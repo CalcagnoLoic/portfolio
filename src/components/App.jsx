@@ -1,25 +1,24 @@
 import Navbar from "./navbar";
 import Presentation from "./presentation";
 import Footer from './footer';
-import Skills from "./skills";
-import { ChakraProvider } from '@chakra-ui/react'
+import Projects from "./projects";
+import Contact from "./contact";
 
 const App = () => {
     return (
-        <ChakraProvider>
-            <div>
-                <header>
-                    <Navbar />
-                </header>
-                <main>
-                    <Presentation />
-                    <Skills />
-                </main>
-                <footer>
-                    <Footer />
-                </footer>
-            </div>
-        </ChakraProvider>
+        <div>
+            <header>
+                <Navbar />
+            </header>
+            <main>
+                <Presentation />
+                <Projects />
+                <Contact />
+            </main>
+            <footer className="bg-dark-blue p-5">
+                <Footer />
+            </footer>
+        </div>
     )
 }
 
