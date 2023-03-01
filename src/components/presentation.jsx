@@ -21,7 +21,7 @@ const Presentation = () => {
                     cursorStyle='|'
                     words={[' <développeur web junior />']}
                     deleteSpeed={40}
-                    delaySpeed={1000}
+                    delaySpeed={2500}
                     />
                 </span>
                 </h1>

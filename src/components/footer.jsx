@@ -1,6 +1,7 @@
 import GITHUB from '../assets/img/github.png';
 import GMAIL from '../assets/img/mail.png';
 import LINKEDIN from '../assets/img/linkedin.png';
+import ANCHOR from '../assets/img/top.png';
 
 const Footer = () => {
     return (
@@ -26,6 +27,10 @@ const Footer = () => {
                 <a href="https://www.freepik.com/free-vector/programmer-concept-illustration_8672698.htm#query=web%20development&position=46&from_view=search&track=ais" target={"_blank"} rel="noreferrer">Images de storyset </a> 
                 sur Freepik</p>
             <p className="text-white text-center">&copy; 2023 Copyright - Calcagno Loïc</p>
+
+            <a href='#top' rel='norefferer' className='absolute'>
+                <img src={ANCHOR} className='animate-bounce w-8 md:w-16 right-2 bottom-1 fixed' alt="" />
+            </a>
         </div>
     )
 }
