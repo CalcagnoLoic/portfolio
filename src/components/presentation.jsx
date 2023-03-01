@@ -14,7 +14,7 @@ const Presentation = () => {
                     <span className='text-2xl animate-wave'>👋</span>
                 </div>
                 <h1 className='text-center text-dark-blue text-2xl mt-2'>Je suis
-                <span className='italic text-3xl font-bold break-words'>
+                <span className='italic text-2xl md:text-3xl font-bold break-words'>
                     <Typewriter
                     loop
                     cursor
