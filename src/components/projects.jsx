@@ -13,7 +13,7 @@ import NEWTAB from '../assets/img/newtab.png';
 const Projects = () => {
     return (
         <div className='px-5 sm:px-5 md:px-8 lg:px-28'>
-            <h2 id="projets" className="text-center text-dark-blue my-10 text-3xl">Mes projets</h2>
+            <h2 id="projets" className="text-center text-dark-blue my-10 text-3xl lg:text-4xl font-bold">Mes projets</h2>
 
             {/* Projet 1 */} 
             <div className='flex gap-5 md:gap-0 lg:gap-0 justify-center mt-7 flex-col md:flex-row bg-dark-blue px-5 py-8 rounded-xl shadow-lg shadow-indigo-500/50'>
