@@ -16,6 +16,7 @@ const Projects = () => {
             <h2 id="projets" className="text-center text-dark-blue my-10 text-3xl lg:text-4xl font-bold">Mes projets</h2>
 
             {/* Projet 1 */} 
+            {/*
             <div className='flex gap-5 md:gap-0 lg:gap-0 justify-center mt-7 flex-col md:flex-row bg-dark-blue px-5 py-8 rounded-xl shadow-lg shadow-indigo-500/50'>
                 <div className='basis-1/2 self-center'>
                     <a href="https://calcagnoloic.github.io/ChallengeFM_landing_page/" target={'_blank'} rel="noreferrer" className='cursor-default'>
@@ -39,6 +40,7 @@ const Projects = () => {
                     </div>
                 </div>
             </div>
+            *}
 
             {/* Projet 2 */} 
             <div className='flex gap-5 md:gap-0 lg:gap-0 justify-center mt-7 flex-col md:flex-row bg-dark-blue px-5 py-8 rounded-xl shadow-lg shadow-indigo-500/50'>
