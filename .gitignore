@@ -24,6 +24,5 @@ yarn-debug.log*
 yarn-error.log*
 
 languages.jsx
-
 # Local Netlify folder
 .netlify
