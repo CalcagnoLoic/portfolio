@@ -9,7 +9,7 @@ const Footer = () => {
             <div className='py-6 mx-8 md:pl-28 md:pr-28 flex flex-col md:flex-row justify-between'>
                 <div className='flex flex-col'>
                     <h2 className="text-[20px] md:text-3xl xl:text-3xl sm:text-2xl text-white text-center md:text-left">Portfolio | Calcagno Loïc</h2>
-                    <p className='text-lg text-white text-center my-4 md:text-left md:w-72 lg:w-96'>Ce portfolio a été réalisé avec les technologies ReactJS et TailwindCSS.</p>
+                    <p className='text-lg text-white text-center my-4 md:text-left md:w-72 lg:w-96'>This portfolio was built with ReactJS and TailwindCSS technologies.</p>
                 </div>
                 <div className='flex gap-3 justify-center mt-3 sm:mt-0 md:gap-6'>
                     <a href="https://github.com/CalcagnoLoic" target={'_blank'} rel="noreferrer">
@@ -24,8 +24,8 @@ const Footer = () => {
                 </div>
             </div>
             <p className="text-center text-white">
-                <a href="https://www.freepik.com/free-vector/programmer-concept-illustration_8672698.htm#query=web%20development&position=46&from_view=search&track=ais" target={"_blank"} rel="noreferrer">Images de storyset </a> 
-                sur Freepik</p>
+                <a href="https://www.freepik.com/free-vector/programmer-concept-illustration_8672698.htm#query=web%20development&position=46&from_view=search&track=ais" target={"_blank"} rel="noreferrer">Images of storyset </a> 
+                on Freepik</p>
             <p className="text-white text-center">&copy; 2023 Copyright - Calcagno Loïc</p>
 
             <a href='#top' rel='norefferer' className='absolute'>

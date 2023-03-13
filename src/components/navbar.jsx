@@ -7,7 +7,7 @@ const Navbar = () => {
                 <p id='top' className="text-[20px] md:text-3xl xl:text-3xl sm:text-2xl text-white text-center xl:text-left break-words">Portfolio | Calcagno Loïc</p>
             </div>
             <div className="flex gap-16 self-center mt-5 mb-5 lg:my-5 md:my-5 sm:my-5"> 
-                <a className="text-white text-[18px] sm:text-xl xl:text-xl md:text-xl hover:cursor-pointer hover:italic hover:underline hover:underline-offset-[10px]" href='#projets'>Projets</a>
+                <a className="text-white text-[18px] sm:text-xl xl:text-xl md:text-xl hover:cursor-pointer hover:italic hover:underline hover:underline-offset-[10px]" href='#projects'>Projects</a>
                 <a className="text-white text-[18px] sm:text-xl xl:text-xl md:text-xl hover:cursor-pointer hover:italic hover:underline hover:underline-offset-[10px]" href='#contact'>Contact</a>
             </div>
             <div className="self-center mt-3 xl:mt-0">

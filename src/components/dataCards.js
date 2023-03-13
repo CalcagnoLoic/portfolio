@@ -4,7 +4,7 @@ export const dataCards = [
         image_project: './img/sunnyside.png',
         link_project: 'https://calcagnoloic.github.io/Sunnyside-agency-react/', 
         title: 'Sunnyside agency',
-        message: "Réalisation d'une landing page avec ReactJS et TailwindCSS en suivant les instructions d'un challenge Frontend Mentor.",
+        message: "Building a landing page with ReactJS and TailwindCSS following the instructions of a Frontend Mentor challenge.",
         lang1: './img/react.png', 
         lang2: '/img/tailwind.png',
         logo_github: './img/github.png',
@@ -16,19 +16,22 @@ export const dataCards = [
         image_project: './img/loopstudio.png',
         link_project: 'https://calcagnoloic.github.io/loopstudios/', 
         title: 'Loopstudios',
-        message: "Réalisation d'une landing page avec ReactJS et TailwindCSS en suivant les instructions du site Frontend Mentor. Utilisation des hooks useState et useEffect ainsi que le CSS-Grid.",
+        message: "Creation of a landing page with ReactJS and TailwindCSS following the instructions of the Frontend Mentor site. Use of the useState and useEffect hooks and the CSS-Grid.",
         lang1: './img/react.png', 
         lang2: '/img/tailwind.png',
         logo_github: './img/github.png',
         open_view: './img/newtab.png',
         link_github: 'https://github.com/CalcagnoLoic/loopstudios',
-    }, 
-    {
+    }
+]
+
+/**
+ * {
         id: 3, 
         image_project: './img/movieflix.png',
         link_project: '/', 
         title: 'MovieFlix',
-        message: "Projet fullstack personnel. Réalisation d'un petit site permettant de voir 20 films par genres. Les informations des différents films proviennent de l'API TMDb.",
+        message: "Personal fullstack project. Realization of a small site allowing to see 20 films by genres. The information of the different films comes from the TMDb API.",
         lang1: './img/html.png', 
         lang2: '/img/sass.png',
         lang3: './img/js.png', 
@@ -38,4 +41,4 @@ export const dataCards = [
         open_view: './img/newtab.png',
         link_github: 'https://github.com/CalcagnoLoic/MovieFlix',
     }
-]
+ */
