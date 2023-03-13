@@ -38,8 +38,9 @@ const Presentation = () => {
                     </a>
                 </div>
             </div>
-            <div className='basis-1/2'>
-                <img src={picture} alt="I'm a dev" className='mx-auto'/>
+            <div className='basis-1/2 flex flex-col justify-center'>
+                <img src={picture} alt="I'm a dev" className='mx-auto w-5/6'/>
+                <p className='italic text-dark-blue text-center text-sm'><a href="https://www.freepik.com/free-vector/programmer-concept-illustration_8672698.htm#query=web%20development&position=46&from_view=search&track=ais" target={"_blank"} rel="noreferrer">Image by storyset </a> on Freepik</p>
             </div>
         </div>
     )

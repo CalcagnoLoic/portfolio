@@ -35,6 +35,7 @@ const Contact = () => {
             <div className= "mt-6 flex justify-center lg:gap-20">
                 <div className='self-center hidden md:block lg:block'>
                     <img src={CONTACT} alt="Contact form" />
+                    <p className='italic text-dark-blue text-center text-sm'><a href="https://www.freepik.com/free-vector/get-touch-concept-illustration_9000470.htm#page=5&query=contact%20me&position=5&from_view=search&track=ais">Image by storyset</a> on Freepik</p>
                 </div>
                 <div>
                     <form action='' ref={form} onSubmit={sendEmail} className="flex flex-col my-5 bg-dark-blue py-8 px-6 md:py-10 md:px-20 rounded-xl shadow-lg shadow-indigo-500/50 sm:px-20 md:mr-6 lg:mr-4" >
