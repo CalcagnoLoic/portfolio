@@ -26,8 +26,8 @@ const Footer = () => {
             
             <p className="text-white text-center">&copy; 2023 Copyright - Calcagno Loïc</p>
 
-            <a href='#top' rel='norefferer' className='absolute'>
-                <img src={ANCHOR} className='animate-bounce w-8 md:w-16 right-2 bottom-1 fixed' alt="" />
+            <a href='#top' rel='norefferer' className='absolute z-0'>
+                <img src={ANCHOR} className='animate-bounce w-8 md:w-16 right-2 bottom-1 fixed' alt="Arrow up" />
             </a>
         </div>
     )

@@ -11,7 +11,7 @@ const Presentation = () => {
             <div className='flex flex-col justify-center basis-1/2'>
                 <div className='flex flex-row justify-center'>
                     <p className='text-2xl text-dark-blue text-center'>Hey, welcome</p>
-                    <span className='text-2xl animate-wave'>👋</span>
+                    <span className='text-2xl md:animate-wave'>👋</span>
                 </div>
                 <h1 className='text-center text-dark-blue text-2xl mt-2'>I am
                 <span className='italic text-2xl md:text-3xl font-bold break-words'>
