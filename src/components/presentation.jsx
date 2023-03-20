@@ -6,7 +6,7 @@ import { Typewriter } from "react-simple-typewriter";
 
 const Presentation = () => {
     return (
-        <div className="flex justify-center py-7 flex-col md:flex-row lg:flex-row gap-5 px-5 sm:px-5 md:px-28 lg:px-28 sm:gap-8 md:gap-16 lg:gap-16 md:pt-32">
+        <div className="flex justify-center py-7 flex-col md:flex-row lg:flex-row gap-5 px-5 sm:px-5 md:px-28 lg:px-28 sm:gap-8 md:gap-16 lg:gap-16">
             <div className="flex flex-col justify-center basis-1/2">
                 <div className="flex flex-row justify-center">
                     <p className="text-2xl text-dark-blue text-center">
