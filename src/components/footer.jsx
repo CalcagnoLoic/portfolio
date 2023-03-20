@@ -6,7 +6,7 @@ import ANCHOR from '../assets/img/top.png';
 const Footer = () => {
     return (
         <div>
-            <div className='py-6 mx-8 md:pl-28 md:pr-28 flex flex-col md:flex-row justify-between'>
+            <div className='py-6 mx-8 lg:pl-28 lg:pr-28 flex flex-col md:flex-row justify-between'>
                 <div className='flex flex-col'>
                     <h2 className="text-[20px] md:text-3xl xl:text-3xl sm:text-2xl text-white text-center md:text-left">Portfolio | Calcagno Loïc</h2>
                     <p className='text-lg text-white text-center my-4 md:text-left md:w-72 lg:w-96'>This portfolio was built with ReactJS and TailwindCSS technologies.</p>

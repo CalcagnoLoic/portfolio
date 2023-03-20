@@ -8,7 +8,7 @@ const Navbar = () => {
     const [menu, setMenu] = useState(false);
 
     return (
-        <nav className="flex flex-row py-6 pl-5 pr-5 md:pl-28 md:pr-28 justify-between xl:flex-row  bg-dark-blue">
+        <nav className="flex flex-row py-6 pl-5 pr-5 md:pl-28 md:pr-28 justify-between xl:flex-row  bg-dark-blue ">
             <div className='w-full z-20 flex justify-between'>
                 <div className='flex self-center'>
                     <p id='top' className="text-[20px] md:text-3xl xl:text-3xl sm:text-2xl text-white xl:text-left break-words">Portfolio | Calcagno Loïc</p>
