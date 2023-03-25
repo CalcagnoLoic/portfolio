@@ -12,6 +12,7 @@ class Skills extends Component {
 
     render() {
         const settings = {
+            arrows: false,
             centerMode: true,
             centerPadding: "50px",
             infinite: true,
@@ -42,6 +43,8 @@ class Skills extends Component {
                     settings: {
                         slidesToShow: 2,
                         slidesToScroll: 1,
+                        speed: 1200,
+                        autoplaySpeed: 1200,
                     },
                 },
             ],

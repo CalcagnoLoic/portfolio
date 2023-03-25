@@ -1,4 +1,4 @@
-import picture from "../assets/img/developer.png";
+import picture from "../assets/img/photo.png";
 import GITHUB from "../assets/img/github.png";
 import GMAIL from "../assets/img/mail.png";
 import LINKEDIN from "../assets/img/linkedin.png";
@@ -6,7 +6,7 @@ import { Typewriter } from "react-simple-typewriter";
 
 const Presentation = () => {
     return (
-        <div className="flex justify-center py-7 flex-col md:flex-row lg:flex-row gap-5 px-5 sm:px-5 md:px-28 lg:px-28 sm:gap-8 md:gap-16 lg:gap-16">
+        <div className="flex justify-center py-7 flex-col md:flex-row lg:flex-row gap-5 px-5 sm:px-5 md:px-28 lg:px-28 sm:gap-8 md:gap-16 lg:gap-16 md:pt-32 lg:pt-40">
             <div className="flex flex-col justify-center basis-1/2">
                 <div className="flex flex-row justify-center">
                     <p className="text-2xl text-dark-blue text-center">
@@ -27,7 +27,7 @@ const Presentation = () => {
                         />
                     </span>
                 </h1>
-                <p className="text-center text-dark-blue text-xl leading-relaxed mt-2">
+                <p className="text-center text-dark-blue text-lg leading-relaxed mt-2">
                     After I taught myself to code, it became a real passion. I
                     love learning new technologies and facing new challenges. I
                     can easily adapt to both frontend and backend situations and
@@ -68,17 +68,7 @@ const Presentation = () => {
                 </div>
             </div>
             <div className="basis-1/2 flex flex-col justify-center">
-                <img src={picture} alt="I'm a dev" className="mx-auto w-5/6" />
-                <p className="italic text-dark-blue text-center text-sm">
-                    <a
-                        href="https://www.freepik.com/free-vector/programmer-concept-illustration_8672698.htm#query=web%20development&position=46&from_view=search&track=ais"
-                        target={"_blank"}
-                        rel="noreferrer"
-                    >
-                        Image by storyset{" "}
-                    </a>{" "}
-                    on Freepik
-                </p>
+                <img src={picture} alt="I'm a dev" className="mx-auto w-1/2 rounded-full" />
             </div>
         </div>
     );

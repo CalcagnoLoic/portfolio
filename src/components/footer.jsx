@@ -11,10 +11,6 @@ const Footer = () => {
                     <h2 className="text-[20px] md:text-3xl xl:text-3xl sm:text-2xl text-white text-center md:text-left">
                         Portfolio | Calcagno Loïc
                     </h2>
-                    <p className="text-lg text-white text-center my-4 md:text-left md:w-72 lg:w-96">
-                        This portfolio was built with ReactJS and TailwindCSS
-                        technologies.
-                    </p>
                 </div>
                 <div className="flex gap-3 justify-center mt-3 sm:mt-0 md:gap-6">
                     <a
@@ -56,7 +52,7 @@ const Footer = () => {
             <a href="#top" rel="norefferer" className="absolute z-0">
                 <img
                     src={ANCHOR}
-                    className="animate-bounce w-8 md:w-16 right-2 bottom-1 fixed"
+                    className="animate-bounce w-8 md:w-16 right-2 bottom-1 fixed md:hidden"
                     alt="Arrow up"
                 />
             </a>
