@@ -14,23 +14,13 @@ export const dataCards = [
         logo_github: './img/github.png',
         open_view: './img/newtab.png',
         link_github: 'https://github.com/CalcagnoLoic/loopstudios',
-    }
-]
-
-/**
- * {
+    }, 
+    {
         id: 3, 
-        image_project: './img/movieflix.png',
-        link_project: '/', 
-        title: 'MovieFlix',
-        message: "Personal fullstack project. Realization of a small site allowing to see 20 films by genres. The information of the different films comes from the TMDb API.",
-        lang1: './img/html.png', 
-        lang2: '/img/sass.png',
-        lang3: './img/js.png', 
-        lang4: '/img/mysql.png',
-        lang5: '/img/php.png',
+        image_project: './img/spacetourism.png',
+        link_project: 'https://calcagnoloic.github.io/space-tourism/', 
         logo_github: './img/github.png',
         open_view: './img/newtab.png',
-        link_github: 'https://github.com/CalcagnoLoic/MovieFlix',
+        link_github: 'https://github.com/CalcagnoLoic/space-tourism',
     }
- */
+]
