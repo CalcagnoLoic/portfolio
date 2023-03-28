@@ -46,16 +46,21 @@ export const dataSlider = [
     },
     {
         id: 10,
+        logo: "./img/laravel.png",
+        title:"Laravel",
+    },
+    {
+        id: 11,
         logo: "./img/mysql.png",
         title:"MySQL",
     },
     {
-        id: 11,
+        id: 12,
         logo: "./img/python.png",
         title:"Python",
     },
     {
-        id: 12,
+        id: 13,
         logo: "./img/django.png",
         title:"Django",
     },
