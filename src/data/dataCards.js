@@ -18,7 +18,7 @@ export const dataCards = [
     {
         id: 3, 
         image_project: './img/spacetourism.png',
-        link_project: 'https://calcagnoloic.github.io/space-tourism/', 
+        link_project: 'https://space-tourism-loic.netlify.app/', 
         logo_github: './img/github.png',
         open_view: './img/newtab.png',
         link_github: 'https://github.com/CalcagnoLoic/space-tourism',
