@@ -44,22 +44,16 @@ const Contact = () => {
             >
                 Contact
             </h2>
-            <div className="mt-6 flex justify-center lg:gap-20">
+            <div className="mt-6 flex justify-center lg:gap-20 bg-cyan-800 mx-2 sm:mx-5 md:mx-28 lg:mx-28 rounded-3xl shadow-slate-700/50 shadow-lg">
                 <div className="self-center hidden md:block lg:block">
                     <img src={CONTACT} alt="Contact form" />
-                    <p className="italic text-dark-blue text-center text-sm">
-                        <a href="https://www.freepik.com/free-vector/get-touch-concept-illustration_9000470.htm#page=5&query=contact%20me&position=5&from_view=search&track=ais">
-                            Image by storyset
-                        </a>{" "}
-                        on Freepik
-                    </p>
                 </div>
                 <div>
                     <form
                         action=""
                         ref={form}
                         onSubmit={sendEmail}
-                        className="flex flex-col my-5 bg-dark-blue py-8 px-6 md:py-10 md:px-20 rounded-xl shadow-slate-700/50 shadow-lg sm:px-20 md:mr-6 lg:mr-4"
+                        className="flex flex-col my-5 py-8 px-6 md:py-10 md:px-20 sm:px-20 md:mr-6 lg:mr-4"
                     >
                         <div className="flex flex-col sm:gap-1 sm:mb-8 mb-2">
                             <label className="text-white mb-1 font-semibold">
@@ -67,7 +61,7 @@ const Contact = () => {
                             </label>
                             <input
                                 type="text"
-                                placeholder="Your name..."
+                                placeholder="Name"
                                 required
                                 className="rounded-md p-2 w-72 md:w-80 lg:w-96"
                                 name="name"
@@ -80,7 +74,7 @@ const Contact = () => {
                             <input
                                 type="email"
                                 required
-                                placeholder="Your email address..."
+                                placeholder="Email"
                                 className="rounded-md w-72 p-2 md:w-80 lg:w-96"
                                 name="reply_to"
                             />
@@ -93,7 +87,7 @@ const Contact = () => {
                                 cols="30"
                                 rows="4"
                                 required
-                                placeholder="Your message..."
+                                placeholder="Message"
                                 className="rounded-md w-72 p-2 md:w-80 lg:w-96"
                                 name="message"
                             ></textarea>

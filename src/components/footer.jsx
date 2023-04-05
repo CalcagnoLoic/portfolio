@@ -45,6 +45,13 @@ const Footer = () => {
                 </div>
             </div>
 
+            <p className="text-white text-center text-sm hidden md:block lg:block">
+                <a href="https://fr.freepik.com/photos-gratuite/enveloppe-marron-manille-lettre-vierge_3777220.htm#page=2&query=envelope&position=7&from_view=search&track=sph">
+                    Image by kstudio
+                </a>{" "}
+                on Freepik
+            </p>
+
             <p className="text-white text-center">
                 &copy; 2023 Copyright - Calcagno Loïc
             </p>
