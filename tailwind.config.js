@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       colors: {
         'dark-blue': '#2F365F',
+        'color-form': '#545a79',
       },
       keyframes: {
         wave: {
