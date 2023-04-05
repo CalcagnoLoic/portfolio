@@ -45,7 +45,7 @@ const Contact = () => {
                 Contact
             </h2>
             <div className="mt-6 flex justify-center lg:gap-20 bg-cyan-800 mx-2 sm:mx-5 md:mx-28 lg:mx-28 rounded-3xl shadow-slate-700/50 shadow-lg">
-                <div className="self-center hidden md:block lg:block">
+                <div className="self-center hidden md:hidden lg:block">
                     <img src={CONTACT} alt="Contact form" />
                 </div>
                 <div>
