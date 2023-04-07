@@ -46,8 +46,8 @@ const Footer = () => {
             </div>
 
             <p className="text-white text-center text-sm hidden md:block lg:block">
-                <a href="https://fr.freepik.com/photos-gratuite/enveloppe-marron-manille-lettre-vierge_3777220.htm#page=2&query=envelope&position=7&from_view=search&track=sph">
-                    Image by kstudio
+                <a href="https://fr.freepik.com/vecteurs-libre/mains-utilisant-smartphone-envoyant-email_5677150.htm#query=send%20contact&position=11&from_view=search&track=ais">
+                    Image by studiogstock
                 </a>{" "}
                 on Freepik
             </p>

@@ -7,16 +7,16 @@ import { Typewriter } from "react-simple-typewriter";
 const Presentation = () => {
     return (
         <div className="flex justify-center py-7 flex-col md:flex-row lg:flex-row gap-5 px-5 sm:px-5 md:px-28 lg:px-28 sm:gap-8 md:gap-16 lg:gap-16 md:pt-52 lg:pt-40">
-            <div className="flex flex-col justify-center basis-1/2">
+            <div className="flex flex-col justify-center basis-1/2 lg:basis-3/5">
                 <div className="flex flex-row justify-center">
-                    <p className="text-2xl text-dark-blue text-center">
+                    <p className="text-2xl text-dark-blue text-center font-[bellefair] lg:text-4xl">
                         Hey, welcome
                     </p>
                     <span className="text-2xl animate-wave">👋</span>
                 </div>
-                <h1 className="text-center text-dark-blue text-2xl mt-2">
+                <h1 className="text-center text-dark-blue text-3xl lg:text-5xl mt-2 font-[bellefair]">
                     I am
-                    <span className="italic text-2xl md:text-3xl font-bold break-words">
+                    <span className="italic text-3xl md:text-3xl lg:text-5xl font-bold break-words">
                         <Typewriter
                             loop
                             cursor
@@ -67,7 +67,7 @@ const Presentation = () => {
                     </a>
                 </div>
             </div>
-            <div className="basis-1/2 flex flex-col justify-center">
+            <div className="basis-1/2 flex flex-col justify-center lg:basis-2/5">
                 <img src={picture} alt="I'm a dev" className="mx-auto rounded-full" />
             </div>
         </div>

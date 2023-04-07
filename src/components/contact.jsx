@@ -40,63 +40,69 @@ const Contact = () => {
         <div className="pb-16">
             <h2
                 id="contact"
-                className="text-center text-dark-blue pt-10 text-3xl lg:text-4xl font-bold"
+                className="text-center text-dark-blue pt-10 text-3xl lg:text-4xl font-bold font-[bellefair] underline italic"
             >
-                Contact
+                Get in touch
             </h2>
-            <div className="mt-6 flex justify-center lg:gap-20 bg-color-form mx-2 sm:mx-5 md:mx-28 lg:mx-28 rounded-3xl shadow-slate-700/50 shadow-lg">
-                <div className="self-center hidden md:hidden lg:block">
-                    <img src={CONTACT} alt="Contact form" />
+            <div className="mt-6 flex justify-center items-center lg:gap-20 bg-color-form mx-2 sm:mx-5 md:mx-28 lg:mx-28 rounded-3xl shadow-slate-700/50 shadow-lg">
+                <div className="self-center  hidden xl:block">
+                    <img src={CONTACT} alt="Contact form" className="w-[350px]" />
                 </div>
                 <div>
                     <form
                         action=""
                         ref={form}
                         onSubmit={sendEmail}
-                        className="flex flex-col my-5 py-8 px-6 md:py-10 md:px-20 sm:px-20 md:mr-6 lg:mr-4"
+                        className="flex flex-col my-5 py-8 pt-3 pb-6 md:py-10 md:px-20 sm:px-20 md:mr-6 lg:mr-4"
                     >
-                        <div className="flex flex-col sm:gap-1 sm:mb-8 mb-2">
-                            <label className="text-white mb-1 font-semibold">
-                                Name :{" "}
-                            </label>
-                            <input
-                                type="text"
-                                placeholder="Name"
-                                required
-                                className="rounded-md p-2 w-72 md:w-80 lg:w-96"
-                                name="name"
-                            />
+                        <div className="flex flex-col lg:flex-row lg:gap-5">
+                            <div className="flex flex-col sm:gap-1 sm:mb-8 mb-2">
+                                <label className="text-white mb-1 font-semibold">
+                                    Name <span className="text-rose-400">*</span> :{" "}
+                                </label>
+                                <input
+                                    type="text"
+                                    placeholder="Name"
+                                    required
+                                    className="rounded-md p-2 w-72 md:w-80"
+                                    name="name"
+                                />
+                            </div>
+                            <div className="flex flex-col sm:gap-1 sm:mb-8 mb-2">
+                                <label className="text-white mb-1 font-semibold">
+                                    Email <span className="text-rose-400">*</span> :{" "}
+                                </label>
+                                <input
+                                    type="email"
+                                    required
+                                    placeholder="Email"
+                                    className="rounded-md w-72 p-2 md:w-80"
+                                    name="reply_to"
+                                />
+                            </div>
                         </div>
+
                         <div className="flex flex-col sm:gap-1 sm:mb-8 mb-2">
                             <label className="text-white mb-1 font-semibold">
-                                Email :{" "}
-                            </label>
-                            <input
-                                type="email"
-                                required
-                                placeholder="Email"
-                                className="rounded-md w-72 p-2 md:w-80 lg:w-96"
-                                name="reply_to"
-                            />
-                        </div>
-                        <div className="flex flex-col sm:gap-1 sm:mb-8 mb-2">
-                            <label className="text-white mb-1 font-semibold">
-                                Message :{" "}
+                                Message <span className="text-rose-400">*</span> :{" "}
                             </label>
                             <textarea
                                 cols="30"
                                 rows="4"
                                 required
                                 placeholder="Message"
-                                className="rounded-md w-72 p-2 md:w-80 lg:w-96"
+                                className="rounded-md w-72 p-2 md:w-80 lg:w-full"
                                 name="message"
                             ></textarea>
+                            <span className="text-rose-400">* Required Fields</span>
                         </div>
-                        <input
-                            type="submit"
-                            value="Submit"
-                            className="text-white font-bold p-4 bg-black rounded-xl cursor-pointer hover:bg-white hover:text-dark-blue duration-1000 text-lg mt-3"
-                        />
+                        <div>
+                            <input
+                                type="submit"
+                                value="Submit"
+                                className="text-white font-bold p-4 bg-black rounded-xl cursor-pointer hover:bg-white hover:text-dark-blue duration-1000 text-lg mt-3 w-1/2"
+                            />
+                        </div>
                     </form>
                 </div>
             </div>
