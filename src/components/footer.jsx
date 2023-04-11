@@ -46,7 +46,7 @@ const Footer = () => {
             </div>
 
             <p className="text-white text-center text-sm hidden md:block lg:block">
-                <a href="https://fr.freepik.com/vecteurs-libre/mains-utilisant-smartphone-envoyant-email_5677150.htm#query=send%20contact&position=11&from_view=search&track=ais">
+                <a href="https://fr.freepik.com/vecteurs-libre/mains-utilisant-smartphone-envoyant-email_5677150.htm#query=send%20contact&position=11&from_view=search&track=ais" target="_blank" rel="noreferrer">
                     Image by studiogstock
                 </a>{" "}
                 on Freepik

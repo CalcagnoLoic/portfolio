@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: bellefair;
-    src: url("../assets/fonts/Bellefair/Bellefair-Regular.ttf");
+    font-family: sofia;
+    src: url("../assets/fonts/Sofia_Sans_Condensed/SofiaSansCondensed-Italic-VariableFont_wght.ttf");
 }
 
 @font-face {

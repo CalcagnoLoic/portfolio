@@ -40,7 +40,7 @@ const Contact = () => {
         <div className="pb-16">
             <h2
                 id="contact"
-                className="text-center text-dark-blue pt-10 text-3xl lg:text-4xl font-bold font-[bellefair] underline italic"
+                className="text-center text-dark-blue pt-10 text-3xl lg:text-4xl font-bold font-[sofia] underline"
             >
                 Get in touch
             </h2>
