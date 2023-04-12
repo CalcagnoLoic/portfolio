@@ -6,6 +6,6 @@
     <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
 </p>
 
-Ce projet constitue mon portfolio avec les différents projets que je mets en avant. En particulier des challenges provenant de sites externes ou des challenges fullstack personnel.
+This project is my portfolio with the different projects I put forward. In particular challenges from external sites.
 
 ![](src/assets/img/readme.png)
