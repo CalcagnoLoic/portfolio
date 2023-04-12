@@ -51,7 +51,7 @@ class Skills extends Component {
         };
 
         return (
-            <div className="px-5 sm:px-5 md:px-8 lg:px-28 py-10">
+            <section className="px-5 sm:px-5 md:px-8 lg:px-28 py-10">
                 <h2
                     id="skills"
                     className="text-center text-dark-blue text-3xl lg:text-4xl font-bold pb-10 font-[sofia] underline"
@@ -72,7 +72,7 @@ class Skills extends Component {
                         );
                     })}
                 </Slider>
-            </div>
+            </section>
         );
     }
 }

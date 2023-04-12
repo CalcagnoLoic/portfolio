@@ -5,7 +5,7 @@ import ANCHOR from "../assets/img/top.png";
 
 const Footer = () => {
     return (
-        <div>
+        <section>
             <div className="py-6 mx-8 lg:pl-28 lg:pr-28 flex flex-col md:flex-row justify-between">
                 <div className="flex flex-col">
                     <h2 className="text-[20px] md:text-3xl xl:text-3xl sm:text-2xl text-white text-center md:text-left">
@@ -63,7 +63,7 @@ const Footer = () => {
                     alt="Arrow up"
                 />
             </a>
-        </div>
+        </section>
     );
 };
 

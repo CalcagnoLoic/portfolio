@@ -6,17 +6,17 @@ import { Typewriter } from "react-simple-typewriter";
 
 const Presentation = () => {
     return (
-        <div className="flex justify-center py-7 flex-col md:flex-row lg:flex-row gap-5 px-5 sm:px-5 md:px-28 lg:px-28 sm:gap-8 md:gap-16 lg:gap-16 md:pt-52 lg:pt-40 pb-7">
-            <div className="flex flex-col justify-center basis-1/2 lg:basis-3/5">
-                <div className="flex flex-row justify-center">
+        <section className="flex justify-center py-7 flex-col md:flex-row lg:flex-row gap-5 px-5 sm:px-5 md:px-28 lg:px-28 sm:gap-8 md:gap-16 lg:gap-16 md:pt-52 lg:pt-40 pb-7">
+            <article className="flex flex-col justify-center basis-1/2 lg:basis-3/5">
+                <header className="flex flex-row justify-center">
                     <p className="text-2xl text-dark-blue text-center font-[sofia] lg:text-4xl">
                         Hey, welcome
                     </p>
                     <span className="text-2xl animate-wave">👋</span>
-                </div>
+                </header>
                 <h1 className="text-center text-dark-blue text-3xl lg:text-5xl mt-2 font-[sofia]">
                     I am
-                    <span className="italic text-3xl md:text-3xl lg:text-5xl font-bold break-words">
+                    <span className="text-3xl md:text-3xl lg:text-5xl font-bold break-words">
                         <Typewriter
                             loop
                             cursor
@@ -35,7 +35,7 @@ const Presentation = () => {
                     the achievements I am most proud of and thus show my
                     abilities in this fascinating world of web development!
                 </p>
-                <div className="flex justify-center mt-5 gap-5">
+                <footer className="flex justify-center mt-5 gap-5">
                     <a
                         href="https://github.com/CalcagnoLoic"
                         target={"_blank"}
@@ -65,12 +65,12 @@ const Presentation = () => {
                             alt="Logo Gmail | Contact"
                         />
                     </a>
-                </div>
-            </div>
+                </footer>
+            </article>
             <div className="basis-1/2 flex flex-col justify-center lg:basis-2/5">
                 <img src={picture} alt="I'm a dev" className="mx-auto rounded-full" />
             </div>
-        </div>
+        </section>
     );
 };
 

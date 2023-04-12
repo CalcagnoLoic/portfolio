@@ -37,7 +37,7 @@ const Contact = () => {
     };
 
     return (
-        <div className="pb-16">
+        <section className="pb-16">
             <h2
                 id="contact"
                 className="text-center text-dark-blue pt-10 text-3xl lg:text-4xl font-bold font-[sofia] underline"
@@ -96,17 +96,17 @@ const Contact = () => {
                             ></textarea>
                             <span className="text-rose-400">* Required Fields</span>
                         </div>
-                        <div>
+                        <div className="grid place-content-center md:block">
                             <input
                                 type="submit"
                                 value="Submit"
-                                className="text-white font-bold p-4 bg-black rounded-xl cursor-pointer hover:bg-white hover:text-dark-blue duration-1000 text-lg mt-3 w-1/2"
+                                className="text-white font-bold p-4 bg-black rounded-xl cursor-pointer hover:bg-white hover:text-dark-blue duration-1000 text-lg mt-3 md:w-1/2"
                             />
                         </div>
                     </form>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 
