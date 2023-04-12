@@ -21,7 +21,7 @@ const Presentation = () => {
                             loop
                             cursor
                             cursorStyle="|"
-                            words={[" <junior web developer />"]}
+                            words={[" <junior web developer /> "]}
                             deleteSpeed={40}
                             delaySpeed={2500}
                         />
@@ -68,7 +68,7 @@ const Presentation = () => {
                 </footer>
             </article>
             <div className="basis-1/2 flex flex-col justify-center lg:basis-2/5">
-                <img src={picture} alt="I'm a dev" className="mx-auto rounded-full" />
+                <img src={picture} alt="I am a junior web developper" className="mx-auto rounded-full" />
             </div>
         </section>
     );

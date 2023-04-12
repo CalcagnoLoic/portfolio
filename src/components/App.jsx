@@ -15,8 +15,9 @@ const App = () => {
             </header>
             <main>
                 <Presentation />
-                <Skills />
                 <Projects />
+                <Skills />
+                
                 <Contact />
             </main>
             <footer className="bg-dark-blue p-5">

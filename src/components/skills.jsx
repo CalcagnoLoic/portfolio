@@ -64,7 +64,7 @@ class Skills extends Component {
                             <div key={id}>
                                 <img
                                     src={id.logo}
-                                    alt="Mes skills"
+                                    alt={id.title}
                                     className="w-24 md:w-28"
                                     title={id.title}
                                 />

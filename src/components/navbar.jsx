@@ -54,15 +54,15 @@ const Navbar = () => {
                 <div className="flex flex-col gap-16 justify-center mt-5 mb-5 lg:my-5 md:my-5 sm:my-5 md:flex md:gap-10 px-5 items-center h-full">
                     <a
                         className="text-white text-3xl hover:cursor-pointer hover:italic hover:underline hover:underline-offset-[10px] font-[bellefair]"
-                        href="#skills"
-                    >
-                        Skills
-                    </a>
-                    <a
-                        className="text-white text-3xl hover:cursor-pointer hover:italic hover:underline hover:underline-offset-[10px] font-[bellefair]"
                         href="#projects"
                     >
                         Projects
+                    </a>
+                    <a
+                        className="text-white text-3xl hover:cursor-pointer hover:italic hover:underline hover:underline-offset-[10px] font-[bellefair]"
+                        href="#skills"
+                    >
+                        Skills
                     </a>
                     <a
                         className="text-white text-3xl hover:cursor-pointer hover:italic hover:underline hover:underline-offset-[10px] font-[bellefair]"
@@ -85,15 +85,15 @@ const Navbar = () => {
                 <div className="flex gap-16 self-center mt-5 mb-5 lg:my-5 md:my-5 sm:my-5 md:flex md:gap-10">
                     <a
                         className="text-white text-[18px] xl:text-xl md:text-xl hover:cursor-pointer hover:italic hover:underline hover:underline-offset-[10px] font-[bellefair]"
-                        href="#skills"
-                    >
-                        Skills
-                    </a>
-                    <a
-                        className="text-white text-[18px] xl:text-xl md:text-xl hover:cursor-pointer hover:italic hover:underline hover:underline-offset-[10px] font-[bellefair]"
                         href="#projects"
                     >
                         Projects
+                    </a>
+                    <a
+                        className="text-white text-[18px] xl:text-xl md:text-xl hover:cursor-pointer hover:italic hover:underline hover:underline-offset-[10px] font-[bellefair]"
+                        href="#skills"
+                    >
+                        Skills
                     </a>
                     <a
                         className="text-white text-[18px] xl:text-xl md:text-xl hover:cursor-pointer hover:italic hover:underline hover:underline-offset-[10px] font-[bellefair]"
