@@ -58,7 +58,7 @@ const Contact = () => {
                         <div className="flex flex-col lg:flex-row lg:gap-5">
                             <div className="flex flex-col sm:gap-1 sm:mb-8 mb-2">
                                 <label className="text-white mb-1 font-semibold">
-                                    Name <span className="text-rose-400">*</span> :{" "}
+                                    Name <span className="text-rose-300">*</span> :{" "}
                                 </label>
                                 <input
                                     type="text"
@@ -70,7 +70,7 @@ const Contact = () => {
                             </div>
                             <div className="flex flex-col sm:gap-1 sm:mb-8 mb-2">
                                 <label className="text-white mb-1 font-semibold">
-                                    Email <span className="text-rose-400">*</span> :{" "}
+                                    Email <span className="text-rose-300">*</span> :{" "}
                                 </label>
                                 <input
                                     type="email"
@@ -84,7 +84,7 @@ const Contact = () => {
 
                         <div className="flex flex-col sm:gap-1 sm:mb-8 mb-2">
                             <label className="text-white mb-1 font-semibold">
-                                Message <span className="text-rose-400">*</span> :{" "}
+                                Message <span className="text-rose-300">*</span> :{" "}
                             </label>
                             <textarea
                                 cols="30"
@@ -94,7 +94,7 @@ const Contact = () => {
                                 className="rounded-md w-72 p-2 md:w-80 lg:w-full"
                                 name="message"
                             ></textarea>
-                            <span className="text-rose-400">* Required Fields</span>
+                            <span className="text-rose-300">* Required Fields</span>
                         </div>
                         <div className="grid place-content-center md:block">
                             <input

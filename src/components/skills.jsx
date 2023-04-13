@@ -61,7 +61,7 @@ class Skills extends Component {
                 <Slider {...settings}>
                     {this.state.logo_slider.map((id) => {
                         return (
-                            <div key={id}>
+                            <div key={id} className="grid place-content-end">
                                 <img
                                     src={id.logo}
                                     alt={id.title}
