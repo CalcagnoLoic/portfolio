@@ -1,5 +1,5 @@
 import GITHUB from "../assets/img/github.png";
-import GMAIL from "../assets/img/mail.png";
+import GMAIL from "../assets/img/mail.ico";
 import LINKEDIN from "../assets/img/linkedin.png";
 import ANCHOR from "../assets/img/top.png";
 

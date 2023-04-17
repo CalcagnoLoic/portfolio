@@ -9,14 +9,15 @@ export const dataSlider = [
         logo: "./img/github.png",
         title:"Github",
     },
+    /*
     {
         id: 3,
         logo: "./img/figma.png",
         title:"Figma",
-    },
+    },*/
     {
         id: 4,
-        logo: "./img/html.png",
+        logo: "./img/html.svg",
         title:"HTML5",
     },
     {
@@ -61,7 +62,7 @@ export const dataSlider = [
     },
     {
         id: 12,
-        logo: "./img/django.png",
+        logo: "./img/django.svg",
         title:"Django",
     },
 ];
