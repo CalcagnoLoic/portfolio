@@ -2,10 +2,10 @@ import { Cards } from "./cards";
 
 const Projects = () => {
     return (
-        <section className="px-5 sm:px-5 md:px-8 lg:px-28 py-10">
+        <section className="px-5 sm:px-5 md:px-8 lg:px-28 pb-20 pt-20">
             <h2
                 id="projects"
-                className="text-center text-dark-blue text-3xl lg:text-4xl font-bold pb-5 font-[sofia] underline"
+                className="text-center text-main-color text-3xl lg:text-4xl font-bold font-[sofia] underline pb-5"
             >
                 Recent projects
             </h2>

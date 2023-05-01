@@ -1,4 +1,3 @@
-import cv from "../assets/CV_dev.pdf";
 import hamburger from "../assets/img/icon-hamburger.svg";
 import close from "../assets/img/icon-close.svg";
 import { useState, useEffect } from "react";
@@ -16,8 +15,8 @@ const Navbar = () => {
     }, [menu]);
 
     return (
-        <nav className="flex flex-row py-6 md:py-2 pl-5 pr-5 lg:pl-28 lg:pr-28 justify-between xl:flex-row  bg-dark-blue shadow-slate-700/50 shadow-lg z-20 md:fixed md:w-full">
-            <div className="w-full z-20 flex justify-between">
+        <nav className="flex flex-row py-6 md:py-2 pl-5 pr-5 lg:pl-28 lg:pr-28 justify-between xl:flex-row  bg-main-color z-20 md:fixed md:w-full">
+            <div className="w-full flex justify-between">
                 <div className="flex self-center">
                     <p
                         id="top"
@@ -46,7 +45,7 @@ const Navbar = () => {
             </div>
 
             <nav
-                className={`fixed top-[-100vh] left-0 right-0 h-screen bg-dark-blue transition-all duration-700 md:hidden z-10 ${
+                className={`fixed top-[-100vh] left-0 right-0 h-screen bg-main-color transition-all duration-700 md:hidden z-10 ${
                     menu === true ? "top-[0]" : ""
                 }`}
                 onClick={() => setMenu(!menu)}
@@ -70,14 +69,6 @@ const Navbar = () => {
                     >
                         Contact
                     </a>
-                    <a
-                        href={cv}
-                        target={"_blank"}
-                        rel="noreferrer"
-                        className="text-white  hover:cursor-pointer bg-color-btn px-20 py-3 sm:px-12 xl:px-16 xl:py-3 md:px-16 md:py-3 rounded-md text-3xl hover:border-none hover:text-dark-blue hover:bg-white duration-1000 font-[bellefair]"
-                    >
-                        CV
-                    </a>
                 </div>
             </nav>
 
@@ -100,16 +91,6 @@ const Navbar = () => {
                         href="#contact"
                     >
                         Contact
-                    </a>
-                </div>
-                <div className="self-center mt-3 xl:mt-0">
-                    <a
-                        href={cv}
-                        target={"_blank"}
-                        rel="noreferrer"
-                        className="text-white text-base hover:cursor-pointer bg-color-btn px-8 py-2 xl:px-16 xl:py-3 md:px-16 md:py-3 rounded-md text-[18px] xl:text-xl md:text-xl hover:border-none hover:text-dark-blue hover:bg-white duration-1000 font-[bellefair]"
-                    >
-                        CV
                     </a>
                 </div>
             </nav>

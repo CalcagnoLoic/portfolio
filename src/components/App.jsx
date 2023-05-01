@@ -20,7 +20,7 @@ const App = () => {
                 
                 <Contact />
             </main>
-            <footer className="bg-dark-blue p-5">
+            <footer className="bg-main-color p-7">
                 <Footer />
             </footer>
         </div>

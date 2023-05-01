@@ -4,9 +4,9 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                "dark-blue": "#2F365F",
-                "color-form": "#545a79",
-                "color-btn": "#545a79",
+                "main-color": "#1F1F1E",
+                "section-gray": "#1F1F1E",
+                "red-element": "#E5231A"
             },
             keyframes: {
                 wave: {

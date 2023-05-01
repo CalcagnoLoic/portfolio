@@ -1,7 +1,8 @@
-import CONTACT from "../assets/img/contactme.png";
 import { useRef } from "react";
 import { sendForm } from "emailjs-com";
 import Swal from "sweetalert2";
+import { TfiEmail } from "react-icons/tfi";
+import { GrMapLocation } from "react-icons/gr";
 
 const Contact = () => {
     const form = useRef();
@@ -37,70 +38,99 @@ const Contact = () => {
     };
 
     return (
-        <section className="pb-16">
+        <section className="lg:py-10">
             <h2
                 id="contact"
-                className="text-center text-dark-blue pt-10 text-3xl lg:text-4xl font-bold font-[sofia] underline"
+                className="text-center text-main-color pt-10 text-3xl lg:text-4xl font-bold font-[sofia] underline"
             >
                 Get in touch
             </h2>
-            <div className="mt-6 flex justify-center items-center lg:gap-20 bg-color-form mx-2 sm:mx-5 md:mx-28 lg:mx-28 rounded-3xl shadow-slate-700/50 shadow-lg">
-                <div className="self-center  hidden xl:block">
-                    <img src={CONTACT} alt="Contact form" className="w-[350px]" />
+
+            <div className="flex flex-col md:flex-row justify-center items-center mx-2 sm:mx-5 ">
+                <div className="self-center mx-10 md:pl-5 lg:mx-5 lg:pl-20">
+                    <h2 className="text-center md:text-start pt-5 md:pt-0 text-main-color">
+                        If you want more information about me or my work, don't
+                        hesitate to contact me with this contact form or
+                        directly on my email address.{" "}
+                    </h2>
+                    <h2 className="text-center md:text-start mb-10 text-main-color">
+                        I will reply as soon as possible.
+                    </h2>
+                    <div className="flex flex-col gap-5">
+                        <div className="flex gap-5 text-center justify-center md:text-start border-2 p-5 rounded-3xl border-b-red-element border-white">
+                            <TfiEmail className="self-center" />
+                            <p className="self-center text-main-color">
+                                calcagnoloic93@gmail.com
+                            </p>
+                        </div>
+                        <div className="flex gap-5 text-center justify-center md:text-start border-2 p-5 rounded-3xl border-b-red-element border-white">
+                            <GrMapLocation className="self-center" />
+                            <p className="self-center text-main-color">
+                                Belgium, Hainaut, 7170 La Hestre
+                            </p>
+                        </div>
+                    </div>
                 </div>
                 <div>
                     <form
                         action=""
                         ref={form}
                         onSubmit={sendEmail}
-                        className="flex flex-col my-5 py-8 pt-3 pb-6 md:py-10 md:px-20 sm:px-20 md:mr-6 lg:mr-4"
+                        className="flex flex-col my-5 py-8 sm:pl-20 sm:pr-5 lg:pr-20"
                     >
                         <div className="flex flex-col lg:flex-row lg:gap-5">
                             <div className="flex flex-col sm:gap-1 sm:mb-8 mb-2">
-                                <label className="text-white mb-1 font-semibold">
-                                    Name <span className="text-rose-300">*</span> :{" "}
+                                <label className="mb-1 font-semibold text-main-color">
+                                    Name{" "}
+                                    <span className="text-red-element">*</span>{" "}
+                                    :{" "}
                                 </label>
                                 <input
                                     type="text"
                                     placeholder="Name"
                                     required
-                                    className="rounded-md p-2 w-72 md:w-80"
+                                    className="rounded-md p-2 w-72 md:w-80 border-2"
                                     name="name"
                                 />
                             </div>
                             <div className="flex flex-col sm:gap-1 sm:mb-8 mb-2">
-                                <label className="text-white mb-1 font-semibold">
-                                    Email <span className="text-rose-300">*</span> :{" "}
+                                <label className="mb-1 font-semibold text-main-color">
+                                    Email{" "}
+                                    <span className="text-red-element">*</span>{" "}
+                                    :{" "}
                                 </label>
                                 <input
                                     type="email"
                                     required
                                     placeholder="Email"
-                                    className="rounded-md w-72 p-2 md:w-80"
+                                    className="rounded-md w-72 p-2 md:w-80 border-2"
                                     name="reply_to"
                                 />
                             </div>
                         </div>
 
                         <div className="flex flex-col sm:gap-1 sm:mb-8 mb-2">
-                            <label className="text-white mb-1 font-semibold">
-                                Message <span className="text-rose-300">*</span> :{" "}
+                            <label className="mb-1 font-semibold text-main-color">
+                                Message{" "}
+                                <span className="text-red-element">*</span> :{" "}
                             </label>
                             <textarea
                                 cols="30"
                                 rows="4"
                                 required
                                 placeholder="Message"
-                                className="rounded-md w-72 p-2 md:w-80 lg:w-full"
+                                className="rounded-md w-72 p-2 md:w-80 lg:w-full border-2"
                                 name="message"
                             ></textarea>
-                            <span className="text-rose-300">* Required Fields</span>
+                            <span className="text-red-element">
+                                * Required Fields
+                            </span>
                         </div>
                         <div className="grid place-content-center md:block">
                             <input
                                 type="submit"
                                 value="Submit"
-                                className="text-white font-bold p-4 bg-black rounded-xl cursor-pointer hover:bg-white hover:text-dark-blue duration-1000 text-lg mt-3 md:w-1/2"
+                                className="text-white font-bold p-4 hover:bg-red-element rounded-xl cursor-pointer hover:text-white bg-main-color duration-1000 text-lg mt-3 w-full md:w-1/2"
                             />
                         </div>
                     </form>
