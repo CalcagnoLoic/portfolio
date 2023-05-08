@@ -4,7 +4,7 @@ import cv from "../assets/CV_dev.pdf";
 
 const Presentation = () => {
     return (
-        <section className="flex justify-center py-7 flex-col md:flex-row lg:flex-row gap-5 px-5 sm:px-5 md:px-28 lg:px-28 sm:gap-8 md:gap-16 lg:gap-16 md:py-52 lg:py-28 pb-7 bg-section-gray">
+        <section className="flex justify-center py-7 flex-col md:flex-row lg:flex-row gap-5 px-5 sm:px-5 md:px-20 lg:px-28 sm:gap-8 md:gap-16 lg:gap-16 md:py-28 pb-7 bg-section-gray">
             <article className="flex flex-col justify-center basis-1/2 lg:basis-3/5">
                 <header className="flex flex-row justify-center lg:justify-start lg:pt-12">
                     <p className="text-2xl text-white text-center font-[sofia] lg:text-4xl ">
@@ -36,7 +36,7 @@ const Presentation = () => {
                 <footer className="flex flex-col sm:flex-row justify-center sm:justify-start mt-5 gap-5">
                     <a
                         href="#contact"
-                        className="text-white hover:cursor-pointer bg-red-element px-20 py-3 rounded-md text-2xl hover:border-none hover:bg-white hover:text-main-color duration-1000 font-[bellefair] sm:w-1/2 text-center"
+                        className="text-white hover:cursor-pointer bg-red-element md:px-16 px-20 py-3 rounded-md text-2xl hover:border-none hover:bg-white hover:text-main-color duration-1000 font-[bellefair] sm:w-1/2 text-center self-center"
                     >
                         Contact Me
                     </a>
@@ -44,7 +44,7 @@ const Presentation = () => {
                         href={cv}
                         target={"_blank"}
                         rel="noreferrer"
-                        className="text-white  hover:cursor-pointer bg-red-element px-20 py-3 rounded-md text-2xl hover:border-none hover:bg-white hover:text-main-color duration-1000 font-[bellefair] sm:w-1/2 text-center"
+                        className="text-white  hover:cursor-pointer bg-red-element py-3 rounded-md text-2xl hover:border-none hover:bg-white hover:text-main-color duration-1000 font-[bellefair] sm:w-1/2 text-center self-center px-20"
                     >
                         CV
                     </a>

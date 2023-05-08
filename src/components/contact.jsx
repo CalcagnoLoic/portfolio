@@ -46,7 +46,7 @@ const Contact = () => {
                 Get in touch
             </h2>
 
-            <div className="flex flex-col md:flex-row justify-center items-center mx-2 sm:mx-5 ">
+            <div className="flex flex-col md:flex-row justify-center items-center mx-2 sm:mx-5 lg:mx-10">
                 <div className="self-center mx-10 md:pl-5 lg:mx-5 lg:pl-20">
                     <h2 className="text-center md:text-start pt-5 md:pt-0 text-main-color">
                         If you want more information about me or my work, don't
@@ -76,7 +76,7 @@ const Contact = () => {
                         action=""
                         ref={form}
                         onSubmit={sendEmail}
-                        className="flex flex-col my-5 py-8 sm:pl-20 sm:pr-5 lg:pr-20"
+                        className="flex flex-col my-5 py-8 sm:px-5 lg:pr-16 lg:px-16"
                     >
                         <div className="flex flex-col lg:flex-row lg:gap-5">
                             <div className="flex flex-col sm:gap-1 sm:mb-8 mb-2">
