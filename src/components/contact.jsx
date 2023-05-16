@@ -3,6 +3,7 @@ import { sendForm } from "emailjs-com";
 import Swal from "sweetalert2";
 import { TfiEmail } from "react-icons/tfi";
 import { GrMapLocation } from "react-icons/gr";
+import { IconContext } from "react-icons";
 
 const Contact = () => {
     const form = useRef();
@@ -57,14 +58,20 @@ const Contact = () => {
                         I will reply as soon as possible.
                     </h2>
                     <div className="flex flex-col gap-5">
-                        <div className="flex gap-5 text-center justify-center md:text-start border-2 p-5 rounded-3xl border-b-red-element border-white">
-                            <TfiEmail className="self-center" />
+                        <div className="flex gap-5 text-center justify-center md:text-start border-2 p-5 rounded-3xl bg-gray-100 border-white">
+                            <IconContext.Provider value={{size:"1.25rem"}}>
+                                <TfiEmail className="self-center" />
+                            </IconContext.Provider>
+                            
                             <p className="self-center text-main-color">
                                 calcagnoloic93@gmail.com
                             </p>
                         </div>
-                        <div className="flex gap-5 text-center justify-center md:text-start border-2 p-5 rounded-3xl border-b-red-element border-white">
-                            <GrMapLocation className="self-center" />
+                        <div className="flex gap-5 text-center justify-center md:text-start border-2 p-5 rounded-3xl bg-gray-100 border-white">
+                            <IconContext.Provider value={{size:"1.25rem"}}>
+                                <GrMapLocation className="self-center" />
+                            </IconContext.Provider>
+                            
                             <p className="self-center text-main-color">
                                 Belgium, Hainaut, 7170 La Hestre
                             </p>
