@@ -6,7 +6,7 @@ module.exports = {
             colors: {
                 "main-color": "#1F1F1E",
                 "section-gray": "#1F1F1E",
-                "red-element": "#E5231A"
+                "red-element": "#FF1D40"
             },
             keyframes: {
                 wave: {
