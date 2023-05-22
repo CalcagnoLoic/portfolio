@@ -27,7 +27,7 @@ const Footer = () => {
             </IconContext.Provider>
 
             <a href="#top" rel="norefferer" className="absolute z-0">
-                <IconContext.Provider value={{color: "#FF0F25", size: "2em"}}>
+                <IconContext.Provider value={{style:{color: "#FF1D40"}, size: "2em"}}>
                     <BsFillArrowUpCircleFill className=" w-8 md:w-16 right-2 bottom-1 fixed md:hidden" />
                 </IconContext.Provider>
             </a>
