@@ -54,7 +54,7 @@ const Presentation = () => {
                 <img
                     src={picture}
                     alt="I am a junior web developper"
-                    className="w-2/3 mx-auto rounded-3xl"
+                    className="w-2/3 mx-auto rounded-full"
                 />
             </div>
         </section>
