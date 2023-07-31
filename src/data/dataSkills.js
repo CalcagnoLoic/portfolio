@@ -34,7 +34,7 @@ export const dataSkills = [
         ),
     },
     {
-        id: 1,
+        id: 2,
         title: "Backend",
         paragraph:
             "I can work structurally and object-oriented and apply an MVC structure in my backend projects. I also have skills in data mining and basic graphical exploration.",
@@ -57,7 +57,7 @@ export const dataSkills = [
         ),
     },
     {
-        id: 1,
+        id: 3,
         title: "Responsive design",
         paragraph:
             "In every project I work on, I apply responsive web design so that they fit on mobile, tablet and computer. I also apply the mobile first strategy.",
