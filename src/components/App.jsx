@@ -1,9 +1,9 @@
-import Navbar from "./navbar";
-import Presentation from "./presentation";
-import Footer from "./footer";
-import Projects from "./projects";
-import Contact from "./contact";
-import Skills from "./skills";
+import Navbar from "./Navbar";
+import Presentation from "./Presentation";
+import Footer from "./Footer";
+import Projects from "./Projects";
+import Contact from "./Contact";
+import Skills from "./Skills";
 
 const App = () => {
     return (

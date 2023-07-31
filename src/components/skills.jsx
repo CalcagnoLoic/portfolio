@@ -1,4 +1,4 @@
-import { CardsSkills } from "./cards_skills";
+import { CardsSkills } from "./Cards_skills";
 
 const Skills = () => {
     return (
