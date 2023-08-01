@@ -25,7 +25,7 @@ export const dataSkills = [
                     <FaSass className="bg-pink-600 rounded-xl p-2" />
                 </IconContext.Provider>
                 <IconContext.Provider value={{ size: "2.5em", color: "white" }}>
-                    <IoLogoJavascript className="bg-yellow-400 rounded-3xl p-2" />
+                    <IoLogoJavascript className="bg-yellow-400 rounded-xl p-2" />
                 </IconContext.Provider>
                 <IconContext.Provider value={{ size: "2.5em", color: "white" }}>
                     <FaReact className="bg-sky-400 rounded-xl p-2" />

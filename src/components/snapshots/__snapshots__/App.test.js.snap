@@ -377,7 +377,7 @@ exports[`render correctly App component 1`] = `
                 />
               </svg>
               <svg
-                className="bg-yellow-400 rounded-3xl p-2"
+                className="bg-yellow-400 rounded-xl p-2"
                 fill="currentColor"
                 height="2.5em"
                 stroke="currentColor"
