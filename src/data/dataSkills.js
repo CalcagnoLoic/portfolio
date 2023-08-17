@@ -8,6 +8,7 @@ import { IoLogoJavascript } from "react-icons/io";
 import { GrMysql } from "react-icons/gr";
 import { SiDjango } from "react-icons/si";
 import { RiComputerLine } from "react-icons/ri";
+import { SiTailwindcss } from "react-icons/si";
 
 export const dataSkills = [
     {
@@ -29,6 +30,9 @@ export const dataSkills = [
                 </IconContext.Provider>
                 <IconContext.Provider value={{ size: "2.5em", color: "white" }}>
                     <FaReact className="bg-sky-400 rounded-xl p-2" />
+                </IconContext.Provider>
+                <IconContext.Provider value={{ size: "2.5em", color: "white" }}>
+                    <SiTailwindcss className="bg-sky-800 rounded-xl p-2" />
                 </IconContext.Provider>
             </div>
         ),
