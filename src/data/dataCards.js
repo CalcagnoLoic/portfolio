@@ -60,7 +60,7 @@ export const dataCards = [
         link_github: "https://github.com/CalcagnoLoic/space-tourism",
         title: "Space Tourism",
         explanation:
-            "SPA created following a Frontend Mentor challenge using ReactJS and React-Router",
+            "SPA created following a Frontend Mentor challenge using ReactJS, Styled-components and React-Router",
         tag1: (
             <IconContext.Provider value={{ size: "2.5em", color: "white" }}>
                 <FaReact className="bg-sky-400 rounded-xl p-2" />
