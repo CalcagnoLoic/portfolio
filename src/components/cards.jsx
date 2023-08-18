@@ -21,7 +21,7 @@ export const Cards = () => {
         }) => (
             <div
                 key={id}
-                className="rounded-xl overflow-hidden shadow-slate-700/50 shadow-lg mb-8"
+                className="rounded-xl overflow-hidden shadow-slate-700/50 shadow-lg mb-8 bg-main-color"
             >
                 <div className="basis-1/2 z-0">
                     <a href={link_project} target={"_blank"} rel="noreferrer">
