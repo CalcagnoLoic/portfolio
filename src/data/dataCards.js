@@ -6,11 +6,39 @@ import {
     SiTailwindcss,
     SiStyledcomponents,
     SiReactrouter,
+    SiRedux
 } from "react-icons/si";
+import { nanoid } from "nanoid";
 
 export const dataCards = [
     {
-        id: 1,
+        id: nanoid(4),
+        image_project: "./img/box_generator.png",
+        link_project: "https://calcagnoloic.github.io/box_shadow_generator/",
+        logo_github: <BsGithub />,
+        logo_redirect: <CgWebsite />,
+        link_github: "https://github.com/CalcagnoLoic/box_shadow_generator",
+        title: "Box generator",
+        explanation:
+            "Application that allows to generate a css code for box-shadow property. ReactJS, TailwindCSS and Redux-toolkit were used in this project. ",
+        tag1: (
+            <IconContext.Provider value={{ size: "2.5em", color: "white" }}>
+                <FaReact className="bg-sky-400 rounded-xl p-2" />
+            </IconContext.Provider>
+        ),
+        tag2: (
+            <IconContext.Provider value={{ size: "2.5em", color: "white" }}>
+                <SiTailwindcss className="bg-sky-800 rounded-xl p-2" />
+            </IconContext.Provider>
+        ),
+        tag3: (
+            <IconContext.Provider value={{ size: "2.5em", color: "white" }}>
+                <SiRedux className="bg-indigo-400 rounded-xl p-2" />
+            </IconContext.Provider>
+        ),
+    },
+    {
+        id: nanoid(4),
         image_project: "./img/catwiki.png",
         link_project: "https://cat-wiki-loic.netlify.app/",
         logo_github: <BsGithub />,
@@ -36,7 +64,7 @@ export const dataCards = [
         ),
     },
     {
-        id: 2,
+        id: nanoid(4),
         image_project: "./img/weatherapp.png",
         link_project: "https://weather-airquality-app.netlify.app/",
         logo_github: <BsGithub />,
@@ -57,7 +85,7 @@ export const dataCards = [
         ),
     },
     {
-        id: 3,
+        id: nanoid(4),
         image_project: "./img/spacetourism.png",
         link_project: "https://space-tourism-loic.netlify.app/",
         logo_github: <BsGithub />,
@@ -83,7 +111,7 @@ export const dataCards = [
         ),
     },
     {
-        id: 4,
+        id: nanoid(4),
         image_project: "./img/loopstudio.png",
         link_project: "https://calcagnoloic.github.io/loopstudios/",
         logo_github: <BsGithub />,

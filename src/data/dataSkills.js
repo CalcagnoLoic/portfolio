@@ -6,7 +6,7 @@ import { AiFillHtml5 } from "react-icons/ai";
 import { FaSass, FaReact, FaPhp, FaPython } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import { GrMysql } from "react-icons/gr";
-import { SiDjango } from "react-icons/si";
+import { SiDjango, SiRedux } from "react-icons/si";
 import { RiComputerLine } from "react-icons/ri";
 import { SiTailwindcss } from "react-icons/si";
 
@@ -26,13 +26,16 @@ export const dataSkills = [
                     <FaSass className="bg-pink-600 rounded-xl p-2" />
                 </IconContext.Provider>
                 <IconContext.Provider value={{ size: "2.5em", color: "white" }}>
+                    <SiTailwindcss className="bg-sky-800 rounded-xl p-2" />
+                </IconContext.Provider>
+                <IconContext.Provider value={{ size: "2.5em", color: "white" }}>
                     <IoLogoJavascript className="bg-yellow-400 rounded-xl p-2" />
                 </IconContext.Provider>
                 <IconContext.Provider value={{ size: "2.5em", color: "white" }}>
                     <FaReact className="bg-sky-400 rounded-xl p-2" />
                 </IconContext.Provider>
                 <IconContext.Provider value={{ size: "2.5em", color: "white" }}>
-                    <SiTailwindcss className="bg-sky-800 rounded-xl p-2" />
+                    <SiRedux className="bg-indigo-400 rounded-xl p-2" />
                 </IconContext.Provider>
             </div>
         ),
