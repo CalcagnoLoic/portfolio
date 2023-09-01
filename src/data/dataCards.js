@@ -10,6 +10,8 @@ import {
 } from "react-icons/si";
 import { nanoid } from "nanoid";
 
+//1300x986 = format photo
+
 export const dataCards = [
     {
         id: nanoid(4),
