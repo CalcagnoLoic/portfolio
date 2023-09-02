@@ -12,10 +12,10 @@ const Contact = () => {
         e.preventDefault();
 
         sendForm(
-            process.env.REACT_APP_EMAILJS_SERVICE_ID,
-            process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+            import.meta.env.VITE_SERVICE_ID,
+            import.meta.env.VITE_TEMPLATE_ID,
             form.current,
-            process.env.REACT_APP_EMAILJS_USER_ID
+            import.meta.env.VITE_USER_ID
         ).then(
             (result) => {
                 Swal.fire({
@@ -59,19 +59,19 @@ const Contact = () => {
                     </h2>
                     <div className="flex flex-col gap-5">
                         <div className="flex gap-5 text-center justify-center md:text-start border-2 p-5 rounded-3xl bg-gray-100 border-white">
-                            <IconContext.Provider value={{size:"1.25rem"}}>
+                            <IconContext.Provider value={{ size: "1.25rem" }}>
                                 <TfiEmail className="self-center" />
                             </IconContext.Provider>
-                            
+
                             <p className="self-center text-main-color">
                                 calcagnoloic93@gmail.com
                             </p>
                         </div>
                         <div className="flex gap-5 text-center justify-center md:text-start border-2 p-5 rounded-3xl bg-gray-100 border-white">
-                            <IconContext.Provider value={{size:"1.25rem"}}>
+                            <IconContext.Provider value={{ size: "1.25rem" }}>
                                 <GrMapLocation className="self-center" />
                             </IconContext.Provider>
-                            
+
                             <p className="self-center text-main-color">
                                 Belgium, Hainaut, 7170 La Hestre
                             </p>
