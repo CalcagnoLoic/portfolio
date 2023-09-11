@@ -6,7 +6,7 @@ import {
     SiTailwindcss,
     SiStyledcomponents,
     SiReactrouter,
-    SiRedux
+    SiRedux,
 } from "react-icons/si";
 import { nanoid } from "nanoid";
 

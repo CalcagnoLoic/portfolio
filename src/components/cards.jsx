@@ -36,7 +36,7 @@ export const Cards = () => {
                     <h2 className="text-2xl font-semibold italic text-white">
                         {title}
                     </h2>
-                    <h3 className="text-white mt-3">{explanation}</h3>
+                    <h3 className="text-white mt-3 ">{explanation}</h3>
                     <div className="flex gap-5 mt-5">
                         <p>{tag1}</p>
                         <p>{tag2}</p>
