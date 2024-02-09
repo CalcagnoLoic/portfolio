@@ -2,12 +2,12 @@ import { MdOutlineDesignServices } from "react-icons/md";
 import { BsFillDatabaseFill, BsPhone, BsTablet } from "react-icons/bs";
 import { BiMobileAlt } from "react-icons/bi";
 import { IconContext } from "react-icons";
-import { FaSass, FaReact, FaPhp, FaPython } from "react-icons/fa";
+import { FaReact, FaPhp, FaPython } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { GrMysql } from "react-icons/gr";
 import { SiDjango, SiFigma  } from "react-icons/si";
 import { RiComputerLine } from "react-icons/ri";
-import { SiTailwindcss, SiTypescript } from "react-icons/si";
+import { SiTailwindcss, SiTypescript, SiStorybook } from "react-icons/si";
 
 export const dataSkills = [
   {
@@ -22,7 +22,7 @@ export const dataSkills = [
           <SiFigma className="bg-orange-600 rounded-xl p-2" />
         </IconContext.Provider>
         <IconContext.Provider value={{ size: "2.5em", color: "white" }}>
-          <FaSass className="bg-pink-600 rounded-xl p-2" />
+          <SiStorybook className="bg-rose-600 rounded-xl p-2" />
         </IconContext.Provider>
         <IconContext.Provider value={{ size: "2.5em", color: "white" }}>
           <SiTailwindcss className="bg-sky-800 rounded-xl p-2" />

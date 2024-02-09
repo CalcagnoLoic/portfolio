@@ -19,6 +19,8 @@ export const Cards = () => {
       tag3,
       tag4,
       logo_redirect,
+      logo_storybook,
+      link_chromatic,
     }) => (
       <div
         key={id}
@@ -53,6 +55,18 @@ export const Cards = () => {
                 {logo_github}
               </IconContext.Provider>
             </a>
+            {logo_storybook && (
+              <a
+                href={link_chromatic}
+                target={"_blank"}
+                rel="noreferrer"
+                className="flex justify-center mt-8 self-center"
+              >
+                <IconContext.Provider value={{ color: "white", size: "2em" }}>
+                  {logo_storybook}
+                </IconContext.Provider>
+              </a>
+            )}
             <a
               href={link_project}
               target={"_blank"}
