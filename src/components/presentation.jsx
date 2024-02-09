@@ -19,7 +19,7 @@ const Presentation = () => {
               loop
               cursor
               cursorStyle="|"
-              words={[" <junior web developer /> "]}
+              words={[" <React and Python developper /> "]}
               deleteSpeed={40}
               delaySpeed={2500}
             />

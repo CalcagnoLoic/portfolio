@@ -8,6 +8,7 @@ import {
   SiReactrouter,
   SiRedux,
   SiTypescript,
+  SiStorybook,
 } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
 import { nanoid } from "nanoid";
@@ -15,6 +16,41 @@ import { nanoid } from "nanoid";
 //1300x986 = format photo
 
 export const dataCards = [
+  {
+    id: nanoid(4),
+    image_project: "./img/sneakers.png",
+    link_project: "https://calcagnoloic.github.io/ecommerce-sneakers/",
+    logo_github: <BsGithub />,
+    logo_redirect: <CgWebsite />,
+    link_github: "https://github.com/CalcagnoLoic/ecommerce-sneakers",
+    logo_storybook: <SiStorybook />,
+    link_chromatic:
+      "https://65b3f7c0ccbf56939b38309a-gyhhowhxyz.chromatic.com/",
+    title: "E-commerce Sneakers",
+    explanation:
+      "Ecommerce for adding a pair of sneakers to the shopping cart. ReactTS, TailwindCSS and Storybook were used in this project. ",
+    tag1: (
+      <IconContext.Provider value={{ size: "2.5em", color: "white" }}>
+        <FaReact className="bg-sky-400 rounded-xl p-2" />
+      </IconContext.Provider>
+    ),
+    tag2: (
+      <IconContext.Provider value={{ size: "2.5em", color: "white" }}>
+        <SiTypescript className="bg-blue-800 rounded-xl p-2" />
+      </IconContext.Provider>
+    ),
+
+    tag3: (
+      <IconContext.Provider value={{ size: "2.5em", color: "white" }}>
+        <SiStorybook className="bg-rose-600 rounded-xl p-2" />
+      </IconContext.Provider>
+    ),
+    tag4: (
+      <IconContext.Provider value={{ size: "2.5em", color: "white" }}>
+        <SiTailwindcss className="bg-sky-800 rounded-xl p-2" />
+      </IconContext.Provider>
+    ),
+  },
   {
     id: nanoid(4),
     image_project: "./img/password-generator.png",
