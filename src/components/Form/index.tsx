@@ -47,12 +47,12 @@ const Component = () => {
     <form
       ref={form}
       onSubmit={sendEmail}
-      className="my-5 flex w-full flex-col py-8  text-tuatara lg:px-16 lg:pr-16"
+      className="my-5 flex w-full flex-col py-8 text-tuatara"
     >
       <div className="flex flex-col lg:flex-row lg:gap-5">
         <div className="input-container">
           <InputField
-            css="input-field w-80"
+            css="input-field"
             content="Name: "
             isLabel={true}
             isTextArea={false}
@@ -66,7 +66,7 @@ const Component = () => {
 
         <div className="input-container">
           <InputField
-            css="input-field w-80"
+            css="input-field"
             content="Email: "
             isLabel={true}
             isTextArea={false}

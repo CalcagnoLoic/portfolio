@@ -33,6 +33,7 @@ const Component = () => (
         <section className="mt-10 flex flex-col justify-center gap-5 md:mt-16 md:flex-row lg:w-5/6">
           <Link
             content="Contact Me"
+            href="#contact"
             css="font-[bellefair] bg-torchRed px-10 py-3 text-2xl rounded-xl w-full text-center cursor-pointer hover:text-tuatara hover:bg-white duration-300 ease-in-out"
           />
           <Link

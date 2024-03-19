@@ -15,7 +15,7 @@ const Component = () => {
       />
 
       <section className="flex flex-col items-center lg:flex-row">
-        <article>
+        <article className="lg:mr-16">
           <div className="flex flex-col">
             <Paragraph
               kind="span"

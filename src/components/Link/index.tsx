@@ -1,6 +1,6 @@
 type LinkProps = {
   css?: string;
-  content: string;
+  content: string | React.ReactNode;
   href?: string;
   target?: string;
 };
