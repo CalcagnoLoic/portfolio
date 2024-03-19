@@ -4,7 +4,7 @@ type LayoutProps = {
 };
 
 const Layout = ({ children, css }: LayoutProps) => (
-  <section className={css}>{children}</section>
+  <section className={`px-12 md:px-32 pt-5 ${css}`}>{children}</section>
 );
 
 export default Layout;
