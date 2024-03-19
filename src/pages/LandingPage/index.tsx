@@ -4,7 +4,7 @@ import SectionLayout from "../../layouts/SectionLayout";
 import ProfessionalProjects from "../../components/Projects/ProfessionalProjects";
 import ExperimentationProjects from "../../components/Projects/ExperimentationProjects";
 import CardSkills from "../../components/Cards/CardSkills";
-import ContactForm from "../../components/ContactForm";
+import ContactForm from "../../components/Contact/ContactForm";
 
 const Page = () => (
   <>

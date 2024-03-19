@@ -1,6 +1,7 @@
 interface Typographies {
   css: string;
-  content: string;
+  content: string | JSX.Element;
+  id?: string;
 }
 
 export interface HeadingProps extends Typographies {

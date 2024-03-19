@@ -1,7 +1,7 @@
 import CV from "../../../public/assets/CV_dev.pdf";
 import PICTURE from "../../../public/assets/img/photo.png";
 
-import Button from "../Button";
+import Link from "../Link";
 import Heading from "../../typographies/Heading";
 import Paragraph from "../../typographies/Paragraph";
 
@@ -31,13 +31,11 @@ const Component = () => (
         />
 
         <section className="mt-10 flex flex-col justify-center gap-5 md:mt-16 md:flex-row lg:w-5/6">
-          <Button
-            kind="link"
+          <Link
             content="Contact Me"
             css="font-[bellefair] bg-torchRed px-10 py-3 text-2xl rounded-xl w-full text-center cursor-pointer hover:text-tuatara hover:bg-white duration-300 ease-in-out"
           />
-          <Button
-            kind="link"
+          <Link
             content="CV"
             href={CV}
             target="_blanck"
