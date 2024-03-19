@@ -6,6 +6,11 @@ export const navItems = [
   },
   {
     id: 2,
+    content: "Experimentation",
+    href: "#experimentation",
+  },
+  {
+    id: 2,
     content: "Skills",
     href: "#skills",
   },

@@ -6,6 +6,7 @@ export default {
       colors: {
         tuatara: "#1F1F1E",
         torchRed: "#FF1D40",
+        gallery: "#EBEBEB",
       },
       keyframes: {
         wave: {
