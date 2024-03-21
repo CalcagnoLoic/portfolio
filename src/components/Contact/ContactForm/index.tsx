@@ -11,10 +11,10 @@ const Component = () => {
         kind="h2"
         id="contact"
         content="Get in touch"
-        css="my-10 text-center font-[sofia] text-2xl underline md:text-4xl"
+        css=" text-center font-[sofia] text-2xl underline md:text-4xl"
       />
 
-      <section className="flex flex-col items-center lg:flex-row">
+      <section className="flex flex-col items-center pb-5 lg:flex-row mt-5 lg:mt-2">
         <article className="lg:mr-16">
           <div className="flex flex-col">
             <Paragraph

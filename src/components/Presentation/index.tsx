@@ -22,12 +22,12 @@ const Component = () => (
         <Paragraph
           kind="p"
           content="I'm deeply passionate about web development, a journey that began with self-teaching. Each project and challenge fuels my inspiration as I explore new technologies and tackle complex tasks. This portfolio showcases my proudest achievements in web development."
-          css="lg:w-5/6 text-center lg:text-start mt-5 text-xl font-[barlow]"
+          css="lg:w-5/6 text-center lg:text-start mt-5 text-lg md:text-xl font-[barlow]"
         />
         <Paragraph
           kind="p"
           content="In addition to my dedication to web development, I have a strong commitment to knowledge sharing. I eagerly contribute to the community by sharing what I've learned. This portfolio reflects my journey, skills, and determination to excel in the dynamic field of web development."
-          css="lg:w-5/6 text-center lg:text-start mt-5 text-xl font-[barlow]"
+          css="lg:w-5/6 text-center lg:text-start mt-5 text-lg md:text-xl font-[barlow]"
         />
 
         <section className="mt-10 flex flex-col justify-center gap-5 md:mt-16 md:flex-row lg:w-5/6">

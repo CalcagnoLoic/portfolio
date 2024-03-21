@@ -24,11 +24,11 @@ const Page = () => (
         <ExperimentationProjects />
       </SectionLayout>
 
-      <SectionLayout css="text-tuatara">
+      <SectionLayout css="text-tuatara py-12">
         <CardSkills />
       </SectionLayout>
 
-      <SectionLayout css="text-white bg-tuatara">
+      <SectionLayout css="text-white bg-tuatara pt-12">
         <ContactForm />
       </SectionLayout>
     </main>

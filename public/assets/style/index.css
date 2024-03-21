@@ -28,15 +28,17 @@
 }
 
 @layer components {
-  .no-scroll {
-    @apply overflow-hidden;
+  .icon {
+    @apply rounded-xl p-2;
   }
-
   .input-container {
     @apply mb-2 flex flex-col sm:mb-8 sm:gap-1;
   }
 
   .input-field {
     @apply mb-1 font-semibold text-white outline-none;
+  }
+  .no-scroll {
+    @apply overflow-hidden;
   }
 }

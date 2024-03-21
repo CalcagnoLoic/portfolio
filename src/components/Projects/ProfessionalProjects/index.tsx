@@ -3,7 +3,7 @@ const Component = () => {
     <>
       <h2
         id="projects"
-        className="my-10 text-center font-[sofia] text-2xl underline md:text-4xl"
+        className="text-center font-[sofia] text-2xl underline md:text-4xl"
       >
         Recent professional projects
       </h2>

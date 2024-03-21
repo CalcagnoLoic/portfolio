@@ -50,7 +50,7 @@ const Component = () => {
       className="my-5 flex w-full flex-col py-8 text-tuatara"
     >
       <div className="flex flex-col lg:flex-row lg:gap-5">
-        <div className="input-container">
+        <div className="input-container lg:w-1/2">
           <InputField
             css="input-field"
             content="Name: "
@@ -58,13 +58,13 @@ const Component = () => {
             isTextArea={false}
             type="text"
             placeholder="Name"
-            inputCSS="rounded-md border-2 p-2"
+            inputCSS="rounded-md border-2 p-2 w-full"
             name="name"
           />
           {isError && <ErrorMessage />}
         </div>
 
-        <div className="input-container">
+        <div className="input-container lg:w-1/2">
           <InputField
             css="input-field"
             content="Email: "
@@ -72,7 +72,7 @@ const Component = () => {
             isTextArea={false}
             type="email"
             placeholder="Email"
-            inputCSS="rounded-md border-2 p-2"
+            inputCSS="rounded-md border-2 p-2 w-full"
             name="reply_to"
           />
           {isError && <ErrorMessage />}

@@ -1,4 +1,4 @@
-import { BsGithub } from "react-icons/bs";
+/* import { BsGithub } from "react-icons/bs";
 import { CgWebsite } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { IconContext } from "react-icons";
@@ -213,3 +213,4 @@ export const dataCards = [
     ),
   },
 ];
+ */

@@ -3,13 +3,14 @@ import NetworkIcons from "../../icons/NetworkIcons";
 import Paragraph from "../../typographies/Paragraph";
 
 const Component = () => (
-  <footer className="flex flex-col bg-tuatara px-12 py-5 pt-5 text-lg text-white md:flex-row md:justify-between md:px-32">
+  <footer className="flex flex-col bg-tuatara px-12 py-7  text-lg text-white md:flex-row md:justify-between md:px-32">
+    <div className="absolute left-1/2 h-[2px] w-2/3 -translate-x-[50%] bg-white"></div>
     <Paragraph
       kind="p"
-      css="text-center md:text-start"
+      css="text-center md:text-start mt-8"
       content="Portfolio | Calcagno Loïc - &copy; Copyright 2024"
     />
-    <div className="mt-5 flex gap-5 self-center md:mt-0">
+    <div className="mt-5 flex gap-5 self-center md:mt-8">
       <Link
         content={<NetworkIcons kind="linkedin" />}
         href="https://www.linkedin.com/in/loic-calcagno/"
