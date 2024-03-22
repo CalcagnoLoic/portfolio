@@ -20,7 +20,9 @@ const Component = () => (
             css="text-center text-xl md:text-3xl font-[sofia]"
           />
 
-          <div className="mt-5 flex justify-center">{item.skillsIcons}</div>
+          <div className="mt-5 flex justify-center" title="test">
+            {item.skillsIcons}
+          </div>
 
           <Paragraph
             kind="p"

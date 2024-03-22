@@ -124,6 +124,7 @@ const Icons = ({ kind }: GeneralIconsProps) => {
           viewBox="0 0 48 48"
           className="h-11 w-11"
         >
+          <title>Mobile Development</title>
           <path
             fill="#37474F"
             d="M12,40V8c0-2.2,1.8-4,4-4h16c2.2,0,4,1.8,4,4v32c0,2.2-1.8,4-4,4H16C13.8,44,12,42.2,12,40z"
@@ -143,6 +144,7 @@ const Icons = ({ kind }: GeneralIconsProps) => {
           viewBox="0 3 48 48"
           className="h-11 w-11"
         >
+          <title>Tablet Development</title>
           <path
             fill="#37474F"
             d="M8,41V7c0-2.2,1.8-4,4-4h24c2.2,0,4,1.8,4,4v34c0,2.2-1.8,4-4,4H12C9.8,45,8,43.2,8,41z"
@@ -157,6 +159,7 @@ const Icons = ({ kind }: GeneralIconsProps) => {
     case "computer":
       return (
         <svg width="45" height="45" viewBox="0 0 512 512">
+          <title>Computer Development</title>
           <g>
             <path
               fill="#BBDEFB"
