@@ -14,7 +14,7 @@ const Component = () => {
         css="text-center font-[sofia] text-2xl underline md:text-4xl"
       />
 
-      <div className="grid grid-cols-1 gap-5 text-white md:grid-cols-2 2xl:grid-cols-3 mt-5">
+      <div className="mt-5 grid grid-cols-1 gap-5 text-white md:grid-cols-2 2xl:grid-cols-3">
         {Professional.map((item) => (
           <section key={item.id} className="mt-8 drop-shadow-xl">
             <Link
@@ -22,7 +22,7 @@ const Component = () => {
                 <img
                   src={item.projectIllustration}
                   alt={item.projectTitle}
-                  className="rounded-t-3xl border-tuatara border-[1px]"
+                  className="rounded-t-3xl border-[1px] border-tuatara"
                 />
               }
               href={item.projectWebsite}
@@ -40,7 +40,7 @@ const Component = () => {
               <Paragraph
                 kind="p"
                 content={item.projectDescription}
-                css="mt-3 italic text-sm md:text-base "
+                css="mt-3 italic text-base md:text-lg "
               />
 
               <div className="mt-5 flex flex-col items-center gap-5 lg:flex-row lg:justify-between">
