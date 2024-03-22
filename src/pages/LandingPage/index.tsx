@@ -1,11 +1,11 @@
+import ContactForm from "../../components/Contact/ContactForm";
+import ExperimentationProjects from "../../components/Projects/ExperimentationProjects";
+import Footer from "../../components/Footer";
 import NavBar from "../../components/NavBar";
 import Presentation from "../../components/Presentation";
-import SectionLayout from "../../layouts/SectionLayout";
 import ProfessionalProjects from "../../components/Projects/ProfessionalProjects";
-import ExperimentationProjects from "../../components/Projects/ExperimentationProjects";
-import CardSkills from "../../components/Cards/CardSkills";
-import ContactForm from "../../components/Contact/ContactForm";
-import Footer from "../../components/Footer";
+import SectionLayout from "../../layouts/SectionLayout";
+import Skills from "../../components/Skills";
 
 const Page = () => (
   <>
@@ -16,19 +16,19 @@ const Page = () => (
         <Presentation />
       </SectionLayout>
 
-      <SectionLayout css="text-tuatara">
+      <SectionLayout css="text-tuatara py-16">
         <ProfessionalProjects />
       </SectionLayout>
 
-      <SectionLayout css="text-white bg-tuatara">
+      <SectionLayout css="text-white bg-tuatara py-16">
         <ExperimentationProjects />
       </SectionLayout>
 
-      <SectionLayout css="text-tuatara py-12">
-        <CardSkills />
+      <SectionLayout css="text-tuatara py-16">
+        <Skills />
       </SectionLayout>
 
-      <SectionLayout css="text-white bg-tuatara pt-12">
+      <SectionLayout css="text-white bg-tuatara pt-16">
         <ContactForm />
       </SectionLayout>
     </main>

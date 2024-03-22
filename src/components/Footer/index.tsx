@@ -17,7 +17,7 @@ const Component = () => (
         target="_blank"
       />
       <Link
-        content={<NetworkIcons kind="github" />}
+        content={<NetworkIcons kind="github" isDarkBackground={false} />}
         href="https://github.com/CalcagnoLoic"
         target="_blank"
       />

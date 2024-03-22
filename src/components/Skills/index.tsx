@@ -1,7 +1,7 @@
-import { skills } from "../../../data/skills";
+import { skills } from "../../data/skills";
 
-import Heading from "../../../typographies/Heading";
-import Paragraph from "../../../typographies/Paragraph";
+import Heading from "../../typographies/Heading";
+import Paragraph from "../../typographies/Paragraph";
 
 const Component = () => (
   <>
@@ -9,6 +9,7 @@ const Component = () => (
       kind="h2"
       css="mb-10 text-center font-[sofia] text-2xl underline md:text-4xl"
       content="What can i do for you?"
+      id="skills"
     />
 
     <div className="grid grid-cols-1 gap-5  text-white md:grid-cols-2 lg:grid-cols-3">
@@ -20,9 +21,7 @@ const Component = () => (
             css="text-center text-xl md:text-3xl font-[sofia]"
           />
 
-          <div className="mt-5 flex justify-center" title="test">
-            {item.skillsIcons}
-          </div>
+          <div className="mt-5 flex justify-center">{item.skillsIcons}</div>
 
           <Paragraph
             kind="p"

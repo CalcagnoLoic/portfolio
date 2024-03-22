@@ -25,9 +25,20 @@ export interface SkillsProps extends ElementProps {
     | "docker"
     | "django"
     | "git"
-    | "redux";
+    | "redux"
+    | "react-router";
 }
 
 export interface GeneralIconsProps extends ElementProps {
   kind: "design" | "database" | "mobile" | "tablet" | "computer" | "practise";
+}
+
+export interface Projects {
+  id: string;
+  projectIllustration: string;
+  projectTitle: string;
+  projectDescription: string;
+  projectStack: React.ReactNode;
+  projectWebsite: string;
+  projectLink: React.ReactNode;
 }

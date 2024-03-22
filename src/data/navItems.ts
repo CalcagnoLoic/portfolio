@@ -12,8 +12,8 @@ export const navItems: navItems[] = [
   },
   {
     id: 2,
-    content: "Experimentation",
-    href: "#experimentation",
+    content: "Experimentations",
+    href: "#experimentations",
   },
   {
     id: 3,
