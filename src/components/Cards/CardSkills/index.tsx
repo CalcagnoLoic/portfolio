@@ -1,4 +1,3 @@
-import { IconContext } from "react-icons";
 import { skills } from "../../../data/skills";
 
 import Heading from "../../../typographies/Heading";
@@ -14,19 +13,14 @@ const Component = () => (
 
     <div className="grid grid-cols-1 gap-5  text-white md:grid-cols-2 lg:grid-cols-3">
       {skills.map((item) => (
-        <div
-          key={item.id}
-          className="rounded-xl bg-tuatara p-5"
-        >
+        <div key={item.id} className="rounded-xl bg-tuatara p-5">
           <Heading
             kind="h3"
             content={item.skillsTitle}
             css="text-center text-xl md:text-3xl font-[sofia]"
           />
 
-          <IconContext.Provider value={{ size: "2em" }}>
-            <div className="mt-5 flex justify-center">{item.skillsIcons}</div>
-          </IconContext.Provider>
+          <div className="mt-5 flex justify-center">{item.skillsIcons}</div>
 
           <Paragraph
             kind="p"
@@ -34,7 +28,9 @@ const Component = () => (
             css="mt-5 text-center"
           />
 
-          {item.skills}
+          <div className="mt-5 flex justify-center gap-2 lg:gap-4">
+            {item.skills}
+          </div>
         </div>
       ))}
     </div>
