@@ -1,11 +1,31 @@
 <h1 align="center">Portfolio</h1>
 
 <p align="center">
-    <img src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white" alt="Logo VScode">
-    <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Logo Tailwind">
-    <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=ts,react,tailwind,vite" />
+  </a>
 </p>
 
-This project is my portfolio with the different projects I put forward. In particular challenges from external sites.
+I am React and Python developer.
 
-![](src/assets/img/readme.png)
+I'm deeply passionate about web development, a journey that began with self-teaching. Each project and challenge fuels my inspiration as I explore new technologies and tackle complex tasks. This portfolio showcases my proudest achievements in web development.
+
+In addition to my dedication to web development, I have a strong commitment to knowledge sharing. I eagerly contribute to the community by sharing what I've learned. This portfolio reflects my journey, skills, and determination to excel in the dynamic field of web development.
+
+![](public/assets/img/readme.png)
+
+## Built with
+
+- Semantic HTML5 markup
+- Mobile-first workflow
+- TailwindCSS
+- React
+- TypeScript
+- EmailJS
+
+## Networks
+
+- Personnal website - [Portfolio](https://calcagno-loic.netlify.app/)
+- Frontend Mentor - [@CalcagnoLoic](https://www.frontendmentor.io/profile/CalcagnoLoic)
+- Linkedin - [LinkedIn](https://www.linkedin.com/in/loic-calcagno/)
+- CodeWars - [CalcagnoLoic](https://www.codewars.com/users/CalcagnoLoic)
