@@ -40,7 +40,7 @@ const Component = () => {
               <Paragraph
                 kind="p"
                 content={item.projectDescription}
-                css="mt-3 italic text-sm md:text-base "
+                css="mt-3 italic text-base md:text-lg"
               />
 
               <div className="mt-5 flex flex-col items-center gap-5 lg:flex-row lg:justify-between">
