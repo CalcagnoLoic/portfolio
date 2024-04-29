@@ -1,13 +1,14 @@
+import { handleMoreProject } from "../../../utils/showMoreProject";
 import { Professional } from "../../../data/professional";
 import { useEffect, useState } from "react";
+import { Projects } from "../../../types/interface";
 
 import Heading from "../../../typographies/Heading";
 import Link from "../../Link";
 import Paragraph from "../../../typographies/Paragraph";
-import { handleMoreProject } from "../../../utils/showMoreProject";
 
 const Component = () => {
-  const [displayedData, setDisplayedData] = useState(Professional);
+  const [displayedData, setDisplayedData] = useState<Projects[]>(Professional);
   const [visibleProject, setVisibleProject] = useState<number>(3);
 
   useEffect(() => {
@@ -68,10 +69,10 @@ const Component = () => {
 
       {visibleProject < Professional.length && (
         <button
+          className="mx-auto mt-12 block cursor-pointer rounded-xl bg-torchRed px-8 py-5 font-bold text-white duration-500 ease-in-out hover:bg-tuatara"
           onClick={() => handleMoreProject(setVisibleProject)}
-          className="mx-auto mt-12 block cursor-pointer rounded-xl bg-torchRed py-5 px-8 text-white duration-500 ease-in-out hover:bg-tuatara font-bold"
         >
-          Load More..
+          Load More ...
         </button>
       )}
     </>

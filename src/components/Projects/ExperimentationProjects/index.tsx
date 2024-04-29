@@ -1,13 +1,14 @@
 import { Experimentation } from "../../../data/experimentations";
+import { handleMoreProject } from "../../../utils/showMoreProject";
+import { Projects } from "../../../types/interface";
+import { useEffect, useState } from "react";
 
 import Heading from "../../../typographies/Heading";
 import Link from "../../Link";
 import Paragraph from "../../../typographies/Paragraph";
-import { useEffect, useState } from "react";
-import { handleMoreProject } from "../../../utils/showMoreProject";
 
 const Component = () => {
-  const [displayedData, setDisplayedData] = useState(Experimentation);
+  const [displayedData, setDisplayedData] = useState<Projects[]>(Experimentation);
   const [visibleProject, setVisibleProject] = useState<number>(3);
 
   useEffect(() => {

@@ -1,7 +1,10 @@
+import { Typewriter } from "react-simple-typewriter";
+
 import CV from "../../../public/assets/CV_dev.pdf";
 import PICTURE from "../../../public/assets/img/photo.webp";
 
 import Link from "../Link";
+import GeneralIcons from "../../icons/GeneralIcons";
 import Heading from "../../typographies/Heading";
 import Paragraph from "../../typographies/Paragraph";
 
@@ -13,12 +16,23 @@ const Component = () => (
           kind="h3"
           content="Welcome 👋"
           css="text-xl md:text-3xl mt-5 italic text-center lg:text-start font-[sofia]"
+          id="top"
         />
-        <Heading
-          kind="h2"
-          content="I am <React and Python developer />"
-          css="text-2xl md:text-4xl mt-8 italic text-center lg:text-start font-[sofia]"
-        />
+        <div className="flex flex-col xl:flex-row">
+          <span className="mt-8 text-center font-[sofia] text-2xl italic md:text-4xl lg:text-start ">
+            <Heading
+              kind="h2"
+              content="I am "
+              css="block mr-5 mb-5 xl:mb-0 xl:inline-block"
+            />
+            <Typewriter
+              words={["<React and Python developer />"]}
+              loop
+              cursor
+            />
+          </span>
+        </div>
+
         <Paragraph
           kind="p"
           content="I'm deeply passionate about web development, a journey that began with self-teaching. Each project and challenge fuels my inspiration as I explore new technologies and tackle complex tasks. This portfolio showcases my proudest achievements in web development."
@@ -44,6 +58,7 @@ const Component = () => (
           />
         </section>
       </article>
+
       <article className="mt-5 flex lg:mt-0">
         <img
           src={PICTURE}
@@ -51,6 +66,8 @@ const Component = () => (
           className="m-auto block w-1/2 self-center rounded-full lg:w-full"
         />
       </article>
+
+      <GeneralIcons kind="goback" />
     </div>
   </section>
 );
