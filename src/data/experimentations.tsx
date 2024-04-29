@@ -7,7 +7,7 @@ import SkillsIcons from "../icons/SkillsIcons";
 export const Experimentation: Projects[] = [
   {
     id: "1nh-soc",
-    projectIllustration: "assets/img/calculator-app.png",
+    projectIllustration: "assets/img/calculator-app.webp",
     projectTitle: "Calculator app",
     projectDescription:
       "Thanks to this project to create an interactive calculator, I was able to improve my knowledge of typescript and unit testing.  Clean code practices led the direction of the project.",
@@ -42,7 +42,7 @@ export const Experimentation: Projects[] = [
   },
   {
     id: "p@7l59k",
-    projectIllustration: "assets/img/box-generator.png",
+    projectIllustration: "assets/img/box-generator.webp",
     projectTitle: "Boxy generator",
     projectDescription:
       "Thanks to this CSS code generator project for the box-shadow property, I was able to learn about the redux toolkit and state management practices and concepts with React.",
@@ -79,7 +79,7 @@ export const Experimentation: Projects[] = [
   },
   {
     id: "d$i1mf*",
-    projectIllustration: "assets/img/catwiki.png",
+    projectIllustration: "assets/img/catwiki.webp",
     projectTitle: "CatWiki",
     projectDescription:
       "Thanks to this single page application project on cat breeds, I was able to test my ability to consume information from an API, create contexts and work with a router. ",

@@ -1,5 +1,5 @@
 import CV from "../../../public/assets/CV_dev.pdf";
-import PICTURE from "../../../public/assets/img/photo.png";
+import PICTURE from "../../../public/assets/img/photo.webp";
 
 import Link from "../Link";
 import Heading from "../../typographies/Heading";
