@@ -31,17 +31,19 @@ const Component = () => {
             />
 
             <article className="rounded-b-3xl border-t-[1px] border-t-tuatara bg-white p-5 text-tuatara">
-              <Heading
-                kind="h3"
-                content={item.projectTitle}
-                css="text-2xl font-[sofia]"
-              />
+              <div className="md:h-64 2xl:h-44">
+                <Heading
+                  kind="h3"
+                  content={item.projectTitle}
+                  css="text-2xl font-[sofia]"
+                />
 
-              <Paragraph
-                kind="p"
-                content={item.projectDescription}
-                css="mt-3 italic text-base md:text-lg"
-              />
+                <Paragraph
+                  kind="p"
+                  content={item.projectDescription}
+                  css="mt-3 italic text-base md:text-lg"
+                />
+              </div>
 
               <div className="mt-5 flex flex-col items-center gap-5 lg:flex-row lg:justify-between">
                 <div className="flex gap-5">{item.projectStack}</div>

@@ -6,13 +6,17 @@
   </a>
 </p>
 
-I am React and Python developer.
+Hello and welcome to my portfolio ✌️ 
 
-I'm deeply passionate about web development, a journey that began with self-teaching. Each project and challenge fuels my inspiration as I explore new technologies and tackle complex tasks. This portfolio showcases my proudest achievements in web development.
+I have a profound passion for web development, a journey that commenced through self-education. Every project and obstacle encountered further ignites my inspiration as I delve into novel technologies and confront intricate challenges. In tandem with my fervor for web development, I hold a steadfast dedication to knowledge dissemination. I enthusiastically contribute to the community by imparting the insights I've acquired. 
 
-In addition to my dedication to web development, I have a strong commitment to knowledge sharing. I eagerly contribute to the community by sharing what I've learned. This portfolio reflects my journey, skills, and determination to excel in the dynamic field of web development.
+There are two types of project in this portfolio. 
 
-![](public/assets/img/readme.png)
+- On the one hand, the so-called "professional" projects where I apply all my knowledge and clean code to be as professional as possible in my approach. 
+
+- On the other hand, the so-called "experimental" projects where I learn new development technologies/tools.
+
+Don't wait any longer! Immerse yourself in my world and let's take a journey together 😊
 
 ## Built with
 
@@ -28,4 +32,3 @@ In addition to my dedication to web development, I have a strong commitment to k
 - Personnal website - [Portfolio](https://calcagno-loic.netlify.app/)
 - Frontend Mentor - [@CalcagnoLoic](https://www.frontendmentor.io/profile/CalcagnoLoic)
 - Linkedin - [LinkedIn](https://www.linkedin.com/in/loic-calcagno/)
-- CodeWars - [CalcagnoLoic](https://www.codewars.com/users/CalcagnoLoic)

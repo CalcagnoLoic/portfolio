@@ -14,9 +14,9 @@ const Component = () => {
         css="text-center font-[sofia] text-2xl underline md:text-4xl"
       />
 
-      <div className="mt-5 grid grid-cols-1 gap-5 text-white md:grid-cols-2 2xl:grid-cols-3">
+      <div className="container  mt-5 grid grid-cols-1 gap-5 text-white md:grid-cols-2 2xl:grid-cols-3">
         {Professional.map((item) => (
-          <section key={item.id} className="mt-8 drop-shadow-xl">
+          <section key={item.id} className=" mt-8 h-full drop-shadow-xl">
             <Link
               content={
                 <img
@@ -30,18 +30,20 @@ const Component = () => {
               css="hover:opacity-70 duration-500 transition ease-in-out"
             />
 
-            <article className="texte-white rounded-b-3xl bg-tuatara p-5">
-              <Heading
-                kind="h3"
-                content={item.projectTitle}
-                css="text-2xl font-[sofia]"
-              />
+            <article className="texte-white items-stretch rounded-b-3xl bg-tuatara p-5">
+              <div className="md:h-52 2xl:h-44">
+                <Heading
+                  kind="h3"
+                  content={item.projectTitle}
+                  css="text-2xl font-[sofia]"
+                />
 
-              <Paragraph
-                kind="p"
-                content={item.projectDescription}
-                css="mt-3 italic text-base md:text-lg "
-              />
+                <Paragraph
+                  kind="p"
+                  content={item.projectDescription}
+                  css="mt-3 italic text-base md:text-lg "
+                />
+              </div>
 
               <div className="mt-5 flex flex-col items-center gap-5 lg:flex-row lg:justify-between">
                 <div className="flex gap-5">{item.projectStack}</div>

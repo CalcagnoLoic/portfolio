@@ -6,6 +6,49 @@ import SkillsIcons from "../icons/SkillsIcons";
 
 export const Professional: Projects[] = [
   {
+    id: "*YooA7N",
+    projectIllustration: "assets/img/crowdfund.png",
+    projectTitle: "Crowdfunding webapp",
+    projectDescription:
+      "Participatory funding product page where users can select certain offers to increase funding. Users can add a bookmark to the products they wish to finance. ",
+    projectStack: (
+      <>
+        <SkillsIcons kind="react" />
+        <SkillsIcons kind="ts" />
+        <SkillsIcons kind="storybook" />
+        <SkillsIcons kind="tw" />
+      </>
+    ),
+    projectWebsite: "https://calcagnoloic.github.io/crowdfunding-webapp/",
+    projectLink: (
+      <>
+        <Link
+          href="https://github.com/CalcagnoLoic/crowdfunding-webapp"
+          content={
+            <NetworkIcons
+              kind="github"
+              isDarkBackground={false}
+              css="w-8 h-8"
+            />
+          }
+          target="_blank"
+          css="self-center w-[30px]"
+        />
+
+        <Link
+          href="https://calcagnoloic.github.io/crowdfunding-webapp/"
+          target="_blanck"
+          content={<NetworkIcons kind="website" isDarkBackground={false} />}
+        />
+        <Link
+          href="https://65fea557005e1e6abef7c259-mskecrihhi.chromatic.com"
+          target="_blanck"
+          content={<NetworkIcons kind="storybook" />}
+        />
+      </>
+    ),
+  },
+  {
     id: "?ijhfm*",
     projectIllustration: "assets/img/dictionary.png",
     projectTitle: "Dictionary webapp",

@@ -8,7 +8,7 @@ const Component = () => {
   const isMobile = useMobile();
   return (
     <header>
-      <nav className="fixed flex w-full justify-between bg-tuatara px-12 py-8 pt-5 text-white md:px-32 z-20">
+      <nav className="fixed flex w-full justify-between bg-tuatara px-12 py-8 pt-5 text-white xl:px-32 z-20">
         <Heading
           kind="h1"
           content="Portfolio | Calcagno Loïc"
