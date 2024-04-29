@@ -26,11 +26,20 @@ export interface SkillsProps extends ElementProps {
     | "django"
     | "git"
     | "redux"
-    | "react-router";
+    | "react-router"
+    | "astro";
+  bgLight?: boolean;
 }
 
 export interface GeneralIconsProps extends ElementProps {
-  kind: "design" | "database" | "mobile" | "tablet" | "computer" | "practise";
+  kind:
+    | "design"
+    | "database"
+    | "mobile"
+    | "tablet"
+    | "computer"
+    | "practise"
+    | "goback";
 }
 
 export interface Projects {
