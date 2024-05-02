@@ -6,6 +6,43 @@ import SkillsIcons from "../icons/SkillsIcons";
 
 export const Professional: Projects[] = [
   {
+    id: "?ZxC*Hi",
+    projectIllustration: "assets/img/planets-fact.webp",
+    projectTitle: "Planets fact",
+    projectDescription:
+      "This space-themed SPA plunges us straight into the physico-chemical aspects of the planets in our solar system. It was built using the AstroJS framework and react TSX islands.",
+    projectStack: (
+      <>
+        <SkillsIcons kind="astro" bgLight={false} />
+        <SkillsIcons kind="react" />
+        <SkillsIcons kind="ts" />
+        <SkillsIcons kind="tw" />
+      </>
+    ),
+    projectWebsite: "https://calcagnoloic.github.io/planets-fact/",
+    projectLink: (
+      <>
+        <Link
+          href="https://github.com/CalcagnoLoic/planets-fact"
+          content={
+            <NetworkIcons
+              kind="github"
+              isDarkBackground={false}
+              css="w-8 h-8"
+            />
+          }
+          target="_blank"
+          css="self-center w-[30px]"
+        />
+        <Link
+          href="https://calcagnoloic.github.io/planets-fact/"
+          target="_blanck"
+          content={<NetworkIcons kind="website" isDarkBackground={false} />}
+        />
+      </>
+    ),
+  },
+  {
     id: "*YooA7N",
     projectIllustration: "assets/img/crowdfund.webp",
     projectTitle: "Crowdfunding webapp",
