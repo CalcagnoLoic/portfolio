@@ -18,7 +18,8 @@ export const skills: Skills[] = [
       "I offer my expertise in accurately translating frontend designs from Figma prototypes, as well as crafting custom designs aligned with specific design guidelines and principles.",
     skills: (
       <>
-        <SkillsIcons kind="react"  />
+        <SkillsIcons kind="react" />
+        <SkillsIcons kind="astro" bgLight={false} />
         <SkillsIcons kind="ts" />
         <SkillsIcons kind="js" />
         <SkillsIcons kind="storybook" />
