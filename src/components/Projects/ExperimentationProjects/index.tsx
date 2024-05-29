@@ -69,7 +69,7 @@ const Component = () => {
       {visibleProject < Experimentation.length && (
         <button
           onClick={() => handleMoreProject(setVisibleProject)}
-          className="mx-auto mt-12 block cursor-pointer rounded-xl bg-torchRed px-8 py-5 font-bold text-white duration-500 ease-in-out hover:bg-white hover:text-tuatara"
+          className="mx-auto mt-12 block cursor-pointer rounded-xl bg-torchRed px-8 py-5 font-bold text-white duration-500 ease-in-out hover:bg-white hover:text-tuatara shadow-xl"
         >
           Load More..
         </button>

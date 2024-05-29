@@ -10,7 +10,7 @@ export const Experimentation: Projects[] = [
     projectIllustration: "assets/img/calculator-app.webp",
     projectTitle: "Calculator app",
     projectDescription:
-      "Thanks to this project to create an interactive calculator, I was able to improve my knowledge of typescript and unit testing.  Clean code practices led the direction of the project.",
+      "Build and interact with this calculator app, developed to enhance my TypeScript and unit testing skills. The project follows clean code practices for maintainability.",
     projectStack: (
       <>
         <SkillsIcons kind="ts" />
@@ -23,18 +23,14 @@ export const Experimentation: Projects[] = [
         <Link
           href="https://github.com/CalcagnoLoic/calculator"
           content={
-            <NetworkIcons
-              kind="github"
-              isDarkBackground={true}
-              css="w-8 h-8"
-            />
+            <NetworkIcons kind="github" isDarkBackground={true} css="w-8 h-8" />
           }
           target="_blank"
           css="self-center w-[30px]"
         />
         <Link
           href="https://calcagnoloic.github.io/calculator/"
-          target="_blanck"
+          target="_blank"
           content={<NetworkIcons kind="website" isDarkBackground={true} />}
         />
       </>
@@ -45,7 +41,7 @@ export const Experimentation: Projects[] = [
     projectIllustration: "assets/img/box-generator.webp",
     projectTitle: "Boxy generator",
     projectDescription:
-      "Thanks to this CSS code generator project for the box-shadow property, I was able to learn about the redux toolkit and state management practices and concepts with React.",
+      "Create CSS box-shadow code effortlessly with this generator. This project helped me learn Redux toolkit and state management concepts using React.",
     projectStack: (
       <>
         <SkillsIcons kind="react" />
@@ -60,18 +56,14 @@ export const Experimentation: Projects[] = [
         <Link
           href="https://github.com/CalcagnoLoic/box_shadow_generator"
           content={
-            <NetworkIcons
-              kind="github"
-              isDarkBackground={true}
-              css="w-8 h-8"
-            />
+            <NetworkIcons kind="github" isDarkBackground={true} css="w-8 h-8" />
           }
           target="_blank"
           css="self-center w-[30px]"
         />
         <Link
           href="https://calcagnoloic.github.io/box_shadow_generator/"
-          target="_blanck"
+          target="_blank"
           content={<NetworkIcons kind="website" isDarkBackground={true} />}
         />
       </>
@@ -82,7 +74,7 @@ export const Experimentation: Projects[] = [
     projectIllustration: "assets/img/catwiki.webp",
     projectTitle: "CatWiki",
     projectDescription:
-      "Thanks to this single page application project on cat breeds, I was able to test my ability to consume information from an API, create contexts and work with a router. ",
+      "Discover various cat breeds with this SPA, developed to enhance my skills in API consumption, context creation, and React Router integration.",
     projectStack: (
       <>
         <SkillsIcons kind="react" />
@@ -97,18 +89,14 @@ export const Experimentation: Projects[] = [
         <Link
           href="https://github.com/CalcagnoLoic/catwiki"
           content={
-            <NetworkIcons
-              kind="github"
-              isDarkBackground={true}
-              css="w-8 h-8"
-            />
+            <NetworkIcons kind="github" isDarkBackground={true} css="w-8 h-8" />
           }
           target="_blank"
           css="self-center w-[30px]"
         />
         <Link
           href="https://cat-wiki-loic.netlify.app/"
-          target="_blanck"
+          target="_blank"
           content={<NetworkIcons kind="website" isDarkBackground={true} />}
         />
       </>
