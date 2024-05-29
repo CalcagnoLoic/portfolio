@@ -10,7 +10,7 @@ export const Professional: Projects[] = [
     projectIllustration: "assets/img/planets-fact.webp",
     projectTitle: "Planets fact",
     projectDescription:
-      "This space-themed SPA plunges us straight into the physico-chemical aspects of the planets in our solar system. It was built using the AstroJS framework and react TSX islands.",
+      "Dive into the properties of our solar system's planets with this interactive SPA. Built with AstroJS, this application offers a detailed exploration of each planet's characteristics.",
     projectStack: (
       <>
         <SkillsIcons kind="astro" bgLight={false} />
@@ -36,7 +36,7 @@ export const Professional: Projects[] = [
         />
         <Link
           href="https://calcagnoloic.github.io/planets-fact/"
-          target="_blanck"
+          target="_blank"
           content={<NetworkIcons kind="website" isDarkBackground={false} />}
         />
       </>
@@ -47,7 +47,7 @@ export const Professional: Projects[] = [
     projectIllustration: "assets/img/crowdfund.webp",
     projectTitle: "Crowdfunding webapp",
     projectDescription:
-      "Participatory funding product page where users can select certain offers to increase funding. Users can add a bookmark to the products they wish to finance. ",
+      "Explore this participatory funding product page where users can select offers to increase funding and bookmark products they wish to support. Built with React, TypeScript, and TailwindCSS.",
     projectStack: (
       <>
         <SkillsIcons kind="react" />
@@ -74,12 +74,12 @@ export const Professional: Projects[] = [
 
         <Link
           href="https://calcagnoloic.github.io/crowdfunding-webapp/"
-          target="_blanck"
+          target="_blank"
           content={<NetworkIcons kind="website" isDarkBackground={false} />}
         />
         <Link
           href="https://65fea557005e1e6abef7c259-mskecrihhi.chromatic.com"
-          target="_blanck"
+          target="_blank"
           content={<NetworkIcons kind="storybook" />}
         />
       </>
@@ -90,7 +90,7 @@ export const Professional: Projects[] = [
     projectIllustration: "assets/img/dictionary.webp",
     projectTitle: "Dictionary webapp",
     projectDescription:
-      "This online dictionary was powered by CDD. With this dictionary, the user can find a plethora of definitions by syntactic genre as well as hear the pronunciation of the word. ",
+      "Access a plethora of word definitions and pronunciations with this online dictionary. Built with React and TypeScript, it leverages modern web technologies for a seamless user experience.",
     projectStack: (
       <>
         <SkillsIcons kind="react" />
@@ -117,12 +117,12 @@ export const Professional: Projects[] = [
 
         <Link
           href="https://calcagnoloic.github.io/dictionary-webapp/"
-          target="_blanck"
+          target="_blank"
           content={<NetworkIcons kind="website" isDarkBackground={false} />}
         />
         <Link
           href="https://65c4faea26944c656f6474a3-sfiofbresk.chromatic.com/"
-          target="_blanck"
+          target="_blank"
           content={<NetworkIcons kind="storybook" />}
         />
       </>
@@ -133,7 +133,7 @@ export const Professional: Projects[] = [
     projectIllustration: "assets/img/sneakers.webp",
     projectTitle: "E-commerce sneakers",
     projectDescription:
-      "This ecommerce application was built using the Component Design Development concept and Storybook. A context allows you to add and remove items from the shopping cart.",
+      "Shop for sneakers in this e-commerce application built with Component Design Development and Storybook. Features include adding and removing items from the cart using React context.",
     projectStack: (
       <>
         <SkillsIcons kind="react" />
@@ -160,12 +160,12 @@ export const Professional: Projects[] = [
 
         <Link
           href="https://calcagnoloic.github.io/ecommerce-sneakers/"
-          target="_blanck"
+          target="_blank"
           content={<NetworkIcons kind="website" isDarkBackground={false} />}
         />
         <Link
           href="https://65b3f7c0ccbf56939b38309a-gyhhowhxyz.chromatic.com/"
-          target="_blanck"
+          target="_blank"
           content={<NetworkIcons kind="storybook" />}
         />
       </>
@@ -176,7 +176,7 @@ export const Professional: Projects[] = [
     projectIllustration: "assets/img/password-generator.webp",
     projectTitle: "Password generator",
     projectDescription:
-      "Typescript application to generate a random password. The user can include upper/lower case letters, numbers and symbols. The strength of the password is also notified.",
+      "Generate random passwords with this TypeScript application. Customize passwords with upper/lowercase letters, numbers, and symbols, and get notified about their strength.",
     projectStack: (
       <>
         <SkillsIcons kind="ts" />
@@ -201,7 +201,7 @@ export const Professional: Projects[] = [
 
         <Link
           href="https://calcagnoloic.github.io/password-generator-app/"
-          target="_blanck"
+          target="_blank"
           content={<NetworkIcons kind="website" isDarkBackground={false} />}
         />
       </>

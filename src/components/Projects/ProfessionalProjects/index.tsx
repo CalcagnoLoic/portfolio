@@ -56,7 +56,7 @@ const Component = () => {
                   />
                 </div>
 
-                <div className="mt-5 flex flex-col items-center gap-5 lg:flex-row lg:justify-between">
+                <div className="mt-5 flex flex-col items-center gap-5 lg:flex-row lg:justify-between lg:mt-8">
                   <div className="flex gap-5">{item.projectStack}</div>
 
                   <div className="flex gap-5">{item.projectLink}</div>
@@ -69,7 +69,7 @@ const Component = () => {
 
       {visibleProject < Professional.length && (
         <button
-          className="mx-auto mt-12 block cursor-pointer rounded-xl bg-torchRed px-8 py-5 font-bold text-white duration-500 ease-in-out hover:bg-tuatara"
+          className="mx-auto mt-12 block cursor-pointer rounded-xl bg-torchRed px-8 py-5 font-bold text-white duration-500 ease-in-out hover:bg-tuatara shadow-xl"
           onClick={() => handleMoreProject(setVisibleProject)}
         >
           Load More ...
