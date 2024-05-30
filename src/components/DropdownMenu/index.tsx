@@ -1,9 +1,9 @@
+import { useClickOutside } from "../../hooks/useClickOutside";
 import { useRef, useState } from "react";
+import { useShouldOverflow } from "../../hooks/useShouldOverflow";
 
 import NavBarContent from "../NavBarContent";
 import NavBarIcons from "../../icons/NavBarIcons";
-import { useShouldOverflow } from "../../hooks/useShouldOverflow";
-import { useClickOutside } from "../../hooks/useClickOutside";
 
 const Component = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -20,7 +20,7 @@ const Component = () => {
 
   return (
     <>
-      <NavBarIcons isOpen={isOpen} handleClick={handleClick} />
+      <NavBarIcons isOpen={isOpen} handleClick={(e) => handleClick(e)} />
 
       {isOpen && (
         <>

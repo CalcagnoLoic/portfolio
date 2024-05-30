@@ -1,9 +1,6 @@
-import Paragraph from "../../../typographies/Paragraph";
+import { ContactInformationProps } from "../../../types/interface";
 
-type ContactInformationProps = {
-  icon: string;
-  content: string | JSX.Element;
-};
+import Paragraph from "../../../typographies/Paragraph";
 
 const Component = ({ icon, content }: ContactInformationProps) => (
   <div className="mb-3 flex justify-center gap-5 rounded-3xl bg-gallery p-5 text-center text-tuatara md:text-start">

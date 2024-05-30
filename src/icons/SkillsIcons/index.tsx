@@ -147,9 +147,9 @@ const Icons = ({ kind, bgLight }: SkillsProps) => {
     case "python":
       return (
         <svg
-          width="45px"
-          height="45px"
-          viewBox="10 12 30 50"
+          width="40px"
+          height="40px"
+          viewBox="10 12 45 45"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -266,6 +266,23 @@ const Icons = ({ kind, bgLight }: SkillsProps) => {
           <path
             d="M0 69.5866C0 69.5866 14.3139 62.6137 28.6678 62.6137L39.4901 29.1204C39.8953 27.5007 41.0783 26.3999 42.4139 26.3999C43.7495 26.3999 44.9325 27.5007 45.3377 29.1204L56.1601 62.6137C73.1601 62.6137 84.8278 69.5866 84.8278 69.5866C84.8278 69.5866 60.5145 3.35233 60.467 3.21944C59.7692 1.2612 58.5911 0 57.0029 0H27.8274C26.2392 0 25.1087 1.2612 24.3634 3.21944C24.3108 3.34983 0 69.5866 0 69.5866Z"
             fill={bgLight ? "#000014" : "#FFF"}
+          />
+        </svg>
+      );
+
+    case "fastapi":
+      return (
+        <svg
+          fill="none"
+          height="30"
+          width="30"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 154 154"
+        >
+          <circle cx="77" cy="77" fill="#05998b" r="77" />
+          <path
+            d="M81.375 18.667l-38.75 70H77.5l-3.875 46.666 38.75-70H77.5z"
+            fill="#fff"
           />
         </svg>
       );
