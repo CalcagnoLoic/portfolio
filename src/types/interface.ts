@@ -22,6 +22,7 @@ export interface SkillsProps extends ElementProps {
     | "sql"
     | "python"
     | "flask"
+    | "fastapi"
     | "docker"
     | "django"
     | "git"

@@ -38,6 +38,7 @@ export const skills: Skills[] = [
         <SkillsIcons kind="python" />
         <SkillsIcons kind="django" />
         <SkillsIcons kind="flask" />
+        <SkillsIcons kind="fastapi" />
         <SkillsIcons kind="docker" />
         <SkillsIcons kind="sql" />
       </>
