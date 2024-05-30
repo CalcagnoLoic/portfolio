@@ -1,16 +1,6 @@
-import Paragraph from "../../typographies/Paragraph";
+import { InputFieldProps } from "../../types/interface";
 
-type InputFieldProps = {
-  css?: string;
-  content?: string;
-  isLabel: boolean;
-  type?: string;
-  isTextArea: boolean;
-  placeholder?: string;
-  inputCSS?: string;
-  name?: string;
-  value?: string;
-};
+import Paragraph from "../../typographies/Paragraph";
 
 const Component = ({
   css,

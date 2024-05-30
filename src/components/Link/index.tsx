@@ -1,9 +1,4 @@
-type LinkProps = {
-  css?: string;
-  content: string | React.ReactNode;
-  href?: string;
-  target?: string;
-};
+import { LinkProps } from "../../types/interface";
 
 const Component = ({ css, content, href, target }: LinkProps) => (
   <a href={href} target={target} rel="noreferrer" className={css}>

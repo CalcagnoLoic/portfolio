@@ -14,6 +14,7 @@ const Component = () => {
   useEffect(() => {
     setDisplayedData(Experimentation.slice(0, visibleProject));
   }, [visibleProject]);
+  
   return (
     <>
       <Heading

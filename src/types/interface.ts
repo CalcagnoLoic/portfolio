@@ -52,3 +52,27 @@ export interface Projects {
   projectWebsite: string;
   projectLink: React.ReactNode;
 }
+
+export interface ContactInformationProps {
+  icon: string;
+  content: string | JSX.Element;
+}
+
+export interface InputFieldProps {
+  css?: string;
+  content?: string;
+  isLabel: boolean;
+  type?: string;
+  isTextArea: boolean;
+  placeholder?: string;
+  inputCSS?: string;
+  name?: string;
+  value?: string;
+}
+
+export interface LinkProps {
+  css?: string;
+  content: string | React.ReactNode;
+  href?: string;
+  target?: string;
+}
