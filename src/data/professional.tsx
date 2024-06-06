@@ -6,7 +6,58 @@ import SkillsIcons from "../icons/SkillsIcons";
 
 export const Professional: Projects[] = [
   {
+    id: "25A#za9",
+    inProgress: true,
+    projectIllustration: "assets/img/invoice-app.webp",
+    projectTitle: "Invoice App",
+    projectDescription:
+      "Check out my new fullstack project soon! However, you can now launch it on your local machines (procedures available in the readme). See the two github icons below",
+    projectStack: (
+      <>
+        <SkillsIcons kind="react" />
+        <div className="rounded bg-white px-1">
+          <SkillsIcons kind="react-router" />
+        </div>
+        <SkillsIcons kind="python" />
+        <SkillsIcons kind="fastapi" />
+        <SkillsIcons kind="docker" />
+      </>
+    ),
+    projectWebsite: "https://github.com/CalcagnoLoic/invoice-app-web",
+    projectLink: (
+      <>
+        <Link
+          href="https://github.com/CalcagnoLoic/invoice-app-web"
+          aria="Go to the github page for to access frontend"
+          content={
+            <NetworkIcons
+              kind="github"
+              isDarkBackground={false}
+              css="w-8 h-8"
+            />
+          }
+          target="_blank"
+          css="self-center w-[30px]"
+        />
+        <Link
+          href="https://github.com/CalcagnoLoic/invoice-app-server"
+          aria="Go to the github page for to access backend"
+          content={
+            <NetworkIcons
+              kind="github"
+              isDarkBackground={false}
+              css="w-8 h-8"
+            />
+          }
+          target="_blank"
+          css="self-center w-[30px]"
+        />
+      </>
+    ),
+  },
+  {
     id: "?ZxC*Hi",
+    inProgress: false,
     projectIllustration: "assets/img/planets-fact.webp",
     projectTitle: "Planets fact",
     projectDescription:
@@ -33,10 +84,12 @@ export const Professional: Projects[] = [
           }
           target="_blank"
           css="self-center w-[30px]"
+          aria="Go to github repository"
         />
         <Link
           href="https://calcagnoloic.github.io/planets-fact/"
           target="_blank"
+          aria="Go to website"
           content={<NetworkIcons kind="website" isDarkBackground={false} />}
         />
       </>
@@ -44,6 +97,7 @@ export const Professional: Projects[] = [
   },
   {
     id: "*YooA7N",
+    inProgress: false,
     projectIllustration: "assets/img/crowdfund.webp",
     projectTitle: "Crowdfunding webapp",
     projectDescription:
@@ -70,16 +124,19 @@ export const Professional: Projects[] = [
           }
           target="_blank"
           css="self-center w-[30px]"
+          aria="Go to github repository"
         />
 
         <Link
           href="https://calcagnoloic.github.io/crowdfunding-webapp/"
           target="_blank"
+          aria="Go to website"
           content={<NetworkIcons kind="website" isDarkBackground={false} />}
         />
         <Link
           href="https://65fea557005e1e6abef7c259-mskecrihhi.chromatic.com"
           target="_blank"
+          aria="Go to chromatic project"
           content={<NetworkIcons kind="storybook" />}
         />
       </>
@@ -87,6 +144,7 @@ export const Professional: Projects[] = [
   },
   {
     id: "?ijhfm*",
+    inProgress: false,
     projectIllustration: "assets/img/dictionary.webp",
     projectTitle: "Dictionary webapp",
     projectDescription:
@@ -113,16 +171,19 @@ export const Professional: Projects[] = [
           }
           target="_blank"
           css="self-center w-[30px]"
+          aria="Go to github repository"
         />
 
         <Link
           href="https://calcagnoloic.github.io/dictionary-webapp/"
           target="_blank"
+          aria="Go to website"
           content={<NetworkIcons kind="website" isDarkBackground={false} />}
         />
         <Link
           href="https://65c4faea26944c656f6474a3-sfiofbresk.chromatic.com/"
           target="_blank"
+          aria="Go to chromatic project"
           content={<NetworkIcons kind="storybook" />}
         />
       </>
@@ -130,6 +191,7 @@ export const Professional: Projects[] = [
   },
   {
     id: "d%u^piq",
+    inProgress: false,
     projectIllustration: "assets/img/sneakers.webp",
     projectTitle: "E-commerce sneakers",
     projectDescription:
@@ -156,16 +218,19 @@ export const Professional: Projects[] = [
           }
           target="_blank"
           css="self-center w-[30px]"
+          aria="Go to github repository"
         />
 
         <Link
           href="https://calcagnoloic.github.io/ecommerce-sneakers/"
           target="_blank"
+          aria="Go to website"
           content={<NetworkIcons kind="website" isDarkBackground={false} />}
         />
         <Link
           href="https://65b3f7c0ccbf56939b38309a-gyhhowhxyz.chromatic.com/"
           target="_blank"
+          aria="Go to chromatic project"
           content={<NetworkIcons kind="storybook" />}
         />
       </>
@@ -173,6 +238,7 @@ export const Professional: Projects[] = [
   },
   {
     id: "j*o2ky$",
+    inProgress: false,
     projectIllustration: "assets/img/password-generator.webp",
     projectTitle: "Password generator",
     projectDescription:
@@ -197,11 +263,13 @@ export const Professional: Projects[] = [
           }
           target="_blank"
           css="self-center w-[30px]"
+          aria="Go to github repository"
         />
 
         <Link
           href="https://calcagnoloic.github.io/password-generator-app/"
           target="_blank"
+          aria="Go to website"
           content={<NetworkIcons kind="website" isDarkBackground={false} />}
         />
       </>

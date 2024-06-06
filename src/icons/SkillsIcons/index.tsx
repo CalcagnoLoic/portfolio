@@ -147,15 +147,14 @@ const Icons = ({ kind, bgLight }: SkillsProps) => {
     case "python":
       return (
         <svg
-          width="40px"
-          height="40px"
-          viewBox="10 12 45 45"
-          fill="none"
+          width="30px"
+          height="30px"
+          viewBox="15 15 35 35"
           xmlns="http://www.w3.org/2000/svg"
         >
           <title>Python</title>
           <path
-            d="M31.885 16c-8.124 0-7.617 3.523-7.617 3.523l.01 3.65h7.752v1.095H21.197S16 23.678 16 31.876c0 8.196 4.537 7.906 4.537 7.906h2.708v-3.804s-.146-4.537 4.465-4.537h7.688s4.32.07 4.32-4.175v-7.019S40.374 16 31.885 16zm-4.275 2.454c.771 0 1.395.624 1.395 1.395s-.624 1.395-1.395 1.395a1.393 1.393 0 0 1-1.395-1.395c0-.771.624-1.395 1.395-1.395z"
+            d="M31.885 16c-8.124 0-7.617 3.523-7.617 3.523l.01 3.65h7.752v1.095H21.197S16 23.678 16 31.876c0 8.196 4.537 7.906 4.537 7.906h2.708v-3.804s-.146-4.537 4.465-4.537h7.688s4.32.07 4.32-4.175v-7.019S40.374 16 31.885 16zm-4.275 2.454c.771 0 1.395.624 1.395 1.395s-.624 1.395-1.395 1.395a1.393 1.393 0 0 1-1.395-1.395c0-.771.624-1.395 1.395-1.395"
             fill="url(#a)"
           />
           <path
@@ -176,10 +175,10 @@ const Icons = ({ kind, bgLight }: SkillsProps) => {
             </linearGradient>
             <linearGradient
               id="b"
-              x1="28.809"
-              y1="28.882"
-              x2="45.803"
-              y2="45.163"
+              x1="20.809"
+              y1="20.882"
+              x2="20.803"
+              y2="0.163"
               gradientUnits="userSpaceOnUse"
             >
               <stop stopColor="#FFE052" />
@@ -200,9 +199,9 @@ const Icons = ({ kind, bgLight }: SkillsProps) => {
     case "docker":
       return (
         <svg
-          height="35"
-          viewBox="0 0 24 24"
-          width="35"
+          height="30"
+          viewBox="0 0 24 22"
+          width="30"
           xmlns="http://www.w3.org/2000/svg"
         >
           <title>Docker - Docker Compose</title>
@@ -279,6 +278,7 @@ const Icons = ({ kind, bgLight }: SkillsProps) => {
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 154 154"
         >
+          <title>FastAPI</title>
           <circle cx="77" cy="77" fill="#05998b" r="77" />
           <path
             d="M81.375 18.667l-38.75 70H77.5l-3.875 46.666 38.75-70H77.5z"
