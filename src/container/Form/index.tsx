@@ -23,9 +23,9 @@ const Component = () => {
   });
 
   const isValidate = validateForm({
-    field1: name,
-    field2: email,
-    field3: message,
+    name: name,
+    email: email,
+    message: message,
   });
 
   const sendEmail: React.FormEventHandler<HTMLFormElement> = (e) => {

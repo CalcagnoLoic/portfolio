@@ -34,6 +34,7 @@ const Component = () => {
                     src={item.projectIllustration}
                     alt={item.projectTitle}
                     className="rounded-t-3xl"
+                    loading="lazy"
                   />
                 }
                 href={item.projectWebsite}

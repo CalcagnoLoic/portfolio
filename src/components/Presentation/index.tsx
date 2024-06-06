@@ -64,6 +64,7 @@ const Component = () => (
           src={PICTURE}
           alt="React and Python developer"
           className="m-auto block w-1/2 self-center rounded-full lg:w-full"
+          loading="lazy"
         />
       </article>
 
