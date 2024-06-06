@@ -7,6 +7,7 @@ import SkillsIcons from "../icons/SkillsIcons";
 export const Experimentation: Projects[] = [
   {
     id: "1nh-soc",
+    inProgress: false,
     projectIllustration: "assets/img/calculator-app.webp",
     projectTitle: "Calculator app",
     projectDescription:
@@ -27,10 +28,12 @@ export const Experimentation: Projects[] = [
           }
           target="_blank"
           css="self-center w-[30px]"
+          aria="Go to github repository"
         />
         <Link
           href="https://calcagnoloic.github.io/calculator/"
           target="_blank"
+          aria="Go to website"
           content={<NetworkIcons kind="website" isDarkBackground={true} />}
         />
       </>
@@ -38,6 +41,7 @@ export const Experimentation: Projects[] = [
   },
   {
     id: "p@7l59k",
+    inProgress: false,
     projectIllustration: "assets/img/box-generator.webp",
     projectTitle: "Boxy generator",
     projectDescription:
@@ -60,10 +64,12 @@ export const Experimentation: Projects[] = [
           }
           target="_blank"
           css="self-center w-[30px]"
+          aria="Go to github repository"
         />
         <Link
           href="https://calcagnoloic.github.io/box_shadow_generator/"
           target="_blank"
+          aria="Go to website"
           content={<NetworkIcons kind="website" isDarkBackground={true} />}
         />
       </>
@@ -71,6 +77,7 @@ export const Experimentation: Projects[] = [
   },
   {
     id: "d$i1mf*",
+    inProgress: false,
     projectIllustration: "assets/img/catwiki.webp",
     projectTitle: "CatWiki",
     projectDescription:
@@ -93,10 +100,12 @@ export const Experimentation: Projects[] = [
           }
           target="_blank"
           css="self-center w-[30px]"
+          aria="Go to github repository"
         />
         <Link
           href="https://cat-wiki-loic.netlify.app/"
           target="_blank"
+          aria="Go to website"
           content={<NetworkIcons kind="website" isDarkBackground={true} />}
         />
       </>

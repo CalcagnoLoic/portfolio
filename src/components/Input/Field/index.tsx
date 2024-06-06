@@ -1,6 +1,6 @@
-import { InputFieldProps } from "../../types/interface";
+import { InputFieldProps } from "../../../types/interface";
 
-import Paragraph from "../../typographies/Paragraph";
+import Paragraph from "../../../typographies/Paragraph";
 
 const Component = ({
   css,
@@ -12,6 +12,7 @@ const Component = ({
   inputCSS,
   name,
   value,
+  onChange,
 }: InputFieldProps) => (
   <>
     {isLabel && (
@@ -27,6 +28,8 @@ const Component = ({
         placeholder="Message"
         className="rounded-md border-2 p-2"
         name="message"
+        value={value}
+        onChange={onChange}
       ></textarea>
     ) : (
       <input
@@ -35,6 +38,7 @@ const Component = ({
         className={inputCSS}
         name={name}
         value={value}
+        onChange={onChange}
       />
     )}
   </>

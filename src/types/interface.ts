@@ -45,6 +45,7 @@ export interface GeneralIconsProps extends ElementProps {
 
 export interface Projects {
   id: string;
+  inProgress: boolean;
   projectIllustration: string;
   projectTitle: string;
   projectDescription: string;
@@ -68,6 +69,9 @@ export interface InputFieldProps {
   inputCSS?: string;
   name?: string;
   value?: string;
+  onChange?: (
+    newValue: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => void;
 }
 
 export interface LinkProps {
@@ -75,4 +79,34 @@ export interface LinkProps {
   content: string | React.ReactNode;
   href?: string;
   target?: string;
+  aria?: string;
+}
+
+export interface HandleChange {
+  e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>;
+  callback: (newValue: string) => void;
+}
+
+export interface ValidateForm {
+  field1: string;
+  field2: string;
+  field3: string;
+}
+
+export interface ErrorField {
+  NameEmpty: string;
+  EmailEmpty: string;
+  EmailFormat: string;
+  MessageEmpty: string;
+}
+
+export interface FieldInput {
+  state: string;
+  setState: (state: string) => void;
+  isValid: boolean;
+  errorMessage: string;
+}
+
+export interface MailFormatField extends FieldInput {
+  errorFormatField: string;
 }

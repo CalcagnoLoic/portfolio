@@ -1,32 +1,36 @@
-type validateProps = {
-  ref: React.RefObject<HTMLFormElement>;
-  callback: (newValue: boolean) => void;
-};
+import { ErrorField, ValidateForm } from "../../types/interface";
 
-export const validateForm = ({ ref, callback }: validateProps): boolean => {
-  const nameField = ref.current?.elements[0] as HTMLInputElement;
-  const emailField = ref.current?.elements[1] as HTMLInputElement;
-  const messageField = ref.current?.elements[2] as HTMLInputElement;
+export const validateForm = ({
+  field1,
+  field2,
+  field3,
+}: ValidateForm) => {
   let isValid = true;
+  const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const errors: ErrorField = {
+    NameEmpty: "",
+    EmailEmpty: "",
+    EmailFormat: "",
+    MessageEmpty: "",
+  };
 
-  if (!nameField || nameField.value.trim() === "") {
-    callback(true);
+  if (!field1 || field1.trim() === "") {
+    errors.NameEmpty = "The field name is required";
     isValid = false;
   }
 
-  if (!emailField || emailField.value.trim() === "") {
-    callback(true);
+  if (!field2 || field2.trim() === "") {
+    errors.EmailEmpty = "The field email is required";
+    isValid = false;
+  } else if (!re.test(field2)) {
+    errors.EmailFormat = "Wrong format for password";
     isValid = false;
   }
 
-  if (
-    !messageField ||
-    messageField.value.trim() === "" ||
-    !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailField.value)
-  ) {
-    callback(true);
+  if (!field3 || field3.trim() === "") {
+    errors.MessageEmpty = "The field message is required";
     isValid = false;
   }
 
-  return isValid;
+  return { isValid, errors };
 };

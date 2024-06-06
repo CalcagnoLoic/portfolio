@@ -198,12 +198,12 @@ const Icons = ({ kind }: GeneralIconsProps) => {
 
     case "goback":
       return (
-        <a href="#top">
+        <a href="#top" aria-label="Go to the top of page">
           <svg
             width="60px"
             height="60px"
             viewBox="0 0 122.883 122.882"
-            enable-background="new 0 0 122.883 122.882"
+            enableBackground="new 0 0 122.883 122.882"
             xmlSpace="preserve"
             className="fixed bottom-5 right-5 z-20 animate-pulse cursor-pointer"
             fill="#FF1D40"

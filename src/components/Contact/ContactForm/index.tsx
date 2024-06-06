@@ -1,5 +1,5 @@
 import ContactInformation from "../ContactInformation";
-import Form from "../../Form";
+import Form from "../../../container/Form";
 import Heading from "../../../typographies/Heading";
 import Link from "../../Link";
 import Paragraph from "../../../typographies/Paragraph";

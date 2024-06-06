@@ -34,6 +34,7 @@ const Component = () => {
                     src={item.projectIllustration}
                     alt={item.projectTitle}
                     className="rounded-t-3xl border-[1px] border-tuatara"
+                    loading="lazy"
                   />
                 }
                 href={item.projectWebsite}
@@ -43,11 +44,20 @@ const Component = () => {
 
               <article className="texte-white items-stretch rounded-b-3xl bg-tuatara p-5">
                 <div className="md:h-52 2xl:h-44">
-                  <Heading
-                    kind="h3"
-                    content={item.projectTitle}
-                    css="text-2xl font-[sofia]"
-                  />
+                  <div className="flex justify-between">
+                    <Heading
+                      kind="h3"
+                      content={item.projectTitle}
+                      css="text-2xl font-[sofia]"
+                    />
+                    {item.inProgress && (
+                      <Paragraph
+                        kind="span"
+                        css="uppercase bg-torchRed self-center rounded-2xl py-1 px-2"
+                        content="🛠️ in progress 🛠️"
+                      />
+                    )}
+                  </div>
 
                   <Paragraph
                     kind="p"
@@ -56,7 +66,7 @@ const Component = () => {
                   />
                 </div>
 
-                <div className="mt-5 flex flex-col items-center gap-5 lg:flex-row lg:justify-between lg:mt-8">
+                <div className="mt-5 flex flex-col items-center gap-5 lg:mt-8 lg:flex-row lg:justify-between">
                   <div className="flex gap-5">{item.projectStack}</div>
 
                   <div className="flex gap-5">{item.projectLink}</div>
@@ -69,7 +79,7 @@ const Component = () => {
 
       {visibleProject < Professional.length && (
         <button
-          className="mx-auto mt-12 block cursor-pointer rounded-xl bg-torchRed px-8 py-5 font-bold text-white duration-500 ease-in-out hover:bg-tuatara shadow-xl"
+          className="mx-auto mt-12 block cursor-pointer rounded-xl bg-torchRed px-8 py-5 font-bold text-white shadow-xl duration-500 ease-in-out hover:bg-tuatara"
           onClick={() => handleMoreProject(setVisibleProject)}
         >
           Load More ...

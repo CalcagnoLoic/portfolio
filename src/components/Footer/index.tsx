@@ -15,15 +15,18 @@ const Component = () => (
         content={<NetworkIcons kind="linkedin" />}
         href="https://www.linkedin.com/in/loic-calcagno/"
         target="_blank"
+        aria="Visit my linkedin and get in touch!"
       />
       <Link
         content={<NetworkIcons kind="github" isDarkBackground={false} />}
         href="https://github.com/CalcagnoLoic"
         target="_blank"
+        aria="Visit my github!"
       />
       <Link
         content={<NetworkIcons kind="gmail" />}
         href="mailto:calcagnoloic93@gmail.com"
+        aria="Send me a mail if you want more informations!"
       />
     </div>
   </footer>
