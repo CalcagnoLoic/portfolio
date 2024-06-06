@@ -88,9 +88,9 @@ export interface HandleChange {
 }
 
 export interface ValidateForm {
-  field1: string;
-  field2: string;
-  field3: string;
+  name: string;
+  email: string;
+  message: string;
 }
 
 export interface ErrorField {
