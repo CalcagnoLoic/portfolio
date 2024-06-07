@@ -44,7 +44,7 @@ const Component = () => {
 
               <article className="texte-white items-stretch rounded-b-3xl bg-tuatara p-5">
                 <div className="md:h-52 2xl:h-44">
-                  <div className="flex justify-between">
+                  <div className="flex justify-between flex-col md:flex-row">
                     <Heading
                       kind="h3"
                       content={item.projectTitle}
@@ -53,7 +53,7 @@ const Component = () => {
                     {item.inProgress && (
                       <Paragraph
                         kind="span"
-                        css="uppercase bg-torchRed self-center rounded-2xl py-1 px-2"
+                        css="uppercase bg-torchRed md:self-center rounded-2xl py-1 px-2 mt-3 md:mt-0 text-center font-bold"
                         content="🛠️ in progress 🛠️"
                       />
                     )}
