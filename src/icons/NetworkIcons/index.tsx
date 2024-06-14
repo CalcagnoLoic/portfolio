@@ -9,9 +9,9 @@ const Icons = ({ kind, isDarkBackground, css }: NetworkIconsProps) => {
     case "linkedin":
       return (
         <svg
-          height="15"
+          height="20"
           viewBox="0 0 72 72"
-          width="15"
+          width="20"
           xmlns="http://www.w3.org/2000/svg"
         >
           <g fill="none" fillRule="evenodd">
@@ -30,8 +30,8 @@ const Icons = ({ kind, isDarkBackground, css }: NetworkIconsProps) => {
     case "github":
       return (
         <svg
-          width="15"
-          height="15"
+          width="20"
+          height="20"
           viewBox="0 0 1024 1024"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -50,8 +50,8 @@ const Icons = ({ kind, isDarkBackground, css }: NetworkIconsProps) => {
     case "gmail":
       return (
         <svg
-          width="15"
-          height="15"
+          width="20"
+          height="20"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="52 42 88 66"
         >

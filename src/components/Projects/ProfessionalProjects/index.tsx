@@ -1,11 +1,12 @@
 import { handleMoreProject } from "../../../utils/showMoreProject";
 import { Professional } from "../../../data/professional";
-import { useEffect, useState } from "react";
 import { Projects } from "../../../types/interface";
+import { useEffect, useState } from "react";
 
 import Heading from "../../../typographies/Heading";
 import Link from "../../Link";
 import Paragraph from "../../../typographies/Paragraph";
+import ShimmerButton from "../../MagicUI/shimmer-button";
 
 const Component = () => {
   const [displayedData, setDisplayedData] = useState<Projects[]>(Professional);
@@ -25,9 +26,9 @@ const Component = () => {
       />
 
       {displayedData && (
-        <div className="container  mt-5 grid grid-cols-1 gap-5 text-white md:grid-cols-2 2xl:grid-cols-3">
+        <div className="container mt-5 grid grid-cols-1 gap-5 text-gallery md:grid-cols-2 2xl:grid-cols-3">
           {displayedData.map((item) => (
-            <section key={item.id} className=" mt-8 h-full drop-shadow-xl">
+            <section key={item.id} className="mt-8 h-full drop-shadow-xl">
               <Link
                 content={
                   <img
@@ -42,9 +43,9 @@ const Component = () => {
                 css="hover:opacity-70 duration-500 transition ease-in-out"
               />
 
-              <article className="texte-white items-stretch rounded-b-3xl bg-tuatara p-5">
+              <article className="texte-gallery items-stretch rounded-b-3xl bg-tuatara p-5">
                 <div className="md:h-52 2xl:h-44">
-                  <div className="flex justify-between flex-col md:flex-row">
+                  <div className="flex flex-col justify-between md:flex-row">
                     <Heading
                       kind="h3"
                       content={item.projectTitle}
@@ -78,12 +79,16 @@ const Component = () => {
       )}
 
       {visibleProject < Professional.length && (
-        <button
-          className="mx-auto mt-12 block cursor-pointer rounded-xl bg-torchRed px-8 py-5 font-bold text-white shadow-xl duration-500 ease-in-out hover:bg-tuatara"
-          onClick={() => handleMoreProject(setVisibleProject)}
-        >
-          Load More ...
-        </button>
+        <div className="z-10 mt-8 flex items-center justify-center">
+          <ShimmerButton
+            className="shadow-2xl"
+            onClick={() => handleMoreProject(setVisibleProject)}
+          >
+            <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-gallery lg:text-lg dark:from-gallery dark:to-slate-900/10">
+              Load More...
+            </span>
+          </ShimmerButton>
+        </div>
       )}
     </>
   );

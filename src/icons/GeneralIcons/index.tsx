@@ -214,6 +214,8 @@ const Icons = ({ kind }: GeneralIconsProps) => {
           </svg>
         </a>
       );
+
+    
     default:
       return null;
   }

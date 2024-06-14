@@ -18,7 +18,10 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+
+    /* Paths */
+    "paths": { "@/components/*": ["../components/*"] }
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]

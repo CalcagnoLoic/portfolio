@@ -9,7 +9,7 @@ const Component = ({ state, setState, isValid, errorMessage }: FieldInput) => (
   <>
     <Field
       css="input-field"
-      content="Message :"
+      content="Message"
       isTextArea={true}
       isLabel={true}
       value={state}

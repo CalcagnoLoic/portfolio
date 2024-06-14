@@ -13,7 +13,7 @@ const Component = ({
   <div className="input-container lg:w-1/2">
     <Field
       css="input-field"
-      content="Email: "
+      content="Email"
       isLabel={true}
       isTextArea={false}
       type="email"
