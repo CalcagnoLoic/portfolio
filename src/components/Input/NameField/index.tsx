@@ -8,7 +8,7 @@ const Component = ({ state, setState, isValid, errorMessage }: FieldInput) => (
   <div className="input-container lg:w-1/2">
     <Field
       css="input-field"
-      content="Name: "
+      content="Name"
       isLabel={true}
       isTextArea={false}
       type="text"

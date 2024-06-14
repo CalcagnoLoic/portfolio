@@ -1,5 +1,7 @@
 import { ErrorField } from "../../types/interface";
+import { notify } from "../../utils/toastMessage";
 import { sendForm } from "@emailjs/browser";
+import { ToastContainer, Zoom } from "react-toastify";
 import { useState } from "react";
 import { validateForm } from "../../utils/validateForm";
 
@@ -7,8 +9,6 @@ import EmailField from "../../components/Input/EmailField";
 import Field from "../../components/Input/Field";
 import MessageField from "../../components/Input/MessageField";
 import NameField from "../../components/Input/NameField";
-import Paragraph from "../../typographies/Paragraph";
-import Swal from "sweetalert2";
 
 const Component = () => {
   const [name, setName] = useState<string>("");
@@ -36,12 +36,7 @@ const Component = () => {
     setError(isValidate.errors);
 
     if (!isValidate.isValid) {
-      Swal.fire({
-        title: "Error!",
-        text: "Your message could not be sent. Please check that all fields have been filled in.",
-        icon: "error",
-        confirmButtonText: "Close",
-      });
+      notify("missing");
       return;
     }
 
@@ -55,20 +50,10 @@ const Component = () => {
         setName("");
         setEmail("");
         setMessage("");
-        Swal.fire({
-          title: "Mail sent!",
-          text: "Your message has been sent, I will reply as soon as possible! Thank you!",
-          icon: "success",
-          confirmButtonText: "Close",
-        });
+        notify("success");
       })
       .catch(() => {
-        Swal.fire({
-          title: "Error!",
-          text: "Oops, there are a problem with EmailJS server. Please try again or contact me directly by email.",
-          icon: "error",
-          confirmButtonText: "Close",
-        });
+        notify("error");
       });
   };
 
@@ -101,20 +86,17 @@ const Component = () => {
           isValid={isInvalidForm}
           errorMessage={error.MessageEmpty}
         />
-        <Paragraph
-          kind="span"
-          content="* Required Fields"
-          css="text-torchRed text-sm italic"
-        />
       </div>
 
       <Field
         isLabel={false}
         isTextArea={false}
         type="submit"
-        value="Submit"
+        value="Contact me 📧"
         inputCSS="mt-3 w-full cursor-pointer rounded-xl bg-torchRed p-4 text-lg font-bold text-white duration-1000 hover:text-tuatara hover:bg-white"
       />
+
+      <ToastContainer closeButton={false} transition={Zoom} />
     </form>
   );
 };

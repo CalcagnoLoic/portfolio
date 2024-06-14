@@ -40,7 +40,8 @@ export interface GeneralIconsProps extends ElementProps {
     | "tablet"
     | "computer"
     | "practise"
-    | "goback";
+    | "goback"
+    | "send";
 }
 
 export interface Projects {

@@ -1,7 +1,5 @@
 import { InputFieldProps } from "../../../types/interface";
 
-import Paragraph from "../../../typographies/Paragraph";
-
 const Component = ({
   css,
   content,
@@ -15,11 +13,7 @@ const Component = ({
   onChange,
 }: InputFieldProps) => (
   <>
-    {isLabel && (
-      <label className={css}>
-        {content} <Paragraph kind="span" content="*" css="text-torchRed" />{" "}
-      </label>
-    )}
+    {isLabel && <label className={css}>{content}</label>}
 
     {isTextArea ? (
       <textarea

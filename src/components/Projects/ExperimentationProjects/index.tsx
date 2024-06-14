@@ -1,20 +1,15 @@
 import { Experimentation } from "../../../data/experimentations";
-import { handleMoreProject } from "../../../utils/showMoreProject";
+
 import { Projects } from "../../../types/interface";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import Heading from "../../../typographies/Heading";
 import Link from "../../Link";
 import Paragraph from "../../../typographies/Paragraph";
 
 const Component = () => {
-  const [displayedData, setDisplayedData] = useState<Projects[]>(Experimentation);
-  const [visibleProject, setVisibleProject] = useState<number>(3);
+  const [displayedData] = useState<Projects[]>(Experimentation);
 
-  useEffect(() => {
-    setDisplayedData(Experimentation.slice(0, visibleProject));
-  }, [visibleProject]);
-  
   return (
     <>
       <Heading
@@ -66,15 +61,6 @@ const Component = () => {
             </section>
           ))}
         </div>
-      )}
-
-      {visibleProject < Experimentation.length && (
-        <button
-          onClick={() => handleMoreProject(setVisibleProject)}
-          className="mx-auto mt-12 block cursor-pointer rounded-xl bg-torchRed px-8 py-5 font-bold text-white duration-500 ease-in-out hover:bg-white hover:text-tuatara shadow-xl"
-        >
-          Load More..
-        </button>
       )}
     </>
   );
