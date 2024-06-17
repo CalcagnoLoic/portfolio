@@ -6,7 +6,6 @@ export const notify = (state: "success" | "error" | "missing") => {
     case "success":
       toast.success("Mail send with succes!", {
         position: "bottom-right",
-        theme: "colored",
       });
       break;
 
@@ -15,7 +14,6 @@ export const notify = (state: "success" | "error" | "missing") => {
         "Oops, there are an error with servor, try later or contact me by email.",
         {
           position: "bottom-right",
-          theme: "colored",
         },
       );
       break;
@@ -23,7 +21,6 @@ export const notify = (state: "success" | "error" | "missing") => {
     case "missing":
       toast.warn("You have probably forgotten to fill in some information ", {
         position: "bottom-right",
-        theme: "colored",
       });
       break;
 
