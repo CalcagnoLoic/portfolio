@@ -19,7 +19,7 @@ const Component = () => (
           id="top"
         />
         <div className="flex flex-col xl:flex-row">
-          <span className="mt-8 text-center font-[sofia] text-2xl italic md:text-4xl lg:text-start ">
+          <span className="mt-8 text-center font-[sofia] text-2xl italic md:text-4xl lg:text-start">
             <Heading
               kind="h2"
               content="I am "
@@ -35,12 +35,12 @@ const Component = () => (
 
         <Paragraph
           kind="p"
-          content="I'm deeply passionate about web development, a journey that began with self-teaching. Each project and challenge fuels my inspiration as I explore new technologies and tackle complex tasks. This portfolio showcases my proudest achievements in web development."
+          content="I'm deeply passionate about web development, a journey that began with self-teaching. Each project and challenge fuels my inspiration as I explore new technologies and tackle complex tasks. This portfolio showcases my proudest web development achievements."
           css="lg:w-5/6 text-center lg:text-start mt-5 text-lg md:text-xl font-[barlow]"
         />
         <Paragraph
           kind="p"
-          content="In addition to my dedication to web development, I have a strong commitment to knowledge sharing. I eagerly contribute to the community by sharing what I've learned. This portfolio reflects my journey, skills, and determination to excel in the dynamic field of web development."
+          content="In addition to my dedication to web development, I'm very enthusiastic about sharing knowledge. I eagerly contribute to the community by sharing what I've learned. This portfolio reflects my journey, skills, and determination to excel in the exciting field of web development."
           css="lg:w-5/6 text-center lg:text-start mt-5 text-lg md:text-xl font-[barlow]"
         />
 
@@ -49,12 +49,14 @@ const Component = () => (
             content="Contact Me"
             href="#contact"
             css="font-[bellefair] bg-torchRed px-10 py-3 text-2xl rounded-xl w-full text-center cursor-pointer hover:text-tuatara hover:bg-white duration-300 ease-in-out"
+            aria="Contact me with form or directly at calcagnoloic93@gmail.com"
           />
           <Link
             content="CV"
             href={CV}
             target="_blanck"
-            css="bg-torchRed px-10 py-3 text-2xl rounded-xl w-full text-center cursor-pointer hover:text-tuatara hover:bg-white duration-300 ease-in-out"
+            css="bg-torchRed font-[bellefair] px-10 py-3 text-2xl rounded-xl w-full text-center cursor-pointer hover:text-tuatara hover:bg-white duration-300 ease-in-out"
+            aria="Discover me with my CV"
           />
         </section>
       </article>

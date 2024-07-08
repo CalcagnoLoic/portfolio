@@ -54,7 +54,7 @@ const Component = () => {
                     {item.inProgress && (
                       <Paragraph
                         kind="span"
-                        css="uppercase bg-torchRed md:self-center rounded-2xl py-1 px-2 mt-3 md:mt-0 text-center font-bold"
+                        css="font-[bellefair]  uppercase bg-torchRed md:self-center rounded-2xl py-1 px-2 mt-3 md:mt-0 text-center font-bold"
                         content="🛠️ in progress 🛠️"
                       />
                     )}
@@ -84,7 +84,7 @@ const Component = () => {
             className="shadow-2xl"
             onClick={() => handleMoreProject(setVisibleProject)}
           >
-            <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-gallery lg:text-lg dark:from-gallery dark:to-slate-900/10">
+            <span className="font-[bellefair] whitespace-pre-wrap text-center text-2xl font-medium leading-none tracking-tight text-gallery lg:text-lg dark:from-gallery dark:to-slate-900/10">
               Load More...
             </span>
           </ShimmerButton>
