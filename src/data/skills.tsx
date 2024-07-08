@@ -20,7 +20,7 @@ export const skills: Skills[] = [
       <>
         <SkillsIcons kind="react" />
         <div className="rounded bg-white px-1">
-          <SkillsIcons kind="react-router" />
+          <SkillsIcons kind="next" />
         </div>
         <SkillsIcons kind="astro" bgLight={false} />
         <SkillsIcons kind="ts" />
@@ -52,10 +52,11 @@ export const skills: Skills[] = [
     skillsTitle: "Best Practice",
     skillsIcons: <GeneralIcons kind="practise" />,
     skillsPresentation:
-      "In every project, I emphasize mobile-first development and scalability. Additionally, I excel in Git for version control and effective teamwork for efficient codebase management.",
+      "In every project, I focus on mobile-first development, scalability and unit test automation. In addition, I apply Git for version control and teamwork for efficient code base management.",
     skills: (
       <>
         <SkillsIcons kind="git" />
+        <SkillsIcons kind="actions" />
         <GeneralIcons kind="mobile" />
         <GeneralIcons kind="tablet" />
         <GeneralIcons kind="computer" />

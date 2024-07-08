@@ -6,6 +6,49 @@ import SkillsIcons from "../icons/SkillsIcons";
 
 export const Experimentation: Projects[] = [
   {
+    id: "*YooA7N",
+    inProgress: false,
+    projectIllustration: "assets/img/crowdfund.webp",
+    projectTitle: "Crowdfunding webapp",
+    projectDescription:
+      "Explore this participatory funding product page where users can select offers to increase funding and bookmark products they wish to support. Built with React, TypeScript, and TailwindCSS.",
+    projectStack: (
+      <>
+        <SkillsIcons kind="react" />
+        <SkillsIcons kind="ts" />
+        <SkillsIcons kind="storybook" />
+        <SkillsIcons kind="tw" />
+      </>
+    ),
+    projectWebsite: "https://calcagnoloic.github.io/crowdfunding-webapp/",
+    projectLink: (
+      <>
+        <Link
+          href="https://github.com/CalcagnoLoic/crowdfunding-webapp"
+          content={
+            <NetworkIcons kind="github" isDarkBackground={true} css="w-8 h-8" />
+          }
+          target="_blank"
+          css="self-center w-[30px]"
+          aria="Go to github repository"
+        />
+
+        <Link
+          href="https://calcagnoloic.github.io/crowdfunding-webapp/"
+          target="_blank"
+          aria="Go to website"
+          content={<NetworkIcons kind="website" isDarkBackground={true} />}
+        />
+        <Link
+          href="https://65fea557005e1e6abef7c259-mskecrihhi.chromatic.com"
+          target="_blank"
+          aria="Go to chromatic project"
+          content={<NetworkIcons kind="storybook" isDarkBackground={true} />}
+        />
+      </>
+    ),
+  },
+  {
     id: "1nh-soc",
     inProgress: false,
     projectIllustration: "assets/img/calculator-app.webp",
@@ -68,42 +111,6 @@ export const Experimentation: Projects[] = [
         />
         <Link
           href="https://calcagnoloic.github.io/box_shadow_generator/"
-          target="_blank"
-          aria="Go to website"
-          content={<NetworkIcons kind="website" isDarkBackground={true} />}
-        />
-      </>
-    ),
-  },
-  {
-    id: "d$i1mf*",
-    inProgress: false,
-    projectIllustration: "assets/img/catwiki.webp",
-    projectTitle: "CatWiki",
-    projectDescription:
-      "Discover various cat breeds with this SPA, developed to enhance my skills in API consumption, context creation, and React Router integration.",
-    projectStack: (
-      <>
-        <SkillsIcons kind="react" />
-        <SkillsIcons kind="react-router" />
-        <SkillsIcons kind="js" />
-        <SkillsIcons kind="tw" />
-      </>
-    ),
-    projectWebsite: "https://cat-wiki-loic.netlify.app/",
-    projectLink: (
-      <>
-        <Link
-          href="https://github.com/CalcagnoLoic/catwiki"
-          content={
-            <NetworkIcons kind="github" isDarkBackground={true} css="w-8 h-8" />
-          }
-          target="_blank"
-          css="self-center w-[30px]"
-          aria="Go to github repository"
-        />
-        <Link
-          href="https://cat-wiki-loic.netlify.app/"
           target="_blank"
           aria="Go to website"
           content={<NetworkIcons kind="website" isDarkBackground={true} />}

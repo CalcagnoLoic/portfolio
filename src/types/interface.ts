@@ -28,7 +28,9 @@ export interface SkillsProps extends ElementProps {
     | "git"
     | "redux"
     | "react-router"
-    | "astro";
+    | "astro"
+    | "next"
+    | "actions";
   bgLight?: boolean;
 }
 

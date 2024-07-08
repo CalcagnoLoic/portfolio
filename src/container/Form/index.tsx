@@ -92,8 +92,8 @@ const Component = () => {
         isLabel={false}
         isTextArea={false}
         type="submit"
-        value="Contact me 📧"
-        inputCSS="mt-3 w-full cursor-pointer rounded-xl bg-torchRed p-4 text-lg font-bold text-white duration-1000 hover:text-tuatara hover:bg-white"
+        value="Contact Me 📧"
+        inputCSS="font-[bellefair] bg-torchRed px-10 py-3 text-2xl rounded-xl w-full text-center cursor-pointer hover:text-tuatara hover:bg-white duration-300 ease-in-out text-white"
       />
 
       <ToastContainer closeButton={false} transition={Zoom} />
