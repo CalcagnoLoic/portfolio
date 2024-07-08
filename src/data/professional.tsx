@@ -6,6 +6,47 @@ import SkillsIcons from "../icons/SkillsIcons";
 
 export const Professional: Projects[] = [
   {
+    id: "d$i1mf*",
+    inProgress: true,
+    projectIllustration: "assets/img/catwiki.webp",
+    projectTitle: "CatWiki",
+    projectDescription:
+      "CatWiki is evolving! Currently migrating from a ReactJS (actually hosted) to a NextJS application for enhanced performance and SEO benefits. Stay tuned for the upcoming release.",
+    projectStack: (
+      <>
+        <div className="rounded bg-white px-1">
+          <SkillsIcons kind="next" />
+        </div>
+        <SkillsIcons kind="ts" />
+        <SkillsIcons kind="tw" />
+      </>
+    ),
+    projectWebsite: "https://cat-wiki-loic.netlify.app/",
+    projectLink: (
+      <>
+        <Link
+          href="https://github.com/CalcagnoLoic/catwiki/tree/migrating-nextjs"
+          content={
+            <NetworkIcons
+              kind="github"
+              isDarkBackground={false}
+              css="w-8 h-8"
+            />
+          }
+          target="_blank"
+          css="self-center w-[30px]"
+          aria="Go to github repository"
+        />
+        <Link
+          href="https://cat-wiki-loic.netlify.app/"
+          target="_blank"
+          aria="Go to website"
+          content={<NetworkIcons kind="website" isDarkBackground={false} />}
+        />
+      </>
+    ),
+  },
+  {
     id: "25A#za9",
     inProgress: true,
     projectIllustration: "assets/img/invoice-app.webp",
@@ -91,53 +132,6 @@ export const Professional: Projects[] = [
           target="_blank"
           aria="Go to website"
           content={<NetworkIcons kind="website" isDarkBackground={false} />}
-        />
-      </>
-    ),
-  },
-  {
-    id: "*YooA7N",
-    inProgress: false,
-    projectIllustration: "assets/img/crowdfund.webp",
-    projectTitle: "Crowdfunding webapp",
-    projectDescription:
-      "Explore this participatory funding product page where users can select offers to increase funding and bookmark products they wish to support. Built with React, TypeScript, and TailwindCSS.",
-    projectStack: (
-      <>
-        <SkillsIcons kind="react" />
-        <SkillsIcons kind="ts" />
-        <SkillsIcons kind="storybook" />
-        <SkillsIcons kind="tw" />
-      </>
-    ),
-    projectWebsite: "https://calcagnoloic.github.io/crowdfunding-webapp/",
-    projectLink: (
-      <>
-        <Link
-          href="https://github.com/CalcagnoLoic/crowdfunding-webapp"
-          content={
-            <NetworkIcons
-              kind="github"
-              isDarkBackground={false}
-              css="w-8 h-8"
-            />
-          }
-          target="_blank"
-          css="self-center w-[30px]"
-          aria="Go to github repository"
-        />
-
-        <Link
-          href="https://calcagnoloic.github.io/crowdfunding-webapp/"
-          target="_blank"
-          aria="Go to website"
-          content={<NetworkIcons kind="website" isDarkBackground={false} />}
-        />
-        <Link
-          href="https://65fea557005e1e6abef7c259-mskecrihhi.chromatic.com"
-          target="_blank"
-          aria="Go to chromatic project"
-          content={<NetworkIcons kind="storybook" />}
         />
       </>
     ),

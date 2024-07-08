@@ -20,7 +20,7 @@ export const skills: Skills[] = [
       <>
         <SkillsIcons kind="react" />
         <div className="rounded bg-white px-1">
-          <SkillsIcons kind="react-router" />
+          <SkillsIcons kind="next" />
         </div>
         <SkillsIcons kind="astro" bgLight={false} />
         <SkillsIcons kind="ts" />
@@ -56,6 +56,7 @@ export const skills: Skills[] = [
     skills: (
       <>
         <SkillsIcons kind="git" />
+        <SkillsIcons kind="actions" />
         <GeneralIcons kind="mobile" />
         <GeneralIcons kind="tablet" />
         <GeneralIcons kind="computer" />
