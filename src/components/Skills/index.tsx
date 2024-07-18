@@ -12,9 +12,9 @@ const Component = () => (
       id="skills"
     />
 
-    <div className="grid grid-cols-1 gap-5  text-white md:grid-cols-2 lg:grid-cols-3">
+    <div className="container grid grid-cols-1 gap-5 h-full text-white md:grid-cols-2 lg:grid-cols-3">
       {skills.map((item) => (
-        <div key={item.id} className="rounded-xl bg-tuatara p-5">
+        <section key={item.id} className="rounded-xl items-stretch bg-tuatara p-5">
           <Heading
             kind="h3"
             content={item.skillsTitle}
@@ -26,13 +26,13 @@ const Component = () => (
           <Paragraph
             kind="p"
             content={item.skillsPresentation}
-            css="mt-5 text-center"
+            css="mt-5 text-center h-32"
           />
 
           <div className="mt-5 flex justify-center gap-2 lg:gap-4">
             {item.skills}
           </div>
-        </div>
+        </section>
       ))}
     </div>
   </>
