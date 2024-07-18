@@ -1,6 +1,6 @@
 import { Typewriter } from "react-simple-typewriter";
 
-import CV from "../../../public/assets/CV_dev.pdf";
+import CV from "../../../public/assets/cv.pdf";
 import PICTURE from "../../../public/assets/img/photo.webp";
 
 import Link from "../Link";

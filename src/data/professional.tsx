@@ -6,47 +6,6 @@ import SkillsIcons from "../icons/SkillsIcons";
 
 export const Professional: Projects[] = [
   {
-    id: "d$i1mf*",
-    inProgress: true,
-    projectIllustration: "assets/img/catwiki.webp",
-    projectTitle: "CatWiki",
-    projectDescription:
-      "CatWiki is evolving! Currently migrating from a ReactJS (actually hosted) to a NextJS application for enhanced performance and SEO benefits. Stay tuned for the upcoming release.",
-    projectStack: (
-      <>
-        <div className="rounded bg-white px-1">
-          <SkillsIcons kind="next" />
-        </div>
-        <SkillsIcons kind="ts" />
-        <SkillsIcons kind="tw" />
-      </>
-    ),
-    projectWebsite: "https://cat-wiki-loic.netlify.app/",
-    projectLink: (
-      <>
-        <Link
-          href="https://github.com/CalcagnoLoic/catwiki/tree/migrating-nextjs"
-          content={
-            <NetworkIcons
-              kind="github"
-              isDarkBackground={false}
-              css="w-8 h-8"
-            />
-          }
-          target="_blank"
-          css="self-center w-[30px]"
-          aria="Go to github repository"
-        />
-        <Link
-          href="https://cat-wiki-loic.netlify.app/"
-          target="_blank"
-          aria="Go to website"
-          content={<NetworkIcons kind="website" isDarkBackground={false} />}
-        />
-      </>
-    ),
-  },
-  {
     id: "25A#za9",
     inProgress: true,
     projectIllustration: "assets/img/invoice-app.webp",
@@ -92,6 +51,47 @@ export const Professional: Projects[] = [
           }
           target="_blank"
           css="self-center w-[30px]"
+        />
+      </>
+    ),
+  },
+  {
+    id: "d$i1mf*",
+    inProgress: false,
+    projectIllustration: "assets/img/catwiki.webp",
+    projectTitle: "CatWiki",
+    projectDescription:
+      "Welcome cat lovers to this site, where you can delve into the characteristics of your favorite breeds. There's also an article on why you should adopt a cat.",
+    projectStack: (
+      <>
+        <div className="rounded bg-white px-1">
+          <SkillsIcons kind="next" />
+        </div>
+        <SkillsIcons kind="ts" />
+        <SkillsIcons kind="tw" />
+      </>
+    ),
+    projectWebsite: "https://cat-wiki-loic.netlify.app/",
+    projectLink: (
+      <>
+        <Link
+          href="https://github.com/CalcagnoLoic/catwiki/"
+          content={
+            <NetworkIcons
+              kind="github"
+              isDarkBackground={false}
+              css="w-8 h-8"
+            />
+          }
+          target="_blank"
+          css="self-center w-[30px]"
+          aria="Go to github repository"
+        />
+        <Link
+          href="https://cat-wiki-loic.netlify.app/"
+          target="_blank"
+          aria="Go to website"
+          content={<NetworkIcons kind="website" isDarkBackground={false} />}
         />
       </>
     ),

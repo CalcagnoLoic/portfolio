@@ -35,7 +35,7 @@ export const skills: Skills[] = [
     skillsTitle: "Backend",
     skillsIcons: <GeneralIcons kind="database" />,
     skillsPresentation:
-      "I offer services with the ability to implement MVT architectures. Moreover, I am familiar with the use of containers to enhance application management and ensure their portability.",
+      "I offer services with the ability to implement architectural patterns, including MVC and MVT. Moreover, I am proficient in using containers to enhance application management and ensure portability.",
     skills: (
       <>
         <SkillsIcons kind="python" />

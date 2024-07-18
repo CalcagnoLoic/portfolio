@@ -54,7 +54,7 @@ const Component = () => {
                     {item.inProgress && (
                       <Paragraph
                         kind="span"
-                        css="font-[bellefair]  uppercase bg-torchRed md:self-center rounded-2xl py-1 px-2 mt-3 md:mt-0 text-center font-bold"
+                        css="font-[bellefair] uppercase bg-torchRed md:self-center rounded-2xl py-1 px-2 mt-3 md:mt-0 text-center font-bold"
                         content="🛠️ in progress 🛠️"
                       />
                     )}
