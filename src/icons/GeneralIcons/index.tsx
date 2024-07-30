@@ -1,4 +1,4 @@
-import { GeneralIconsProps } from "../../types/interface";
+import { GeneralIconsProps } from "@definitions/definitions";
 
 const Icons = ({ kind }: GeneralIconsProps) => {
   switch (kind) {
@@ -215,7 +215,6 @@ const Icons = ({ kind }: GeneralIconsProps) => {
         </a>
       );
 
-    
     default:
       return null;
   }

@@ -1,17 +1,11 @@
-import GeneralIcons from "../icons/GeneralIcons";
-import SkillsIcons from "../icons/SkillsIcons";
+import { Skills } from "@definitions/definitions";
 
-type Skills = {
-  id: number;
-  skillsTitle: string;
-  skillsIcons: React.ReactNode;
-  skillsPresentation: string;
-  skills: React.ReactNode;
-};
+import GeneralIcons from "@icons/GeneralIcons";
+import SkillsIcons from "@icons/SkillsIcons";
 
 export const skills: Skills[] = [
   {
-    id: 1,
+    id: "oXeqm6s",
     skillsTitle: "Frontend",
     skillsIcons: <GeneralIcons kind="design" />,
     skillsPresentation:
@@ -31,7 +25,7 @@ export const skills: Skills[] = [
     ),
   },
   {
-    id: 2,
+    id: "1sa@9PT",
     skillsTitle: "Backend",
     skillsIcons: <GeneralIcons kind="database" />,
     skillsPresentation:
@@ -48,7 +42,7 @@ export const skills: Skills[] = [
     ),
   },
   {
-    id: 3,
+    id: "-w*Z4el",
     skillsTitle: "Best Practice",
     skillsIcons: <GeneralIcons kind="practise" />,
     skillsPresentation:

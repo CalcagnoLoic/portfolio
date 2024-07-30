@@ -113,3 +113,57 @@ export interface FieldInput {
 export interface MailFormatField extends FieldInput {
   errorFormatField: string;
 }
+
+export type navItem = {
+  id: string;
+  content: string;
+  href: string;
+};
+
+export type Skills = {
+  id: string;
+  skillsTitle: string;
+  skillsIcons: React.ReactNode;
+  skillsPresentation: string;
+  skills: React.ReactNode;
+};
+
+export type useClickOutsideProps = {
+  callback: (newValue: boolean) => void;
+  ref: React.RefObject<HTMLDivElement>;
+};
+
+export type UseShouldOverflowProps = {
+  state: boolean;
+};
+
+export type IconProps = {
+  isOpen: boolean;
+  handleClick: React.MouseEventHandler<SVGSVGElement>;
+};
+
+export type NetworkIconsProps = {
+  kind: "linkedin" | "github" | "gmail" | "website" | "storybook";
+  isDarkBackground?: boolean;
+  css?: string;
+};
+
+export type LayoutProps = {
+  children: JSX.Element | JSX.Element[];
+  css: string;
+};
+
+export type handleMoreProjectType = (
+  setState: React.Dispatch<React.SetStateAction<number>>,
+) => void;
+
+export interface ShimmerButtonProps
+  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  shimmerColor?: string;
+  shimmerSize?: string;
+  borderRadius?: string;
+  shimmerDuration?: string;
+  background?: string;
+  className?: string;
+  children?: React.ReactNode;
+}

@@ -1,8 +1,5 @@
 import { useEffect } from "react";
-
-type UseShouldOverflowProps = {
-  state: boolean;
-};
+import { UseShouldOverflowProps } from "@definitions/definitions";
 
 export const useShouldOverflow = ({ state }: UseShouldOverflowProps) => {
   const handleOverflow = (shoudOverflow: boolean): void => {

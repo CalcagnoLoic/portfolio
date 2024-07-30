@@ -1,4 +1,4 @@
-import { HeadingProps } from "../../types/interface";
+import { HeadingProps } from "@definitions/definitions";
 
 const Typographies = ({ kind, content, css, id }: HeadingProps) => {
   switch (kind) {

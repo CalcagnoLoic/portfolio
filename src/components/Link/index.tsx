@@ -1,7 +1,13 @@
-import { LinkProps } from "../../types/interface";
+import { LinkProps } from "@definitions/definitions";
 
 const Component = ({ css, content, href, target, aria }: LinkProps) => (
-  <a href={href} target={target} rel="noreferrer" className={css} aria-label={aria}>
+  <a
+    href={href}
+    target={target}
+    rel="noreferrer"
+    className={css}
+    aria-label={aria}
+  >
     {content}
   </a>
 );

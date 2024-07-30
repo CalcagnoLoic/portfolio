@@ -1,7 +1,7 @@
-import { skills } from "../../data/skills";
+import { skills } from "@data/skills";
 
-import Heading from "../../typographies/Heading";
-import Paragraph from "../../typographies/Paragraph";
+import Heading from "@typographies/Heading";
+import Paragraph from "@typographies/Paragraph";
 
 const Component = () => (
   <>
@@ -12,9 +12,12 @@ const Component = () => (
       id="skills"
     />
 
-    <div className="container grid grid-cols-1 gap-5 h-full text-white md:grid-cols-2 lg:grid-cols-3">
+    <div className="container grid h-full grid-cols-1 gap-5 text-white md:grid-cols-2 lg:grid-cols-3">
       {skills.map((item) => (
-        <section key={item.id} className="rounded-xl items-stretch bg-tuatara p-5">
+        <section
+          key={item.id}
+          className="items-stretch rounded-xl bg-tuatara p-5"
+        >
           <Heading
             kind="h3"
             content={item.skillsTitle}

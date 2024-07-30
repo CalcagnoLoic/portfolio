@@ -1,7 +1,4 @@
-type IconProps = {
-  isOpen: boolean;
-  handleClick: React.MouseEventHandler<SVGSVGElement>;
-};
+import { IconProps } from "@definitions/definitions";
 
 const Icons = ({ isOpen, handleClick }: IconProps) =>
   isOpen ? (
@@ -9,7 +6,7 @@ const Icons = ({ isOpen, handleClick }: IconProps) =>
       width="20"
       height="20"
       xmlns="http://www.w3.org/2000/svg"
-      className="cursor-pointer self-center z-20"
+      className="z-20 cursor-pointer self-center"
       onClick={handleClick}
     >
       <path

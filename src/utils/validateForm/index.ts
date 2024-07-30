@@ -1,4 +1,4 @@
-import { ErrorField, ValidateForm } from "../../types/interface";
+import { ErrorField, ValidateForm } from "@definitions/definitions";
 
 export const validateForm = ({ name, email, message }: ValidateForm) => {
   let isValid = true;

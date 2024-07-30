@@ -1,27 +1,23 @@
-type navItems = {
-  id: number;
-  content: string;
-  href: string;
-};
+import { navItem } from "@definitions/definitions";
 
-export const navItems: navItems[] = [
+export const navItems: navItem[] = [
   {
-    id: 1,
+    id: "r*sIHGR",
     content: "Projects",
     href: "#projects",
   },
   {
-    id: 2,
+    id: "xb9lRdH",
     content: "Experimentations",
     href: "#experimentations",
   },
   {
-    id: 3,
+    id: "Pd-A7s^",
     content: "Skills",
     href: "#skills",
   },
   {
-    id: 4,
+    id: "nXN9$.F",
     content: "Contact",
     href: "#contact",
   },

@@ -1,4 +1,4 @@
-import { ParagraphProps } from "../../types/interface";
+import { ParagraphProps } from "@definitions/definitions";
 
 const Typographies = ({ kind, css, content }: ParagraphProps) => {
   switch (kind) {

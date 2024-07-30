@@ -1,12 +1,12 @@
-import { handleMoreProject } from "../../../utils/showMoreProject";
-import { Professional } from "../../../data/professional";
-import { Projects } from "../../../types/interface";
+import { handleMoreProject } from "@utils/showMoreProject";
+import { Professional } from "@data/professional";
+import { Projects } from "@definitions/definitions";
 import { useEffect, useState } from "react";
 
-import Heading from "../../../typographies/Heading";
-import Link from "../../Link";
-import Paragraph from "../../../typographies/Paragraph";
-import ShimmerButton from "../../MagicUI/shimmer-button";
+import Link from "@components/Link";
+import Heading from "@typographies/Heading";
+import Paragraph from "@typographies/Paragraph";
+import ShimmerButton from "@components/MagicUI/shimmer-button";
 
 const Component = () => {
   const [displayedData, setDisplayedData] = useState<Projects[]>(Professional);
@@ -28,22 +28,25 @@ const Component = () => {
       {displayedData && (
         <div className="container mt-5 grid grid-cols-1 gap-5 text-gallery md:grid-cols-2 2xl:grid-cols-3">
           {displayedData.map((item) => (
-            <section key={item.id} className="mt-8 h-full drop-shadow-xl">
+            <section
+              key={item.id}
+              className="mt-8 h-full overflow-hidden drop-shadow-xl"
+            >
               <Link
                 content={
                   <img
                     src={item.projectIllustration}
                     alt={item.projectTitle}
-                    className="rounded-t-3xl border-[1px] border-tuatara"
+                    className="transform-gpu rounded-t-3xl border-[1px] border-tuatara transition duration-700 ease-in-out hover:scale-110"
                     loading="lazy"
                   />
                 }
                 href={item.projectWebsite}
                 target="_blanck"
-                css="hover:opacity-70 duration-500 transition ease-in-out"
+                css="hover:opacity-70 block overflow-hidden rounded-t-3xl"
               />
 
-              <article className="texte-gallery items-stretch rounded-b-3xl bg-tuatara p-5">
+              <article className="texte-gallery items-stretch overflow-hidden rounded-b-3xl bg-tuatara p-5">
                 <div className="md:h-52 2xl:h-44">
                   <div className="flex flex-col justify-between md:flex-row">
                     <Heading
@@ -84,7 +87,7 @@ const Component = () => {
             className="shadow-2xl"
             onClick={() => handleMoreProject(setVisibleProject)}
           >
-            <span className="font-[bellefair] whitespace-pre-wrap text-center text-2xl font-medium leading-none tracking-tight text-gallery lg:text-lg dark:from-gallery dark:to-slate-900/10">
+            <span className="whitespace-pre-wrap text-center font-[bellefair] text-2xl font-medium leading-none tracking-tight text-gallery lg:text-lg dark:from-gallery dark:to-slate-900/10">
               Load More...
             </span>
           </ShimmerButton>

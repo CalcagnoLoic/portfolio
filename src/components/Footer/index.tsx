@@ -1,9 +1,9 @@
-import Link from "../Link";
-import NetworkIcons from "../../icons/NetworkIcons";
-import Paragraph from "../../typographies/Paragraph";
+import Link from "@components/Link";
+import NetworkIcons from "@icons/NetworkIcons";
+import Paragraph from "@typographies/Paragraph";
 
 const Component = () => (
-  <footer className="flex flex-col bg-tuatara px-12 py-7  text-lg text-white md:flex-row md:justify-between md:px-32">
+  <footer className="flex flex-col bg-tuatara px-12 py-7 text-lg text-white md:flex-row md:justify-between md:px-32">
     <div className="absolute left-1/2 h-[2px] w-2/3 -translate-x-[50%] bg-white"></div>
     <Paragraph
       kind="p"

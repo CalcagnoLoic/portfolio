@@ -21,7 +21,19 @@
     "noFallthroughCasesInSwitch": true,
 
     /* Paths */
-    "paths": { "@/components/*": ["../components/*"] }
+    "paths": {
+      "@components/*": ["./src/components/*"],
+      "@container/*": ["./src/container/*"],
+      "@data/*": ["./src/data/*"],
+      "@hooks/*": ["./src/hooks/*"],
+      "@icons/*": ["./src/icons/*"],
+      "@layouts/*": ["./src/layouts/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@lib/*": ["./src/lib/*"],
+      "@typographies/*": ["./src/typographies/*"],
+      "@definitions/*": ["./src/types/*"],
+      "@public/*": ["./public/assets/*"]
+    }
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
