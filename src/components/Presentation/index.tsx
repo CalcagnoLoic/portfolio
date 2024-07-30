@@ -1,12 +1,12 @@
 import { Typewriter } from "react-simple-typewriter";
 
-import CV from "../../../public/assets/cv.pdf";
-import PICTURE from "../../../public/assets/img/photo.webp";
+import CALCAGNO_LOIC_CV_en from "@public/CALCAGNO_LOIC_CV_en.pdf";
+import PICTURE from "@public/img/photo.webp";
 
-import Link from "../Link";
-import GeneralIcons from "../../icons/GeneralIcons";
-import Heading from "../../typographies/Heading";
-import Paragraph from "../../typographies/Paragraph";
+import GeneralIcons from "@icons/GeneralIcons";
+import Heading from "@typographies/Heading";
+import Link from "@components/Link";
+import Paragraph from "@typographies/Paragraph";
 
 const Component = () => (
   <section className="py-12">
@@ -35,12 +35,12 @@ const Component = () => (
 
         <Paragraph
           kind="p"
-          content="I'm deeply passionate about web development, a journey that began with self-teaching. Each project and challenge fuels my inspiration as I explore new technologies and tackle complex tasks. This portfolio showcases my proudest web development achievements."
+          content="I'm deeply passionate about web development, a journey that began with self-teaching. Primarily a React developer, I also have a strong affinity for backend development, particularly with Python. Each project and challenge fuels my inspiration as I explore new technologies and tackle complex tasks."
           css="lg:w-5/6 text-center lg:text-start mt-5 text-lg md:text-xl font-[barlow]"
         />
         <Paragraph
           kind="p"
-          content="In addition to my dedication to web development, I'm very enthusiastic about sharing knowledge. I eagerly contribute to the community by sharing what I've learned. This portfolio reflects my journey, skills, and determination to excel in the exciting field of web development."
+          content="This portfolio showcases my proudest web development achievements. In addition to my dedication to web development, I'm very enthusiastic about sharing knowledge. I eagerly contribute to the community by sharing what I've learned."
           css="lg:w-5/6 text-center lg:text-start mt-5 text-lg md:text-xl font-[barlow]"
         />
 
@@ -53,7 +53,7 @@ const Component = () => (
           />
           <Link
             content="CV"
-            href={CV}
+            href={CALCAGNO_LOIC_CV_en}
             target="_blanck"
             css="bg-torchRed font-[bellefair] px-10 py-3 text-2xl rounded-xl w-full text-center cursor-pointer hover:text-tuatara hover:bg-white duration-300 ease-in-out"
             aria="Discover me with my CV"

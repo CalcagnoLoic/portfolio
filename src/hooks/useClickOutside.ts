@@ -1,9 +1,5 @@
+import { useClickOutsideProps } from "@definitions/definitions";
 import { useEffect } from "react";
-
-type useClickOutsideProps = {
-  callback: (newValue: boolean) => void;
-  ref: React.RefObject<HTMLDivElement>;
-};
 
 export const useClickOutside = ({ callback, ref }: useClickOutsideProps) => {
   const clickOutside = (e: MouseEvent) => {
@@ -18,6 +14,6 @@ export const useClickOutside = ({ callback, ref }: useClickOutsideProps) => {
     return () => {
       document.removeEventListener("click", clickOutside);
     };
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 };

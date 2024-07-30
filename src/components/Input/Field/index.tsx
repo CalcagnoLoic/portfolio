@@ -1,4 +1,4 @@
-import { InputFieldProps } from "../../../types/interface";
+import { InputFieldProps } from "@definitions/definitions";
 
 const Component = ({
   css,

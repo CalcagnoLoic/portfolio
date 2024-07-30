@@ -1,4 +1,4 @@
-import { SkillsProps } from "../../types/interface";
+import { SkillsProps } from "../../types/definitions";
 
 const Icons = ({ kind, bgLight }: SkillsProps) => {
   switch (kind) {
@@ -302,11 +302,7 @@ const Icons = ({ kind, bgLight }: SkillsProps) => {
 
     case "actions":
       return (
-        <svg
-          height="35"
-          width="35"
-          viewBox="0 0 128 128"
-        >
+        <svg height="35" width="35" viewBox="0 0 128 128">
           <title>Github Actions - CI/CD</title>
           <path
             fill="#FFFFFF"

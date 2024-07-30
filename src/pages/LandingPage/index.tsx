@@ -1,11 +1,11 @@
-import ContactForm from "../../components/Contact/ContactForm";
-import ExperimentationProjects from "../../components/Projects/ExperimentationProjects";
-import Footer from "../../components/Footer";
-import NavBar from "../../components/NavBar";
-import Presentation from "../../components/Presentation";
-import ProfessionalProjects from "../../components/Projects/ProfessionalProjects";
-import SectionLayout from "../../layouts/SectionLayout";
-import Skills from "../../components/Skills";
+import ContactForm from "@components/Contact/ContactForm";
+import ExperimentationProjects from "@components/Projects/ExperimentationProjects";
+import Footer from "@components/Footer";
+import NavBar from "@components/NavBar";
+import Presentation from "@components/Presentation";
+import ProfessionalProjects from "@components/Projects/ProfessionalProjects";
+import SectionLayout from "@layouts/SectionLayout";
+import Skills from "@components/Skills";
 
 const Page = () => (
   <>

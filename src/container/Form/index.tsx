@@ -1,14 +1,14 @@
-import { ErrorField } from "../../types/interface";
-import { notify } from "../../utils/toastMessage";
+import { ErrorField } from "@definitions/definitions";
+import { notify } from "@utils/toastMessage";
 import { sendForm } from "@emailjs/browser";
 import { ToastContainer, Zoom } from "react-toastify";
 import { useState } from "react";
-import { validateForm } from "../../utils/validateForm";
+import { validateForm } from "@utils/validateForm";
 
-import EmailField from "../../components/Input/EmailField";
-import Field from "../../components/Input/Field";
-import MessageField from "../../components/Input/MessageField";
-import NameField from "../../components/Input/NameField";
+import EmailField from "@components/Input/EmailField";
+import Field from "@components/Input/Field";
+import MessageField from "@components/Input/MessageField";
+import NameField from "@components/Input/NameField";
 
 const Component = () => {
   const [name, setName] = useState<string>("");

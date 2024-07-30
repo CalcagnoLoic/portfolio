@@ -1,7 +1,4 @@
-type LayoutProps = {
-  children: JSX.Element | JSX.Element[];
-  css: string;
-};
+import { LayoutProps } from "@definitions/definitions";
 
 const Layout = ({ children, css }: LayoutProps) => (
   <section className={`px-8 xl:px-32 ${css}`}>{children}</section>

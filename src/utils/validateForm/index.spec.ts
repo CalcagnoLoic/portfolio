@@ -1,6 +1,6 @@
 import { it, describe, expect } from "vitest";
 import { validateForm } from ".";
-import { ErrorField } from "../../types/interface";
+import { ErrorField } from "../../types/definitions";
 
 describe("validateForm Unit Test Suite", () => {
   it("should return something", () => {

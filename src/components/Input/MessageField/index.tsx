@@ -1,9 +1,8 @@
-import { FieldInput } from "../../../types/interface";
-import { handleChange } from "../../../utils/handleChange";
+import { FieldInput } from "@definitions/definitions";
+import { handleChange } from "@utils/handleChange";
 
-import Field from "../Field";
-import Paragraph from "../../../typographies/Paragraph";
-
+import Field from "@components/Input/Field";
+import Paragraph from "@typographies/Paragraph";
 
 const Component = ({ state, setState, isValid, errorMessage }: FieldInput) => (
   <>

@@ -1,8 +1,8 @@
-import ContactInformation from "../ContactInformation";
-import Form from "../../../container/Form";
-import Heading from "../../../typographies/Heading";
-import Link from "../../Link";
-import Paragraph from "../../../typographies/Paragraph";
+import ContactInformation from "@components/Contact/ContactInformation";
+import Form from "@container/Form";
+import Link from "@components/Link";
+import Heading from "@typographies/Heading";
+import Paragraph from "@typographies/Paragraph";
 
 const Component = () => (
   <>

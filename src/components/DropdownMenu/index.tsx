@@ -1,9 +1,9 @@
-import { useClickOutside } from "../../hooks/useClickOutside";
+import { useClickOutside } from "@hooks/useClickOutside";
+import { useShouldOverflow } from "@hooks/useShouldOverflow";
 import { useRef, useState } from "react";
-import { useShouldOverflow } from "../../hooks/useShouldOverflow";
 
-import NavBarContent from "../NavBarContent";
-import NavBarIcons from "../../icons/NavBarIcons";
+import NavBarContent from "@components/NavBarContent";
+import NavBarIcons from "@icons/NavBarIcons";
 
 const Component = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
