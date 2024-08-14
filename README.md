@@ -1,34 +1,54 @@
-<h1 align="center">Portfolio</h1>
+# Astro Starter Kit: Basics
 
-<p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=ts,react,tailwind,vite" />
-  </a>
-</p>
+```sh
+npm create astro@latest -- --template basics
+```
 
-Hello and welcome to my portfolio ✌️
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
+[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
 
-I have a profound passion for web development, a journey that commenced through self-education. Every project and obstacle encountered further ignites my inspiration as I delve into novel technologies and confront intricate challenges. In tandem with my fervor for web development, I hold a steadfast dedication to knowledge dissemination. I enthusiastically contribute to the community by imparting the insights I've acquired.
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-There are two types of project in this portfolio.
+![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
 
-- On the one hand, the so-called "professional" projects where I apply all my knowledge and clean code to be as professional as possible in my approach.
+## 🚀 Project Structure
 
-- On the other hand, the so-called "experimental" projects where I learn new development technologies/tools.
+Inside of your Astro project, you'll see the following folders and files:
 
-Don't wait any longer! Immerse yourself in my world and let's take a journey together 😊
+```text
+/
+├── public/
+│   └── favicon.svg
+├── src/
+│   ├── components/
+│   │   └── Card.astro
+│   ├── layouts/
+│   │   └── Layout.astro
+│   └── pages/
+│       └── index.astro
+└── package.json
+```
 
-## Built with
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
-- Semantic HTML5 markup
-- Mobile-first workflow
-- TailwindCSS
-- React
-- TypeScript
-- EmailJS
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
 
-## Networks
+Any static assets, like images, can be placed in the `public/` directory.
 
-- Personnal website - [Portfolio](https://calcagno-loic.netlify.app/)
-- Frontend Mentor - [@CalcagnoLoic](https://www.frontendmentor.io/profile/CalcagnoLoic)
-- Linkedin - [LinkedIn](https://www.linkedin.com/in/loic-calcagno/)
+## 🧞 Commands
+
+All commands are run from the root of the project, from a terminal:
+
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
+
+## 👀 Want to learn more?
+
+Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
