@@ -1,0 +1,51 @@
+---
+import type { navLinkProps } from "../definitions";
+import photo from "../assets/img/photo.webp?url";
+import Image from "astro:assets";
+
+const navItems: navLinkProps[] = [
+  {
+    name: "Accueil",
+    link: "/",
+  },
+  {
+    name: "Projets",
+    link: "/Projets",
+  },
+  {
+    name: "Expérimentations",
+    link: "/Experimentations",
+  },
+  {
+    name: "Expertise",
+    link: "/Expertise",
+  },
+  {
+    name: "Contact",
+    link: "/Contact",
+  },
+];
+---
+
+<div class="flex justify-between">
+  <div class="flex">
+    <span class="text-athensGray font-[sofia] text-4xl">Portfolio |</span>
+    <img
+      src={photo}
+      alt="Bienvenue dans mon portfolio"
+      class="ml-4 h-10 w-10 rounded-full"
+    />
+  </div>
+
+  <nav
+    class="text-athensGray hidden list-none gap-6 self-center font-[bellefair] text-2xl lg:flex"
+  >
+    {
+      navItems.map((item) => (
+        <li>
+          <a href={item.link}>{item.name}</a>
+        </li>
+      ))
+    }
+  </nav>
+</div>
