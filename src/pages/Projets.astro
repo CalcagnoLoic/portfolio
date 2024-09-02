@@ -1,5 +1,69 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import GridLayout from "../layouts/GridLayout.astro";
+import { Projects } from "../data/Projects";
+import SkillsIcons from "../icons/SkillsIcons";
+import type { SkillsProps } from "../definitions";
+import Link from "../components/Link.astro";
+import NetworkIcons from "../icons/NetworkIcons";
+
+const pageTitle = "Mes projets";
 ---
 
-<BaseLayout />
+<BaseLayout pageTitle={pageTitle}>
+  <div class="mt-8 text-center text-athensGray lg:mt-20 lg:text-start">
+    <h1 class="font-[sofia] text-3xl lg:text-6xl">Voici mes projets</h1>
+    <p class="mt-8 lg:mt-12">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus velit
+      aliquid vero sit tempore alias sed animi deleniti possimus tempora nisi,
+      ipsam facilis pariatur quia illo iste cupiditate ab voluptate!
+    </p>
+  </div>
+
+  <GridLayout>
+    {
+      Projects.map((project) => (
+        <div
+          class="rounded-2xl bg-blue-700 p-5 text-athensGray"
+          id={project.projectId}
+        >
+          <a href={project.projectWebsite} target="_blank">
+            <img
+              src={project.projectIllustration}
+              alt={project.projectTitle}
+              class="rounded-2xl"
+            />
+          </a>
+          <div class="flex justify-between">
+            <h2 class="mt-5 font-[sofia] text-2xl">{project.projectTitle}</h2>
+            {project.projectStatus && (
+              <span class="bg-torchRed self-center rounded-2xl px-2 py-1 font-[bellefair] font-bold uppercase md:mt-0">
+                🛠️ in progress 🛠️
+              </span>
+            )}
+          </div>
+
+          <div class="mt-5 flex justify-between">
+            <div class="flex gap-5">
+              {project.projectStack.map((icon) => (
+                <SkillsIcons kind={icon} />
+              ))}
+            </div>
+            <div class="flex gap-5">
+              {project.projectLink.map((link) => (
+                <a
+                  href={link.href}
+                  target="_blank"
+                  class="w-[30px] self-center"
+                  aria-label={`Go to ${link.kind}`}
+                >
+                  <NetworkIcons kind={link.kind} css={link.css || ""} />
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
+      ))
+    }
+  </GridLayout>
+</BaseLayout>

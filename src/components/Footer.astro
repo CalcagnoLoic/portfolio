@@ -1,15 +1,20 @@
 ---
-import SocialMediaIcons from "../icons/SocialMediaIcons";
+import NetworkIcons from "../icons/NetworkIcons";
 
 const date = new Date().getFullYear();
 ---
 
-<footer class="text-athensGray border-t-2 pt-3 border-t-athensGray flex justify-between">
+<footer
+  class="flex justify-between border-t-2 border-t-athensGray pt-3 text-athensGray lg:my-12"
+>
   <span>&copy; Portfolio Calcagno Loïc - {date} </span>
 
-  <div class="flex self-center gap-5">
-    <SocialMediaIcons kind="gmail" />
-    <SocialMediaIcons kind="linkedin" />
-    <SocialMediaIcons kind="github" />
+  <div class="flex gap-5 self-center">
+    <NetworkIcons kind="gmail" target="mailto:calcagnoloic93@gmail.com" />
+    <NetworkIcons
+      kind="linkedin"
+      target="https://www.linkedin.com/in/loic-calcagno/"
+    />
+    <NetworkIcons kind="github" target="https://github.com/CalcagnoLoic" />
   </div>
 </footer>
