@@ -3,12 +3,6 @@ export type navLinkProps = {
   link: string;
 };
 
-interface ElementProps {
-  css?: string;
-  content?: string | JSX.Element;
-  id?: string;
-}
-
 export type Stack = {
   kind:
     | "react"
