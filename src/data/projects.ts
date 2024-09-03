@@ -1,4 +1,26 @@
-export const Projects = [
+import type { Project } from "../definitions";
+
+export const Projects: Project[] = [
+  {
+    projectId: "25A#za9",
+    projectIllustration: "src/assets/img/invoice-app.webp",
+    projectWebsite: "",
+    projectTitle: "Invoice App",
+    projectStatus: true,
+    projectStack: ["react", "react-router", "python", "docker"],
+    projectLink: [
+      {
+        href: "https://github.com/CalcagnoLoic/invoice-app-web",
+        kind: "github",
+        css: "w-8 h-8",
+      },
+      {
+        href: "https://github.com/CalcagnoLoic/invoice-app-server",
+        kind: "github",
+        css: "w-8 h-8",
+      },
+    ],
+  },
   {
     projectId: "d$i1mf*",
     projectIllustration: "src/assets/img/catwiki.webp",

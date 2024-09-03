@@ -3,14 +3,13 @@ export type navLinkProps = {
   link: string;
 };
 
-
 interface ElementProps {
   css?: string;
   content?: string | JSX.Element;
   id?: string;
 }
 
-export interface SkillsProps extends ElementProps {
+export type Stack = {
   kind:
     | "react"
     | "ts"
@@ -33,7 +32,22 @@ export interface SkillsProps extends ElementProps {
 
 export type NetworkIconsProps = {
   kind: "linkedin" | "github" | "gmail" | "website" | "storybook";
-  isDarkBackground?: boolean;
   css?: string;
-  target?: string
+  target?: string;
+};
+
+type ProjectLink = {
+  href: string;
+  kind: "github" | "website";
+  css: string;
+};
+
+export type Project = {
+  projectId: string;
+  projectIllustration: string;
+  projectWebsite: string;
+  projectTitle: string;
+  projectStatus: boolean;
+  projectStack: string[];
+  projectLink: ProjectLink[];
 };

@@ -1,11 +1,10 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import GridLayout from "../layouts/GridLayout.astro";
-import { Projects } from "../data/Projects";
 import SkillsIcons from "../icons/SkillsIcons";
-import type { SkillsProps } from "../definitions";
-import Link from "../components/Link.astro";
 import NetworkIcons from "../icons/NetworkIcons";
+import { Projects } from "../data/projects";
+import type { Stack } from "../definitions";
 
 const pageTitle = "Mes projets";
 ---
@@ -37,28 +36,25 @@ const pageTitle = "Mes projets";
           <div class="flex justify-between">
             <h2 class="mt-5 font-[sofia] text-2xl">{project.projectTitle}</h2>
             {project.projectStatus && (
-              <span class="bg-torchRed self-center rounded-2xl px-2 py-1 font-[bellefair] font-bold uppercase md:mt-0">
-                🛠️ in progress 🛠️
+              <span class="bg-torchRed self-end rounded-2xl px-2 py-1 font-[bellefair] font-bold uppercase md:mt-0">
+                🛠️ en cours 🛠️
               </span>
             )}
           </div>
 
-          <div class="mt-5 flex justify-between">
+          <div class="mt-5 flex flex-col items-center lg:flex-row lg:justify-between">
             <div class="flex gap-5">
               {project.projectStack.map((icon) => (
-                <SkillsIcons kind={icon} />
+                <SkillsIcons kind={icon as Stack["kind"]} />
               ))}
             </div>
-            <div class="flex gap-5">
+            <div class="mt-5 flex gap-5 lg:mt-0">
               {project.projectLink.map((link) => (
-                <a
-                  href={link.href}
-                  target="_blank"
-                  class="w-[30px] self-center"
-                  aria-label={`Go to ${link.kind}`}
-                >
-                  <NetworkIcons kind={link.kind} css={link.css || ""} />
-                </a>
+                <NetworkIcons
+                  kind={link.kind}
+                  css={link.css || ""}
+                  target={link.href}
+                />
               ))}
             </div>
           </div>

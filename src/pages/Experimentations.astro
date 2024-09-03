@@ -1,5 +1,65 @@
 ---
+import NetworkIcons from "../icons/NetworkIcons";
+import SkillsIcons from "../icons/SkillsIcons";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import GridLayout from "../layouts/GridLayout.astro";
+import { ExperimentationsProject } from "../data/experimentation";
+const pageTitle = "Expérimentations"
 ---
 
-<BaseLayout />
+<BaseLayout pageTitle={pageTitle}>
+  <div class="mt-8 text-center text-athensGray lg:mt-20 lg:text-start">
+    <h1 class="font-[sofia] text-3xl lg:text-6xl">
+      Voici mes expérimentations
+    </h1>
+    <p class="mt-8 lg:mt-12">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus velit
+      aliquid vero sit tempore alias sed animi deleniti possimus tempora nisi,
+      ipsam facilis pariatur quia illo iste cupiditate ab voluptate!
+    </p>
+  </div>
+
+  <GridLayout>
+    {
+      ExperimentationsProject.map((project) => (
+        <div
+          class="rounded-2xl bg-blue-700 p-5 text-athensGray"
+          id={project.projectId}
+        >
+          <a href={project.projectWebsite} target="_blank">
+            <img
+              src={project.projectIllustration}
+              alt={project.projectTitle}
+              class="rounded-2xl"
+            />
+          </a>
+          <div class="flex justify-between">
+            <h2 class="mt-5 font-[sofia] text-2xl">{project.projectTitle}</h2>
+            {project.projectStatus && (
+              <span class="bg-torchRed self-end rounded-2xl px-2 py-1 font-[bellefair] font-bold uppercase md:mt-0">
+                🛠️ en cours 🛠️
+              </span>
+            )}
+          </div>
+
+          <div class="mt-5 flex flex-col items-center lg:flex-row lg:justify-between">
+            <div class="flex gap-5">
+              {project.projectStack.map((icon) => (
+                <SkillsIcons kind={icon} />
+              ))}
+            </div>
+            <div class="mt-5 flex gap-5 lg:mt-0">
+              {project.projectLink.map((link) => (
+                <NetworkIcons
+                  kind={link.kind}
+                  css={link.css || ""}
+                  target={link.href}
+                />
+              ))}
+            </div>
+          </div>
+        </div>
+      ))
+    }
+  </GridLayout>
+</BaseLayout>

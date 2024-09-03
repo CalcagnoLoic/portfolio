@@ -5,6 +5,8 @@ export default {
     extend: {
       colors: {
         athensGray: "#FCFCFD",
+        bunting: "#172554",
+        torchRed: "#FF1D40",
       },
     },
   },
