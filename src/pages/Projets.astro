@@ -23,39 +23,45 @@ const pageTitle = "Mes projets";
     {
       Projects.map((project) => (
         <div
-          class="rounded-2xl bg-blue-700 p-5 text-athensGray"
           id={project.projectId}
+          class="relative rounded-2xl border-2 border-athensGray p-5 text-athensGray shadow-md shadow-athensGray/40"
         >
-          <a href={project.projectWebsite} target="_blank">
-            <img
-              src={project.projectIllustration}
-              alt={project.projectTitle}
-              class="rounded-2xl"
-            />
-          </a>
-          <div class="flex justify-between">
-            <h2 class="mt-5 font-[sofia] text-2xl">{project.projectTitle}</h2>
-            {project.projectStatus && (
-              <span class="bg-torchRed self-end rounded-2xl px-2 py-1 font-[bellefair] font-bold uppercase md:mt-0">
-                🛠️ en cours 🛠️
-              </span>
-            )}
-          </div>
+          <div class="absolute inset-0 rounded-2xl bg-black opacity-65" />
 
-          <div class="mt-5 flex flex-col items-center lg:flex-row lg:justify-between">
-            <div class="flex gap-5">
-              {project.projectStack.map((icon) => (
-                <SkillsIcons kind={icon as Stack["kind"]} />
-              ))}
-            </div>
-            <div class="mt-5 flex gap-5 lg:mt-0">
-              {project.projectLink.map((link) => (
-                <NetworkIcons
-                  kind={link.kind}
-                  css={link.css || ""}
-                  target={link.href}
+          <div class="relative rounded-t-2xl">
+            <a href={project.projectWebsite} target="_blank">
+              <div class="overflow-hidden rounded-2xl">
+                <img
+                  src={project.projectIllustration}
+                  alt={project.projectTitle}
+                  class="rounded-2xl transition duration-300 ease-in-out hover:scale-110"
                 />
-              ))}
+              </div>
+            </a>
+            <div class="flex justify-between">
+              <h2 class="mt-7 font-[sofia] text-2xl">{project.projectTitle}</h2>
+              {project.projectStatus && (
+                <span class="bg-torchRed self-end rounded-2xl px-2 py-1 font-[bellefair] font-bold uppercase md:mt-0">
+                  🛠️ en cours 🛠️
+                </span>
+              )}
+            </div>
+
+            <div class="mt-7 flex flex-col items-center lg:flex-row lg:justify-between">
+              <div class="flex gap-5">
+                {project.projectStack.map((icon) => (
+                  <SkillsIcons kind={icon as Stack["kind"]} />
+                ))}
+              </div>
+              <div class="mt-5 flex gap-5 lg:mt-0">
+                {project.projectLink.map((link) => (
+                  <NetworkIcons
+                    kind={link.kind}
+                    css={link.css || ""}
+                    target={link.href}
+                  />
+                ))}
+              </div>
             </div>
           </div>
         </div>
