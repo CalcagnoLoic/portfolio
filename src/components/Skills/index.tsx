@@ -8,7 +8,7 @@ const Component = () => (
     <Heading
       kind="h2"
       css="mb-10 text-center font-[sofia] text-2xl underline md:text-4xl"
-      content="What can i do for you?"
+      content="Que puis-je faire pour vous?"
       id="skills"
     />
 

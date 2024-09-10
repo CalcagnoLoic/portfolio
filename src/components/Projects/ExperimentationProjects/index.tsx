@@ -15,7 +15,7 @@ const Component = () => {
         kind="h2"
         id="experimentations"
         css="text-center font-[sofia] text-2xl md:text-4xl underline"
-        content="Venturing into the Unknown"
+        content="S'aventurer dans l'inconnu"
       />
 
       {displayedData && (

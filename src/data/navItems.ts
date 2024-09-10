@@ -3,17 +3,17 @@ import { navItem } from "@definitions/definitions";
 export const navItems: navItem[] = [
   {
     id: "r*sIHGR",
-    content: "Projects",
+    content: "Projets",
     href: "#projects",
   },
   {
     id: "xb9lRdH",
-    content: "Experimentations",
+    content: "Expérimentations",
     href: "#experimentations",
   },
   {
     id: "Pd-A7s^",
-    content: "Skills",
+    content: "Compétences",
     href: "#skills",
   },
   {
