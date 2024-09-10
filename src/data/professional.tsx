@@ -11,7 +11,7 @@ export const Professional: Projects[] = [
     projectIllustration: "assets/img/invoice-app.webp",
     projectTitle: "Invoice App",
     projectDescription:
-      "Check out my new fullstack project soon! However, you can now launch it on your local machines (procedures available in the readme). See the two github icons below",
+      "Découvrez bientôt mon nouveau projet fullstack ! Cependant, vous pouvez le lancer sur vos machines locales (procédures disponibles dans le readme). Voir les deux icônes github ci-dessous.",
     projectStack: (
       <>
         <SkillsIcons kind="react" />
@@ -61,7 +61,7 @@ export const Professional: Projects[] = [
     projectIllustration: "assets/img/catwiki.webp",
     projectTitle: "CatWiki",
     projectDescription:
-      "Welcome cat lovers to this site, where you can delve into the characteristics of your favorite breeds. There's also an article on why you should adopt a cat.",
+      "Bienvenue aux amoureux des chats sur ce site, où vous pourrez découvrir les caractéristiques de vos races préférées. Vous y trouverez également un article sur les raisons d'adopter un chat.",
     projectStack: (
       <>
         <div className="rounded bg-white px-1">
@@ -102,7 +102,7 @@ export const Professional: Projects[] = [
     projectIllustration: "assets/img/planets-fact.webp",
     projectTitle: "Planets fact",
     projectDescription:
-      "Dive into the properties of our solar system's planets with this interactive SPA. Built with AstroJS, this application offers a detailed exploration of each planet's characteristics.",
+      "Plongez dans les propriétés des planètes de notre système solaire avec cette SPA. Construite avec AstroJS, ce site offre une exploration détaillée des caractéristiques de chaque planète.",
     projectStack: (
       <>
         <SkillsIcons kind="astro" bgLight={false} />
@@ -142,7 +142,7 @@ export const Professional: Projects[] = [
     projectIllustration: "assets/img/dictionary.webp",
     projectTitle: "Dictionary webapp",
     projectDescription:
-      "Access a plethora of word definitions and pronunciations with this online dictionary. Built with React and TypeScript, it leverages modern web technologies for a seamless user experience.",
+      "Accédez à une pléthore de définitions et de prononciations de mots avec ce dictionnaire en ligne. Construit avec React et TypeScript, il tire parti des technologies web modernes.",
     projectStack: (
       <>
         <SkillsIcons kind="react" />
@@ -189,7 +189,7 @@ export const Professional: Projects[] = [
     projectIllustration: "assets/img/sneakers.webp",
     projectTitle: "E-commerce sneakers",
     projectDescription:
-      "Shop for sneakers in this e-commerce application built with Component Design Development and Storybook. Features include adding and removing items from the cart using React context.",
+      "Achetez des baskets dans cet e-commerce construit avec le CDD et Storybook. Les fonctionnalités incluent l'ajout et la suppression d'articles du panier en utilisant le contexte React.",
     projectStack: (
       <>
         <SkillsIcons kind="react" />
@@ -236,7 +236,7 @@ export const Professional: Projects[] = [
     projectIllustration: "assets/img/password-generator.webp",
     projectTitle: "Password generator",
     projectDescription:
-      "Generate random passwords with this TypeScript application. Customize passwords with upper/lowercase letters, numbers, and symbols, and get notified about their strength.",
+      "Générez des mots de passe aléatoires! Personnalisez vos mots de passe avec des lettres majuscules/minuscules, des chiffres et des symboles, et soyez informé de leur force.",
     projectStack: (
       <>
         <SkillsIcons kind="ts" />

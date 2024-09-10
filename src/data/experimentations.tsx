@@ -11,7 +11,7 @@ export const Experimentation: Projects[] = [
     projectIllustration: "assets/img/crowdfund.webp",
     projectTitle: "Crowdfunding webapp",
     projectDescription:
-      "Explore this participatory funding product page where users can select offers to increase funding and bookmark products they wish to support. Built with React, TypeScript, and TailwindCSS.",
+      "Explorez cette page de produits de financement participatif où les utilisateurs peuvent sélectionner des offres pour augmenter le financement et mettre en signet les produits qu'ils souhaitent soutenir. ",
     projectStack: (
       <>
         <SkillsIcons kind="react" />
@@ -54,7 +54,7 @@ export const Experimentation: Projects[] = [
     projectIllustration: "assets/img/calculator-app.webp",
     projectTitle: "Calculator app",
     projectDescription:
-      "Build and interact with this calculator app, developed to enhance my TypeScript and unit testing skills. The project follows clean code practices for maintainability.",
+      "Calculatrice développée pour améliorer mes compétences en TypeScript et en tests unitaires. Le projet suit des pratiques de clean code pour la maintenabilité.",
     projectStack: (
       <>
         <SkillsIcons kind="ts" />
@@ -88,7 +88,7 @@ export const Experimentation: Projects[] = [
     projectIllustration: "assets/img/box-generator.webp",
     projectTitle: "Boxy generator",
     projectDescription:
-      "Create CSS box-shadow code effortlessly with this generator. This project helped me learn Redux toolkit and state management concepts using React.",
+      "Créez la propriété CSS box-shadow sans effort avec ce générateur. Ce projet m'a permis d'apprendre l'outil Redux et les concepts de gestion d'état en utilisant React.",
     projectStack: (
       <>
         <SkillsIcons kind="react" />

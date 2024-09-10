@@ -8,11 +8,11 @@ const Component = ({ state, setState, isValid, errorMessage }: FieldInput) => (
   <div className="input-container lg:w-1/2">
     <Field
       css="input-field"
-      content="Name"
+      content="Nom"
       isLabel={true}
       isTextArea={false}
       type="text"
-      placeholder="Name"
+      placeholder="Nom"
       inputCSS="rounded-md border-2 p-2 w-full"
       name="name"
       value={state}

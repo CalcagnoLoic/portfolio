@@ -9,7 +9,7 @@ export const skills: Skills[] = [
     skillsTitle: "Frontend",
     skillsIcons: <GeneralIcons kind="design" />,
     skillsPresentation:
-      "I offer my expertise in accurately translating frontend designs from Figma prototypes, as well as crafting custom designs aligned with specific design guidelines and principles.",
+      "J'offre mon expertise dans la reproduction précise des prototypes Figma, ainsi que dans l'élaboration de conceptions personnalisées alignées sur des lignes directrices et des principes de conception spécifiques.",
     skills: (
       <>
         <SkillsIcons kind="react" />
@@ -29,7 +29,7 @@ export const skills: Skills[] = [
     skillsTitle: "Backend",
     skillsIcons: <GeneralIcons kind="database" />,
     skillsPresentation:
-      "I offer services with the ability to implement architectural patterns, including MVC and MVT. Moreover, I am proficient in using containers to enhance application management and ensure portability.",
+      "Je propose mes services afin de mettre en œuvre des modèles architecturaux, notamment MVC/MVT. En outre, je sais utiliser les conteneurs pour améliorer la gestion des applications et garantir la portabilité.",
     skills: (
       <>
         <SkillsIcons kind="python" />
@@ -43,10 +43,10 @@ export const skills: Skills[] = [
   },
   {
     id: "-w*Z4el",
-    skillsTitle: "Best Practice",
+    skillsTitle: "Bonnes pratiques",
     skillsIcons: <GeneralIcons kind="practise" />,
     skillsPresentation:
-      "In every project, I focus on mobile-first development, scalability and unit test automation. In addition, I apply Git for version control and teamwork for efficient code base management.",
+      "Dans chaque projet, je me concentre sur le développement mobile, l'évolution et l'automatisation des tests unitaires. De plus, l'utilisation de Git permet une gestion efficace du code.",
     skills: (
       <>
         <SkillsIcons kind="git" />

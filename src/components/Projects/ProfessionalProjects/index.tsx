@@ -20,7 +20,7 @@ const Component = () => {
     <>
       <Heading
         kind="h2"
-        content="Dive into my latest creations"
+        content="Plongez dans mes dernières créations"
         id="projects"
         css="text-center font-[sofia] text-2xl underline md:text-4xl"
       />
@@ -58,7 +58,7 @@ const Component = () => {
                       <Paragraph
                         kind="span"
                         css="font-[bellefair] uppercase bg-torchRed md:self-center rounded-2xl py-1 px-2 mt-3 md:mt-0 text-center font-bold"
-                        content="🛠️ in progress 🛠️"
+                        content="🛠️ en cours 🛠️"
                       />
                     )}
                   </div>

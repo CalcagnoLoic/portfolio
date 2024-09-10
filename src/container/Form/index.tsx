@@ -92,7 +92,7 @@ const Component = () => {
         isLabel={false}
         isTextArea={false}
         type="submit"
-        value="Contact Me 📧"
+        value="Contactez moi 📧"
         inputCSS="font-[bellefair] bg-torchRed px-10 py-3 text-2xl rounded-xl w-full text-center cursor-pointer hover:text-tuatara hover:bg-white duration-300 ease-in-out text-white"
       />
 

@@ -9,7 +9,7 @@ const Component = () => (
     <Heading
       kind="h2"
       id="contact"
-      content="Get in touch"
+      content="Restons en contact!"
       css=" text-center font-[sofia] text-2xl underline md:text-4xl"
     />
 
@@ -18,15 +18,13 @@ const Component = () => (
         <div className="flex flex-col">
           <Paragraph
             kind="span"
-            content="If you want more information about me or my work, don't hesitate
-              to contact me with this contact form or directly on my email
-              address."
+            content="Si vous voulez plus d'informations à propos de moi ou de mon travail, n'hésitez pas à me contacter  directement par mail ou via ce formulaire de contact."
             css="text-lg"
           />
 
           <Paragraph
             kind="span"
-            content="I will reply as soon as possible."
+            content="J'y répondrai aussi vite que possible."
             css="mt-5 text-lg"
           />
         </div>
@@ -43,7 +41,7 @@ const Component = () => (
           />
           <ContactInformation
             icon="🗺️"
-            content="Belgium, Hainaut, 7170 La Hestre"
+            content="Belgique, Hainaut, 7170 La Hestre"
           />
         </div>
       </article>
