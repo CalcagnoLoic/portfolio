@@ -4,14 +4,14 @@ import "react-toastify/dist/ReactToastify.css";
 export const notify = (state: "success" | "error" | "missing") => {
   switch (state) {
     case "success":
-      toast.success("Mail send with succes!", {
+      toast.success("Email envoyé avec succès!", {
         position: "bottom-right",
       });
       break;
 
     case "error":
       toast.error(
-        "Oops, there are an error with servor, try later or contact me by email.",
+        "Oops, une erreur est survenue sur le serveur. Réessayez plus tard ou contactez moi par mail directement.",
         {
           position: "bottom-right",
         },
@@ -19,7 +19,7 @@ export const notify = (state: "success" | "error" | "missing") => {
       break;
 
     case "missing":
-      toast.warn("You have probably forgotten to fill in some information ", {
+      toast.warn("Vous avez probablement oublié de remplir une information!", {
         position: "bottom-right",
       });
       break;
