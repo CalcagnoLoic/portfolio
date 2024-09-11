@@ -52,7 +52,8 @@ const Component = () => {
         setMessage("");
         notify("success");
       })
-      .catch(() => {
+      .catch((error) => {
+        console.error("Error sending email:", error);
         notify("error");
       });
   };

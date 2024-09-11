@@ -88,7 +88,7 @@ const Component = () => {
             onClick={() => handleMoreProject(setVisibleProject)}
           >
             <span className="whitespace-pre-wrap text-center font-[bellefair] text-2xl font-medium leading-none tracking-tight text-gallery lg:text-lg dark:from-gallery dark:to-slate-900/10">
-              Load More...
+              Voir plus de projets...
             </span>
           </ShimmerButton>
         </div>
