@@ -11,20 +11,20 @@ export const validateForm = ({ name, email, message }: ValidateForm) => {
   };
 
   if (!name || name.trim() === "") {
-    errors.NameEmpty = "The field name is required";
+    errors.NameEmpty = "Le nom est requis";
     isValid = false;
   }
 
   if (!email || email.trim() === "") {
-    errors.EmailEmpty = "The field email is required";
+    errors.EmailEmpty = "L'email est requis";
     isValid = false;
   } else if (!re.test(email)) {
-    errors.EmailFormat = "Wrong format for password";
+    errors.EmailFormat = "Mauvais format d'email";
     isValid = false;
   }
 
   if (!message || message.trim() === "") {
-    errors.MessageEmpty = "The field message is required";
+    errors.MessageEmpty = "Le message est requis";
     isValid = false;
   }
 

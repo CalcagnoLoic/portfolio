@@ -73,7 +73,7 @@ describe("validateForm Unit Test Suite", () => {
         email: "test@example.com",
         message: "Hello, World!",
       }).errors.NameEmpty,
-    ).toBe("The field name is required");
+    ).toBe("Le nom est requis");
   });
 
   it("should return an error message if email's field is empty", () => {
@@ -83,7 +83,7 @@ describe("validateForm Unit Test Suite", () => {
         email: "",
         message: "Hello, World!",
       }).errors.EmailEmpty,
-    ).toBe("The field email is required");
+    ).toBe("L'email est requis");
   });
 
   it("should return an error message if message's field is empty", () => {
@@ -93,7 +93,7 @@ describe("validateForm Unit Test Suite", () => {
         email: "test@example.com",
         message: "",
       }).errors.MessageEmpty,
-    ).toBe("The field message is required");
+    ).toBe("Le message est requis");
   });
 
   it("should return an error message if name's field is empty", () => {
@@ -103,6 +103,6 @@ describe("validateForm Unit Test Suite", () => {
         email: "test@example",
         message: "Hello, World!",
       }).errors.EmailFormat,
-    ).toBe("Wrong format for password");
+    ).toBe("Mauvais format d'email");
   });
 });
