@@ -179,9 +179,9 @@ const Icons = ({ kind }: GeneralIconsProps) => {
     case "practise":
       return (
         <svg
-          width="75"
+          width="40"
           height="40"
-          viewBox="0 0 45 50"
+          viewBox="0 0 60 40"
           fill="#FFF"
           className="-mt-3"
         >

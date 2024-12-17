@@ -1,7 +1,7 @@
 import { Skills } from "@definitions/definitions";
 
-import GeneralIcons from "@icons/GeneralIcons";
-import SkillsIcons from "@icons/SkillsIcons";
+import GeneralIcons from "@icons/GeneralIcons/GeneralIcons";
+import SkillsIcons from "@icons/SkillsIcons/SkillsIcons";
 
 export const skills: Skills[] = [
   {
@@ -34,8 +34,8 @@ export const skills: Skills[] = [
       <>
         <SkillsIcons kind="python" />
         <SkillsIcons kind="django" />
-        <SkillsIcons kind="flask" />
         <SkillsIcons kind="fastapi" />
+        <SkillsIcons kind="nodejs" />
         <SkillsIcons kind="docker" />
         <SkillsIcons kind="sql" />
       </>

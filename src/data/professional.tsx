@@ -1,11 +1,11 @@
 import { Projects } from "@definitions/definitions";
 
-import Link from "@components/Link";
-import NetworkIcons from "@icons/NetworkIcons";
-import SkillsIcons from "@icons/SkillsIcons";
+import Link from "@components/Link/Link";
+import NetworkIcons from "@icons/NetworkIcons/NetworkIcons";
+import SkillsIcons from "@icons/SkillsIcons/SkillsIcons";
 
 export const Professional: Projects[] = [
-  {
+  /*   {
     id: "25A#za9",
     inProgress: true,
     projectIllustration: "assets/img/invoice-app.webp",
@@ -54,7 +54,7 @@ export const Professional: Projects[] = [
         />
       </>
     ),
-  },
+  }, */
   {
     id: "d$i1mf*",
     inProgress: false,
