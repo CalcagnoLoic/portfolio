@@ -1,14 +1,14 @@
 import { ErrorField } from "@definitions/definitions";
-import { notify } from "@utils/toastMessage";
+import { notify } from "@utils/toastMessage/toastMessage";
 import { sendForm } from "@emailjs/browser";
 import { ToastContainer, Zoom } from "react-toastify";
 import { useState } from "react";
-import { validateForm } from "@utils/validateForm";
+import { validateForm } from "@utils/validateForm/validateForm";
 
-import EmailField from "@components/Input/EmailField";
-import Field from "@components/Input/Field";
-import MessageField from "@components/Input/MessageField";
-import NameField from "@components/Input/NameField";
+import EmailField from "@components/Input/EmailField/EmailField";
+import Field from "@components/Input/Field/Field";
+import MessageField from "@components/Input/MessageField/MessageField";
+import NameField from "@components/Input/NameField/NameField";
 
 const Component = () => {
   const [name, setName] = useState<string>("");
@@ -94,7 +94,7 @@ const Component = () => {
         isTextArea={false}
         type="submit"
         value="Contactez moi 📧"
-        inputCSS="font-[bellefair] bg-torchRed px-10 py-3 text-2xl rounded-xl w-full text-center cursor-pointer hover:text-tuatara hover:bg-white duration-300 ease-in-out text-white"
+        inputCSS="font-[bellefair] bg-torchRed px-10 py-3 text-2xl rounded-xl w-full text-center cursor-pointer  hover:bg-tuatara duration-300 ease-in-out text-white"
       />
 
       <ToastContainer closeButton={false} transition={Zoom} />

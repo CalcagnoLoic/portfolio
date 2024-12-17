@@ -1,7 +1,7 @@
 import { skills } from "@data/skills";
 
-import Heading from "@typographies/Heading";
-import Paragraph from "@typographies/Paragraph";
+import Heading from "@typographies/Heading/Heading";
+import Paragraph from "@typographies/Paragraph/Paragraph";
 
 const Component = () => (
   <>
@@ -12,19 +12,21 @@ const Component = () => (
       id="skills"
     />
 
-    <div className="container grid h-full grid-cols-1 gap-5 text-white md:grid-cols-2 lg:grid-cols-3">
+    <div className="grid h-full grid-cols-1 gap-5 text-white md:grid-cols-2 lg:grid-cols-3">
       {skills.map((item) => (
         <section
           key={item.id}
           className="items-stretch rounded-xl bg-tuatara p-5"
         >
-          <Heading
-            kind="h3"
-            content={item.skillsTitle}
-            css="text-center text-xl md:text-3xl font-[sofia]"
-          />
+          <div className="flex justify-center gap-3">
+            <Heading
+              kind="h3"
+              content={item.skillsTitle}
+              css="text-center text-xl md:text-3xl font-[sofia] self-center"
+            />
 
-          <div className="mt-5 flex justify-center">{item.skillsIcons}</div>
+            {/* <div className="self-center">{item.skillsIcons}</div> */}
+          </div>
 
           <Paragraph
             kind="p"

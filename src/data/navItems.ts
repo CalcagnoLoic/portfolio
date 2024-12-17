@@ -17,6 +17,11 @@ export const navItems: navItem[] = [
     href: "#skills",
   },
   {
+    id: "8cqagdj",
+    content: "Témoignages",
+    href: "#testimonials",
+  },
+  {
     id: "nXN9$.F",
     content: "Contact",
     href: "#contact",

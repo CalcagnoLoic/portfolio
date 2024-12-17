@@ -1,8 +1,8 @@
 import { useMobile } from "@hooks/useMobile";
 
-import DropdownMenu from "@components/DropdownMenu";
-import Heading from "@typographies/Heading";
-import NavBarContent from "@components/NavBarContent";
+import DropdownMenu from "@components/DropdownMenu/DropdownMenu";
+import Heading from "@typographies/Heading/Heading";
+import NavBarContent from "@components/NavBarContent/NavBarContent";
 
 const Component = () => {
   const isMobile = useMobile();

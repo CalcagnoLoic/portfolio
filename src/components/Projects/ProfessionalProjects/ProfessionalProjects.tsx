@@ -1,12 +1,12 @@
-import { handleMoreProject } from "@utils/showMoreProject";
+import { handleMoreProject } from "@utils/showMoreProject/showMoreProject";
 import { Professional } from "@data/professional";
 import { Projects } from "@definitions/definitions";
 import { useEffect, useState } from "react";
 
-import Link from "@components/Link";
-import Heading from "@typographies/Heading";
-import Paragraph from "@typographies/Paragraph";
-import ShimmerButton from "@components/MagicUI/shimmer-button";
+import Link from "@components/Link/Link";
+import Heading from "@typographies/Heading/Heading";
+import Paragraph from "@typographies/Paragraph/Paragraph";
+import ShimmerButton from "@components/MagicUI/shimmer-button/shimmer-button";
 
 const Component = () => {
   const [displayedData, setDisplayedData] = useState<Projects[]>(Professional);
@@ -26,7 +26,7 @@ const Component = () => {
       />
 
       {displayedData && (
-        <div className="container mt-5 grid grid-cols-1 gap-5 text-gallery md:grid-cols-2 2xl:grid-cols-3">
+        <div className="mt-5 grid grid-cols-1 gap-5 text-gallery md:grid-cols-2 2xl:grid-cols-3">
           {displayedData.map((item) => (
             <section
               key={item.id}

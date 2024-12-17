@@ -30,7 +30,8 @@ export interface SkillsProps extends ElementProps {
     | "react-router"
     | "astro"
     | "next"
-    | "actions";
+    | "actions"
+    | "nodejs";
   bgLight?: boolean;
 }
 
@@ -166,4 +167,15 @@ export interface ShimmerButtonProps
   background?: string;
   className?: string;
   children?: React.ReactNode;
+}
+
+export interface Testimonials {
+  id: string;
+  name: string;
+  position: string;
+  company: string;
+  skills: React.ReactNode;
+  text: string;
+  link?: string;
+  companyImg: string;
 }

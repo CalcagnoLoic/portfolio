@@ -1,8 +1,8 @@
-import { handleChange } from "@utils/handleChange";
+import { handleChange } from "@utils/handleChange/handleChange";
 import { MailFormatField } from "@definitions/definitions";
 
-import Field from "@components/Input/Field";
-import Paragraph from "@typographies/Paragraph";
+import Field from "@components/Input/Field/Field";
+import Paragraph from "@typographies/Paragraph/Paragraph";
 
 const Component = ({
   state,

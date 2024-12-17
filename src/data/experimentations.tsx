@@ -1,8 +1,8 @@
 import { Projects } from "@definitions/definitions";
 
-import Link from "@components/Link";
-import NetworkIcons from "@icons/NetworkIcons";
-import SkillsIcons from "@icons/SkillsIcons";
+import Link from "@components/Link/Link";
+import NetworkIcons from "@icons/NetworkIcons/NetworkIcons";
+import SkillsIcons from "@icons/SkillsIcons/SkillsIcons";
 
 export const Experimentation: Projects[] = [
   {

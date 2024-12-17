@@ -3,10 +3,10 @@ import { Typewriter } from "react-simple-typewriter";
 import CALCAGNO_LOIC_CV_en from "@public/CALCAGNO_LOIC_CV.pdf";
 import PICTURE from "@public/img/photo.webp";
 
-import GeneralIcons from "@icons/GeneralIcons";
-import Heading from "@typographies/Heading";
-import Link from "@components/Link";
-import Paragraph from "@typographies/Paragraph";
+import GeneralIcons from "@icons/GeneralIcons/GeneralIcons";
+import Heading from "@typographies/Heading/Heading";
+import Link from "@components/Link/Link";
+import Paragraph from "@typographies/Paragraph/Paragraph";
 
 const Component = () => (
   <section className="py-12">
@@ -26,7 +26,10 @@ const Component = () => (
               css="block mr-5 mb-5 xl:mb-0 xl:inline-block"
             />
             <Typewriter
-              words={["<développeur React/TypeScript... />", "__avec une expérience en Python.__"]}
+              words={[
+                "<développeur React/TypeScript... />",
+                "__avec une expérience en Python.__",
+              ]}
               loop
               cursor
             />
