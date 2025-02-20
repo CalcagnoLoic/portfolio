@@ -33,10 +33,6 @@ export const skills: Skills[] = [
     skills: (
       <>
         <SkillsIcons kind="python" />
-<<<<<<< HEAD
-=======
-        <SkillsIcons kind="django" />
->>>>>>> e17812e6a17c3536c262b726f1aac7ae86df01e1
         <SkillsIcons kind="fastapi" />
         <SkillsIcons kind="nodejs" />
         <SkillsIcons kind="docker" />

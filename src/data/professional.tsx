@@ -5,7 +5,7 @@ import NetworkIcons from "@icons/NetworkIcons/NetworkIcons";
 import SkillsIcons from "@icons/SkillsIcons/SkillsIcons";
 
 export const Professional: Projects[] = [
-  /*   {
+  {
     id: "25A#za9",
     category: "react-native-project",
     inProgress: true,
@@ -44,7 +44,7 @@ export const Professional: Projects[] = [
         />
       </>
     ),
-  }, */
+  },
   {
     id: "d$i1mf*",
     category: "next-project",
