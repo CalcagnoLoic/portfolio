@@ -13,7 +13,7 @@ const Component = () => (
       css=" text-center font-[sofia] text-2xl underline md:text-4xl"
     />
 
-    <section className="mt-5 flex flex-col items-center pb-5 lg:mt-2 lg:flex-row">
+    <section className="mt-5 flex flex-col items-center lg:mt-2 lg:flex-row">
       <article className="lg:mr-16">
         <div className="flex flex-col">
           <Paragraph

@@ -13,10 +13,10 @@ const Component = () => (
       id="testimonials"
     />
 
-    <div className="grid grid-cols-1 gap-5 text-tuatara md:grid-cols-2 lg:grid-cols-3">
+    <div className="grid grid-cols-1 gap-5 text-white md:grid-cols-2 lg:grid-cols-3 place-items-center">
       {testimonials.map((testimonial) => (
         <div
-          className="flex h-full flex-col rounded-xl bg-white p-8"
+          className="flex h-full flex-col rounded-xl bg-tuatara p-8 shadow-lg"
           key={testimonial.id}
         >
           <img

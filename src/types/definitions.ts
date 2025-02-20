@@ -49,6 +49,7 @@ export interface GeneralIconsProps extends ElementProps {
 
 export interface Projects {
   id: string;
+  category: string
   inProgress: boolean;
   projectIllustration: string;
   projectTitle: string;
