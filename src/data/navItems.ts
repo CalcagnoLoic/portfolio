@@ -7,11 +7,6 @@ export const navItems: navItem[] = [
     href: "#projects",
   },
   {
-    id: "xb9lRdH",
-    content: "Expérimentations",
-    href: "#experimentations",
-  },
-  {
     id: "Pd-A7s^",
     content: "Compétences",
     href: "#skills",

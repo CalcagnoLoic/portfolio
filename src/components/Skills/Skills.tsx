@@ -12,11 +12,11 @@ const Component = () => (
       id="skills"
     />
 
-    <div className="grid h-full grid-cols-1 gap-5 text-white md:grid-cols-2 lg:grid-cols-3">
+    <div className="grid h-full grid-cols-1 gap-5 text-tuatara md:grid-cols-2 lg:grid-cols-3">
       {skills.map((item) => (
         <section
           key={item.id}
-          className="items-stretch rounded-xl bg-tuatara p-5"
+          className="flex flex-col items-stretch rounded-xl bg-white p-5"
         >
           <div className="flex justify-center gap-3">
             <Heading
@@ -24,14 +24,12 @@ const Component = () => (
               content={item.skillsTitle}
               css="text-center text-xl md:text-3xl font-[sofia] self-center"
             />
-
-            {/* <div className="self-center">{item.skillsIcons}</div> */}
           </div>
 
           <Paragraph
             kind="p"
             content={item.skillsPresentation}
-            css="mt-5 text-center h-32"
+            css="mt-5 text-center h-fit flex-grow"
           />
 
           <div className="mt-5 flex justify-center gap-2 lg:gap-4">

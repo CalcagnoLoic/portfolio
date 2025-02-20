@@ -6,7 +6,7 @@ const Component = () => {
   const nowYear = new Date().getFullYear();
 
   return (
-    <footer className="flex flex-col bg-tuatara px-12  py-8 text-lg text-white md:flex-row md:justify-between md:px-32">
+    <footer className="flex flex-col bg-tuatara px-12  py-8 text-lg text-white md:flex-row md:justify-between md:px-32 border-t border-t-white">
       <Paragraph
         kind="p"
         css="text-center md:text-start"

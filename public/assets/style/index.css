@@ -44,7 +44,7 @@
   }
 
   .input-field {
-    @apply mb-1 font-semibold text-tuatara outline-none;
+    @apply mb-1 font-semibold text-white outline-none;
   }
   .no-scroll {
     @apply overflow-hidden;

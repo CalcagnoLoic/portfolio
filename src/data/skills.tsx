@@ -9,14 +9,14 @@ export const skills: Skills[] = [
     skillsTitle: "Frontend",
     skillsIcons: <GeneralIcons kind="design" />,
     skillsPresentation:
-      "J'offre mon expertise dans la reproduction précise des prototypes Figma, ainsi que dans l'élaboration de conceptions personnalisées alignées sur des lignes directrices et des principes de conception spécifiques.",
+      "Avec une expertise solide en React, je suis également à l’aise avec Next.js et Astro, bien que je les utilise de manière occasionnelle. Je maîtrise pleinement le développement de composants et la gestion d’état. Actuellement, je développe mes compétences en React Native pour aborder le développement d’applications mobiles.",
     skills: (
       <>
         <SkillsIcons kind="react" />
         <div className="rounded bg-white px-1">
           <SkillsIcons kind="next" />
         </div>
-        <SkillsIcons kind="astro" bgLight={false} />
+        <SkillsIcons kind="astro" bgLight={true} />
         <SkillsIcons kind="ts" />
         <SkillsIcons kind="js" />
         <SkillsIcons kind="storybook" />
@@ -29,11 +29,10 @@ export const skills: Skills[] = [
     skillsTitle: "Backend",
     skillsIcons: <GeneralIcons kind="database" />,
     skillsPresentation:
-      "Je propose mes services afin de mettre en œuvre des modèles architecturaux, notamment MVC/MVT. En outre, je sais utiliser les conteneurs pour améliorer la gestion des applications et garantir la portabilité.",
+      "Fort de mon expérience dans le développement backend, j’ai conçu des applications en appliquant des modèles architecturaux comme le MVC. J’ai aussi géré des APIs maison et utilisé Docker pour optimiser la gestion des applications et garantir leur portabilité.",
     skills: (
       <>
         <SkillsIcons kind="python" />
-        <SkillsIcons kind="django" />
         <SkillsIcons kind="fastapi" />
         <SkillsIcons kind="nodejs" />
         <SkillsIcons kind="docker" />
@@ -46,7 +45,7 @@ export const skills: Skills[] = [
     skillsTitle: "Bonnes pratiques",
     skillsIcons: <GeneralIcons kind="practise" />,
     skillsPresentation:
-      "Dans chaque projet, je me concentre sur le développement mobile, l'évolution et l'automatisation des tests unitaires. De plus, l'utilisation de Git permet une gestion efficace du code.",
+      "Je mets un accent particulier sur les bonnes pratiques en développement, en garantissant la qualité du code grâce à l'automatisation des tests unitaires et l'utilisation de Git. Mon expérience me permet de garantir une approche structurée et efficace pour chaque étape du cycle de vie d'une application.",
     skills: (
       <>
         <SkillsIcons kind="git" />

@@ -13,7 +13,7 @@ const Component = ({ state, setState, isValid, errorMessage }: FieldInput) => (
       isTextArea={false}
       type="text"
       placeholder="Nom"
-      inputCSS="rounded-md border-2 p-2 w-full"
+      inputCSS="rounded-md border-2 p-2 w-full "
       name="name"
       value={state}
       onChange={(e) => handleChange({ e, callback: setState })}

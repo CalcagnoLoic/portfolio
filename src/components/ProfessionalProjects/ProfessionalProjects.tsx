@@ -12,18 +12,20 @@ import FilterOption from "@components/FilterOption/FilterOption";
 const Component = () => {
   const [displayedData, setDisplayedData] = useState<Projects[]>(Professional);
   const [visibleProject, setVisibleProject] = useState<number>(3);
-  const [selected, setSelected] = useState<string>("all");
+  const [selected, setSelected] = useState<string[]>(["all"]);
+
 
   useEffect(() => {
     setDisplayedData(
-      Professional.filter((project) =>
-        selected === "all" ? true : project.category === selected,
+      Professional.filter(
+        (project) =>
+          selected.includes("all") || selected.includes(project.category),
       ).slice(0, visibleProject),
     );
   }, [visibleProject, selected]);
 
   const filteredProject = displayedData.filter((category) => {
-    return selected === "all" || selected === category.category;
+    return selected.includes("all") || selected.includes(category.category);
   });
 
   return (
@@ -38,7 +40,7 @@ const Component = () => {
       <FilterOption selected={selected} setSelected={setSelected} />
 
       {filteredProject && (
-        <div className="mt-5 grid grid-cols-1 gap-5 text-gallery md:grid-cols-2 2xl:grid-cols-3">
+        <div className="mt-5 grid grid-cols-1 gap-5 text-gallery md:grid-cols-2 lg:grid-cols-3">
           {filteredProject.map((item) => (
             <section
               key={item.id}
