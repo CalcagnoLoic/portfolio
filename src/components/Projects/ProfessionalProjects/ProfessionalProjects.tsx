@@ -7,14 +7,24 @@ import Link from "@components/Link/Link";
 import Heading from "@typographies/Heading/Heading";
 import Paragraph from "@typographies/Paragraph/Paragraph";
 import ShimmerButton from "@components/MagicUI/shimmer-button/shimmer-button";
+import FilterOption from "@components/FilterOption/FilterOption";
 
 const Component = () => {
   const [displayedData, setDisplayedData] = useState<Projects[]>(Professional);
   const [visibleProject, setVisibleProject] = useState<number>(3);
+  const [selected, setSelected] = useState<string>("all");
 
   useEffect(() => {
-    setDisplayedData(Professional.slice(0, visibleProject));
-  }, [visibleProject]);
+    setDisplayedData(
+      Professional.filter((project) =>
+        selected === "all" ? true : project.category === selected,
+      ).slice(0, visibleProject),
+    );
+  }, [visibleProject, selected]);
+
+  const filteredProject = displayedData.filter((category) => {
+    return selected === "all" || selected === category.category;
+  });
 
   return (
     <>
@@ -25,9 +35,11 @@ const Component = () => {
         css="text-center font-[sofia] text-2xl underline md:text-4xl"
       />
 
-      {displayedData && (
+      <FilterOption selected={selected} setSelected={setSelected} />
+
+      {filteredProject && (
         <div className="mt-5 grid grid-cols-1 gap-5 text-gallery md:grid-cols-2 2xl:grid-cols-3">
-          {displayedData.map((item) => (
+          {filteredProject.map((item) => (
             <section
               key={item.id}
               className="mt-8 h-full overflow-hidden drop-shadow-xl"
@@ -37,7 +49,7 @@ const Component = () => {
                   <img
                     src={item.projectIllustration}
                     alt={item.projectTitle}
-                    className="transform-gpu rounded-t-3xl border-[1px] border-tuatara transition duration-700 ease-in-out hover:scale-110"
+                    className="w-full rounded-t-3xl border-[1px] border-tuatara object-contain transition duration-700 ease-in-out hover:scale-110"
                     loading="lazy"
                   />
                 }
@@ -47,6 +59,7 @@ const Component = () => {
               />
 
               <article className="texte-gallery items-stretch overflow-hidden rounded-b-3xl bg-tuatara p-5">
+                <span className="hidden">{item.category}</span>
                 <div className="md:h-52 2xl:h-44">
                   <div className="flex flex-col justify-between md:flex-row">
                     <Heading

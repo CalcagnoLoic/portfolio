@@ -5,29 +5,26 @@ import NetworkIcons from "@icons/NetworkIcons/NetworkIcons";
 import SkillsIcons from "@icons/SkillsIcons/SkillsIcons";
 
 export const Professional: Projects[] = [
-  /*   {
+  {
     id: "25A#za9",
+    category: "react-native-project",
     inProgress: true,
-    projectIllustration: "assets/img/invoice-app.webp",
-    projectTitle: "Invoice App",
+    projectIllustration: "assets/img/pokenative.png",
+    projectTitle: "PokeNative",
     projectDescription:
-      "Découvrez bientôt mon nouveau projet fullstack ! Cependant, vous pouvez le lancer sur vos machines locales (procédures disponibles dans le readme). Voir les deux icônes github ci-dessous.",
+      "Découvrez  mon tout premier projet mobile en React Native. Cette application sur l'univers des pokemons vous permettra d'obtenir plein d'informations sur vos monstres préférés!",
     projectStack: (
       <>
         <SkillsIcons kind="react" />
-        <div className="rounded bg-white px-1">
-          <SkillsIcons kind="react-router" />
-        </div>
-        <SkillsIcons kind="python" />
-        <SkillsIcons kind="fastapi" />
-        <SkillsIcons kind="docker" />
+        <SkillsIcons kind="ts" />
+        <SkillsIcons kind="tw" />
       </>
     ),
     projectWebsite: "https://github.com/CalcagnoLoic/invoice-app-web",
     projectLink: (
       <>
         <Link
-          href="https://github.com/CalcagnoLoic/invoice-app-web"
+          href="https://github.com/CalcagnoLoic/pokeNative"
           aria="Go to the github page for to access frontend"
           content={
             <NetworkIcons
@@ -40,23 +37,17 @@ export const Professional: Projects[] = [
           css="self-center w-[30px]"
         />
         <Link
-          href="https://github.com/CalcagnoLoic/invoice-app-server"
-          aria="Go to the github page for to access backend"
-          content={
-            <NetworkIcons
-              kind="github"
-              isDarkBackground={false}
-              css="w-8 h-8"
-            />
-          }
+          href="https://github.com/CalcagnoLoic/pokeNative"
           target="_blank"
-          css="self-center w-[30px]"
+          aria="Go to website"
+          content={<NetworkIcons kind="website" isDarkBackground={false} />}
         />
       </>
     ),
-  }, */
+  },
   {
     id: "d$i1mf*",
+    category: "next-project",
     inProgress: false,
     projectIllustration: "assets/img/catwiki.webp",
     projectTitle: "CatWiki",
@@ -98,6 +89,7 @@ export const Professional: Projects[] = [
   },
   {
     id: "?ZxC*Hi",
+    category: "astro-project",
     inProgress: false,
     projectIllustration: "assets/img/planets-fact.webp",
     projectTitle: "Planets fact",
@@ -138,6 +130,7 @@ export const Professional: Projects[] = [
   },
   {
     id: "?ijhfm*",
+    category: "react-project",
     inProgress: false,
     projectIllustration: "assets/img/dictionary.webp",
     projectTitle: "Dictionary webapp",
@@ -185,6 +178,7 @@ export const Professional: Projects[] = [
   },
   {
     id: "d%u^piq",
+    category: "react-project",
     inProgress: false,
     projectIllustration: "assets/img/sneakers.webp",
     projectTitle: "E-commerce sneakers",
@@ -232,6 +226,7 @@ export const Professional: Projects[] = [
   },
   {
     id: "j*o2ky$",
+    category: "typescript-project",
     inProgress: false,
     projectIllustration: "assets/img/password-generator.webp",
     projectTitle: "Password generator",
@@ -265,6 +260,122 @@ export const Professional: Projects[] = [
           target="_blank"
           aria="Go to website"
           content={<NetworkIcons kind="website" isDarkBackground={false} />}
+        />
+      </>
+    ),
+  },
+  {
+    id: "*YooA7N",
+    category: "react-project",
+    inProgress: false,
+    projectIllustration: "assets/img/crowdfund.webp",
+    projectTitle: "Crowdfunding webapp",
+    projectDescription:
+      "Explorez cette page de produits de financement participatif où les utilisateurs peuvent sélectionner des offres pour augmenter le financement et mettre en signet les produits qu'ils souhaitent soutenir. ",
+    projectStack: (
+      <>
+        <SkillsIcons kind="react" />
+        <SkillsIcons kind="ts" />
+        <SkillsIcons kind="storybook" />
+        <SkillsIcons kind="tw" />
+      </>
+    ),
+    projectWebsite: "https://calcagnoloic.github.io/crowdfunding-webapp/",
+    projectLink: (
+      <>
+        <Link
+          href="https://github.com/CalcagnoLoic/crowdfunding-webapp"
+          content={
+            <NetworkIcons kind="github" isDarkBackground={true} css="w-8 h-8" />
+          }
+          target="_blank"
+          css="self-center w-[30px]"
+          aria="Go to github repository"
+        />
+
+        <Link
+          href="https://calcagnoloic.github.io/crowdfunding-webapp/"
+          target="_blank"
+          aria="Go to website"
+          content={<NetworkIcons kind="website" isDarkBackground={true} />}
+        />
+        <Link
+          href="https://65fea557005e1e6abef7c259-mskecrihhi.chromatic.com"
+          target="_blank"
+          aria="Go to chromatic project"
+          content={<NetworkIcons kind="storybook" isDarkBackground={true} />}
+        />
+      </>
+    ),
+  },
+  {
+    id: "1nh-soc",
+    category: "typescript-project",
+    inProgress: false,
+    projectIllustration: "assets/img/calculator-app.webp",
+    projectTitle: "Calculator app",
+    projectDescription:
+      "Calculatrice développée pour améliorer mes compétences en TypeScript et en tests unitaires. Le projet suit des pratiques de clean code pour la maintenabilité.",
+    projectStack: (
+      <>
+        <SkillsIcons kind="ts" />
+        <SkillsIcons kind="tw" />
+      </>
+    ),
+    projectWebsite: "https://calcagnoloic.github.io/calculator/",
+    projectLink: (
+      <>
+        <Link
+          href="https://github.com/CalcagnoLoic/calculator"
+          content={
+            <NetworkIcons kind="github" isDarkBackground={true} css="w-8 h-8" />
+          }
+          target="_blank"
+          css="self-center w-[30px]"
+          aria="Go to github repository"
+        />
+        <Link
+          href="https://calcagnoloic.github.io/calculator/"
+          target="_blank"
+          aria="Go to website"
+          content={<NetworkIcons kind="website" isDarkBackground={true} />}
+        />
+      </>
+    ),
+  },
+  {
+    id: "p@7l59k",
+    category: "react-project",
+    inProgress: false,
+    projectIllustration: "assets/img/box-generator.webp",
+    projectTitle: "Boxy generator",
+    projectDescription:
+      "Créez la propriété CSS box-shadow sans effort avec ce générateur. Ce projet m'a permis d'apprendre l'outil Redux et les concepts de gestion d'état en utilisant React.",
+    projectStack: (
+      <>
+        <SkillsIcons kind="react" />
+        <SkillsIcons kind="redux" />
+        <SkillsIcons kind="js" />
+        <SkillsIcons kind="tw" />
+      </>
+    ),
+    projectWebsite: "https://calcagnoloic.github.io/box_shadow_generator/",
+    projectLink: (
+      <>
+        <Link
+          href="https://github.com/CalcagnoLoic/box_shadow_generator"
+          content={
+            <NetworkIcons kind="github" isDarkBackground={true} css="w-8 h-8" />
+          }
+          target="_blank"
+          css="self-center w-[30px]"
+          aria="Go to github repository"
+        />
+        <Link
+          href="https://calcagnoloic.github.io/box_shadow_generator/"
+          target="_blank"
+          aria="Go to website"
+          content={<NetworkIcons kind="website" isDarkBackground={true} />}
         />
       </>
     ),
