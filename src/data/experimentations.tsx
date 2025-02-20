@@ -7,6 +7,7 @@ import SkillsIcons from "@icons/SkillsIcons/SkillsIcons";
 export const Experimentation: Projects[] = [
   {
     id: "*YooA7N",
+    category: "react-project",
     inProgress: false,
     projectIllustration: "assets/img/crowdfund.webp",
     projectTitle: "Crowdfunding webapp",
@@ -50,6 +51,7 @@ export const Experimentation: Projects[] = [
   },
   {
     id: "1nh-soc",
+    category: "typescript-project",
     inProgress: false,
     projectIllustration: "assets/img/calculator-app.webp",
     projectTitle: "Calculator app",
@@ -84,6 +86,7 @@ export const Experimentation: Projects[] = [
   },
   {
     id: "p@7l59k",
+    category: "react-project",
     inProgress: false,
     projectIllustration: "assets/img/box-generator.webp",
     projectTitle: "Boxy generator",

@@ -64,6 +64,9 @@ const Component = () => (
         </section>
       </article>
 
+
+
+
       <article className="mt-5 flex lg:mt-0">
         <img
           src={PICTURE}
