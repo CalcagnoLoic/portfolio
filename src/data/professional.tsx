@@ -20,7 +20,7 @@ export const Professional: Projects[] = [
         <SkillsIcons kind="tw" />
       </>
     ),
-    projectWebsite: "https://github.com/CalcagnoLoic/invoice-app-web",
+    projectWebsite: "https://github.com/CalcagnoLoic/pokeNative",
     projectLink: (
       <>
         <Link
