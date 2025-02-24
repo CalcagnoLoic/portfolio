@@ -39,11 +39,11 @@ const FilterOption = ({
   };
 
   return (
-<div className="relative w-full mt-8">
+<div className="relative w-full mt-8 font-[bellefair]">
   <div className="flex justify-end">
     <div className="w-64">
       <button
-        className="flex items-center justify-between rounded-3xl bg-tuatara p-4 text-white shadow-lg w-full"
+        className="flex items-center justify-between rounded-3xl bg-tuatara p-4 text-white shadow-lg w-full text-lg"
         onClick={handleOpen}
       >
         {selected.length > 0

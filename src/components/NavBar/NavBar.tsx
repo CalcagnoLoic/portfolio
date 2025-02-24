@@ -9,7 +9,7 @@ const Component = () => {
 
   return (
     <header>
-      <nav className="fixed z-20 flex w-full justify-between bg-tuatara px-12 py-8 pt-5 text-white xl:px-32">
+      <nav className="fixed z-20 flex w-full justify-between bg-tuatara px-6 py-8 pt-5 text-white xl:px-32">
         <Heading
           kind="h1"
           content="Portfolio | Calcagno Loïc"
