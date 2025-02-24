@@ -19,7 +19,7 @@ const Component = () => (
           id="top"
         />
         <div className="flex flex-col xl:flex-row">
-          <span className="mt-8 text-center font-[sofia] text-2xl italic md:text-4xl lg:text-start">
+          <span className="mx-1 mt-8 w-full text-center font-[sofia] text-xl italic md:text-4xl lg:text-start">
             <Heading
               kind="h2"
               content="Je suis "
@@ -28,7 +28,7 @@ const Component = () => (
             <Typewriter
               words={[
                 "<développeur React/TypeScript... />",
-                "__avec une expérience en Python.__",
+                "__avec de l'expérience en Python.__",
               ]}
               loop
               cursor
@@ -63,9 +63,6 @@ const Component = () => (
           />
         </section>
       </article>
-
-
-
 
       <article className="mt-5 flex lg:mt-0">
         <img
