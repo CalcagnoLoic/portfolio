@@ -31,8 +31,10 @@ export interface SkillsProps extends ElementProps {
     | "astro"
     | "next"
     | "actions"
-    | "nodejs";
+    | "nodejs"
+    | "expressjs";
   bgLight?: boolean;
+  isFilterIcons?: boolean;
 }
 
 export interface GeneralIconsProps extends ElementProps {
@@ -49,7 +51,7 @@ export interface GeneralIconsProps extends ElementProps {
 
 export interface Projects {
   id: string;
-  category: string
+  category: string;
   inProgress: boolean;
   projectIllustration: string;
   projectTitle: string;
@@ -180,3 +182,9 @@ export interface Testimonials {
   link?: string;
   companyImg: string;
 }
+
+export type Options = {
+  value: string;
+  label: string;
+  logo: "astro" | "ts" | "next" | "react" | "expressjs";
+};

@@ -45,6 +45,47 @@ export const Professional: Projects[] = [
       </>
     ),
   },
+/*   {
+    id: "d$i1mf*",
+    category: "express-project",
+    inProgress: false,
+    projectIllustration: "assets/img/hackathon.png",
+    projectTitle: "Projet Hackathon",
+    projectDescription:
+      "Durant le hackathon Odoo, j'ai pu m'occuper de la partie ExpressJS de ce SaaS à destinations des enfants TDAH. Une multitude d'activités y sont présentes afin d'aider ces derniers. Le username/mots de passe factices sont admin ;)",
+    projectStack: (
+      <>
+        <SkillsIcons kind="react" />
+        <SkillsIcons kind="expressjs" />
+        <SkillsIcons kind="docker" />
+        <SkillsIcons kind="sass" />
+      </>
+    ),
+    projectWebsite: "http://35.241.147.228/",
+    projectLink: (
+      <>
+        <Link
+          href="https://github.com/Escanor1986/odoo-hackathon"
+          content={
+            <NetworkIcons
+              kind="github"
+              isDarkBackground={false}
+              css="w-8 h-8"
+            />
+          }
+          target="_blank"
+          css="self-center w-[30px]"
+          aria="Go to github repository"
+        />
+        <Link
+          href="http://35.241.147.228/"
+          target="_blank"
+          aria="Go to website"
+          content={<NetworkIcons kind="website" isDarkBackground={false} />}
+        />
+      </>
+    ),
+  }, */
   {
     id: "d$i1mf*",
     category: "next-project",
@@ -55,9 +96,7 @@ export const Professional: Projects[] = [
       "Bienvenue aux amoureux des chats sur ce site, où vous pourrez découvrir les caractéristiques de vos races préférées. Vous y trouverez également un article sur les raisons d'adopter un chat.",
     projectStack: (
       <>
-        <div className="rounded bg-white px-1">
-          <SkillsIcons kind="next" />
-        </div>
+        <SkillsIcons kind="next" />
         <SkillsIcons kind="ts" />
         <SkillsIcons kind="tw" />
       </>
