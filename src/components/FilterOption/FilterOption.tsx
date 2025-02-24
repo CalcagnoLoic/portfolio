@@ -1,4 +1,8 @@
+import { Options } from "@definitions/definitions";
+import SkillsIcons from "@icons/SkillsIcons/SkillsIcons";
 import { useState } from "react";
+
+
 
 const FilterOption = ({
   selected,
@@ -7,12 +11,13 @@ const FilterOption = ({
   selected: string[];
   setSelected: React.Dispatch<React.SetStateAction<string[]>>;
 }) => {
-  const options = [
-    { value: "astro-project", label: "AstroJS", logo: "" },
-    { value: "next-project", label: "NextJS", logo: "" },
-    { value: "react-project", label: "React", logo: "" },
-    { value: "react-native-project", label: "React Native", logo: "" },
-    { value: "typescript-project", label: "Typescript", logo: "" },
+  const options: Options[] = [
+    { value: "astro-project", label: "AstroJS", logo: "astro" },
+    { value: "next-project", label: "NextJS", logo: "next" },
+    { value: "react-project", label: "React", logo: "react" },
+    { value: "react-native-project", label: "React Native", logo: "react" },
+    { value: "typescript-project", label: "Typescript", logo: "ts" },
+    { value: "express-project", label: "ExpressJS + React", logo: "expressjs" },
   ];
 
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -69,6 +74,7 @@ const FilterOption = ({
                 onChange={() => handleSelection(option.value)}
               />
               {option.label}
+              <SkillsIcons kind={option.logo} isFilterIcons={true} bgLight={false} />
             </label>
           ))}
           <button

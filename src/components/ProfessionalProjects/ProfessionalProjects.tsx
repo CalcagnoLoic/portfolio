@@ -40,27 +40,36 @@ const Component = () => {
         <FilterOption selected={selected} setSelected={setSelected} />
       </TitleMotion>
 
-        {filteredProject && (
-          <div className="mt-5 grid grid-cols-1 gap-5 text-gallery md:grid-cols-2 lg:grid-cols-3">
-            {filteredProject.map((item) => (
-              <CardsBounce>
+      {filteredProject && (
+        <div className="mt-5 grid grid-cols-1 gap-5 text-gallery md:grid-cols-2 lg:grid-cols-3">
+          {filteredProject.map((item) => (
+            <CardsBounce>
               <section
                 key={item.id}
                 className="mt-8 h-full overflow-hidden drop-shadow-xl"
               >
-                <Link
-                  content={
-                    <img
-                      src={item.projectIllustration}
-                      alt={item.projectTitle}
-                      className="w-full rounded-t-3xl border-[1px] border-tuatara object-contain transition duration-700 ease-in-out hover:scale-110"
-                      loading="lazy"
-                    />
-                  }
-                  href={item.projectWebsite}
-                  target="_blanck"
-                  css="hover:opacity-70 block overflow-hidden rounded-t-3xl"
-                />
+                <article className="relative">
+                  <Link
+                    content={
+                      <img
+                        src={item.projectIllustration}
+                        alt={item.projectTitle}
+                        className="w-full rounded-t-3xl border-[1px] border-tuatara object-contain transition duration-700 ease-in-out hover:scale-110"
+                        loading="lazy"
+                      />
+                    }
+                    href={item.projectWebsite}
+                    target="_blanck"
+                    css="hover:opacity-70 block overflow-hidden rounded-t-3xl"
+                  />
+
+                  <div className="absolute left-4 top-4">
+                    <div className="absolute inset-0 translate-x-1 translate-y-1 rounded-xl bg-white opacity-70 border border-tuatara"></div>
+                    <div className="relative rounded-xl border border-white/40 bg-tuatara px-3 py-1 text-white shadow-md">
+                      {item.category}
+                    </div>
+                  </div>
+                </article>
 
                 <article className="texte-gallery items-stretch overflow-hidden rounded-b-3xl bg-tuatara p-5">
                   <span className="hidden">{item.category}</span>
@@ -93,24 +102,24 @@ const Component = () => {
                     <div className="flex gap-5">{item.projectLink}</div>
                   </div>
                 </article>
-              </section></CardsBounce>
-            ))}
-          </div>
-        )}
+              </section>
+            </CardsBounce>
+          ))}
+        </div>
+      )}
 
-        {visibleProject < Professional.length && (
-          <div className="z-10 mt-8 flex items-center justify-center">
-            <button
-              className="rounded-2xl bg-tuatara px-6 py-3 shadow-xl"
-              onClick={() => handleMoreProject(setVisibleProject)}
-            >
-              <span className="whitespace-pre-wrap text-center font-[bellefair] text-2xl font-medium leading-none tracking-tight text-gallery lg:text-xl dark:from-gallery dark:to-slate-900/10">
-                Voir plus de projets...
-              </span>
-            </button>
-          </div>
-        )}
-
+      {visibleProject < Professional.length && (
+        <div className="z-10 mt-8 flex items-center justify-center">
+          <button
+            className="rounded-2xl bg-tuatara px-6 py-3 shadow-xl"
+            onClick={() => handleMoreProject(setVisibleProject)}
+          >
+            <span className="whitespace-pre-wrap text-center font-[bellefair] text-2xl font-medium leading-none tracking-tight text-gallery lg:text-xl dark:from-gallery dark:to-slate-900/10">
+              Voir plus de projets...
+            </span>
+          </button>
+        </div>
+      )}
     </>
   );
 };
