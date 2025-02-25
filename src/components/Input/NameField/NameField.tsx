@@ -1,5 +1,5 @@
 import { FieldInput } from "@definitions/definitions";
-import { handleChange } from "@utils/handleChange/handleChange";
+import { handleChange } from "@utils/handleChange";
 
 import Field from "@components/Input/Field/Field";
 import Paragraph from "@typographies/Paragraph/Paragraph";

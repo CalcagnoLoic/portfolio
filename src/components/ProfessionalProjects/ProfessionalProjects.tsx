@@ -1,4 +1,4 @@
-import { handleMoreProject } from "@utils/showMoreProject/showMoreProject";
+import { handleMoreProject } from "@utils/showMoreProject";
 import { Professional } from "@data/professional";
 import { Projects } from "@definitions/definitions";
 import { useEffect, useState } from "react";
@@ -36,9 +36,9 @@ const Component = () => {
           id="projects"
           css="text-center font-[sofia] text-2xl underline md:text-4xl"
         />
-
-        <FilterOption selected={selected} setSelected={setSelected} />
       </TitleMotion>
+      
+      <FilterOption selected={selected} setSelected={setSelected} />
 
       {filteredProject && (
         <div className="mt-5 grid grid-cols-1 gap-5 text-gallery md:grid-cols-2 lg:grid-cols-3">
@@ -64,7 +64,7 @@ const Component = () => {
                   />
 
                   <div className="absolute left-4 top-4">
-                    <div className="absolute inset-0 translate-x-1 translate-y-1 rounded-xl bg-white opacity-70 border border-tuatara"></div>
+                    <div className="absolute inset-0 translate-x-1 translate-y-1 rounded-xl border border-tuatara bg-white opacity-70"></div>
                     <div className="relative rounded-xl border border-white/40 bg-tuatara px-3 py-1 text-white shadow-md">
                       {item.category}
                     </div>
