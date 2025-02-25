@@ -8,7 +8,7 @@ import FilterDropdown from "@components/FilterDropdown/FilterDropdown";
 const FilterOption = ({ selected, setSelected }: Filter) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
-  const handleOpen = () => setIsOpen(!isOpen);
+  const handleOpen = () => setIsOpen((prevState) => !prevState);
 
   const handleSelection = useCallback(
     (value: string) => {
