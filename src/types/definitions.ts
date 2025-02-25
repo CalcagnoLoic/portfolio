@@ -199,3 +199,12 @@ export type DropdownOptions = {
   handleSelection: (value: string) => void;
   handleDeselectAll: () => void;
 };
+
+export interface Motion {
+  children: React.ReactNode;
+}
+
+export interface ComponentMotion extends Motion {
+  id?: string;
+  className?: string;
+}
