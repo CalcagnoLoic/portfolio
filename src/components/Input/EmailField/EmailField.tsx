@@ -1,4 +1,4 @@
-import { handleChange } from "@utils/handleChange/handleChange";
+import { handleChange } from "@utils/handleChange";
 import { MailFormatField } from "@definitions/definitions";
 
 import Field from "@components/Input/Field/Field";

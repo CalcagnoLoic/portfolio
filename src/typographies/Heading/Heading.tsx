@@ -1,3 +1,4 @@
+import { TitleMotion } from "@components/Motion/Motion";
 import { HeadingProps } from "@definitions/definitions";
 
 const Typographies = ({ kind, content, css, id }: HeadingProps) => {
@@ -7,9 +8,9 @@ const Typographies = ({ kind, content, css, id }: HeadingProps) => {
 
     case "h2":
       return (
-        <h2 className={css} id={id}>
+        <TitleMotion id={id} className={css}>
           {content}
-        </h2>
+        </TitleMotion>
       );
 
     case "h3":
