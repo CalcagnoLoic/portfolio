@@ -188,3 +188,23 @@ export type Options = {
   label: string;
   logo: "astro" | "ts" | "next" | "react" | "expressjs";
 };
+
+export type Filter = {
+  selected: string[];
+  setSelected: React.Dispatch<React.SetStateAction<string[]>>;
+};
+
+export type DropdownOptions = {
+  selected: string[];
+  handleSelection: (value: string) => void;
+  handleDeselectAll: () => void;
+};
+
+export interface Motion {
+  children: React.ReactNode;
+}
+
+export interface ComponentMotion extends Motion {
+  id?: string;
+  className?: string;
+}

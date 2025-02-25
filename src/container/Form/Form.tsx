@@ -1,9 +1,9 @@
 import { ErrorField } from "@definitions/definitions";
-import { notify } from "@utils/toastMessage/toastMessage";
+import { notify } from "@utils/toastMessage";
 import { sendForm } from "@emailjs/browser";
 import { ToastContainer, Zoom } from "react-toastify";
 import { useState } from "react";
-import { validateForm } from "@utils/validateForm/validateForm";
+import { validateForm } from "@utils/validateForm";
 
 import EmailField from "@components/Input/EmailField/EmailField";
 import Field from "@components/Input/Field/Field";
