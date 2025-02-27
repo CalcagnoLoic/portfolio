@@ -9,7 +9,7 @@ export const Professional: Projects[] = [
     id: "25A#za9",
     category: "react-native-project",
     inProgress: true,
-    projectIllustration: "assets/img/pokenative.png",
+    projectIllustration: "assets/img/pokenative.webp",
     projectTitle: "PokeNative",
     projectDescription:
       "Découvrez  mon tout premier projet mobile en React Native. Cette application sur l'univers des pokemons vous permettra d'obtenir plein d'informations sur vos monstres préférés!",
@@ -49,7 +49,7 @@ export const Professional: Projects[] = [
     id: "d$i1mf*",
     category: "express-project",
     inProgress: false,
-    projectIllustration: "assets/img/hackathon.png",
+    projectIllustration: "assets/img/hackathon.webp",
     projectTitle: "Projet Hackathon",
     projectDescription:
       "Durant le hackathon Odoo, j'ai pu m'occuper de la partie ExpressJS de ce SaaS à destinations des enfants TDAH. Une multitude d'activités y sont présentes afin d'aider ces derniers. Le username/mots de passe factices sont admin ;)",
