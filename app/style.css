@@ -3,10 +3,10 @@
 @theme {
   --color-cod-gray: rgb(26, 26, 26);
   --color-cod-gray-darker: rgb(13, 13, 13);
-  --color-big-stone: rgb(22, 33, 62); 
-  --color-white: rgb(255, 255, 255); 
+  --color-big-stone: rgb(22, 33, 62);
+  --color-white: rgb(255, 255, 255);
 
-  --color-accent-green: rgb(111, 207, 151); 
+  --color-accent-green: rgb(31, 170, 89);
   --color-hover: rgb(255, 190, 118);
 }
 
@@ -23,6 +23,9 @@
   .text-primary {
     color: var(--color-white);
   }
+  .text-secondary {
+    color: var(--color-accent-green);
+  }
   .bg-accent {
     background-color: var(--color-accent-green);
   }
@@ -31,5 +34,15 @@
   }
   .bg-hover:hover {
     background-color: var(--color-hover);
+  }
+}
+
+@layer component {
+  .hero_section {
+    @apply px-8 md:px-16 lg:px-32 py-6 md:py-9 lg:py-12;
+  }
+
+  .main_title {
+    @apply text-center md:text-start text-xl md:text-2xl lg:text-3xl italic;
   }
 }

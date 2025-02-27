@@ -1,8 +1,14 @@
+import Presentation from "./ui/components/Presentation";
 
 const Page = () => {
   return (
-    <div></div>
-  )
-}
+    <>
+      <section className="bg-primary text-primary">
+        <Presentation />
+      </section>
+      <section className="bg-secondary text-primary"></section>
+    </>
+  );
+};
 
-export default Page
+export default Page;
