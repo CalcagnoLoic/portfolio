@@ -1,8 +1,12 @@
 import { Metadata } from "next";
 
+import NavBar from "./ui/components/NavBar";
+
+import "@/app/style.css";
+
 export const metadata: Metadata = {
-  title: "Calcagno Loïc"
-}
+  title: "Calcagno Loïc",
+};
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => (
   <html lang="fr">
@@ -10,7 +14,8 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => (
       <meta charSet="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </head>
-    <body>
+    <body className="">
+      <NavBar />
       <main>{children}</main>
     </body>
   </html>

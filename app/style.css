@@ -3,11 +3,11 @@
 @theme {
   --color-cod-gray: rgb(26, 26, 26);
   --color-cod-gray-darker: rgb(13, 13, 13);
-  --color-big-stone: "#16213E";
-  --color-white: "#FFFFFF";
+  --color-big-stone: rgb(22, 33, 62); 
+  --color-white: rgb(255, 255, 255); 
 
-  --color-accent-green: "#6FCF97";
-  --color-hover: "#FFBE76";
+  --color-accent-green: rgb(111, 207, 151); 
+  --color-hover: rgb(255, 190, 118);
 }
 
 @layer base {
