@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cod-gray: rgb(26, 26, 26);
+  --color-cod-gray-darker: rgb(13, 13, 13);
+  --color-big-stone: "#16213E";
+  --color-white: "#FFFFFF";
+
+  --color-accent-green: "#6FCF97";
+  --color-hover: "#FFBE76";
+}
+
+@layer base {
+  .bg-primary {
+    background-color: var(--color-cod-gray);
+  }
+  .bg-secondary {
+    background-color: var(--color-cod-gray-darker);
+  }
+  .bg-ternary {
+    background-color: var(--color-big-stone);
+  }
+  .text-primary {
+    color: var(--color-white);
+  }
+  .bg-accent {
+    background-color: var(--color-accent-green);
+  }
+  .text-accent {
+    color: var(--color-accent-green);
+  }
+  .bg-hover:hover {
+    background-color: var(--color-hover);
+  }
+}
