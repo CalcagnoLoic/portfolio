@@ -1,6 +1,6 @@
 import { Projects } from "@/app/definitions/definitions";
 
-import Link from "@/last/src/components/Link/Link";
+import Link from "@/app/ui/components/Link";
 import NetworkIcons from "@/app/ui/icons/NetworkIcons";
 import SkillsIcons from "@/app/ui/icons/SkillsIcons";
 

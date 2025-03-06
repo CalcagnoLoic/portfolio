@@ -10,8 +10,9 @@ const NavBar = () => {
   const isMobile = useMobile();
 
   return (
-    <nav className="fixed top-0 w-full z-20 flex justify-between px-8 md:px-16 lg:px-32 py-8 
-               lg:bg-black/30 lg:backdrop-blur-xl border-b border-white/10 bg-primary ">
+    <nav
+      className="fixed top-0 w-full z-20 flex justify-between px-8 md:px-16 lg:px-32 py-8  lg:bg-black/30 lg:backdrop-blur-xl border-b border-white/10 bg-primary "
+    >
       <h1 className="text-primary text-xl lg:text-3xl font-bold relative">
         Calcagno Loïc | Portfolio
       </h1>

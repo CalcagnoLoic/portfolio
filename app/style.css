@@ -54,7 +54,6 @@
   }
   .bg-cards {
     background-color: var(--color-cards);
-    color: var(--color-cards);
   }
   .bg-cards-labels {
     background-color: var(--color-cards-labels);

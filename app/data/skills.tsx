@@ -16,7 +16,7 @@ export const skills: Skills[] = [
         <div className="rounded bg-white px-1">
           <SkillsIcons kind="next" />
         </div>
-        <SkillsIcons kind="astro" bgLight={true} />
+        <SkillsIcons kind="astro" bgLight={false} />
         <SkillsIcons kind="ts" />
         <SkillsIcons kind="js" />
         <SkillsIcons kind="storybook" />

@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
 import { Filter } from "@/app/definitions/definitions";
 import { filterOptionsData } from "@/app/data/filterOptionsData";
-import { handleSelectionLogic } from "@/last/src/utils/handleFilters";
+import { handleSelectionLogic } from "@/app/utils/handleFilters";
 import { useCallback, useState } from "react";
 
 import FilterDropdown from "./FilterDropdown";

@@ -6,9 +6,11 @@ import { bellefair, sofia } from "../fonts";
 import { Professional } from "@/app/data/professional";
 import { Projects } from "@/app/definitions/definitions";
 import FilterOption from "./FilterOption";
-import { handleMoreProject } from "@/last/src/utils/showMoreProject";
-import Link from "@/last/src/components/Link/Link";
+import { handleMoreProject } from "@/app/utils/showMoreProject";
+import Link from "@/app/ui/components/Link";
 import Image from "next/image";
+import { CardsBounce } from "../Motion/Cards";
+import { TitleMotion } from "../Motion/Title";
 
 const Project = () => {
   const [displayedData, setDisplayedData] = useState<Projects[]>(Professional);
@@ -29,17 +31,20 @@ const Project = () => {
   });
 
   return (
-    <section className="hero_section">
-      <h2 className={`text-accent text-center text-2xl ${sofia.className}`}>
-        Mes projects
-      </h2>
+    <>
+      <TitleMotion
+        className={`mb-10 text-center font-[sofia] text-2xl underline md:text-4xl text-accent-primary ${sofia.className}`}
+        id="projects"
+      >
+        Mes projets
+      </TitleMotion>
 
       <FilterOption selected={selected} setSelected={setSelected} />
 
       {filteredProject && (
         <div className="mt-5 grid grid-cols-1 gap-5 text-primary md:grid-cols-2 lg:grid-cols-3">
           {filteredProject.map((item) => (
-            <div
+            <CardsBounce
               className="mt-8 overflow-hidden shadow-lg"
               key={item.projectTitle}
             >
@@ -94,7 +99,7 @@ const Project = () => {
                   <div className="flex gap-5">{item.projectLink}</div>
                 </div>
               </article>
-            </div>
+            </CardsBounce>
           ))}
         </div>
       )}
@@ -105,13 +110,15 @@ const Project = () => {
             className="rounded-full bg-accent text-primary px-6 py-3 shadow-xl cursor-pointer hover:bg-hover transition duration-700 ease-out"
             onClick={() => handleMoreProject(setVisibleProject)}
           >
-            <span className={`whitespace-pre-wrap text-center text-2xl font-medium leading-none tracking-tight text-gallery lg:text-xl  ${bellefair.className}`}>
+            <span
+              className={`whitespace-pre-wrap text-center text-2xl font-medium leading-none tracking-tight text-gallery lg:text-xl  ${bellefair.className}`}
+            >
               Voir plus de projets...
             </span>
           </button>
         </div>
       )}
-    </section>
+    </>
   );
 };
 
