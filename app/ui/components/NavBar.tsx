@@ -8,10 +8,11 @@ import NavbarMobile from "./NavbarMobile";
 
 const NavBar = () => {
   const isMobile = useMobile();
-  
+
   return (
-    <nav className="fixed bg-primary w-full flex z-20 justify-between px-8 md:px-16 lg:px-32 py-8">
-      <h1 className="text-primary text-xl lg:text-3xl font-bold">
+    <nav className="fixed top-0 w-full z-20 flex justify-between px-8 md:px-16 lg:px-32 py-8 
+               lg:bg-black/30 lg:backdrop-blur-xl border-b border-white/10 bg-primary ">
+      <h1 className="text-primary text-xl lg:text-3xl font-bold relative">
         Calcagno Loïc | Portfolio
       </h1>
 
@@ -20,7 +21,10 @@ const NavBar = () => {
       ) : (
         <ol className={`flex gap-8 self-center ${bellefair.className}`}>
           {navItems.map((navItem) => (
-            <li key={navItem.id} className="hover:italic hover:text-secondary text-primary text-2xl" >
+            <li
+              key={navItem.id}
+              className="hover:italic hover:text-secondary text-primary text-2xl"
+            >
               <a href={navItem.href}>{navItem.content}</a>
             </li>
           ))}

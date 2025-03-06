@@ -1,6 +1,6 @@
 import { Projects } from "@/app/definitions/definitions";
 
-import Link from "@components/Link/Link";
+import Link from "@/last/src/components/Link/Link";
 import NetworkIcons from "@/app/ui/icons/NetworkIcons";
 import SkillsIcons from "@/app/ui/icons/SkillsIcons";
 
@@ -9,7 +9,7 @@ export const Professional: Projects[] = [
     id: "25A#za9",
     category: "react-native-project",
     inProgress: true,
-    projectIllustration: "assets/img/pokenative.webp",
+    projectIllustration: "/assets/img/pokenative.webp",
     projectTitle: "PokeNative",
     projectDescription:
       "Découvrez  mon tout premier projet mobile en React Native. Cette application sur l'univers des pokemons vous permettra d'obtenir plein d'informations sur vos monstres préférés!",
@@ -45,7 +45,7 @@ export const Professional: Projects[] = [
       </>
     ),
   },
-/*   {
+  /*   {
     id: "d$i1mf*",
     category: "express-project",
     inProgress: false,
@@ -90,7 +90,7 @@ export const Professional: Projects[] = [
     id: "d$i1mf*",
     category: "next-project",
     inProgress: false,
-    projectIllustration: "assets/img/catwiki.webp",
+    projectIllustration: "/assets/img/catwiki.webp",
     projectTitle: "CatWiki",
     projectDescription:
       "Bienvenue aux amoureux des chats sur ce site, où vous pourrez découvrir les caractéristiques de vos races préférées. Vous y trouverez également un article sur les raisons d'adopter un chat.",
@@ -130,7 +130,7 @@ export const Professional: Projects[] = [
     id: "?ZxC*Hi",
     category: "astro-project",
     inProgress: false,
-    projectIllustration: "assets/img/planets-fact.webp",
+    projectIllustration: "/assets/img/planets-fact.webp",
     projectTitle: "Planets fact",
     projectDescription:
       "Plongez dans les propriétés des planètes de notre système solaire avec cette SPA. Construite avec AstroJS, ce site offre une exploration détaillée des caractéristiques de chaque planète.",
@@ -171,7 +171,7 @@ export const Professional: Projects[] = [
     id: "?ijhfm*",
     category: "react-project",
     inProgress: false,
-    projectIllustration: "assets/img/dictionary.webp",
+    projectIllustration: "/assets/img/dictionary.webp",
     projectTitle: "Dictionary webapp",
     projectDescription:
       "Accédez à une pléthore de définitions et de prononciations de mots avec ce dictionnaire en ligne. Construit avec React et TypeScript, il tire parti des technologies web modernes.",
@@ -219,7 +219,7 @@ export const Professional: Projects[] = [
     id: "d%u^piq",
     category: "react-project",
     inProgress: false,
-    projectIllustration: "assets/img/sneakers.webp",
+    projectIllustration: "/assets/img/sneakers.webp",
     projectTitle: "E-commerce sneakers",
     projectDescription:
       "Achetez des baskets dans cet e-commerce construit avec le CDD et Storybook. Les fonctionnalités incluent l'ajout et la suppression d'articles du panier en utilisant le contexte React.",
@@ -267,7 +267,7 @@ export const Professional: Projects[] = [
     id: "j*o2ky$",
     category: "typescript-project",
     inProgress: false,
-    projectIllustration: "assets/img/password-generator.webp",
+    projectIllustration: "/assets/img/password-generator.webp",
     projectTitle: "Password generator",
     projectDescription:
       "Générez des mots de passe aléatoires! Personnalisez vos mots de passe avec des lettres majuscules/minuscules, des chiffres et des symboles, et soyez informé de leur force.",
@@ -307,7 +307,7 @@ export const Professional: Projects[] = [
     id: "*YooA7N",
     category: "react-project",
     inProgress: false,
-    projectIllustration: "assets/img/crowdfund.webp",
+    projectIllustration: "/assets/img/crowdfund.webp",
     projectTitle: "Crowdfunding webapp",
     projectDescription:
       "Explorez cette page de produits de financement participatif où les utilisateurs peuvent sélectionner des offres pour augmenter le financement et mettre en signet les produits qu'ils souhaitent soutenir. ",
@@ -351,7 +351,7 @@ export const Professional: Projects[] = [
     id: "1nh-soc",
     category: "typescript-project",
     inProgress: false,
-    projectIllustration: "assets/img/calculator-app.webp",
+    projectIllustration: "/assets/img/calculator-app.webp",
     projectTitle: "Calculator app",
     projectDescription:
       "Calculatrice développée pour améliorer mes compétences en TypeScript et en tests unitaires. Le projet suit des pratiques de clean code pour la maintenabilité.",
@@ -386,7 +386,7 @@ export const Professional: Projects[] = [
     id: "p@7l59k",
     category: "react-project",
     inProgress: false,
-    projectIllustration: "assets/img/box-generator.webp",
+    projectIllustration: "/assets/img/box-generator.webp",
     projectTitle: "Boxy generator",
     projectDescription:
       "Créez la propriété CSS box-shadow sans effort avec ce générateur. Ce projet m'a permis d'apprendre l'outil Redux et les concepts de gestion d'état en utilisant React.",

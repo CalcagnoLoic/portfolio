@@ -1,4 +1,5 @@
 import Presentation from "./ui/components/Presentation";
+import Project from "./ui/components/Project";
 
 const Page = () => {
   return (
@@ -6,7 +7,9 @@ const Page = () => {
       <section className="bg-primary text-primary">
         <Presentation />
       </section>
-      <section className="bg-secondary text-primary"></section>
+      <section className="bg-secondary text-primary">
+        <Project />
+      </section>
     </>
   );
 };

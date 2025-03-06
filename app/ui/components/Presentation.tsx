@@ -39,7 +39,7 @@ const Presentation = () => {
       <button className="bg-accent text-primary rounded-3xl px-6 py-3 cursor-pointer hover:bg-hover transition duration-700 ease">
         En savoir plus?{" "}
       </button>
-      <button className="bg-accent text-primary rounded-3xl px-6 py-3">
+      <button className="bg-accent text-primary rounded-3xl px-6 py-3 cursor-pointer hover:bg-hover transition duration-700 ease">
         Restons en contact!{" "}
       </button>
     </div>

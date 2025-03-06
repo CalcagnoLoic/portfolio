@@ -4,9 +4,14 @@
   --color-cod-gray: rgb(26, 26, 26);
   --color-cod-gray-darker: rgb(13, 13, 13);
   --color-big-stone: rgb(22, 33, 62);
-  --color-white: rgb(255, 255, 255);
+  --color-white: rgb(248, 249, 250);
+  --color-cards: rgb(18, 53, 36);
+  --color-cards-labels: rgb(198, 156, 114);
 
-  --color-accent-green: rgb(31, 170, 89);
+  --color-accent-primary: rgb(31, 170, 89);
+  --color-accent-secondary: rgb(255, 190, 118);
+  --color-cards-accent: rgb(76, 175, 80);
+
   --color-hover: rgb(255, 190, 118);
 }
 
@@ -20,22 +25,45 @@
   .bg-ternary {
     background-color: var(--color-big-stone);
   }
+  .text-ternary {
+    color: var(--color-big-stone);
+  }
   .text-primary {
     color: var(--color-white);
   }
   .text-secondary {
-    color: var(--color-accent-green);
+    color: var(--color-accent-primary);
+  }
+  .text-cards {
+    color: var(--color-cod-gray-darker);
   }
   .bg-accent {
-    background-color: var(--color-accent-green);
+    background-color: var(--color-accent-primary);
+  }
+  .bg-accent-secondary {
+    background-color: var(--color-accent-secondary);
   }
   .text-accent {
-    color: var(--color-accent-green);
+    color: var(--color-accent-primary);
+  }
+  .text-accent-secondary {
+    color: var(--color-accent-secondary);
   }
   .bg-hover:hover {
     background-color: var(--color-hover);
   }
+  .bg-cards {
+    background-color: var(--color-cards);
+    color: var(--color-cards);
+  }
+  .bg-cards-labels {
+    background-color: var(--color-cards-labels);
+  }
+  .bg-cards-accent {
+    background-color: var(--color-cards-accent);
+  }
 }
+
 
 @layer component {
   .hero_section {

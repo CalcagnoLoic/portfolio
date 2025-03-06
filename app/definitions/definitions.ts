@@ -79,7 +79,7 @@ export interface InputFieldProps {
   name?: string;
   value?: string;
   onChange?: (
-    newValue: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+    newValue: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => void;
 }
 
@@ -136,7 +136,7 @@ export type Skills = {
 
 export type useClickOutsideProps = {
   callback: (newValue: boolean) => void;
-  ref: React.RefObject<HTMLDivElement|null>;
+  ref: React.RefObject<HTMLDivElement | null>;
 };
 
 export type UseShouldOverflowProps = {
@@ -160,19 +160,8 @@ export type LayoutProps = {
 };
 
 export type handleMoreProjectType = (
-  setState: React.Dispatch<React.SetStateAction<number>>,
+  setState: React.Dispatch<React.SetStateAction<number>>
 ) => void;
-
-export interface ShimmerButtonProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  shimmerColor?: string;
-  shimmerSize?: string;
-  borderRadius?: string;
-  shimmerDuration?: string;
-  background?: string;
-  className?: string;
-  children?: React.ReactNode;
-}
 
 export interface Testimonials {
   id: string;

@@ -15,7 +15,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => (
       <meta charSet="UTF-8" />
       <meta name="viewport" content="width=device-width,  initial-scale=1.0" />
     </head>
-    <body className={barlow.className}>
+    <body className={`${barlow.className} bg-primary`}>
       <NavBar />
       <main className="pt-20 lg:pt-24">{children}</main>
     </body>
