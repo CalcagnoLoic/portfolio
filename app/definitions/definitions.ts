@@ -70,8 +70,6 @@ export interface ContactInformationProps {
 
 export interface InputFieldProps {
   css?: string;
-  content?: string;
-  isLabel: boolean;
   type?: string;
   isTextArea: boolean;
   placeholder?: string;

@@ -33,7 +33,7 @@ const Project = () => {
   return (
     <>
       <TitleMotion
-        className={`mb-10 text-center font-[sofia] text-2xl underline md:text-4xl text-accent-primary ${sofia.className}`}
+        className={`mb-10 text-center text-2xl md:text-4xl text-accent-primary ${sofia.className}`}
         id="projects"
       >
         Mes projets
@@ -107,7 +107,7 @@ const Project = () => {
       {visibleProject < Professional.length && (
         <div className="z-10 mt-8 flex items-center justify-center">
           <button
-            className="rounded-full bg-accent text-primary px-6 py-3 shadow-xl cursor-pointer hover:bg-hover transition duration-700 ease-out"
+            className="rounded-full bg-accent text-primary px-6 py-3 shadow-xl cursor-pointer hover:bg-hover transition duration-700 ease-in-out"
             onClick={() => handleMoreProject(setVisibleProject)}
           >
             <span

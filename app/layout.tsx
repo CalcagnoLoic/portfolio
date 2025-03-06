@@ -5,6 +5,7 @@ import { barlow } from "./ui/fonts";
 
 import "@/app/style.css";
 import ScrollProgressBar from "./ui/Motion/ProgressBar";
+import Footer from "./ui/components/Footer";
 
 export const metadata: Metadata = {
   title: "Calcagno Loïc",
@@ -19,6 +20,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => (
     <body className={`${barlow.className} bg-primary`}>
       <NavBar />
       <main className="pt-20 lg:pt-24">{children}</main>
+      <Footer />
       <ScrollProgressBar />
     </body>
   </html>

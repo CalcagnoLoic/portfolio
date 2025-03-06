@@ -8,7 +8,7 @@ import { TitleMotion } from "../Motion/Title";
 const Skills = () => {
   console.log(TitleMotion);
   return ( 
-    <section className="hero_section">
+    <>
       <TitleMotion
         id="skills"
         className={`mb-10 text-center text-2xl md:text-4xl text-accent-primary ${sofia.className}`}
@@ -43,7 +43,7 @@ const Skills = () => {
           ))}
         </div>
       </CardsContainerMotion>
-    </section>
+    </>
   );
 };
 

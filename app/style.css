@@ -69,6 +69,14 @@
     @apply px-8 md:px-16 lg:px-32 py-6 md:py-9 lg:py-12;
   }
 
+  .input-container {
+    @apply mb-2 flex flex-col sm:mb-8 sm:gap-1;
+  }
+
+  .input-field {
+    @apply mb-1 font-semibold outline-none;
+  }
+
   .main_title {
     @apply text-center md:text-start text-xl md:text-2xl lg:text-3xl italic;
   }
