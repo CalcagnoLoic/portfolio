@@ -46,6 +46,7 @@ const FilterOption = ({ selected, setSelected }: Filter) => {
               selected={selected}
               handleSelection={handleSelection}
               handleDeselectAll={handleDeselectAll}
+              isOpen={isOpen}
             />
           )}
         </div>

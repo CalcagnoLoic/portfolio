@@ -1,4 +1,4 @@
-import { NetworkIconsProps } from "@definitions/definitions";
+import { NetworkIconsProps } from "@/app/definitions/definitions";
 
 const Icons = ({ kind, isDarkBackground, css }: NetworkIconsProps) => {
   switch (kind) {

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { sofia } from "../fonts";
+import Typewriter from "./TypeWritter";
 
 const Presentation = () => {
   return (
@@ -12,11 +13,7 @@ const Presentation = () => {
           Bienvenue dans mon univers 🚀
         </h2>
 
-        <p
-          className={`text-center md:text-start text-xl md:text-2xl lg:text-3xl mt-3 text-secondary ${sofia.className}`}
-        >
-          Je suis ...
-        </p>
+        <Typewriter />
 
         <p className="mt-3 text-lg text-center md:text-start">
           Je suis profondément passionné par le développement web, un voyage qui
@@ -36,12 +33,15 @@ const Presentation = () => {
         </p>
 
         <div className="mt-5 flex flex-col md:flex-row gap-5">
-          <button className="bg-accent text-primary rounded-3xl px-6 py-3 cursor-pointer hover:bg-hover transition duration-700 ease">
-            En savoir plus?{" "}
-          </button>
-          <button className="bg-accent text-primary rounded-3xl px-6 py-3 cursor-pointer hover:bg-hover transition duration-700 ease">
-            Restons en contact!{" "}
-          </button>
+          <a className="button bg-accent text-primary hover:bg-hover">
+            En savoir plus?
+          </a>
+          <a
+            href="#contact"
+            className="button bg-accent text-primary hover:bg-hover"
+          >
+            Restons en contact!
+          </a>
         </div>
       </div>
 

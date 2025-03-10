@@ -30,6 +30,10 @@ const Form = () => {
     message: message,
   });
 
+  const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID;
+  const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID;
+  const userId = process.env.NEXT_PUBLIC_USER_ID;
+
   const sendEmail: React.FormEventHandler<HTMLFormElement> = (e) => {
     e.preventDefault();
     const formElement = e.target as HTMLFormElement;
@@ -42,22 +46,22 @@ const Form = () => {
       return;
     }
 
-    sendForm(
-      process.env.NEXT_PUBLIC_SERVICE_ID,
-      process.env.NEXT_PUBLIC_TEMPLATE_ID,
-      formElement,
-      process.env.NEXT_PUBLIC_USER_ID
-    )
-      .then(() => {
-        setName("");
-        setEmail("");
-        setMessage("");
-        notify("success");
-      })
-      .catch((error) => {
-        console.error("Error sending email:", error);
-        notify("error");
-      });
+    if (serviceId && templateId && userId) {
+      sendForm(serviceId, templateId, formElement, userId)
+        .then(() => {
+          setName("");
+          setEmail("");
+          setMessage("");
+          notify("success");
+        })
+        .catch((error) => {
+          console.error("Error sending email:", error);
+          notify("error");
+        });
+    } else {
+      console.error("Missing environment variables for sending the form");
+      notify("error");
+    }
   };
 
   return (
@@ -92,10 +96,10 @@ const Form = () => {
         isTextArea={false}
         type="submit"
         value="Contactez moi 📧"
-        inputCSS={`rounded-full text-2xl bg-accent text-primary px-6 py-3 shadow-xl cursor-pointer hover:bg-hover transition duration-700 ease-in-out text-center ${bellefair.className}`}
+        inputCSS={`button bg-accent text-primary hover:bg-hover text-center text-2xl ${bellefair.className}`}
       />
 
-      <ToastContainer closeButton={false} transition={Zoom} />
+      <ToastContainer closeButton={true} transition={Zoom} />
     </form>
   );
 };

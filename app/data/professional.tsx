@@ -36,12 +36,12 @@ export const Professional: Projects[] = [
           target="_blank"
           css="self-center w-[30px]"
         />
-        <Link
+        {/* <Link
           href="https://github.com/CalcagnoLoic/pokeNative"
           target="_blank"
           aria="Go to website"
           content={<NetworkIcons kind="website" isDarkBackground={false} />}
-        />
+        /> */}
       </>
     ),
   },

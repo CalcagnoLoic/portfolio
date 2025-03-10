@@ -107,7 +107,7 @@ const Project = () => {
       {visibleProject < Professional.length && (
         <div className="z-10 mt-8 flex items-center justify-center">
           <button
-            className="rounded-full bg-accent text-primary px-6 py-3 shadow-xl cursor-pointer hover:bg-hover transition duration-700 ease-in-out"
+            className="button bg-accent text-primary hover:bg-hover"
             onClick={() => handleMoreProject(setVisibleProject)}
           >
             <span

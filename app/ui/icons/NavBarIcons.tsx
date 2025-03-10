@@ -1,4 +1,4 @@
-import { IconProps } from "@definitions/definitions";
+import { IconProps } from "@/app/definitions/definitions";
 
 const Icons = ({ isOpen, handleClick }: IconProps) =>
   isOpen ? (

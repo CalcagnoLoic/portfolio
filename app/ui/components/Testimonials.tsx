@@ -46,7 +46,7 @@ const Testimonials = () => (
             <Link
               content="Envie d'en savoir plus?"
               href={testimonial.link}
-              css={`rounded-full bg-accent text-primary px-6 py-3 shadow-xl cursor-pointer hover:bg-hover transition duration-700 ease-in-out text-center ${bellefair.className}`}
+              css={`button bg-accent text-primary hover:bg-hover text-center text-lg ${bellefair.className}`}
               aria="Contact me with form or directly at calcagnoloic93@gmail.com"
               target="_blank"
             />

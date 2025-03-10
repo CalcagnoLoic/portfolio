@@ -187,6 +187,7 @@ export type DropdownOptions = {
   selected: string[];
   handleSelection: (value: string) => void;
   handleDeselectAll: () => void;
+  isOpen: boolean;
 };
 
 export interface Motion {
