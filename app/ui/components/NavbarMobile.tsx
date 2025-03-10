@@ -27,7 +27,7 @@ const NavbarMobile = () => {
 
   return (
     <>
-      <div onClick={handleToggleMenu} className="cursor-pointer z-50">
+      <div onClick={handleToggleMenu} className="cursor-pointer z-50 self-center">
         {isOpen ? (
           <Icons.closeMenu color="#fff" />
         ) : (

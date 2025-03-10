@@ -4,8 +4,8 @@ import Typewriter from "./TypeWritter";
 
 const Presentation = () => {
   return (
-    <div className="flex flex-col lg:flex-row">
-      <div className="lg:w-2/3 flex flex-col lg:justify-center">
+    <div className="mb-6 flex flex-col lg:mb-12 lg:flex-row">
+      <div className="flex flex-col lg:w-2/3 lg:justify-center">
         <h2
           className={`${sofia.className} main_title`}
           style={{ fontWeight: 500 }}
@@ -15,7 +15,7 @@ const Presentation = () => {
 
         <Typewriter />
 
-        <p className="mt-3 text-lg text-center md:text-start">
+        <p className="mt-3 text-center text-lg md:text-start">
           Je suis profondément passionné par le développement web, un voyage qui
           a commencé par l&apos;auto-apprentissage. Principalement développeur
           React, j&apos;ai également une forte affinité pour le développement
@@ -24,7 +24,7 @@ const Presentation = () => {
           que je m&apos;attaque à des tâches complexes
         </p>
 
-        <p className="mt-3 text-lg text-center md:text-start ">
+        <p className="mt-3 text-center text-lg md:text-start">
           Ce portfolio présente les réalisations dont je suis le plus fier en
           matière de développement web. Outre mon dévouement au développement
           web, je suis très enthousiaste à l&apos;idée de partager mes
@@ -32,26 +32,29 @@ const Presentation = () => {
           partageant ce que j&apos;ai appris.
         </p>
 
-        <div className="mt-5 flex flex-col md:flex-row gap-5">
-          <a className="button bg-accent text-primary hover:bg-hover">
+        <div className="mt-5 flex flex-col gap-5 md:flex-row">
+          <a
+            className="button bg-accent-secondary text-accent hover:bg-hover"
+            href="/assets/CALCAGNO_LOIC_CV.pdf"
+          >
             En savoir plus?
           </a>
           <a
             href="#contact"
-            className="button bg-accent text-primary hover:bg-hover"
+            className="button bg-accent-secondary text-accent hover:bg-primary"
           >
             Restons en contact!
           </a>
         </div>
       </div>
 
-      <div className="lg:flex-1 flex justify-center lg:justify-end items-center">
+      <div className="flex items-center justify-center lg:flex-1 lg:justify-end">
         <Image
           src="/assets/img/photo.png"
           alt="moi"
           width={200}
           height={200}
-          className="rounded-full mt-5 lg:w-[300px] lg:h-[325px]"
+          className="mt-5 rounded-full lg:h-[325px] lg:w-[300px]"
           loading="lazy"
         />
       </div>

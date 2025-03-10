@@ -5,17 +5,24 @@ import { useMobile } from "@/app/hooks/useMobile";
 import { bellefair } from "../fonts";
 
 import NavbarMobile from "./NavbarMobile";
+import Image from "next/image";
 
 const NavBar = () => {
   const isMobile = useMobile();
 
   return (
-    <nav
-      className="fixed top-0 w-full z-20 flex justify-between px-8 md:px-16 lg:px-32 py-8  lg:bg-black/30 lg:backdrop-blur-xl border-b border-white/10 bg-primary "
-    >
-      <h1 className="text-primary text-xl lg:text-3xl font-bold relative">
-        Calcagno Loïc 
-      </h1>
+    <nav className="bg-primary fixed top-0 z-20 flex w-full justify-between border-b border-white/10 px-8 py-8 md:px-16 lg:bg-black/30 lg:px-32 lg:backdrop-blur-xl">
+      <div className="flex gap-5">
+        <Image
+          src={"/assets/img/logo.png"}
+          alt="test"
+          width={50}
+          height={50}
+        />
+        <h1 className="text-primary relative flex text-xl font-bold lg:text-3xl self-center">
+          Calcagno Loïc
+        </h1>
+      </div>
 
       {isMobile ? (
         <NavbarMobile />
@@ -24,7 +31,7 @@ const NavBar = () => {
           {navItems.map((navItem) => (
             <li
               key={navItem.id}
-              className="hover:italic hover:text-secondary text-primary text-2xl"
+              className="hover:text-secondary text-primary text-2xl hover:italic"
             >
               <a href={navItem.href}>{navItem.content}</a>
             </li>

@@ -96,7 +96,7 @@ const Form = () => {
         isTextArea={false}
         type="submit"
         value="Contactez moi 📧"
-        inputCSS={`button bg-accent text-primary hover:bg-hover text-center text-2xl ${bellefair.className}`}
+        inputCSS={`button bg-accent-secondary text-accent hover:bg-primary text-center text-2xl ${bellefair.className}`}
       />
 
       <ToastContainer closeButton={true} transition={Zoom} />

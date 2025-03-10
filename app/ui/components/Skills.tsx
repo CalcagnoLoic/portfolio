@@ -17,16 +17,16 @@ const Skills = () => {
       </TitleMotion>
 
       <CardsContainerMotion>
-        <div className="grid h-full grid-cols-1 gap-5 text-tuatara md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid h-full grid-cols-1 gap-5 text-primary md:grid-cols-2 lg:grid-cols-3 mb-6 sm:mb-12">
           {skills.map((item) => (
             <CardsMotion
               key={item.id}
               id={item.id}
-              className="flex flex-1 flex-col items-stretch rounded-xl bg-cards p-5"
+              className="flex flex-1 flex-col items-stretch rounded-xl bg-ternary p-5 bg-card-primary"
             >
               <div className="flex justify-center gap-3">
                 <h3
-                  className={`text-center text-xl md:text-3xl font-[sofia] self-center ${sofia.className}`}
+                  className={`text-center text-xl md:text-3xl self-center ${sofia.className}`}
                 >
                   {item.skillsTitle}
                 </h3>

@@ -21,8 +21,8 @@ const Project = () => {
     setDisplayedData(
       Professional.filter(
         (project) =>
-          selected.includes("all") || selected.includes(project.category)
-      ).slice(0, visibleProject)
+          selected.includes("all") || selected.includes(project.category),
+      ).slice(0, visibleProject),
     );
   }, [visibleProject, selected]);
 
@@ -33,7 +33,7 @@ const Project = () => {
   return (
     <>
       <TitleMotion
-        className={`mb-10 text-center text-2xl md:text-4xl text-accent-primary ${sofia.className}`}
+        className={`text-primary mb-10 text-center text-2xl md:text-4xl ${sofia.className}`}
         id="projects"
       >
         Mes projets
@@ -42,7 +42,7 @@ const Project = () => {
       <FilterOption selected={selected} setSelected={setSelected} />
 
       {filteredProject && (
-        <div className="mt-5 grid grid-cols-1 gap-5 text-primary md:grid-cols-2 lg:grid-cols-3">
+        <div className="text-primary mt-5 grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
           {filteredProject.map((item) => (
             <CardsBounce
               className="mt-8 overflow-hidden shadow-lg"
@@ -64,31 +64,31 @@ const Project = () => {
                   css="hover:opacity-70 block overflow-hidden rounded-t-3xl"
                 />
 
-                <div className="absolute left-4 top-4">
-                  <div className="absolute inset-0 translate-x-1 translate-y-1 rounded-xl bg-cards-labels opacity-70"></div>
-                  <div className="relative rounded-xl border border-white/40 bg-cards-labels px-3 py-1 text-ternary shadow-md">
+                <div className="absolute top-4 left-4">
+                  <div className="bg-card-label absolute inset-0 translate-x-1 translate-y-1 rounded-xl opacity-70"></div>
+                  <div className="bg-card-label text-accent relative rounded-xl border border-white/40 px-3 py-1 shadow-md">
                     {item.category}
                   </div>
                 </div>
               </article>
 
-              <article className="text-primary items-stretch overflow-hidden rounded-b-3xl bg-[#123524] p-5">
+              <article className="text-primary bg-card-primary items-stretch overflow-hidden rounded-b-3xl p-5">
                 <span className="hidden">{item.category}</span>
                 <div className="md:h-52 2xl:h-44">
                   <div className="flex flex-col justify-between md:flex-row">
-                    <h3 className={`text-2xl ${sofia.className}`}>
+                    <h3 className={`text-2xl text-card-title ${sofia.className}`}>
                       {item.projectTitle}
                     </h3>
                     {item.inProgress && (
                       <span
-                        className={`uppercase bg-cards-labels md:self-center rounded-2xl py-1 px-2 mt-3 md:mt-0 text-center font-bold text-ternary ${bellefair.className}`}
+                        className={`bg-card-label text-accent mt-3 rounded-2xl px-2 py-1 text-center font-bold uppercase md:mt-0 md:self-center ${bellefair.className}`}
                       >
                         ⚠ en cours ⚠
                       </span>
                     )}
                   </div>
 
-                  <p className="mt-3 italic text-base md:text-lg">
+                  <p className="mt-3 text-base italic md:text-lg text-card">
                     {item.projectDescription}
                   </p>
                 </div>
@@ -105,13 +105,13 @@ const Project = () => {
       )}
 
       {visibleProject < Professional.length && (
-        <div className="z-10 mt-8 flex items-center justify-center">
+        <div className="z-10 mt-8 mb-6 flex items-center justify-center sm:mb-12">
           <button
-            className="button bg-accent text-primary hover:bg-hover"
+            className="button bg-accent-secondary text-accent hover:bg-primary"
             onClick={() => handleMoreProject(setVisibleProject)}
           >
             <span
-              className={`whitespace-pre-wrap text-center text-2xl font-medium leading-none tracking-tight text-gallery lg:text-xl  ${bellefair.className}`}
+              className={`text-accent text-center text-2xl leading-none font-medium tracking-tight whitespace-pre-wrap lg:text-xl ${bellefair.className}`}
             >
               Voir plus de projets...
             </span>

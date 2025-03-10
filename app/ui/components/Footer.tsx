@@ -5,7 +5,7 @@ const Footer = () => {
   const nowYear = new Date().getFullYear();
 
   return (
-    <footer className="flex flex-col bg-secondary px-12  py-8 text-lg text-primary md:flex-row md:justify-between md:px-32 border-t border-t-primary">
+    <footer className="flex flex-col bg-secondary px-12  py-8 text-lg text-primary md:flex-row md:justify-between md:px-16 lg:px-32 border-t border-t-primary">
       <p className="text-center md:text-start">{`Portfolio | Calcagno Loïc - Copyright ${nowYear}`}</p>
       <div className="flex gap-5 self-center">
         <Link

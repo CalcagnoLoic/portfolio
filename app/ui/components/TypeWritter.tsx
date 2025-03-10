@@ -39,10 +39,10 @@ const Typewriter = () => {
 
   return (
     <h2
-      className={`text-center md:text-start text-2xl md:text-3xl lg:text-4xl mt-3 text-secondary ${sofia.className}`}
+      className={`text-center md:text-start text-2xl md:text-3xl lg:text-4xl mt-3 text-primary ${sofia.className}`}
     >
-      Je suis... {displayedText}
-      <span className="blinking-cursor italic animate-pulse">|</span>
+      Je suis... <span className="text-accent-secondary">{displayedText}</span>
+      <span className="blinking-cursor italic animate-pulse text-accent-secondary">|</span>
     </h2>
   );
 };

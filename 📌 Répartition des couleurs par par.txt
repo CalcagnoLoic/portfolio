@@ -1,0 +1,23 @@
+📌 Répartition des couleurs par partie du site
+✅ 🌑 Sections principales (backgrounds)
+
+Background clair : --color-gray-light (bg-primary)
+Background foncé : --color-gray-darker (bg-secondary)
+✅ 📌 Textes
+
+Texte principal (standard) : --color-white (text-primary)
+Titres secondaires et accents : --color-accent-blue-light (text-secondary)
+Accentuation sur certains textes : --color-accent-yellow-light (text-accent-secondary)
+✅ 🃏 Cartes
+
+Fond principal : --color-card-primary (bg-card-primary)
+Texte des cartes : --color-card-text (text-card)
+Titres des cartes : --color-card-title (text-card-title)
+Hover des cartes : --color-card-hover (bg-card-hover)
+Labels des cartes : --color-card-label (bg-card-label)
+Accent des cartes : --color-card-accent (bg-card-accent)
+✅ ✨ Accents et effets interactifs
+
+Couleur d'accent principale : --color-accent-blue-light (bg-accent)
+Accent secondaire (par ex : boutons spéciaux) : --color-accent-yellow-light (bg-accent-secondary)
+Effet hover sur certains éléments : --color-hover-yellow (bg-hover)
