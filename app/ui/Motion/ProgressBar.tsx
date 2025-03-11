@@ -15,7 +15,6 @@ const ScrollProgressBar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-
   const scrollPercentage =
     (scrollY / (document.documentElement.scrollHeight - window.innerHeight)) *
     100;
@@ -28,13 +27,13 @@ const ScrollProgressBar = () => {
         left: 0,
         width: "100%",
         height: "5px",
-        backgroundColor: "#FFBE76",
+        backgroundColor: "#FFCA74",
       }}
     >
       <motion.div
         style={{
           height: "100%",
-          backgroundColor: "#4CAF50",
+          backgroundColor: "#5CB7FF",
         }}
         initial={{ width: 0 }}
         animate={{ width: `${scrollPercentage}%` }}

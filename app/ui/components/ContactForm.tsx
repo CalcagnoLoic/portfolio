@@ -2,19 +2,19 @@
 
 import Form from "@/app/container/Form";
 import { FormMotion } from "../Motion/Form";
-import { TitleMotion } from "../Motion/Title";
+import { Title } from "../Motion/Title";
 import { sofia } from "../fonts";
 import Link from "./Link";
 import ContactInformation from "./ContactInformation";
 
 const ContactForm = () => (
   <>
-    <TitleMotion
+    <Title
       id="contact"
-      className={`text-center text-accent-primary text-2xl  md:text-4xl ${sofia.className}`}
+      className={`text-accent-primary text-center text-2xl md:text-4xl ${sofia.className}`}
     >
       Restons en contact!
-    </TitleMotion>
+    </Title>
 
     <FormMotion>
       <article className="lg:mr-16">

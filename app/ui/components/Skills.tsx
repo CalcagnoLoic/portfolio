@@ -3,18 +3,17 @@
 import { skills } from "@/app/data/skills";
 import { sofia } from "../fonts";
 import { CardsContainerMotion, CardsMotion } from "../Motion/Cards";
-import { TitleMotion } from "../Motion/Title";
+import { Title } from "../Motion/Title";
 
 const Skills = () => {
-  console.log(TitleMotion);
   return ( 
     <>
-      <TitleMotion
+      <Title
         id="skills"
         className={`mb-10 text-center text-2xl md:text-4xl text-accent-primary ${sofia.className}`}
       >
         Que puis-je faire pour vous?
-      </TitleMotion>
+      </Title>
 
       <CardsContainerMotion>
         <div className="grid h-full grid-cols-1 gap-5 text-primary md:grid-cols-2 lg:grid-cols-3 mb-6 sm:mb-12">

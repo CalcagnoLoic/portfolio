@@ -77,7 +77,7 @@ export interface InputFieldProps {
   name?: string;
   value?: string;
   onChange?: (
-    newValue: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    newValue: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => void;
 }
 
@@ -158,7 +158,7 @@ export type LayoutProps = {
 };
 
 export type handleMoreProjectType = (
-  setState: React.Dispatch<React.SetStateAction<number>>
+  setState: React.Dispatch<React.SetStateAction<number>>,
 ) => void;
 
 export interface Testimonials {
@@ -197,4 +197,8 @@ export interface Motion {
 export interface ComponentMotion extends Motion {
   id?: string;
   className?: string;
+}
+
+export interface StateMotion extends Motion {
+  state: boolean;
 }

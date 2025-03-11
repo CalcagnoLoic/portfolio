@@ -2,19 +2,19 @@
 
 import { testimonials } from "@/app/data/testimonials";
 import { CardsContainerMotion, CardsMotion } from "../Motion/Cards";
-import { TitleMotion } from "../Motion/Title";
+import { Title } from "../Motion/Title";
 import { bellefair, sofia } from "../fonts";
 import Image from "next/image";
 import Link from "./Link";
 
 const Testimonials = () => (
   <>
-    <TitleMotion
+    <Title
       id="testimonials"
       className={`text-accent-primary mb-10 text-center text-2xl md:text-4xl ${sofia.className}`}
     >
       Témoignages et réussites
-    </TitleMotion>
+    </Title>
 
     <CardsContainerMotion>
       <div className="text-primary mb-6 grid grid-cols-1 place-items-center gap-5 sm:mb-12 md:grid-cols-2 lg:grid-cols-3">
@@ -46,7 +46,7 @@ const Testimonials = () => (
             <Link
               content="Envie d'en savoir plus?"
               href={testimonial.link}
-              css={`button bg-accent-secondary text-accent hover:bg-primary text-center text-lg ${bellefair.className}`}
+              css={`button bg-accent-secondary text-accent text-center text-lg ${bellefair.className}`}
               aria="Contact me with form or directly at calcagnoloic93@gmail.com"
               target="_blank"
             />

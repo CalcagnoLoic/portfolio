@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { sofia } from "../fonts";
+import { bellefair, sofia } from "../fonts";
 import Typewriter from "./TypeWritter";
 
 const Presentation = () => {
@@ -33,18 +33,18 @@ const Presentation = () => {
         </p>
 
         <div className="mt-5 flex flex-col gap-5 md:flex-row">
-          <a
-            className="button bg-accent-secondary text-accent hover:bg-hover"
-            href="/assets/CALCAGNO_LOIC_CV.pdf"
-          >
-            En savoir plus?
-          </a>
-          <a
-            href="#contact"
-            className="button bg-accent-secondary text-accent hover:bg-primary"
-          >
-            Restons en contact!
-          </a>
+          {[
+            { href: "/assets/CALCAGNO_LOIC_CV.pdf", text: "En savoir plus?" },
+            { href: "#contact", text: "Restons en contact!" },
+          ].map(({ href, text }) => (
+            <a
+              key={href}
+              href={href}
+              className={`button bg-accent-secondary text-accent text-lg text-ce ${bellefair.className}`}
+            >
+              {text}
+            </a>
+          ))}
         </div>
       </div>
 
@@ -54,7 +54,7 @@ const Presentation = () => {
           alt="moi"
           width={200}
           height={200}
-          className="mt-5 rounded-full lg:h-[325px] lg:w-[300px]"
+          className="mt-5 lg:h-[325px] lg:w-[300px]"
           loading="lazy"
         />
       </div>

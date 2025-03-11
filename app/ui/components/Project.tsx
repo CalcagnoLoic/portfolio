@@ -10,7 +10,7 @@ import { handleMoreProject } from "@/app/utils/showMoreProject";
 import Link from "@/app/ui/components/Link";
 import Image from "next/image";
 import { CardsBounce } from "../Motion/Cards";
-import { TitleMotion } from "../Motion/Title";
+import { Title } from "../Motion/Title";
 
 const Project = () => {
   const [displayedData, setDisplayedData] = useState<Projects[]>(Professional);
@@ -32,12 +32,12 @@ const Project = () => {
 
   return (
     <>
-      <TitleMotion
+      <Title
         className={`text-primary mb-10 text-center text-2xl md:text-4xl ${sofia.className}`}
         id="projects"
       >
         Mes projets
-      </TitleMotion>
+      </Title>
 
       <FilterOption selected={selected} setSelected={setSelected} />
 
@@ -76,14 +76,14 @@ const Project = () => {
                 <span className="hidden">{item.category}</span>
                 <div className="md:h-52 2xl:h-44">
                   <div className="flex flex-col justify-between md:flex-row">
-                    <h3 className={`text-2xl text-card-title ${sofia.className}`}>
+                    <h3 className={`text-2xl text-primary ${sofia.className}`}>
                       {item.projectTitle}
                     </h3>
                     {item.inProgress && (
                       <span
                         className={`bg-card-label text-accent mt-3 rounded-2xl px-2 py-1 text-center font-bold uppercase md:mt-0 md:self-center ${bellefair.className}`}
                       >
-                        ⚠ en cours ⚠
+                        ⚠️ en cours ⚠️
                       </span>
                     )}
                   </div>
@@ -107,7 +107,7 @@ const Project = () => {
       {visibleProject < Professional.length && (
         <div className="z-10 mt-8 mb-6 flex items-center justify-center sm:mb-12">
           <button
-            className="button bg-accent-secondary text-accent hover:bg-primary"
+            className="button bg-accent-secondary text-accent "
             onClick={() => handleMoreProject(setVisibleProject)}
           >
             <span

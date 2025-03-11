@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { sofia } from "../fonts";
 
-const texts = ["Développeur JavaScript ", "Python Enthusiast 🐍 "];
+const texts = ["Développeur JavaScript", "Python Enthusiast 🐍"];
 
 const Typewriter = () => {
   const [textIndex, setTextIndex] = useState(0);
@@ -39,10 +39,12 @@ const Typewriter = () => {
 
   return (
     <h2
-      className={`text-center md:text-start text-2xl md:text-3xl lg:text-4xl mt-3 text-primary ${sofia.className}`}
+      className={`text-primary mt-3 text-center text-[22px] md:text-start md:text-3xl lg:text-4xl ${sofia.className}`}
     >
       Je suis... <span className="text-accent-secondary">{displayedText}</span>
-      <span className="blinking-cursor italic animate-pulse text-accent-secondary">|</span>
+      <span className="blinking-cursor text-accent-secondary animate-pulse italic">
+        |
+      </span>
     </h2>
   );
 };

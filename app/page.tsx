@@ -7,7 +7,7 @@ import Testimonials from "./ui/components/Testimonials";
 const Page = () => {
   return (
     <>
-      <section className="bg-primary text-primary hero-section relative overflow-hidden">
+      <section className="bg-primary text-primary hero-section relative overflow-hidden mt-10 lg:mt-0">
         <Presentation />
         <svg
           className="absolute bottom-0 left-0 hidden w-full sm:block"
