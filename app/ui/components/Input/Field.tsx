@@ -8,6 +8,7 @@ const Input = ({
   name,
   value,
   onChange,
+  isDisabled = false,
 }: InputFieldProps) => (
   <>
     {isTextArea ? (
@@ -15,7 +16,7 @@ const Input = ({
         cols={30}
         rows={4}
         placeholder="Message"
-        className="rounded-md p-2 bg-secondary border"
+        className={`${inputCSS} bg-secondary rounded-md p-2`}
         name="message"
         value={value}
         onChange={onChange}
@@ -24,10 +25,11 @@ const Input = ({
       <input
         type={type}
         placeholder={placeholder}
-        className={`${inputCSS} `}
+        className={`${inputCSS}`}
         name={name}
         value={value}
         onChange={onChange}
+        disabled={isDisabled}
       />
     )}
   </>

@@ -24,32 +24,35 @@ const Testimonials = () => (
             id={testimonial.id}
             className="bg-card-primary flex h-full flex-col rounded-xl p-8 shadow-lg"
           >
-            <Image
-              src={testimonial.companyImg}
-              alt={testimonial.company}
-              className="mx-auto mb-4 block w-1/2 bg-white"
-              width={200}
-              height={200}
-            />
-            <div className="max-h-32 flex-grow overflow-auto">
-              <q className="mt-5 italic">{testimonial.text}</q>
-            </div>
 
-            <span
-              className={`2xl:mx-1/2 m-auto mt-5 block text-center ${sofia.className}`}
-            >{`${testimonial.name}, ${testimonial.position} chez ${testimonial.company}`}</span>
+              <Image
+                src={testimonial.companyImg}
+                alt={testimonial.company}
+                className="mx-auto mb-4 block  bg-white px-6 py-3 rounded-full"
+                width={200}
+                height={200}
+              />
 
-            <span className="my-4 flex justify-center gap-5">
-              {testimonial.skills}
-            </span>
+              <div className="max-h-32 flex-grow overflow-auto">
+                <q className="mt-5 italic">{testimonial.text}</q>
+              </div>
 
-            <Link
-              content="Envie d'en savoir plus?"
-              href={testimonial.link}
-              css={`button bg-accent-secondary text-accent text-center text-lg ${bellefair.className}`}
-              aria="Contact me with form or directly at calcagnoloic93@gmail.com"
-              target="_blank"
-            />
+              <span
+                className={`2xl:mx-1/2 m-auto mt-5 block text-center ${sofia.className}`}
+              >{`${testimonial.name}, ${testimonial.position} chez ${testimonial.company}`}</span>
+
+              <span className="my-4 flex justify-center gap-5">
+                {testimonial.skills}
+              </span>
+
+              <Link
+                content="Envie d'en savoir plus?"
+                href={testimonial.link}
+                css={`button bg-accent-secondary text-accent text-center text-lg ${bellefair.className}`}
+                aria="Contact me with form or directly at calcagnoloic93@gmail.com"
+                target="_blank"
+              />
+
           </CardsMotion>
         ))}
       </div>

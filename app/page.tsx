@@ -7,10 +7,10 @@ import Testimonials from "./ui/components/Testimonials";
 const Page = () => {
   return (
     <>
-      <section className="bg-primary text-primary hero-section relative overflow-hidden mt-10 lg:mt-0">
+      <section className="bg-primary text-primary hero-section relative mt-10 overflow-hidden lg:mt-0">
         <Presentation />
         <svg
-          className="absolute bottom-0 left-0 hidden w-full sm:block"
+          className="absolute bottom-0 left-0 block w-full"
           viewBox="0 0 1440 100"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -21,7 +21,7 @@ const Page = () => {
       <section className="bg-secondary text-primary hero-section relative overflow-hidden">
         <Project />
         <svg
-          className="absolute bottom-0 left-0 hidden w-full sm:block"
+          className="absolute bottom-0 left-0 block w-full"
           viewBox="0 0 1440 100"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -32,7 +32,7 @@ const Page = () => {
       <section className="bg-primary text-primary hero-section relative overflow-hidden">
         <Skills />
         <svg
-          className="absolute bottom-0 left-0 hidden w-full sm:block"
+          className="absolute bottom-0 left-0 block w-full"
           viewBox="0 0 1440 100"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -43,7 +43,7 @@ const Page = () => {
       <section className="bg-secondary text-primary hero-section relative overflow-hidden">
         <Testimonials />
         <svg
-          className="absolute bottom-0 left-0 hidden w-full sm:block"
+          className="absolute bottom-0 left-0 block w-full"
           viewBox="0 0 1440 100"
           xmlns="http://www.w3.org/2000/svg"
         >

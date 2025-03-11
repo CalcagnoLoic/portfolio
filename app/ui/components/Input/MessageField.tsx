@@ -10,7 +10,7 @@ const MessageField = ({
 }: FieldInput) => (
   <>
     <Field
-      css="input-field"
+      inputCSS={`${isValid ? "border-[#FFCA74]" : "border-white"}`} 
       isTextArea={true}
       value={state}
       onChange={(e) => handleChange({ e, callback: setState })}

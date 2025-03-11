@@ -22,6 +22,10 @@
 }
 
 @layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
   .bg-primary {
     background-color: var(--color-gray-light);
   }
@@ -73,6 +77,10 @@
     @apply cursor-pointer rounded-3xl border border-white px-6 py-3 transition duration-700 ease-in-out hover:bg-[#FFCA96];
   }
 
+  .button-form {
+    @apply cursor-pointer rounded-3xl border border-white px-6 py-3 transition duration-700 ease-in-out ;
+  }
+
   .hero-section {
     @apply px-8 py-6 md:px-16 md:py-9 lg:px-32 lg:py-12;
   }
@@ -85,7 +93,11 @@
     @apply mb-1 font-semibold outline-none;
   }
 
-  .main_title {
+  input:disabled {
+    @apply cursor-not-allowed;
+  }
+
+  .main-title {
     @apply text-center text-xl italic md:text-start md:text-2xl lg:text-3xl;
   }
 }

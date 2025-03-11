@@ -11,11 +11,10 @@ const EmailField = ({
 }: MailFormatField) => (
   <div className="input-container lg:w-1/2">
     <Field
-      css="input-field"
       isTextArea={false}
       type="email"
       placeholder="Email"
-      inputCSS="rounded-md p-2 w-full bg-secondary border"
+      inputCSS={`rounded-md p-2 w-full bg-secondary border ${isValid ? "border-[#FFCA74]" : "border-white"}`}
       name="reply_to"
       value={state}
       onChange={(e) => handleChange({ e, callback: setState })}

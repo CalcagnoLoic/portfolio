@@ -1,19 +1,19 @@
-"use client"
+"use client";
 
 import { useEffect, useState } from "react";
 
 export const useMobile = () => {
-  const [isMobile, setIsMobile] = useState(
-    window.innerWidth < 1024 ? true : false,
-  );
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 1024 ? true : false);
+      setIsMobile(window.innerWidth < 1024);
     };
 
-    window.addEventListener("resize", handleResize);
+    // Initialisation après montage (évite l'erreur "window is not defined")
+    handleResize();
 
+    window.addEventListener("resize", handleResize);
     return () => {
       window.removeEventListener("resize", handleResize);
     };

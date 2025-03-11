@@ -7,7 +7,7 @@ const Presentation = () => {
     <div className="mb-6 flex flex-col lg:mb-12 lg:flex-row">
       <div className="flex flex-col lg:w-2/3 lg:justify-center">
         <h2
-          className={`${sofia.className} main_title`}
+          className={`${sofia.className} main-title`}
           style={{ fontWeight: 500 }}
         >
           Bienvenue dans mon univers 🚀

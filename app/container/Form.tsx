@@ -17,6 +17,7 @@ const Form = () => {
   const [email, setEmail] = useState<string>("");
   const [message, setMessage] = useState<string>("");
   const [isInvalidForm, setIsInvalidForm] = useState<boolean>(false);
+  const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
   const [error, setError] = useState<ErrorField>({
     NameEmpty: "",
     EmailEmpty: "",
@@ -46,6 +47,8 @@ const Form = () => {
       return;
     }
 
+    setIsSubmitting(true);
+
     if (serviceId && templateId && userId) {
       sendForm(serviceId, templateId, formElement, userId)
         .then(() => {
@@ -57,29 +60,34 @@ const Form = () => {
         .catch((error) => {
           console.error("Error sending email:", error);
           notify("error");
+          setIsSubmitting(false);
+        })
+        .finally(() => {
+          setIsSubmitting(false);
         });
     } else {
       console.error("Missing environment variables for sending the form");
       notify("error");
+      setIsSubmitting(false);
     }
   };
 
   return (
-    <form onSubmit={sendEmail} className="my-5 flex w-full flex-col py-8 text">
+    <form onSubmit={sendEmail} className="text my-5 flex w-full flex-col py-8">
       <div className="flex flex-col lg:flex-row lg:gap-5">
         <NameField
           state={name}
           setState={setName}
-          isValid={isInvalidForm}
-          errorMessage={error.NameEmpty}
+          isValid={!!error.NameEmpty}
+          errorMessage={isInvalidForm ? error.NameEmpty : ""}
         />
 
         <EmailField
           state={email}
           setState={setEmail}
-          isValid={isInvalidForm}
-          errorMessage={error.EmailEmpty}
-          errorFormatField={error.EmailFormat}
+          isValid={!!error.EmailEmpty || !!error.EmailFormat}
+          errorMessage={isInvalidForm ? error.EmailEmpty : ""}
+          errorFormatField={isInvalidForm ? error.EmailFormat : ""}
         />
       </div>
 
@@ -87,16 +95,17 @@ const Form = () => {
         <MessageField
           state={message}
           setState={setMessage}
-          isValid={isInvalidForm}
-          errorMessage={error.MessageEmpty}
+          isValid={!!error.MessageEmpty}
+          errorMessage={isInvalidForm ? error.MessageEmpty : ""}
         />
       </div>
 
       <Field
         isTextArea={false}
         type="submit"
-        value="Contactez moi 📧"
-        inputCSS={`button bg-accent-secondary text-accent text-center text-2xl ${bellefair.className}`}
+        value={isSubmitting ? "Envoie en cours..." : "Contactez moi 📧"}
+        inputCSS={`button-form  text-accent text-center text-2xl ${bellefair.className} ${isSubmitting ? "bg-gray-300" : "bg-accent-secondary hover:bg-[#FFCA96]"}`}
+        isDisabled={isSubmitting}
       />
 
       <ToastContainer closeButton={true} transition={Zoom} />

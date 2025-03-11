@@ -25,7 +25,7 @@ const Skills = () => {
             >
               <div className="flex justify-center gap-3">
                 <h3
-                  className={`text-center text-xl md:text-3xl self-center ${sofia.className}`}
+                  className={`text-center text-2xl self-center ${sofia.className}`}
                 >
                   {item.skillsTitle}
                 </h3>

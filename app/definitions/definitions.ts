@@ -79,6 +79,7 @@ export interface InputFieldProps {
   onChange?: (
     newValue: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => void;
+  isDisabled?: boolean;
 }
 
 export interface LinkProps {

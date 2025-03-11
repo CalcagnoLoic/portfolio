@@ -1,12 +1,16 @@
 "use client";
 
+import { motion } from "motion/react";
 import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+
 
 const ScrollProgressBar = () => {
   const [scrollY, setScrollY] = useState(0);
+  const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
+    setIsClient(true); // On sait qu'on est côté client maintenant
+
     const handleScroll = () => {
       setScrollY(window.scrollY);
     };
@@ -14,6 +18,8 @@ const ScrollProgressBar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  if (!isClient) return null; // Évite d'exécuter le code avant le montage
 
   const scrollPercentage =
     (scrollY / (document.documentElement.scrollHeight - window.innerHeight)) *
