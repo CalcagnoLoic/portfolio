@@ -9,7 +9,7 @@ const Skills = () => {
   return ( 
     <>
       <Title
-        id="skills"
+        id="Compétences"
         className={`mb-10 text-center text-2xl md:text-4xl text-accent-primary ${sofia.className}`}
       >
         Que puis-je faire pour vous?

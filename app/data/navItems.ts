@@ -1,20 +1,21 @@
 import { navItem } from "@/app/definitions/definitions";
 
 export const navItems: navItem[] = [
+
   {
     id: "r*sIHGR",
     content: "Projets",
-    href: "#projects",
+    href: "#projets",
   },
   {
     id: "Pd-A7s^",
     content: "Compétences",
-    href: "#skills",
+    href: "#competences",
   },
   {
     id: "8cqagdj",
     content: "Témoignages",
-    href: "#testimonials",
+    href: "#temoignages",
   },
   {
     id: "nXN9$.F",

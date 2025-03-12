@@ -10,7 +10,7 @@ import Link from "./Link";
 const Testimonials = () => (
   <>
     <Title
-      id="testimonials"
+      id="Témoignages"
       className={`text-accent-primary mb-10 text-center text-2xl md:text-4xl ${sofia.className}`}
     >
       Témoignages et réussites

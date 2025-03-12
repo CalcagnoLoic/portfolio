@@ -34,7 +34,7 @@ const Project = () => {
     <>
       <Title
         className={`text-primary mb-10 text-center text-2xl md:text-4xl ${sofia.className}`}
-        id="projects"
+        id="Projets"
       >
         Mes projets
       </Title>
