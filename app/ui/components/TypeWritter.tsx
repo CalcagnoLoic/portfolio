@@ -39,7 +39,7 @@ const Typewriter = () => {
 
   return (
     <h2
-      className={`text-primary mt-3 text-center text-[22px] md:text-start md:text-3xl lg:text-4xl ${sofia.className}`}
+      className={`text-primary mt-3 md:text-center text-[22px] md:text-start md:text-3xl lg:text-4xl ${sofia.className}`}
     >
       Je suis... <span className="text-accent-secondary">{displayedText}</span>
       <span className="blinking-cursor text-accent-secondary animate-pulse italic">

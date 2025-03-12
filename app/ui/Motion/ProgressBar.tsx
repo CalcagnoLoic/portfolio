@@ -26,8 +26,9 @@ const ScrollProgressBar = () => {
         bottom: 0,
         left: 0,
         width: "100%",
-        height: "5px",
-        backgroundColor: "#FFCA74",
+        height: "7px",
+        borderRadius: "100%"
+
       }}
     >
       <motion.div

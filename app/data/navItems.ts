@@ -5,21 +5,21 @@ export const navItems: navItem[] = [
   {
     id: "r*sIHGR",
     content: "Projets",
-    href: "#projets",
+    href: "#Projets",
   },
   {
     id: "Pd-A7s^",
     content: "Compétences",
-    href: "#competences",
+    href: "#Compétences",
   },
   {
     id: "8cqagdj",
     content: "Témoignages",
-    href: "#temoignages",
+    href: "#Témoignages",
   },
   {
     id: "nXN9$.F",
     content: "Contact",
-    href: "#contact",
+    href: "#Contact",
   },
 ];

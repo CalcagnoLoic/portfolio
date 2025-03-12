@@ -6,12 +6,27 @@ import { Title } from "../Motion/Title";
 import { bellefair, sofia } from "../fonts";
 import Image from "next/image";
 import Link from "./Link";
+import { useEffect, useRef, useState } from "react";
+import { motion, useScroll, useTransform } from "motion/react";
 
 const Testimonials = () => {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [isScrollable, setIsScrollable] = useState(false);
+  const { scrollYProgress } = useScroll({ container: containerRef });
+  const fadeInOut = useTransform(scrollYProgress, [0, 0.3], [1, 0]);
+
+  useEffect(() => {
+    if (containerRef.current) {
+      setIsScrollable(
+        containerRef.current.scrollHeight > containerRef.current.clientHeight,
+      );
+    }
+  }, []);
+
   return (
     <>
       <Title
-        id="temoignages"
+        id="Témoignages"
         className={`text-accent-primary mb-10 text-center text-2xl md:text-4xl ${sofia.className}`}
       >
         Témoignages et réussites
@@ -33,11 +48,19 @@ const Testimonials = () => {
                 height={200}
               />
 
-              <div className="bg-secondary relative max-h-32 flex-grow overflow-auto rounded">
+              <div
+                className="bg-secondary relative max-h-32 flex-grow overflow-auto rounded"
+                ref={containerRef}
+              >
                 <q className="text-primary block px-4 py-2 italic">
                   {testimonial.text}
                 </q>
-                <div className="absolute top-28 h-5 w-full bg-red-500"></div>
+                {isScrollable && (
+                  <motion.div
+                    className="from-secondary pointer-events-none absolute bottom-0 left-0 h-10 w-full bg-gradient-to-t to-transparent"
+                    style={{ opacity: fadeInOut }}
+                  />
+                )}
               </div>
 
               <span

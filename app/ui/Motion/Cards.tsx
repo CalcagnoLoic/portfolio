@@ -39,6 +39,7 @@ export const CardsMotion = ({ children, id, className }: ComponentMotion) => (
 
 export const CardsBounce = ({ children, id, className }: ComponentMotion) => (
   <motion.section
+    initial="rest"
     variants={bounceVariants}
     whileHover="hover"
     id={id}

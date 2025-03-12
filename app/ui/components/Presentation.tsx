@@ -2,7 +2,6 @@ import Image from "next/image";
 import { bellefair, sofia } from "../fonts";
 import Typewriter from "./TypeWritter";
 
-
 const Presentation = () => {
   return (
     <div className="mb-6 flex flex-col lg:mb-12 lg:flex-row">
@@ -14,9 +13,9 @@ const Presentation = () => {
           Bienvenue dans mon univers 🚀
         </h2>
 
-
-
         <Typewriter />
+
+        <div className="bg-accent-yellow-light mt-3 mb-5 h-1 w-16 md:h-2 md:w-24 lg:w-28"></div>
 
         <p className="mt-3 text-center text-lg md:text-start">
           Je suis profondément passionné par le développement web, un voyage qui
@@ -43,7 +42,7 @@ const Presentation = () => {
             <a
               key={href}
               href={href}
-              className={`button bg-accent-secondary text-accent text-lg text-ce ${bellefair.className}`}
+              className={`button bg-accent-secondary text-accent text-ce text-lg ${bellefair.className}`}
             >
               {text}
             </a>
