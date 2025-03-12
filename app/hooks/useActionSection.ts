@@ -1,11 +1,15 @@
 "use client";
 
 import { useEffect, useState, useRef, useCallback } from "react";
+import { useScroll, useTransform } from "motion/react";
 
 export const useActiveSection = (sectionsIds: string[]) => {
   const [activeSection, setActiveSection] = useState<string | null>(null);
   const lastScrollY = useRef(0);
   const threshold = 0.7;
+
+  const { scrollYProgress } = useScroll();
+  const scrollPercentage = useTransform(scrollYProgress, [0, 1], [0, 100]);
 
   const handleScroll = useCallback(() => {
     const scrollY = window.scrollY;
@@ -43,9 +47,14 @@ export const useActiveSection = (sectionsIds: string[]) => {
   }, [activeSection, sectionsIds]);
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [handleScroll]);
+    const unsubscribe = scrollPercentage.onChange(() => {
+      handleScroll();
+    });
+
+    return () => {
+      unsubscribe();
+    };
+  }, [scrollPercentage, handleScroll]);
 
   return { activeSection, setActiveSection };
 };

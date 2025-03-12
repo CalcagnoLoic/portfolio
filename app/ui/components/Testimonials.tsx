@@ -7,34 +7,37 @@ import { bellefair, sofia } from "../fonts";
 import Image from "next/image";
 import Link from "./Link";
 
-const Testimonials = () => (
-  <>
-    <Title
-      id="Témoignages"
-      className={`text-accent-primary mb-10 text-center text-2xl md:text-4xl ${sofia.className}`}
-    >
-      Témoignages et réussites
-    </Title>
+const Testimonials = () => {
+  return (
+    <>
+      <Title
+        id="temoignages"
+        className={`text-accent-primary mb-10 text-center text-2xl md:text-4xl ${sofia.className}`}
+      >
+        Témoignages et réussites
+      </Title>
 
-    <CardsContainerMotion>
-      <div className="text-primary mb-6 grid grid-cols-1 place-items-center gap-5 sm:mb-12 md:grid-cols-2 lg:grid-cols-3">
-        {testimonials.map((testimonial) => (
-          <CardsMotion
-            key={testimonial.id}
-            id={testimonial.id}
-            className="bg-card-primary flex h-full flex-col rounded-xl p-8 shadow-lg"
-          >
-
+      <CardsContainerMotion>
+        <div className="text-primary mb-6 grid grid-cols-1 place-items-center gap-5 sm:mb-12 md:grid-cols-2 lg:grid-cols-3">
+          {testimonials.map((testimonial) => (
+            <CardsMotion
+              key={testimonial.id}
+              id={testimonial.id}
+              className="bg-card-primary flex h-full flex-col rounded-xl p-8 shadow-lg"
+            >
               <Image
                 src={testimonial.companyImg}
                 alt={testimonial.company}
-                className="mx-auto mb-4 block  bg-white px-6 py-3 rounded-full"
+                className="mx-auto mb-4 block rounded-full bg-white px-6 py-3"
                 width={200}
                 height={200}
               />
 
-              <div className="max-h-32 flex-grow overflow-auto">
-                <q className="mt-5 italic">{testimonial.text}</q>
+              <div className="bg-secondary relative max-h-32 flex-grow overflow-auto rounded">
+                <q className="text-primary block px-4 py-2 italic">
+                  {testimonial.text}
+                </q>
+                <div className="absolute top-28 h-5 w-full bg-red-500"></div>
               </div>
 
               <span
@@ -52,12 +55,12 @@ const Testimonials = () => (
                 aria="Contact me with form or directly at calcagnoloic93@gmail.com"
                 target="_blank"
               />
-
-          </CardsMotion>
-        ))}
-      </div>
-    </CardsContainerMotion>
-  </>
-);
+            </CardsMotion>
+          ))}
+        </div>
+      </CardsContainerMotion>
+    </>
+  );
+};
 
 export default Testimonials;

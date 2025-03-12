@@ -5,30 +5,30 @@ export const Dropdown = ({ children, state }: StateMotion) => (
   <motion.div
     initial={{
       opacity: 0,
-      y: -20, // Initialisation en dehors de l'écran (ou légèrement en haut)
-      height: 0, // Pas de hauteur au départ
+      y: -20,
+      height: 0,
     }}
     animate={
       state
         ? {
             opacity: 1,
-            y: 0, // Remettre à sa position d'origine
-            height: "auto", // La hauteur devient automatique pour s'adapter au contenu
+            y: 0,
+            height: "auto",
           }
         : {
             opacity: 0,
-            y: -20, // Remonter légèrement vers le haut pour simuler la fermeture
-            height: 0, // Réduire la hauteur à zéro pour masquer le contenu
+            y: -20,
+            height: 0,
           }
     }
     exit={{
       opacity: 0,
-      y: -20, // On remonte pour cacher l'élément
-      height: 0, // On réduit la hauteur pour masquer complètement l'élément
+      y: -20,
+      height: 0,
       transition: {
         opacity: { duration: 0.3, ease: "easeOut" },
         y: { duration: 0.3, ease: "easeOut" },
-        height: { duration: 0.3, ease: "easeOut" }, // Transition pour la hauteur
+        height: { duration: 0.3, ease: "easeOut" },
       },
     }}
     transition={{
@@ -36,7 +36,7 @@ export const Dropdown = ({ children, state }: StateMotion) => (
       ease: "easeInOut",
       type: "spring",
     }}
-    className="filter-button bg-primary border-bg-cards text-primary absolute right-0 z-10 mt-2 flex w-64 flex-col rounded-3xl border shadow-lg overflow-hidden" // Ajout de overflow-hidden pour gérer la hauteur dynamique
+    className="filter-button bg-primary border-bg-cards text-primary absolute right-0 z-10 mt-2 flex w-64 flex-col overflow-hidden rounded-3xl border shadow-lg" // Ajout de overflow-hidden pour gérer la hauteur dynamique
   >
     {children}
   </motion.div>

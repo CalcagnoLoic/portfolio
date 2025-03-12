@@ -1,29 +1,23 @@
 "use client";
 
-import { motion } from "motion/react";
+import { motion, useScroll, useTransform } from "motion/react";
 import { useState, useEffect } from "react";
 
-
 const ScrollProgressBar = () => {
-  const [scrollY, setScrollY] = useState(0);
+  const { scrollYProgress } = useScroll();
   const [isClient, setIsClient] = useState(false);
+  const [progressValue, setProgressValue] = useState(0);
+
+  const progress = useTransform(scrollYProgress, [0, 1], [0, 100]);
+
+  console.log(progress);
 
   useEffect(() => {
-    setIsClient(true); // On sait qu'on est côté client maintenant
+    setIsClient(true);
+    return progress.onChange((latest) => setProgressValue(latest));
+  }, [progress]);
 
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  if (!isClient) return null; // Évite d'exécuter le code avant le montage
-
-  const scrollPercentage =
-    (scrollY / (document.documentElement.scrollHeight - window.innerHeight)) *
-    100;
+  if (!isClient) return null;
 
   return (
     <motion.div
@@ -42,7 +36,7 @@ const ScrollProgressBar = () => {
           backgroundColor: "#5CB7FF",
         }}
         initial={{ width: 0 }}
-        animate={{ width: `${scrollPercentage}%` }}
+        animate={{ width: `${progressValue}%` }}
         transition={{ duration: 0.1 }}
       />
     </motion.div>

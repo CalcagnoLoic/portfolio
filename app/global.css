@@ -6,6 +6,19 @@
   --toastify-color-error: #e74c3c;
 }
 
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5cb7ff;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
 @theme {
   --color-gray-light: rgb(55, 68, 82);
   --color-gray-darker: rgb(20, 30, 40);
@@ -74,11 +87,11 @@
 
 @layer component {
   .button {
-    @apply cursor-pointer rounded-3xl border border-white px-6 py-3 transition duration-700 ease-in-out hover:bg-[#FFCA96];
+    @apply cursor-pointer rounded-3xl border border-white px-6 py-3 transition duration-700 ease-in-out hover:bg-[#FFCA96] lg:hover:scale-x-110;
   }
 
   .button-form {
-    @apply cursor-pointer rounded-3xl border border-white px-6 py-3 transition duration-700 ease-in-out ;
+    @apply cursor-pointer rounded-3xl border border-white px-6 py-3 transition duration-700 ease-in-out lg:hover:scale-x-110;
   }
 
   .hero-section {

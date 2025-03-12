@@ -2,6 +2,7 @@ import Image from "next/image";
 import { bellefair, sofia } from "../fonts";
 import Typewriter from "./TypeWritter";
 
+
 const Presentation = () => {
   return (
     <div className="mb-6 flex flex-col lg:mb-12 lg:flex-row">
@@ -12,6 +13,8 @@ const Presentation = () => {
         >
           Bienvenue dans mon univers 🚀
         </h2>
+
+
 
         <Typewriter />
 

@@ -10,7 +10,7 @@ import ContactInformation from "./ContactInformation";
 const ContactForm = () => (
   <>
     <Title
-      id="Contact"
+      id="contact"
       className={`text-accent-primary text-center text-2xl md:text-4xl ${sofia.className}`}
     >
       Restons en contact!
