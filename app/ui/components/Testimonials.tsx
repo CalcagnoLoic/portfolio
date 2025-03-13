@@ -3,11 +3,11 @@
 import { testimonials } from "@/app/data/testimonials";
 import { CardsContainerMotion, CardsMotion } from "../Motion/Cards";
 import { Title } from "../Motion/Title";
-import { bellefair, sofia } from "../fonts";
+import { sofia } from "../fonts";
 import Image from "next/image";
-import Link from "./Link";
 import { useEffect, useRef, useState } from "react";
 import { motion, useScroll, useTransform } from "motion/react";
+import { SquareArrowOutUpRight } from "lucide-react";
 
 const Testimonials = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -27,7 +27,7 @@ const Testimonials = () => {
     <>
       <Title
         id="Témoignages"
-        className={`text-accent-primary mb-10 text-center text-2xl md:text-4xl ${sofia.className}`}
+        className={`text-accent-primary mb-10 text-center text-2xl [text-shadow:_0_2px_4px_rgba(255,255,255,0.5)] md:text-4xl ${sofia.className}`}
       >
         Témoignages et réussites
       </Title>
@@ -38,7 +38,7 @@ const Testimonials = () => {
             <CardsMotion
               key={testimonial.id}
               id={testimonial.id}
-              className="bg-card-primary flex h-full flex-col rounded-xl p-8 shadow-lg"
+              className="bg-card-primary flex h-full flex-col rounded-xl p-8 shadow-lg shadow-[#364351]"
             >
               <Image
                 src={testimonial.companyImg}
@@ -48,6 +48,14 @@ const Testimonials = () => {
                 height={200}
               />
 
+              <span
+                className={`2xl:mx-1/2 m-auto mb-4 block text-center ${sofia.className}`}
+              >{`${testimonial.name}, ${testimonial.position}`}</span>
+
+              <span className="mb-4 flex justify-center gap-5">
+                {testimonial.skills}
+              </span>
+
               <div
                 className="bg-secondary relative max-h-32 flex-grow overflow-auto rounded"
                 ref={containerRef}
@@ -55,6 +63,7 @@ const Testimonials = () => {
                 <q className="text-primary block px-4 py-2 italic">
                   {testimonial.text}
                 </q>
+
                 {isScrollable && (
                   <motion.div
                     className="from-secondary pointer-events-none absolute bottom-0 left-0 h-10 w-full bg-gradient-to-t to-transparent"
@@ -62,22 +71,7 @@ const Testimonials = () => {
                   />
                 )}
               </div>
-
-              <span
-                className={`2xl:mx-1/2 m-auto mt-5 block text-center ${sofia.className}`}
-              >{`${testimonial.name}, ${testimonial.position} chez ${testimonial.company}`}</span>
-
-              <span className="my-4 flex justify-center gap-5">
-                {testimonial.skills}
-              </span>
-
-              <Link
-                content="Envie d'en savoir plus?"
-                href={testimonial.link}
-                css={`button bg-accent-secondary text-accent text-center text-lg ${bellefair.className}`}
-                aria="Contact me with form or directly at calcagnoloic93@gmail.com"
-                target="_blank"
-              />
+              {/* <SquareArrowOutUpRight className="absolute" /> */}
             </CardsMotion>
           ))}
         </div>

@@ -17,7 +17,7 @@ const FilterOption = ({ selected, setSelected }: Filter) => {
     (value: string) => {
       setSelected((prevValue) => handleSelectionLogic(prevValue, value));
     },
-    [setSelected]
+    [setSelected],
   );
 
   const handleDeselectAll = () => {
@@ -26,17 +26,17 @@ const FilterOption = ({ selected, setSelected }: Filter) => {
 
   return (
     <div className={`relative mt-8 w-full ${bellefair.className}`}>
-      <div className="flex justify-end">
+      <div className="flex">
         <div className="w-64">
           <button
-            className="flex w-full items-center justify-between rounded-3xl bg-primary border border-bg-cards p-4 text-lg text-primary shadow-lg cursor-pointer"
+            className="bg-primary border-bg-cards text-primary flex w-full cursor-pointer items-center justify-between rounded-3xl border p-4 text-lg shadow-lg shadow-[#364351]"
             onClick={handleOpen}
           >
             {selected.includes("all")
               ? "Filtrez selon la stack:"
               : selected
                   .map(
-                    (s) => filterOptionsData.find((o) => o.value === s)?.label
+                    (s) => filterOptionsData.find((o) => o.value === s)?.label,
                   )
                   .join(", ")}
           </button>

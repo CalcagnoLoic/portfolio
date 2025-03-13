@@ -6,7 +6,7 @@ export const testimonials: Testimonials[] = [
   {
     id: "-lyNqiF",
     name: "Gagnant du prix 'Best Purpose'",
-    position: "Hackathon 4e édition",
+    position: "Hackathon ",
     company: "Odoo",
     skills: (
       <>

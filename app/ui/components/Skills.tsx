@@ -6,32 +6,32 @@ import { CardsContainerMotion, CardsMotion } from "../Motion/Cards";
 import { Title } from "../Motion/Title";
 
 const Skills = () => {
-  return ( 
+  return (
     <>
       <Title
         id="Compétences"
-        className={`mb-10 text-center text-2xl md:text-4xl text-accent-primary ${sofia.className}`}
+        className={`text-accent-primary mb-10 text-center text-2xl [text-shadow:_0_2px_4px_rgba(0,0,0,0.5)] md:text-4xl ${sofia.className}`}
       >
         Que puis-je faire pour vous?
       </Title>
 
       <CardsContainerMotion>
-        <div className="grid h-full grid-cols-1 gap-5 text-primary md:grid-cols-2 lg:grid-cols-3 mb-6 sm:mb-12">
+        <div className="text-primary mb-6 grid h-full grid-cols-1 gap-5 sm:mb-12 md:grid-cols-2 xl:grid-cols-3">
           {skills.map((item) => (
             <CardsMotion
               key={item.id}
               id={item.id}
-              className="flex flex-1 flex-col items-stretch rounded-xl bg-ternary p-5 bg-card-primary"
+              className="bg-ternary bg-card-primary flex flex-1 flex-col items-stretch rounded-xl p-5 shadow-lg shadow-[#141E28]"
             >
               <div className="flex justify-center gap-3">
                 <h3
-                  className={`text-center text-2xl self-center ${sofia.className}`}
+                  className={`self-center text-center text-2xl ${sofia.className}`}
                 >
                   {item.skillsTitle}
                 </h3>
               </div>
 
-              <p className="mt-5 text-center h-full flex-grow">
+              <p className="mt-5 h-full flex-grow text-center">
                 {item.skillsPresentation}
               </p>
 

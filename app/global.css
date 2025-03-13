@@ -87,7 +87,7 @@
 
 @layer component {
   .button {
-    @apply cursor-pointer rounded-3xl border border-white px-6 py-3 transition duration-700 ease-in-out hover:bg-[#FFCA96] lg:hover:scale-x-110;
+    @apply cursor-pointer rounded-3xl border-white px-6 py-3 transition duration-700 ease-in-out hover:border lg:hover:scale-x-110;
   }
 
   .button-form {

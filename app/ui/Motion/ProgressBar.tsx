@@ -10,7 +10,6 @@ const ScrollProgressBar = () => {
 
   const progress = useTransform(scrollYProgress, [0, 1], [0, 100]);
 
-  console.log(progress);
 
   useEffect(() => {
     setIsClient(true);

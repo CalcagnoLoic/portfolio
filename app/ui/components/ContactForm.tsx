@@ -11,7 +11,7 @@ const ContactForm = () => (
   <>
     <Title
       id="Contact"
-      className={`text-accent-primary text-center text-2xl md:text-4xl ${sofia.className}`}
+      className={`text-accent-primary text-center text-2xl md:text-4xl [text-shadow:_0_2px_4px_rgba(0,0,0,0.5)] ${sofia.className}`}
     >
       Restons en contact!
     </Title>

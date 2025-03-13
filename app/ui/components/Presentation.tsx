@@ -15,7 +15,7 @@ const Presentation = () => {
 
         <Typewriter />
 
-        <div className="bg-accent-yellow-light mt-3 mb-5 h-1 w-16 md:h-2 md:w-24 lg:w-28"></div>
+        <div className="bg-accent-yellow-light mx-auto mt-3 mb-5 block h-1 w-16 md:mx-0 md:h-2 md:w-24 lg:w-28"></div>
 
         <p className="mt-3 text-center text-lg md:text-start">
           Je suis profondément passionné par le développement web, un voyage qui
@@ -35,18 +35,20 @@ const Presentation = () => {
         </p>
 
         <div className="mt-5 flex flex-col gap-5 md:flex-row">
-          {[
-            { href: "/assets/CALCAGNO_LOIC_CV.pdf", text: "En savoir plus?" },
-            { href: "#contact", text: "Restons en contact!" },
-          ].map(({ href, text }) => (
-            <a
-              key={href}
-              href={href}
-              className={`button bg-accent-secondary text-accent text-ce text-lg ${bellefair.className}`}
-            >
-              {text}
-            </a>
-          ))}
+          <a
+            href="/assets/CALCAGNO_LOIC_CV.pdf"
+            download
+            className={`button text-accent text-lg bg-[linear-gradient(to_right,#FFCA74,#FFD798)] ${bellefair.className}`}
+          >
+            Télécharger mon CV 📌
+          </a>
+          <a
+            href="#contact"
+            className={`button bg-accent-secondary text-accent text-ce text-lg bg-[linear-gradient(to_right,#FFCA74,#FFD798)] ${bellefair.className}`}
+          >
+            Restons en contact!
+          </a>
+          
         </div>
       </div>
 

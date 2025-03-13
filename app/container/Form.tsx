@@ -104,7 +104,7 @@ const Form = () => {
         isTextArea={false}
         type="submit"
         value={isSubmitting ? "Envoie en cours..." : "Contactez moi 📧"}
-        inputCSS={`button-form  text-accent text-center text-2xl ${bellefair.className} ${isSubmitting ? "bg-gray-300" : "bg-accent-secondary hover:bg-[#FFCA96]"}`}
+        inputCSS={`button-form  text-accent text-center text-2xl bg-[linear-gradient(to_right,#FFCA74,#FFD798)] ${bellefair.className} ${isSubmitting ? "bg-gray-300" : "bg-accent-secondary hover:bg-[#FFCA96]"}`}
         isDisabled={isSubmitting}
       />
 

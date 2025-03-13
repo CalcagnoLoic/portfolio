@@ -33,7 +33,7 @@ const Project = () => {
   return (
     <>
       <Title
-        className={`text-primary mb-10 text-center text-2xl md:text-4xl ${sofia.className}`}
+        className={`text-primary mb-10 text-center text-2xl [text-shadow:_0_2px_4px_rgba(255,255,255,0.5)] md:text-4xl ${sofia.className}`}
         id="Projets"
       >
         Mes projets
@@ -42,10 +42,10 @@ const Project = () => {
       <FilterOption selected={selected} setSelected={setSelected} />
 
       {filteredProject && (
-        <div className="text-primary mt-5 grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+        <div className="text-primary mt-5 grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3">
           {filteredProject.map((item) => (
             <CardsBounce
-              className="mt-8 overflow-hidden shadow-lg"
+              className="mt-8 overflow-hidden "
               key={item.projectTitle}
             >
               <article className="relative">
@@ -54,48 +54,47 @@ const Project = () => {
                     <Image
                       src={item.projectIllustration}
                       alt={item.projectTitle}
-                      className="w-full rounded-t-3xl object-contain transition duration-700 ease-in-out hover:scale-110"
+                      className="w-full rounded-t-xl object-contain transition duration-700 ease-in-out hover:scale-110"
                       width={500}
                       height={500}
                     />
                   }
                   href={item.projectWebsite}
                   target="_blanck"
-                  css="hover:opacity-70 block overflow-hidden rounded-t-3xl"
+                  css="hover:opacity-70 block overflow-hidden rounded-t-xl"
                 />
 
                 <div className="absolute top-4 left-4">
-                  <div className="bg-card-label absolute inset-0 translate-x-1 translate-y-1 rounded-xl opacity-70"></div>
-                  <div className="bg-card-label text-accent relative rounded-xl border border-white/40 px-3 py-1 shadow-md">
+                  <div className="bg-card-label absolute inset-0 translate-x-1 translate-y-1 rounded-xl border border-black/70 opacity-70"></div>
+                  <div className="bg-card-label text-accent relative rounded-xl border border-black px-3 py-1 shadow-md">
                     {item.category}
                   </div>
                 </div>
               </article>
 
-              <article className="text-primary bg-card-primary items-stretch overflow-hidden rounded-b-3xl p-5">
+              <article className="text-primary bg-card-primary items-stretch overflow-hidden rounded-b-xl p-5">
                 <span className="hidden">{item.category}</span>
-                <div className="md:h-52 2xl:h-44">
+                <div className="md:h-52 lg:h-40 xl:h-48 2xl:h-44">
                   <div className="flex flex-col justify-between md:flex-row">
-                    <h3 className={`text-2xl text-primary ${sofia.className}`}>
+                    <h3 className={`text-primary text-2xl ${sofia.className}`}>
                       {item.projectTitle}
                     </h3>
                     {item.inProgress && (
                       <span
-                        className={`bg-card-label text-accent mt-3 rounded-2xl px-2 py-1 text-center font-bold uppercase md:mt-0 md:self-center ${bellefair.className}`}
+                        className={`bg-card-label text-accent mt-3 rounded-2xl border px-2 py-1 text-center font-bold uppercase md:mt-0 md:self-center ${bellefair.className}`}
                       >
                         ⚠️ en cours ⚠️
                       </span>
                     )}
                   </div>
 
-                  <p className="mt-3 text-base italic md:text-lg text-card">
+                  <p className="text-card mt-3 text-base italic md:text-lg">
                     {item.projectDescription}
                   </p>
                 </div>
 
                 <div className="mt-5 flex flex-col items-center gap-5 lg:mt-8 lg:flex-row lg:justify-between">
                   <div className="flex gap-5">{item.projectStack}</div>
-
                   <div className="flex gap-5">{item.projectLink}</div>
                 </div>
               </article>
@@ -107,11 +106,11 @@ const Project = () => {
       {visibleProject < Professional.length && (
         <div className="z-10 mt-8 mb-6 flex items-center justify-center sm:mb-12">
           <button
-            className="button bg-accent-secondary text-accent "
+            className="button bg-accent bg-[linear-gradient(to_right,#5CB7FF,#96C8FF)]"
             onClick={() => handleMoreProject(setVisibleProject)}
           >
             <span
-              className={`text-accent text-center text-2xl leading-none font-medium tracking-tight whitespace-pre-wrap lg:text-xl ${bellefair.className}`}
+              className={`text-primary text-center text-2xl leading-none font-medium tracking-tight whitespace-pre-wrap lg:text-xl ${bellefair.className}`}
             >
               Voir plus de projets...
             </span>

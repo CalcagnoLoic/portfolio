@@ -38,7 +38,7 @@ const FilterDropdown = ({
         ))}
 
         <button
-          className={`button bg-accent-secondary text-accent mx-auto mb-5 block w-5/6 text-lg ${bellefair.className}`}
+          className={`button bg-accent-secondary text-accent mx-auto mb-5 block w-5/6 text-lg bg-[linear-gradient(to_right,#FFCA74,#FFD798)] ${bellefair.className}`}
           onClick={handleDeselectAll}
         >
           Tout désélectionner

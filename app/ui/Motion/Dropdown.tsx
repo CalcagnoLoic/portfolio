@@ -36,7 +36,7 @@ export const Dropdown = ({ children, state }: StateMotion) => (
       ease: "easeInOut",
       type: "spring",
     }}
-    className="filter-button bg-primary border-bg-cards text-primary absolute right-0 z-10 mt-2 flex w-64 flex-col overflow-hidden rounded-3xl border shadow-lg" // Ajout de overflow-hidden pour gérer la hauteur dynamique
+    className="filter-button bg-primary border-bg-cards text-primary absolute  z-10 mt-2 flex w-64 flex-col overflow-hidden rounded-3xl border shadow-lg" // Ajout de overflow-hidden pour gérer la hauteur dynamique
   >
     {children}
   </motion.div>
