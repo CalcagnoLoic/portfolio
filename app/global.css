@@ -113,4 +113,8 @@
   .main-title {
     @apply text-center text-xl italic md:text-start md:text-2xl lg:text-3xl;
   }
+
+  .no-scroll {
+    @apply overflow-hidden;
+  }
 }

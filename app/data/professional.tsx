@@ -325,7 +325,11 @@ export const Professional: Projects[] = [
         <Link
           href="https://github.com/CalcagnoLoic/crowdfunding-webapp"
           content={
-            <NetworkIcons kind="github" isDarkBackground={true} css="w-8 h-8" />
+            <NetworkIcons
+              kind="github"
+              isDarkBackground={false}
+              css="w-8 h-8"
+            />
           }
           target="_blank"
           css="self-center w-[30px]"
@@ -336,18 +340,18 @@ export const Professional: Projects[] = [
           href="https://calcagnoloic.github.io/crowdfunding-webapp/"
           target="_blank"
           aria="Go to website"
-          content={<NetworkIcons kind="website" isDarkBackground={true} />}
+          content={<NetworkIcons kind="website" isDarkBackground={false} />}
         />
         <Link
           href="https://65fea557005e1e6abef7c259-mskecrihhi.chromatic.com"
           target="_blank"
           aria="Go to chromatic project"
-          content={<NetworkIcons kind="storybook" isDarkBackground={true} />}
+          content={<NetworkIcons kind="storybook" isDarkBackground={false} />}
         />
       </>
     ),
   },
-  {
+  /*   {
     id: "1nh-soc",
     category: "typescript-project",
     inProgress: false,
@@ -381,7 +385,7 @@ export const Professional: Projects[] = [
         />
       </>
     ),
-  },
+  }, */
   {
     id: "p@7l59k",
     category: "react-project",
@@ -404,7 +408,11 @@ export const Professional: Projects[] = [
         <Link
           href="https://github.com/CalcagnoLoic/box_shadow_generator"
           content={
-            <NetworkIcons kind="github" isDarkBackground={true} css="w-8 h-8" />
+            <NetworkIcons
+              kind="github"
+              isDarkBackground={false}
+              css="w-8 h-8"
+            />
           }
           target="_blank"
           css="self-center w-[30px]"
@@ -414,7 +422,7 @@ export const Professional: Projects[] = [
           href="https://calcagnoloic.github.io/box_shadow_generator/"
           target="_blank"
           aria="Go to website"
-          content={<NetworkIcons kind="website" isDarkBackground={true} />}
+          content={<NetworkIcons kind="website" isDarkBackground={false} />}
         />
       </>
     ),

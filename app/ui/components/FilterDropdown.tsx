@@ -1,12 +1,12 @@
 "use client";
 
+import { AnimatePresence } from "motion/react";
+import { bellefair } from "../fonts";
+import { Dropdown } from "../Motion/Dropdown";
 import { DropdownOptions } from "@/app/definitions/definitions";
 import { filterOptionsData } from "@/app/data/filterOptionsData";
 
 import SkillsIcons from "../icons/SkillsIcons";
-import { bellefair } from "../fonts";
-import { Dropdown } from "../Motion/Dropdown";
-import { AnimatePresence } from "motion/react";
 
 const FilterDropdown = ({
   selected,
@@ -25,10 +25,11 @@ const FilterDropdown = ({
             <input
               type="checkbox"
               checked={selected.includes(option.value)}
-              className="h-5 w-4 rounded-4xl accent-green-400"
+              className="h-5 w-4 accent-green-400"
               onChange={() => handleSelection(option.value)}
             />
-            {option.label}
+            <span className="text-lg">{option.label}</span>
+
             <SkillsIcons
               kind={option.logo}
               isFilterIcons={true}
@@ -38,7 +39,7 @@ const FilterDropdown = ({
         ))}
 
         <button
-          className={`button bg-accent-secondary text-accent mx-auto mb-5 block w-5/6 text-lg bg-[linear-gradient(to_right,#FFCA74,#FFD798)] ${bellefair.className}`}
+          className={`button bg-accent-secondary text-accent mx-auto mb-5 block w-5/6 bg-[linear-gradient(to_right,#FFCA74,#FFD798)] text-lg ${bellefair.className}`}
           onClick={handleDeselectAll}
         >
           Tout désélectionner

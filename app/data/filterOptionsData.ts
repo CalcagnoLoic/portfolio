@@ -6,5 +6,4 @@ export const filterOptionsData: Options[] = [
   { value: "react-project", label: "React", logo: "react" },
   { value: "react-native-project", label: "React Native", logo: "react" },
   { value: "typescript-project", label: "Typescript", logo: "ts" },
-  { value: "express-project", label: "ExpressJS + React", logo: "expressjs" },
 ];

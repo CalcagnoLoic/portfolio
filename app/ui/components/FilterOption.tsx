@@ -1,12 +1,12 @@
 "use client";
 
+import { bellefair } from "../fonts";
 import { Filter } from "@/app/definitions/definitions";
 import { filterOptionsData } from "@/app/data/filterOptionsData";
 import { handleSelectionLogic } from "@/app/utils/handleFilters";
 import { useCallback, useState } from "react";
 
 import FilterDropdown from "./FilterDropdown";
-import { bellefair } from "../fonts";
 
 const FilterOption = ({ selected, setSelected }: Filter) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);

@@ -10,7 +10,6 @@ const ScrollProgressBar = () => {
 
   const progress = useTransform(scrollYProgress, [0, 1], [0, 100]);
 
-
   useEffect(() => {
     setIsClient(true);
     return progress.onChange((latest) => setProgressValue(latest));
@@ -26,8 +25,7 @@ const ScrollProgressBar = () => {
         left: 0,
         width: "100%",
         height: "7px",
-        borderRadius: "100%"
-
+        borderRadius: "100%",
       }}
     >
       <motion.div

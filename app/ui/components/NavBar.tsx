@@ -1,13 +1,13 @@
 "use client";
 
-import { navItems } from "@/app/data/navItems";
-import { useMobile } from "@/app/hooks/useMobile";
 import { bellefair } from "../fonts";
-
-import NavbarMobile from "./NavbarMobile";
-import Image from "next/image";
-import { useActiveSection } from "@/app/hooks/useActionSection";
 import { motion } from "motion/react";
+import { navItems } from "@/app/data/navItems";
+import { useActiveSection } from "@/app/hooks/useActionSection";
+import { useMobile } from "@/app/hooks/useMobile";
+
+import Image from "next/image";
+import NavbarMobile from "./NavbarMobile";
 
 const NavBar = () => {
   const isMobile = useMobile();

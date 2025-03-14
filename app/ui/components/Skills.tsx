@@ -1,8 +1,8 @@
 "use client";
 
+import { CardsContainerMotion, CardsMotion } from "../Motion/Cards";
 import { skills } from "@/app/data/skills";
 import { sofia } from "../fonts";
-import { CardsContainerMotion, CardsMotion } from "../Motion/Cards";
 import { Title } from "../Motion/Title";
 
 const Skills = () => {

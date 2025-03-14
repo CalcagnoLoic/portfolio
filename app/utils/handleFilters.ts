@@ -10,4 +10,3 @@ export const handleSelectionLogic = (selected: string[], value: string) => {
     return [...selected, value];
   }
 };
-

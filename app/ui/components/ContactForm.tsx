@@ -1,17 +1,18 @@
 "use client";
 
-import Form from "@/app/container/Form";
 import { FormMotion } from "../Motion/Form";
-import { Title } from "../Motion/Title";
 import { sofia } from "../fonts";
-import Link from "./Link";
+import { Title } from "../Motion/Title";
+
 import ContactInformation from "./ContactInformation";
+import Form from "@/app/container/Form";
+import Link from "./Link";
 
 const ContactForm = () => (
   <>
     <Title
       id="Contact"
-      className={`text-accent-primary text-center text-2xl md:text-4xl [text-shadow:_0_2px_4px_rgba(0,0,0,0.5)] ${sofia.className}`}
+      className={`text-accent-primary text-center text-2xl [text-shadow:_0_2px_4px_rgba(0,0,0,0.5)] md:text-4xl ${sofia.className}`}
     >
       Restons en contact!
     </Title>

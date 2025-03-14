@@ -1,5 +1,6 @@
-import Image from "next/image";
 import { bellefair, sofia } from "../fonts";
+
+import Image from "next/image";
 import Typewriter from "./TypeWritter";
 
 const Presentation = () => {
@@ -38,17 +39,16 @@ const Presentation = () => {
           <a
             href="/assets/CALCAGNO_LOIC_CV.pdf"
             download
-            className={`button text-accent text-lg bg-[linear-gradient(to_right,#FFCA74,#FFD798)] ${bellefair.className}`}
+            className={`button text-accent bg-[linear-gradient(to_right,#FFCA74,#FFD798)] text-lg ${bellefair.className}`}
           >
             Télécharger mon CV 📌
           </a>
           <a
             href="#contact"
-            className={`button bg-accent-secondary text-accent text-ce text-lg bg-[linear-gradient(to_right,#FFCA74,#FFD798)] ${bellefair.className}`}
+            className={`button bg-accent-secondary text-accent text-ce bg-[linear-gradient(to_right,#FFCA74,#FFD798)] text-lg ${bellefair.className}`}
           >
             Restons en contact!
           </a>
-          
         </div>
       </div>
 

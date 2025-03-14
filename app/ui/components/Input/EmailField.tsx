@@ -1,5 +1,6 @@
-import { MailFormatField } from "@/app/definitions/definitions";
 import { handleChange } from "@/app/utils/handleChange";
+import { MailFormatField } from "@/app/definitions/definitions";
+
 import Field from "./Field";
 
 const EmailField = ({

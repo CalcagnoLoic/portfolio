@@ -1,7 +1,6 @@
 import { navItem } from "@/app/definitions/definitions";
 
 export const navItems: navItem[] = [
-
   {
     id: "r*sIHGR",
     content: "Projets",

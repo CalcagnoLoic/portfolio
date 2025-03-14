@@ -8,7 +8,7 @@ export const useClickOutside = ({ callback, ref }: useClickOutsideProps) => {
         callback(true);
       }
     },
-    [callback, ref]
+    [callback, ref],
   );
 
   useEffect(() => {

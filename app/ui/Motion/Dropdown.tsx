@@ -1,5 +1,5 @@
-import { StateMotion } from "@/app/definitions/definitions";
 import { motion } from "motion/react";
+import { StateMotion } from "@/app/definitions/definitions";
 
 export const Dropdown = ({ children, state }: StateMotion) => (
   <motion.div
@@ -36,7 +36,7 @@ export const Dropdown = ({ children, state }: StateMotion) => (
       ease: "easeInOut",
       type: "spring",
     }}
-    className="filter-button bg-primary border-bg-cards text-primary absolute  z-10 mt-2 flex w-64 flex-col overflow-hidden rounded-3xl border shadow-lg" // Ajout de overflow-hidden pour gérer la hauteur dynamique
+    className="filter-button bg-primary border-bg-cards text-primary absolute z-10 mt-2 flex w-64 flex-col overflow-hidden rounded-3xl border shadow-lg" // Ajout de overflow-hidden pour gérer la hauteur dynamique
   >
     {children}
   </motion.div>

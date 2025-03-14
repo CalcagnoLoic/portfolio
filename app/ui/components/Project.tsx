@@ -1,16 +1,16 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import { bellefair, sofia } from "../fonts";
-
+import { CardsBounce } from "../Motion/Cards";
+import { handleMoreProject } from "@/app/utils/showMoreProject";
 import { Professional } from "@/app/data/professional";
 import { Projects } from "@/app/definitions/definitions";
-import FilterOption from "./FilterOption";
-import { handleMoreProject } from "@/app/utils/showMoreProject";
-import Link from "@/app/ui/components/Link";
-import Image from "next/image";
-import { CardsBounce } from "../Motion/Cards";
 import { Title } from "../Motion/Title";
+import { useEffect, useState } from "react";
+
+import FilterOption from "./FilterOption";
+import Image from "next/image";
+import Link from "@/app/ui/components/Link";
 
 const Project = () => {
   const [displayedData, setDisplayedData] = useState<Projects[]>(Professional);
@@ -45,7 +45,7 @@ const Project = () => {
         <div className="text-primary mt-5 grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3">
           {filteredProject.map((item) => (
             <CardsBounce
-              className="mt-8 overflow-hidden "
+              className="mt-8 overflow-hidden"
               key={item.projectTitle}
             >
               <article className="relative">
@@ -72,7 +72,7 @@ const Project = () => {
                 </div>
               </article>
 
-              <article className="text-primary bg-card-primary items-stretch overflow-hidden rounded-b-xl p-5">
+              <article className="text-primary bg-card-primary mb-12 items-stretch overflow-hidden rounded-b-xl p-5">
                 <span className="hidden">{item.category}</span>
                 <div className="md:h-52 lg:h-40 xl:h-48 2xl:h-44">
                   <div className="flex flex-col justify-between md:flex-row">

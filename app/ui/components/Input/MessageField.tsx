@@ -1,6 +1,7 @@
 import { FieldInput } from "@/app/definitions/definitions";
-import Field from "./Field";
 import { handleChange } from "@/app/utils/handleChange";
+
+import Field from "./Field";
 
 const MessageField = ({
   state,
@@ -10,7 +11,7 @@ const MessageField = ({
 }: FieldInput) => (
   <>
     <Field
-      inputCSS={`${isValid ? "border-[#FFCA74]" : "border-white"}`} 
+      inputCSS={`{isValid ? "border-[#FFCA74]" : "border-white"}`}
       isTextArea={true}
       value={state}
       onChange={(e) => handleChange({ e, callback: setState })}

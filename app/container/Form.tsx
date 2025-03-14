@@ -1,16 +1,17 @@
 "use client";
 
-import { useState } from "react";
+import { bellefair } from "../ui/fonts";
 import { ErrorField } from "../definitions/definitions";
-import { validateForm } from "../utils/validateForm";
 import { notify } from "../utils/toastMessage";
-import Field from "../ui/components/Input/Field";
+import { sendForm } from "@emailjs/browser";
+import { ToastContainer, Zoom } from "react-toastify";
+import { useState } from "react";
+import { validateForm } from "../utils/validateForm";
+
 import EmailField from "../ui/components/Input/EmailField";
+import Field from "../ui/components/Input/Field";
 import MessageField from "../ui/components/Input/MessageField";
 import NameField from "../ui/components/Input/NameField";
-import { ToastContainer, Zoom } from "react-toastify";
-import { sendForm } from "@emailjs/browser";
-import { bellefair } from "../ui/fonts";
 
 const Form = () => {
   const [name, setName] = useState<string>("");

@@ -1,11 +1,11 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { AnimatePresence, motion } from "motion/react";
 import { Icons } from "../icons/icons";
 import { navItems } from "@/app/data/navItems";
 import { useClickOutside } from "@/app/hooks/useClickOutside";
+import { useRef, useState } from "react";
 import { useShouldOverflow } from "@/app/hooks/useShouldOverflow";
-import { AnimatePresence, motion } from "motion/react";
 
 const NavbarMobile = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -48,7 +48,7 @@ const NavbarMobile = () => {
               className="bg-primary absolute -top-5 -right-0 z-30 mt-5 h-screen w-1/2 pt-24 pl-5 md:w-1/3"
               ref={navbarRef}
               initial={{ x: "150%" }}
-              animate={{ x: 0 }} 
+              animate={{ x: 0 }}
               exit={{
                 x: ["0%", "120%", "100%"],
                 transition: {

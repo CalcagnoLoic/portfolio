@@ -1,14 +1,23 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import { sofia } from "../fonts";
+import { useEffect, useState } from "react";
 
 import SkillsIcons from "../icons/SkillsIcons";
 
 const texts = [
-  `Développeur JavaScript ${(<SkillsIcons kind="js" />)}`,
-  "React Lover",
-  "Python Enthusiast 🐍",
+  {
+    text: "Développeur JavaScript ",
+    icon: <SkillsIcons kind="js" />,
+  },
+  {
+    text: "React Lover ",
+    icon: <SkillsIcons kind="react" />,
+  },
+  {
+    text: "Python Enthusiast ",
+    icon: <SkillsIcons kind="python" />,
+  },
 ];
 
 const Typewriter = () => {
@@ -22,9 +31,11 @@ const Typewriter = () => {
     let timeout: NodeJS.Timeout;
 
     if (!isDeleting) {
-      if (displayedText.length < currentText.length) {
+      if (displayedText.length < currentText.text.length) {
         timeout = setTimeout(() => {
-          setDisplayedText(currentText.substring(0, displayedText.length + 1));
+          setDisplayedText(
+            currentText.text.substring(0, displayedText.length + 1),
+          );
         }, speed);
       } else {
         timeout = setTimeout(() => setIsDeleting(true), 1500);
@@ -32,7 +43,9 @@ const Typewriter = () => {
     } else {
       if (displayedText.length > 0) {
         timeout = setTimeout(() => {
-          setDisplayedText(currentText.substring(0, displayedText.length - 1));
+          setDisplayedText(
+            currentText.text.substring(0, displayedText.length - 1),
+          );
         }, speed);
       } else {
         setIsDeleting(false);
@@ -49,11 +62,11 @@ const Typewriter = () => {
     >
       Je suis...{" "}
       <div>
-        <span className="text-accent-secondary [text-shadow:_0_2px_4px_rgba(0,0,0,0.5)]">
+        <span className="text-accent-secondary mt-3 flex flex-row items-center justify-center [text-shadow:_0_2px_4px_rgba(0,0,0,0.5)] md:mt-0 md:justify-start">
           {displayedText}
-        </span>
-        <span className="blinking-cursor text-accent-secondary animate-pulse italic">
-          |
+          {displayedText === texts[textIndex].text && texts[textIndex].icon && (
+            <span className="ml-2 self-center">{texts[textIndex].icon}</span>
+          )}
         </span>
       </div>
     </h2>

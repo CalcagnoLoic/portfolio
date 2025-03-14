@@ -9,7 +9,7 @@ describe("validateForm Unit Test Suite", () => {
         name: "Calcagno Loïc",
         email: "test@example.com",
         message: "Hello, World!",
-      })
+      }),
     ).toBeDefined();
   });
 
@@ -23,16 +23,16 @@ describe("validateForm Unit Test Suite", () => {
     expect(typeof formData.isValid).toBe("boolean");
     expect(typeof formData.errors).toStrictEqual("object");
     expect(typeof formData.errors.NameEmpty as unknown as ErrorField).toBe(
-      "string"
+      "string",
     );
     expect(typeof formData.errors.EmailEmpty as unknown as ErrorField).toBe(
-      "string"
+      "string",
     );
     expect(typeof formData.errors.EmailFormat as unknown as ErrorField).toBe(
-      "string"
+      "string",
     );
     expect(typeof formData.errors.MessageEmpty as unknown as ErrorField).toBe(
-      "string"
+      "string",
     );
   });
 
@@ -42,7 +42,7 @@ describe("validateForm Unit Test Suite", () => {
         name: "Calcagno Loïc",
         email: "test@example.com",
         message: "Hello, World!",
-      }).isValid
+      }).isValid,
     ).toBe(true);
   });
 
@@ -52,7 +52,7 @@ describe("validateForm Unit Test Suite", () => {
         name: "",
         email: "test@example.com",
         message: "Hello, World!",
-      }).isValid
+      }).isValid,
     ).toBe(false);
   });
 
@@ -62,7 +62,7 @@ describe("validateForm Unit Test Suite", () => {
         name: "",
         email: "test@example.com",
         message: "Hello, World!",
-      }).isValid
+      }).isValid,
     ).toBe(false);
   });
 
@@ -72,7 +72,7 @@ describe("validateForm Unit Test Suite", () => {
         name: "",
         email: "test@example.com",
         message: "Hello, World!",
-      }).errors.NameEmpty
+      }).errors.NameEmpty,
     ).toBe("Le nom est requis");
   });
 
@@ -82,7 +82,7 @@ describe("validateForm Unit Test Suite", () => {
         name: "Calcagno Loïc",
         email: "",
         message: "Hello, World!",
-      }).errors.EmailEmpty
+      }).errors.EmailEmpty,
     ).toBe("L'email est requis");
   });
 
@@ -92,7 +92,7 @@ describe("validateForm Unit Test Suite", () => {
         name: "Calcagno Loïc",
         email: "test@example.com",
         message: "",
-      }).errors.MessageEmpty
+      }).errors.MessageEmpty,
     ).toBe("Le message est requis");
   });
 
@@ -102,7 +102,7 @@ describe("validateForm Unit Test Suite", () => {
         name: "Calcagno Loïc",
         email: "test@example",
         message: "Hello, World!",
-      }).errors.EmailFormat
+      }).errors.EmailFormat,
     ).toBe("Mauvais format d'email");
   });
 });
