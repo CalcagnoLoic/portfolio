@@ -21,7 +21,7 @@ const Presentation = () => {
         <p className="mt-3 text-center text-lg md:text-start">
           Je suis profondément passionné par le développement web, un voyage qui
           a commencé par l&apos;auto-apprentissage. Principalement développeur
-          React, j&apos;ai également une forte affinité pour le développement
+          JavaScript, j&apos;ai également une forte affinité pour le développement
           backend, en particulier avec Python. Chaque projet et défi alimente
           mon inspiration alors que j&apos;explore de nouvelles technologies et
           que je m&apos;attaque à des tâches complexes
