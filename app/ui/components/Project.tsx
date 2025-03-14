@@ -12,7 +12,6 @@ import FilterOption from "./FilterOption";
 import Image from "next/image";
 import LinkRedirection from "./LinkRedirection";
 
-
 const Project = () => {
   const [displayedData, setDisplayedData] = useState<Projects[]>(Professional);
   const [visibleProject, setVisibleProject] = useState<number>(3);
@@ -73,7 +72,7 @@ const Project = () => {
                 </div>
               </article>
 
-              <article className="text-primary bg-card-primary mb-12 items-stretch overflow-hidden rounded-b-xl p-5">
+              <article className="text-primary bg-card-primary  items-stretch overflow-hidden rounded-b-xl p-5">
                 <span className="hidden">{item.category}</span>
                 <div className="md:h-52 lg:h-40 xl:h-48 2xl:h-44">
                   <div className="flex flex-col justify-between md:flex-row">
@@ -104,7 +103,7 @@ const Project = () => {
         </div>
       )}
 
-      {visibleProject < Professional.length && (
+      {visibleProject < Professional.length ? (
         <div className="z-10 mt-8 mb-6 flex items-center justify-center sm:mb-12">
           <button
             className="button bg-accent bg-[linear-gradient(to_right,#5CB7FF,#96C8FF)]"
@@ -117,7 +116,7 @@ const Project = () => {
             </span>
           </button>
         </div>
-      )}
+      ) : <div className="mb-12"></div>}
     </>
   );
 };

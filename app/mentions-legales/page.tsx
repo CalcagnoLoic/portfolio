@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 const MentionsLegales = () => {
   return (
-    <div className="text-primary px-8 md:px-16 lg:px-32">
+    <div className="text-primary hero-section">
       <Link
         href="/"
         className={`button text-accent mt-12 block w-fit bg-[linear-gradient(to_right,#FFCA74,#FFD798)] text-lg ${bellefair.className}`}

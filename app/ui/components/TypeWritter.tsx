@@ -62,7 +62,7 @@ const Typewriter = () => {
     >
       Je suis...{" "}
       <div>
-        <span className="text-accent-secondary mt-3 flex flex-row items-center justify-center [text-shadow:_0_2px_4px_rgba(0,0,0,0.5)] md:mt-0 md:justify-start">
+        <span className="text-accent-secondary mt-3 flex min-h-[40px] flex-row items-center justify-center [text-shadow:_0_2px_4px_rgba(0,0,0,0.5)] md:mt-0 md:min-h-fit lg:justify-start">
           {displayedText}
           {displayedText === texts[textIndex].text && texts[textIndex].icon && (
             <span className="ml-2 self-center">{texts[textIndex].icon}</span>

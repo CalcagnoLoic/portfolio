@@ -39,13 +39,13 @@ const Presentation = () => {
           <a
             href="/assets/CALCAGNO_LOIC_CV.pdf"
             download
-            className={`button text-accent bg-[linear-gradient(to_right,#FFCA74,#FFD798)] text-lg ${bellefair.className}`}
+            className={`button text-accent text-center bg-[linear-gradient(to_right,#FFCA74,#FFD798)] text-lg ${bellefair.className}`}
           >
             Télécharger mon CV 📌
           </a>
           <a
             href="#Contact"
-            className={`button bg-accent-secondary text-accent text-ce bg-[linear-gradient(to_right,#FFCA74,#FFD798)] text-lg ${bellefair.className}`}
+            className={`button bg-accent-secondary text-accent text-center bg-[linear-gradient(to_right,#FFCA74,#FFD798)] text-lg ${bellefair.className}`}
           >
             Restons en contact!
           </a>
