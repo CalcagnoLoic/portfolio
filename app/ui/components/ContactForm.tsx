@@ -6,7 +6,7 @@ import { Title } from "../Motion/Title";
 
 import ContactInformation from "./ContactInformation";
 import Form from "@/app/container/Form";
-import Link from "./Link";
+import LinkRedirection from "./LinkRedirection";
 
 const ContactForm = () => (
   <>
@@ -35,7 +35,7 @@ const ContactForm = () => (
           <ContactInformation
             icon="📩"
             content={
-              <Link
+              <LinkRedirection
                 content="calcagnoloic93@gmail.com"
                 href="mailto:calcagnoloic93@gmail.com"
               />

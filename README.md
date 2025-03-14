@@ -27,7 +27,7 @@ Mon portfolio regroupe mes projets, mes compétences et mon parcours. Tu y déco
 
 Si tu veux discuter, échanger ou simplement dire bonjour, tu peux me contacter via :
 
-- Un email - [Gmail](calcagnoloic93@gmail.com)
+- Un email - [Gmail](mailto:calcagnoloic93@gmail.com)
 - Formulaire dispo sur mon site - [Portfolio](https://calcagno-loic.netlify.app/)
 - Linkedin - [LinkedIn](https://www.linkedin.com/in/loic-calcagno/)
 

@@ -1,6 +1,6 @@
 import { LinkProps } from "@/app/definitions/definitions";
 
-const Component = ({ css, content, href, target, aria }: LinkProps) => (
+const LinkRedirection = ({ css, content, href, target, aria }: LinkProps) => (
   <a
     href={href}
     target={target}
@@ -12,4 +12,4 @@ const Component = ({ css, content, href, target, aria }: LinkProps) => (
   </a>
 );
 
-export default Component;
+export default LinkRedirection;

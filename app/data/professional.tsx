@@ -1,6 +1,6 @@
 import { Projects } from "@/app/definitions/definitions";
 
-import Link from "@/app/ui/components/Link";
+import LinkRedirection from "@/app/ui/components/LinkRedirection";
 import NetworkIcons from "@/app/ui/icons/NetworkIcons";
 import SkillsIcons from "@/app/ui/icons/SkillsIcons";
 
@@ -23,7 +23,7 @@ export const Professional: Projects[] = [
     projectWebsite: "https://github.com/CalcagnoLoic/pokeNative",
     projectLink: (
       <>
-        <Link
+        <LinkRedirection
           href="https://github.com/CalcagnoLoic/pokeNative"
           aria="Go to the github page for to access frontend"
           content={
@@ -36,7 +36,7 @@ export const Professional: Projects[] = [
           target="_blank"
           css="self-center w-[30px]"
         />
-        {/* <Link
+        {/* <LinkRedirection
           href="https://github.com/CalcagnoLoic/pokeNative"
           target="_blank"
           aria="Go to website"
@@ -64,7 +64,7 @@ export const Professional: Projects[] = [
     projectWebsite: "http://35.241.147.228/",
     projectLink: (
       <>
-        <Link
+        <LinkRedirection
           href="https://github.com/Escanor1986/odoo-hackathon"
           content={
             <NetworkIcons
@@ -77,7 +77,7 @@ export const Professional: Projects[] = [
           css="self-center w-[30px]"
           aria="Go to github repository"
         />
-        <Link
+        <LinkRedirection
           href="http://35.241.147.228/"
           target="_blank"
           aria="Go to website"
@@ -104,7 +104,7 @@ export const Professional: Projects[] = [
     projectWebsite: "https://cat-wiki-loic.netlify.app/",
     projectLink: (
       <>
-        <Link
+        <LinkRedirection
           href="https://github.com/CalcagnoLoic/catwiki/"
           content={
             <NetworkIcons
@@ -117,7 +117,7 @@ export const Professional: Projects[] = [
           css="self-center w-[30px]"
           aria="Go to github repository"
         />
-        <Link
+        <LinkRedirection
           href="https://cat-wiki-loic.netlify.app/"
           target="_blank"
           aria="Go to website"
@@ -145,7 +145,7 @@ export const Professional: Projects[] = [
     projectWebsite: "https://calcagnoloic.github.io/planets-fact/",
     projectLink: (
       <>
-        <Link
+        <LinkRedirection
           href="https://github.com/CalcagnoLoic/planets-fact"
           content={
             <NetworkIcons
@@ -158,7 +158,7 @@ export const Professional: Projects[] = [
           css="self-center w-[30px]"
           aria="Go to github repository"
         />
-        <Link
+        <LinkRedirection
           href="https://calcagnoloic.github.io/planets-fact/"
           target="_blank"
           aria="Go to website"
@@ -186,7 +186,7 @@ export const Professional: Projects[] = [
     projectWebsite: "https://calcagnoloic.github.io/dictionary-webapp/",
     projectLink: (
       <>
-        <Link
+        <LinkRedirection
           href="https://github.com/CalcagnoLoic/dictionary-webapp"
           content={
             <NetworkIcons
@@ -200,13 +200,13 @@ export const Professional: Projects[] = [
           aria="Go to github repository"
         />
 
-        <Link
+        <LinkRedirection
           href="https://calcagnoloic.github.io/dictionary-webapp/"
           target="_blank"
           aria="Go to website"
           content={<NetworkIcons kind="website" isDarkBackground={false} />}
         />
-        <Link
+        <LinkRedirection
           href="https://65c4faea26944c656f6474a3-sfiofbresk.chromatic.com/"
           target="_blank"
           aria="Go to chromatic project"
@@ -234,7 +234,7 @@ export const Professional: Projects[] = [
     projectWebsite: "https://calcagnoloic.github.io/ecommerce-sneakers/",
     projectLink: (
       <>
-        <Link
+        <LinkRedirection
           href="https://github.com/CalcagnoLoic/ecommerce-sneakers"
           content={
             <NetworkIcons
@@ -248,13 +248,13 @@ export const Professional: Projects[] = [
           aria="Go to github repository"
         />
 
-        <Link
+        <LinkRedirection
           href="https://calcagnoloic.github.io/ecommerce-sneakers/"
           target="_blank"
           aria="Go to website"
           content={<NetworkIcons kind="website" isDarkBackground={false} />}
         />
-        <Link
+        <LinkRedirection
           href="https://65b3f7c0ccbf56939b38309a-gyhhowhxyz.chromatic.com/"
           target="_blank"
           aria="Go to chromatic project"
@@ -280,7 +280,7 @@ export const Professional: Projects[] = [
     projectWebsite: "https://calcagnoloic.github.io/password-generator-app/",
     projectLink: (
       <>
-        <Link
+        <LinkRedirection
           href="https://github.com/CalcagnoLoic/password-generator-app"
           content={
             <NetworkIcons
@@ -294,7 +294,7 @@ export const Professional: Projects[] = [
           aria="Go to github repository"
         />
 
-        <Link
+        <LinkRedirection
           href="https://calcagnoloic.github.io/password-generator-app/"
           target="_blank"
           aria="Go to website"
@@ -322,7 +322,7 @@ export const Professional: Projects[] = [
     projectWebsite: "https://calcagnoloic.github.io/crowdfunding-webapp/",
     projectLink: (
       <>
-        <Link
+        <LinkRedirection
           href="https://github.com/CalcagnoLoic/crowdfunding-webapp"
           content={
             <NetworkIcons
@@ -336,93 +336,17 @@ export const Professional: Projects[] = [
           aria="Go to github repository"
         />
 
-        <Link
+        <LinkRedirection
           href="https://calcagnoloic.github.io/crowdfunding-webapp/"
           target="_blank"
           aria="Go to website"
           content={<NetworkIcons kind="website" isDarkBackground={false} />}
         />
-        <Link
+        <LinkRedirection
           href="https://65fea557005e1e6abef7c259-mskecrihhi.chromatic.com"
           target="_blank"
           aria="Go to chromatic project"
           content={<NetworkIcons kind="storybook" isDarkBackground={false} />}
-        />
-      </>
-    ),
-  },
-  /*   {
-    id: "1nh-soc",
-    category: "typescript-project",
-    inProgress: false,
-    projectIllustration: "/assets/img/calculator-app.webp",
-    projectTitle: "Calculator app",
-    projectDescription:
-      "Calculatrice développée pour améliorer mes compétences en TypeScript et en tests unitaires. Le projet suit des pratiques de clean code pour la maintenabilité.",
-    projectStack: (
-      <>
-        <SkillsIcons kind="ts" />
-        <SkillsIcons kind="tw" />
-      </>
-    ),
-    projectWebsite: "https://calcagnoloic.github.io/calculator/",
-    projectLink: (
-      <>
-        <Link
-          href="https://github.com/CalcagnoLoic/calculator"
-          content={
-            <NetworkIcons kind="github" isDarkBackground={true} css="w-8 h-8" />
-          }
-          target="_blank"
-          css="self-center w-[30px]"
-          aria="Go to github repository"
-        />
-        <Link
-          href="https://calcagnoloic.github.io/calculator/"
-          target="_blank"
-          aria="Go to website"
-          content={<NetworkIcons kind="website" isDarkBackground={true} />}
-        />
-      </>
-    ),
-  }, */
-  {
-    id: "p@7l59k",
-    category: "react-project",
-    inProgress: false,
-    projectIllustration: "/assets/img/box-generator.webp",
-    projectTitle: "Boxy generator",
-    projectDescription:
-      "Créez la propriété CSS box-shadow sans effort avec ce générateur. Ce projet m'a permis d'apprendre l'outil Redux et les concepts de gestion d'état en utilisant React.",
-    projectStack: (
-      <>
-        <SkillsIcons kind="react" />
-        <SkillsIcons kind="redux" />
-        <SkillsIcons kind="js" />
-        <SkillsIcons kind="tw" />
-      </>
-    ),
-    projectWebsite: "https://calcagnoloic.github.io/box_shadow_generator/",
-    projectLink: (
-      <>
-        <Link
-          href="https://github.com/CalcagnoLoic/box_shadow_generator"
-          content={
-            <NetworkIcons
-              kind="github"
-              isDarkBackground={false}
-              css="w-8 h-8"
-            />
-          }
-          target="_blank"
-          css="self-center w-[30px]"
-          aria="Go to github repository"
-        />
-        <Link
-          href="https://calcagnoloic.github.io/box_shadow_generator/"
-          target="_blank"
-          aria="Go to website"
-          content={<NetworkIcons kind="website" isDarkBackground={false} />}
         />
       </>
     ),

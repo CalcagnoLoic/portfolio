@@ -10,7 +10,8 @@ import { useEffect, useState } from "react";
 
 import FilterOption from "./FilterOption";
 import Image from "next/image";
-import Link from "@/app/ui/components/Link";
+import LinkRedirection from "./LinkRedirection";
+
 
 const Project = () => {
   const [displayedData, setDisplayedData] = useState<Projects[]>(Professional);
@@ -49,7 +50,7 @@ const Project = () => {
               key={item.projectTitle}
             >
               <article className="relative">
-                <Link
+                <LinkRedirection
                   content={
                     <Image
                       src={item.projectIllustration}
