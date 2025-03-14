@@ -44,7 +44,7 @@ const Presentation = () => {
             Télécharger mon CV 📌
           </a>
           <a
-            href="#contact"
+            href="#Contact"
             className={`button bg-accent-secondary text-accent text-ce bg-[linear-gradient(to_right,#FFCA74,#FFD798)] text-lg ${bellefair.className}`}
           >
             Restons en contact!
