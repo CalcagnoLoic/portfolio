@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+:root {
+  --toastify-color-success: #2ecc71;
+  --toastify-color-warning: #ffa500;
+  --toastify-color-error: #e74c3c;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffca96;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+@theme {
+  --color-gray-light: rgb(55, 68, 82);
+  --color-gray-darker: rgb(20, 30, 40);
+  --color-card-primary: rgb(35, 70, 120);
+  --color-card-text: rgb(255, 255, 255);
+  --color-card-title: rgb(92, 183, 255);
+  --color-card-hover: rgb(45, 90, 140);
+  --color-card-label: rgb(224, 196, 127);
+  --color-card-accent: rgb(130, 204, 255);
+
+  --color-white: rgb(255, 255, 255);
+  --color-accent-blue-light: rgb(92, 183, 255);
+  --color-accent-yellow-light: rgb(255, 202, 116);
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  .bg-primary {
+    background-color: var(--color-gray-light);
+  }
+  .bg-secondary {
+    background-color: var(--color-gray-darker);
+  }
+  .text-primary {
+    color: var(--color-white);
+  }
+  .text-secondary {
+    color: var(--color-accent-blue-light);
+  }
+  .bg-accent {
+    background-color: var(--color-accent-blue-light);
+  }
+  .bg-accent-secondary {
+    background-color: var(--color-accent-yellow-light);
+  }
+  .text-accent {
+    color: var(--color-gray-darker);
+  }
+  .text-accent-secondary {
+    color: var(--color-accent-yellow-light);
+  }
+
+  /* Cartes */
+  .bg-card-primary {
+    background-color: var(--color-card-primary);
+  }
+  .text-card {
+    color: var(--color-card-text);
+  }
+  .text-card-title {
+    color: var(--color-card-title);
+  }
+  .bg-card-hover {
+    background-color: var(--color-card-hover);
+  }
+  .bg-card-label {
+    background-color: var(--color-card-label);
+  }
+  .bg-card-accent {
+    background-color: var(--color-card-accent);
+  }
+}
+
+@layer component {
+  .button {
+    @apply cursor-pointer rounded-3xl border-white px-6 py-3 transition duration-700 ease-in-out hover:border lg:hover:scale-x-110;
+  }
+
+  .button-form {
+    @apply cursor-pointer rounded-3xl border border-white px-6 py-3 transition duration-700 ease-in-out lg:hover:scale-x-110;
+  }
+
+  .hero-section {
+    @apply px-8 py-6 md:px-16 md:py-9 lg:px-32 lg:py-12;
+  }
+
+  .input-container {
+    @apply mb-2 flex flex-col sm:mb-8 sm:gap-1;
+  }
+
+  .input-field {
+    @apply mb-1 font-semibold outline-none;
+  }
+
+  input:disabled {
+    @apply cursor-not-allowed;
+  }
+
+  .main-title {
+    @apply text-center text-xl italic md:text-start md:text-2xl lg:text-3xl;
+  }
+
+  .no-scroll {
+    @apply overflow-hidden;
+  }
+}

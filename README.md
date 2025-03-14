@@ -1,4 +1,4 @@
-<h1 align="center">Portfolio</h1>
+# 🎨 Mon portfolio
 
 <p align="center">
   <a href="https://skillicons.dev">
@@ -6,29 +6,29 @@
   </a>
 </p>
 
-Hello and welcome to my portfolio ✌️
+## 👋 Bienvenue !
 
-I have a profound passion for web development, a journey that commenced through self-education. Every project and obstacle encountered further ignites my inspiration as I delve into novel technologies and confront intricate challenges. In tandem with my fervor for web development, I hold a steadfast dedication to knowledge dissemination. I enthusiastically contribute to the community by imparting the insights I've acquired.
+Salut et bienvenue sur mon portfolio ✌️
 
-There are two types of project in this portfolio.
+Je suis passionné par le développement web, un domaine que j’ai découvert en autodidacte. Chaque projet et chaque défi rencontrés sont une opportunité d’apprentissage et d’exploration de nouvelles technologies. J’aime expérimenter, trouver des solutions et repousser mes limites.
 
-- On the one hand, the so-called "professional" projects where I apply all my knowledge and clean code to be as professional as possible in my approach.
+En plus de coder, j’aime partager mes connaissances avec la communauté. Que ce soit à travers des articles, des discussions ou du mentorat, j’adore échanger et aider d’autres développeurs à progresser.
 
-- On the other hand, the so-called "experimental" projects where I learn new development technologies/tools.
+## 🚀 Ce que tu trouveras ici
 
-Don't wait any longer! Immerse yourself in my world and let's take a journey together 😊
+Mon portfolio regroupe mes projets, mes compétences et mon parcours. Tu y découvriras des réalisations en **_JavaScript_**, **_TypeScript_**, **_React_**, **_Next.js_**, et bien plus encore. Chaque projet reflète ma passion pour le développement et mon souci du détail.
 
-## Built with
+## 🛠️ Technologies utilisées
 
-- Semantic HTML5 markup
-- Mobile-first workflow
-- TailwindCSS
-- React
-- TypeScript
-- EmailJS
+- Frontend: Next.js, TypeScript, Tailwind
+- Autres outils: CI/CD + GitHub Actions, Netlify, Vitest
 
-## Networks
+## 📩 Me contacter
 
-- Personnal website - [Portfolio](https://calcagno-loic.netlify.app/)
-- Frontend Mentor - [@CalcagnoLoic](https://www.frontendmentor.io/profile/CalcagnoLoic)
+Si tu veux discuter, échanger ou simplement dire bonjour, tu peux me contacter via :
+
+- Un email - [Gmail](mailto:calcagnoloic93@gmail.com)
+- Formulaire dispo sur mon site - [Portfolio](https://calcagno-loic.netlify.app/)
 - Linkedin - [LinkedIn](https://www.linkedin.com/in/loic-calcagno/)
+
+Merci d’avoir pris le temps de visiter mon portfolio ! 🚀
