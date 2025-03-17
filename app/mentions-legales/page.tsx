@@ -45,16 +45,16 @@ const MentionsLegales = () => {
       <section className="mb-6">
         <h2 className="mb-2 text-xl font-semibold underline">Hébergement</h2>
         <p>
-          Ce site est hébergé par : <strong>Netlify</strong>, plateforme
+          Ce site est hébergé par : <strong>Vercel</strong>, plateforme
           d’hébergement fiable et sécurisée.
           <br />
           Vous pouvez consulter leur site ici :{" "}
           <a
-            href="https://www.netlify.com"
+            href="https://www.vercel.com"
             className="text-accent-yellow-light font-semibold hover:italic"
             target="_blank"
           >
-            Netlify
+            Vercel
           </a>
           .
         </p>
