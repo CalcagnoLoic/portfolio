@@ -100,7 +100,7 @@ const MentionsLegales = () => {
       </section>
 
       <span className="mb-5 block text-base italic">
-        Dernière modification: le 14 mars 2025
+        Dernière modification: le 17 mars 2025
       </span>
     </div>
   );

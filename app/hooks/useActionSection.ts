@@ -38,7 +38,7 @@ export const useActiveSection = (sectionsIds: string[]) => {
 
       setActiveSection((prev) => {
         if (prev !== currentSection) {
-          console.log(`Changement de section : ${prev} → ${currentSection}`);
+          /* console.log(`Changement de section : ${prev} → ${currentSection}`); */
           return currentSection;
         }
         return prev;
