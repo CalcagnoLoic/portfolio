@@ -72,7 +72,7 @@ const Project = () => {
                 </div>
               </article>
 
-              <article className="text-primary bg-card-primary  items-stretch overflow-hidden rounded-b-xl p-5">
+              <article className="text-primary bg-card-primary items-stretch overflow-hidden rounded-b-xl p-5">
                 <span className="hidden">{item.category}</span>
                 <div className="md:h-52 lg:h-40 xl:h-48 2xl:h-44">
                   <div className="flex flex-col justify-between md:flex-row">
@@ -116,7 +116,9 @@ const Project = () => {
             </span>
           </button>
         </div>
-      ) : <div className="mb-12"></div>}
+      ) : (
+        <div className="mb-12"></div>
+      )}
     </>
   );
 };

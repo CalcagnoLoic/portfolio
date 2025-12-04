@@ -206,12 +206,6 @@ export const Professional: Projects[] = [
           aria="Go to website"
           content={<NetworkIcons kind="website" isDarkBackground={false} />}
         />
-        <LinkRedirection
-          href="https://65c4faea26944c656f6474a3-sfiofbresk.chromatic.com/"
-          target="_blank"
-          aria="Go to chromatic project"
-          content={<NetworkIcons kind="storybook" />}
-        />
       </>
     ),
   },
@@ -253,12 +247,6 @@ export const Professional: Projects[] = [
           target="_blank"
           aria="Go to website"
           content={<NetworkIcons kind="website" isDarkBackground={false} />}
-        />
-        <LinkRedirection
-          href="https://65b3f7c0ccbf56939b38309a-gyhhowhxyz.chromatic.com/"
-          target="_blank"
-          aria="Go to chromatic project"
-          content={<NetworkIcons kind="storybook" />}
         />
       </>
     ),
@@ -310,7 +298,7 @@ export const Professional: Projects[] = [
     projectIllustration: "/assets/img/crowdfund.webp",
     projectTitle: "Crowdfunding webapp",
     projectDescription:
-      "Explorez cette page de produits de financement participatif où les utilisateurs peuvent sélectionner des offres pour augmenter le financement et mettre en signet les produits qu'ils souhaitent soutenir. ",
+      "Explorez cette page de produits de financement participatif où les utilisateurs peuvent sélectionner des offres pour augmenter le financement et mettre en favori les produits qu'ils souhaitent soutenir. ",
     projectStack: (
       <>
         <SkillsIcons kind="react" />
@@ -341,12 +329,6 @@ export const Professional: Projects[] = [
           target="_blank"
           aria="Go to website"
           content={<NetworkIcons kind="website" isDarkBackground={false} />}
-        />
-        <LinkRedirection
-          href="https://65fea557005e1e6abef7c259-mskecrihhi.chromatic.com"
-          target="_blank"
-          aria="Go to chromatic project"
-          content={<NetworkIcons kind="storybook" isDarkBackground={false} />}
         />
       </>
     ),
